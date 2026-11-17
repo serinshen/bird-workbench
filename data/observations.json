@@ -1,0 +1,194 @@
+{
+  "note": "只有随工作台导入的鸟类记录。一种鸟只要有至少一条记录，就算已观察。时间均为 Asia/Shanghai。不另设可与记录脱节的已观察标记。",
+  "records": [
+    {
+      "id": "obs-2026-11-11-007",
+      "scientificName": "Phoenicurus frontalis",
+      "datetime": "2026-11-11",
+      "timezone": "Asia/Shanghai",
+      "datetimeNote": "Heard during the day’s hike on the 霍比特徒步线 at 石门子村; clock time not reported. Logged as heard-only (no recording or photo). IDs 007–008 follow the order Serin named the two species, after earlier same-day records.",
+      "detection": "heard_only",
+      "confidence": "as-reported",
+      "tentative": true,
+      "location": {
+        "place": "石门子村（霍比特徒步线）",
+        "township": "高兴镇",
+        "county": "华蓥市",
+        "city": "广安市",
+        "province": "四川省",
+        "country": "中国",
+        "note": "Place as reported by Serin (石门子村的霍比特徒步线). Travel and local sources place this trail at 华蓥市高兴镇石门子村 (also called 霍比特森林 / 华蓥山霍比特环线). Official 广安市行政区划 places 高兴镇 under 华蓥市 (https://www.guang-an.gov.cn/gasrmzfw/xzqy/pc/content/content_1718584923215175680.html). 区划地名网 notes 石门子村 was merged into 枧子沟村 in 2004, but the locality is still commonly called 石门子村. No exact hearing point or trailhead coordinates were obtained from a verified POI, so GPS was not recorded; this is the trail/village area, not a precise hearing location."
+      },
+      "habitat": "霍比特徒步线途中听见（华蓥山林区；具体路段未记）",
+      "weatherLight": "白天徒步途中（具体时段未记）",
+      "notes": "Recorded as heard only, per Serin’s aural identification on the 霍比特徒步线 at 石门子村; no recording or photo was provided, so the call was not independently verified. Names follow CBR v10. The species breeds in mountains of central and western China and winters at lower elevations to the south; November in the Huaying hills is a geographically and seasonally reasonable time and place, but this remains an unverified aural record.",
+      "photos": [],
+      "sourceGroup": "雀形目 Passeriformes · 鹟科 Muscicapidae",
+      "independentlyVerified": false,
+      "loggedChinese": "蓝额红尾鸲",
+      "loggedEnglish": "Blue-fronted Redstart"
+    },
+    {
+      "id": "obs-2026-11-11-008",
+      "scientificName": "Cyanoderma ruficeps",
+      "datetime": "2026-11-11",
+      "timezone": "Asia/Shanghai",
+      "datetimeNote": "Heard during the day’s hike on the 霍比特徒步线 at 石门子村; clock time not reported. Logged as heard-only (no recording or photo). IDs 007–008 follow the order Serin named the two species, after earlier same-day records.",
+      "detection": "heard_only",
+      "confidence": "as-reported",
+      "tentative": true,
+      "location": {
+        "place": "石门子村（霍比特徒步线）",
+        "township": "高兴镇",
+        "county": "华蓥市",
+        "city": "广安市",
+        "province": "四川省",
+        "country": "中国",
+        "note": "Place as reported by Serin (石门子村的霍比特徒步线). Travel and local sources place this trail at 华蓥市高兴镇石门子村 (also called 霍比特森林 / 华蓥山霍比特环线). Official 广安市行政区划 places 高兴镇 under 华蓥市 (https://www.guang-an.gov.cn/gasrmzfw/xzqy/pc/content/content_1718584923215175680.html). 区划地名网 notes 石门子村 was merged into 枧子沟村 in 2004, but the locality is still commonly called 石门子村. No exact hearing point or trailhead coordinates were obtained from a verified POI, so GPS was not recorded; this is the trail/village area, not a precise hearing location."
+      },
+      "habitat": "霍比特徒步线途中听见（华蓥山林区；具体路段未记）",
+      "weatherLight": "白天徒步途中（具体时段未记）",
+      "notes": "Recorded as heard only, per Serin’s aural identification on the 霍比特徒步线 at 石门子村; no recording or photo was provided, so the call was not independently verified. Names follow CBR v10 (Cyanoderma ruficeps, not the older Stachyris/Stachyridopsis combination). A vocal understory babbler often heard more than seen; resident in southern China including Sichuan forest, so November here is geographically reasonable, but this remains an unverified aural record.",
+      "photos": [],
+      "sourceGroup": "雀形目 Passeriformes · 穗鹛科 Timaliidae",
+      "independentlyVerified": false,
+      "loggedChinese": "红头穗鹛",
+      "loggedEnglish": "Rufous-capped Babbler"
+    },
+    {
+      "id": "obs-2026-11-11-002",
+      "scientificName": "Motacilla alba",
+      "datetime": "2026-11-11T14:37:06",
+      "timezone": "Asia/Shanghai",
+      "datetimeNote": "EXIF DateTime from photo",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "高兴镇（华蓥市）",
+        "township": "高兴镇",
+        "county": "华蓥市",
+        "city": "广安市",
+        "province": "四川省",
+        "country": "中国",
+        "lat": 30.277,
+        "lon": 106.752267,
+        "gpsRaw": "30°16'37.2\"N, 106°45'8.16\"E",
+        "altitudeM": 462.6,
+        "note": "Coordinates and altitude from photo EXIF GPS (iPhone 15 Pro). OSM reverse geocode returned 高兴镇, 广安市; official 广安市行政区划 places 高兴镇 under 华蓥市 (https://www.guang-an.gov.cn/gasrmzfw/xzqy/pc/content/content_1718584923215175680.html). About 500 m from obs-2026-11-11-001, and about 11 km southwest of 红岩乡/十里芳菲."
+      },
+      "habitat": "停在屋脊瓦上；背后为山林，村落屋顶（约 463 米）",
+      "weatherLight": "白天室外自然光",
+      "notes": "White forehead and face, a sharply defined black throat/breast bib, black-and-white wings, and typical slim wagtail jizz on a tiled rooftop. In this region the white-faced, black-bibbed pattern usually belongs to the common form leucopsis (Amur/white-faced wagtail), but the bird was distant and partly hidden by tiles, so the subspecies is not certain. ID from photo.",
+      "photos": [
+        "photos/2026-11-11-motacilla-alba.jpg"
+      ],
+      "sourceGroup": "雀形目 Passeriformes · 鹡鸰科 Motacillidae",
+      "loggedChinese": "白鹡鸰",
+      "loggedEnglish": "White Wagtail"
+    },
+    {
+      "id": "obs-2026-11-11-001",
+      "scientificName": "Phoenicurus fuliginosus",
+      "datetime": "2026-11-11T12:05:56",
+      "timezone": "Asia/Shanghai",
+      "datetimeNote": "EXIF DateTime from photo",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "高兴镇（华蓥市）",
+        "township": "高兴镇",
+        "county": "华蓥市",
+        "city": "广安市",
+        "province": "四川省",
+        "country": "中国",
+        "lat": 30.274575,
+        "lon": 106.756639,
+        "gpsRaw": "30°16'28.47\"N, 106°45'23.9\"E",
+        "altitudeM": 501.1,
+        "note": "Coordinates and altitude from photo EXIF GPS (iPhone 15 Pro). OSM reverse geocode returned 高兴镇, 广安市; official 广安市行政区划 places 高兴镇 under 华蓥市 (https://www.guang-an.gov.cn/gasrmzfw/xzqy/pc/content/content_1718584923215175680.html). About 11 km southwest of 红岩乡/十里芳菲, and lower (~501 m vs ~780–800 m)."
+      },
+      "habitat": "山溪石滩，停在溪流岩石上（约 501 米）",
+      "weatherLight": "白天室外自然光",
+      "notes": "Female: ashy grey-brown body on mid-stream rocks, tail fanned to show white sides/base and rufous remainder. A male would be slaty-blue with an all-rufous tail and no large white tail patches. Stream habitat plus this tail pattern is diagnostic. ID from photo.",
+      "photos": [
+        "photos/2026-11-11-phoenicurus-fuliginosus-female.jpg"
+      ],
+      "sourceGroup": "雀形目 Passeriformes · 鹟科 Muscicapidae",
+      "sex": "female",
+      "loggedChinese": "红尾水鸲（雌鸟）",
+      "loggedEnglish": "Plumbeous Water Redstart (female)"
+    },
+    {
+      "id": "obs-2026-11-10-002",
+      "scientificName": "Phoenicurus auroreus",
+      "datetime": "2026-11-10T15:07:20",
+      "timezone": "Asia/Shanghai",
+      "datetimeNote": "EXIF DateTime from photo",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "红岩乡（华蓥山，近十里芳菲）",
+        "township": "红岩乡",
+        "county": "华蓥市",
+        "city": "广安市",
+        "province": "四川省",
+        "country": "中国",
+        "lat": 30.357369,
+        "lon": 106.827897,
+        "gpsRaw": "30°21'26.53\"N, 106°49'40.43\"E",
+        "altitudeM": 786.4,
+        "note": "Coordinates and altitude from photo EXIF GPS (iPhone 15 Pro). About 0.5 km from 华蓥十里芳菲 (obs-2026-11-09-001)."
+      },
+      "habitat": "停在电线上；周边为华蓥山中海拔村落与林缘（约 786 米）",
+      "weatherLight": "阴天／室外漫射光",
+      "notes": "Female: brownish-gray head and mantle, prominent white wing patch, rufous rump and tail, buff-orange wash on flanks; lacks the male’s black throat and bright orange breast. White mid-wing patch plus rufous tail is diagnostic for this species. ID from photo.",
+      "photos": [
+        "photos/2026-11-10-phoenicurus-auroreus-female.jpg"
+      ],
+      "sourceGroup": "雀形目 Passeriformes · 鹟科 Muscicapidae",
+      "sex": "female",
+      "loggedChinese": "北红尾鸲（雌鸟）",
+      "loggedEnglish": "Daurian Redstart (female)"
+    },
+    {
+      "id": "obs-2026-11-10-001",
+      "scientificName": "Phylloscopus inornatus",
+      "datetime": "2026-11-10T13:33:46",
+      "timezone": "Asia/Shanghai",
+      "datetimeNote": "EXIF DateTime from first photo; second photo 13:34:05",
+      "detection": "seen",
+      "confidence": "medium-high",
+      "tentative": true,
+      "location": {
+        "place": "红岩乡（华蓥山）",
+        "township": "红岩乡",
+        "county": "华蓥市",
+        "city": "广安市",
+        "province": "四川省",
+        "country": "中国",
+        "lat": 30.368947,
+        "lon": 106.825958,
+        "gpsRaw": "30°22'8.21\"N, 106°49'33.45\"E",
+        "altitudeM": 804.5,
+        "note": "Coordinates and altitude from first photo EXIF GPS (iPhone 15 Pro). Second photo nearly identical (30°22'8.3\"N, 106°49'33.5\"E, 803.3 m). OSM reverse geocode: 红岩乡, 华蓥市, 广安市. About 1.7 km north of 华蓥十里芳菲 (obs-2026-11-09-001)."
+      },
+      "habitat": "华蓥山中海拔落叶乔木冠层（约 804 米）",
+      "weatherLight": "阴天／逆光（室外）",
+      "notes": "ID from two distant, backlit photos plus observer notes (tit/leaf-warbler size, black eye-stripe, gray and green). Visible: long pale supercilium, dark eye-stripe, gray-olive (not bright yellow-green) upperparts, at least one pale wing bar, no obvious bright yellow coronal stripe or yellow rump. Pallas’s Leaf Warbler (Phylloscopus proregulus / 黄腰柳莺) not fully excluded because rump and crown stripe are poorly visible.",
+      "photos": [
+        "photos/2026-11-10-phylloscopus-inornatus-1.jpg",
+        "photos/2026-11-10-phylloscopus-inornatus-2.jpg"
+      ],
+      "sourceGroup": "雀形目 Passeriformes · 柳莺科 Phylloscopidae",
+      "openQuestion": {
+        "text": "尚未完全排除黄腰柳莺",
+        "scientificName": "Phylloscopus proregulus"
+      },
+      "loggedChinese": "黄眉柳莺",
+      "loggedEnglish": "Yellow-browed Warbler"
+    }
+  ]
+}

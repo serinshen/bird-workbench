@@ -1,0 +1,87 @@
+[
+  {
+    "id": "2026-11-17-spoon-billed-sandpiper",
+    "scientificName": "Calidris pygmaea",
+    "zh": "勺嘴鹬"
+  },
+  {
+    "id": "2026-11-16-osprey",
+    "scientificName": "Pandion haliaetus",
+    "zh": "鹗"
+  },
+  {
+    "id": "2026-11-15-saker-falcon",
+    "scientificName": "Falco cherrug",
+    "zh": "猎隼"
+  },
+  {
+    "id": "2026-11-14-great-bustard",
+    "scientificName": "Otis tarda",
+    "zh": "大鸨"
+  },
+  {
+    "id": "2026-11-13-sichuan-jay",
+    "scientificName": "Perisoreus internigrans",
+    "zh": "黑头噪鸦"
+  },
+  {
+    "id": "2026-11-12-greater-yellownape",
+    "scientificName": "Chrysophlegma flavinucha",
+    "zh": "大黄冠啄木鸟"
+  },
+  {
+    "id": "2026-11-11-blackthroat",
+    "scientificName": "Calliope obscura",
+    "zh": "黑喉歌鸲"
+  },
+  {
+    "id": "2026-11-10-blyths-kingfisher",
+    "scientificName": "Alcedo hercules",
+    "zh": "斑头大翠鸟"
+  },
+  {
+    "id": "2026-11-09-blue-crowned-laughingthrush",
+    "scientificName": "Pterorhinus courtoisi",
+    "zh": "靛冠噪鹛"
+  },
+  {
+    "id": "2026-11-08-chinese-crested-tern",
+    "scientificName": "Thalasseus bernsteini",
+    "zh": "中华凤头燕鸥"
+  },
+  {
+    "id": "2026-11-07-oriental-stork",
+    "scientificName": "Ciconia boyciana",
+    "zh": "东方白鹳"
+  },
+  {
+    "id": "2026-11-06-baers-pochard",
+    "scientificName": "Aythya baeri",
+    "zh": "青头潜鸭"
+  },
+  {
+    "id": "2026-11-05-snowy-owl",
+    "scientificName": "Bubo scandiacus",
+    "zh": "雪鸮"
+  },
+  {
+    "id": "2026-11-04-siberian-crane",
+    "scientificName": "Leucogeranus leucogeranus",
+    "zh": "白鹤"
+  },
+  {
+    "id": "2026-11-03-white-necklaced-partridge",
+    "scientificName": "Arborophila gingica",
+    "zh": "白眉山鹧鸪"
+  },
+  {
+    "id": "2026-11-02-fairy-pitta",
+    "scientificName": "Pitta nympha",
+    "zh": "仙八色鸫"
+  },
+  {
+    "id": "2026-11-01-crested-ibis",
+    "scientificName": "Nipponia nippon",
+    "zh": "朱鹮"
+  }
+]

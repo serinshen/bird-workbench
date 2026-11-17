@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="referrer" content="no-referrer">
+  <meta name="theme-color" content="#F7F3EB">
+  <meta name="description" content="观鸟工作台：IOC World Bird List v15.2 名录、检索，以及自己的观察、野外照片和手记。">
+  <title>观鸟工作台</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect fill='%23F7F3EB' width='32' height='32'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%237A9B76' stroke-width='2'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600&family=Noto+Serif+SC:wght@400;500;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,500;0,8..60,600;1,8..60,400;1,8..60,500;1,8..60,600&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+  <div class="shell">
+    <aside class="side">
+      <p class="eyebrow">Serin · field notes</p>
+      <h1 class="site-title">观鸟工作台</h1>
+      <svg class="rule" viewBox="0 0 120 8" aria-hidden="true">
+        <path d="M1 5.2 C 18 2, 28 7, 46 4.5 S 78 2, 119 5" fill="none" stroke="#7A9B76" stroke-width="1.4" stroke-linecap="round"/>
+      </svg>
+      <p class="tax" id="tax-label">IOC World Bird List</p>
+      <nav class="nav" aria-label="站点">
+        <a href="#/" id="nav-index">名录</a>
+        <a href="https://serinshen.github.io/species-archive/" id="nav-cards" target="_blank" rel="noopener noreferrer">晨间物种卡</a>
+        <a href="#/weekly" id="nav-weekly">鸟况周报</a>
+      </nav>
+      <div id="session"></div>
+      <ul class="counts">
+        <li><span>名录</span><b id="count-total">…</b></li>
+        <li><span>已观察</span><b id="count-seen">…</b></li>
+        <li><span>未发现</span><b id="count-unseen">…</b></li>
+        <li><span>中国可记录</span><b id="count-china">…</b></li>
+        <li><span>中文名空缺</span><b id="count-blank">…</b></li>
+      </ul>
+      <p class="count-note">已观察只统计有记录的物种，不另设标记。</p>
+    </aside>
+    <main class="main">
+      <p id="login-note" class="login-note" hidden></p>
+      <div id="view-index">
+        <div class="toolbar">
+          <label class="search">
+            <span>检索</span>
+            <input id="q" type="search" placeholder="中文名、英文名或拉丁名" autocomplete="off" spellcheck="false" enterkeyhint="search">
+          </label>
+        </div>
+        <p id="banner" class="banner" hidden></p>
+        <div class="filters">
+          <label>目 <select id="order" aria-label="目"></select></label>
+          <label>科 <select id="family" aria-label="科" disabled></select></label>
+          <label>属 <select id="genus" aria-label="属" disabled></select></label>
+          <div id="seen-filter" class="seg" role="group" aria-label="观察状态">
+            <button type="button" data-seen="all" aria-pressed="true">全部</button>
+            <button type="button" data-seen="seen">已观察</button>
+            <button type="button" data-seen="unseen">未发现</button>
+          </div>
+          <label class="check"><input type="checkbox" id="china-only"> 中国可记录</label>
+          <button type="button" id="clear" hidden>清除筛选</button>
+        </div>
+        <div class="result-row">
+          <p id="result-count">正在展开名录…</p>
+          <p id="recent" class="recent" hidden></p>
+        </div>
+        <div id="index-view">
+          <div class="cols" id="cols" aria-hidden="true">
+            <span></span><span>中文名</span><span>英文名</span><span>学名</span><span>科</span><span></span>
+          </div>
+          <p id="empty" class="empty" hidden>没有符合的物种。</p>
+          <div id="index-pad"><div id="index-rows"></div></div>
+        </div>
+      </div>
+      <div id="view-species" hidden></div>
+      <div id="view-weekly" hidden></div>
+    </main>
+  </div>
+  <noscript>这个名录需要在浏览器里展开。</noscript>
+  <script src="js/config.js"></script>
+  <script src="js/checklist.js"></script>
+  <script src="js/github.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
