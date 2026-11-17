@@ -1,5 +1,5 @@
 {
-  "note": "只有随工作台导入的鸟类记录。一种鸟只要有至少一条记录，就算已观察。时间均为 Asia/Shanghai。不另设可与记录脱节的已观察标记。",
+  "note": "只有随工作台导入的鸟类记录。已观察只计至少有一条看到（或看到+听到）的记录；记录若全部是听到，则为仅听到，不算已观察。没有记录就是未发现。时间均为 Asia/Shanghai。状态只由记录推导，不另设可脱节的标记。",
   "records": [
     {
       "id": "obs-2026-11-11-007",
@@ -85,7 +85,14 @@
       ],
       "sourceGroup": "雀形目 Passeriformes · 鹡鸰科 Motacillidae",
       "loggedChinese": "白鹡鸰",
-      "loggedEnglish": "White Wagtail"
+      "loggedEnglish": "White Wagtail",
+      "photoMeta": {
+        "photos/2026-11-11-motacilla-alba.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      }
     },
     {
       "id": "obs-2026-11-11-001",
@@ -118,7 +125,14 @@
       "sourceGroup": "雀形目 Passeriformes · 鹟科 Muscicapidae",
       "sex": "female",
       "loggedChinese": "红尾水鸲（雌鸟）",
-      "loggedEnglish": "Plumbeous Water Redstart (female)"
+      "loggedEnglish": "Plumbeous Water Redstart (female)",
+      "photoMeta": {
+        "photos/2026-11-11-phoenicurus-fuliginosus-female.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      }
     },
     {
       "id": "obs-2026-11-10-002",
@@ -151,7 +165,14 @@
       "sourceGroup": "雀形目 Passeriformes · 鹟科 Muscicapidae",
       "sex": "female",
       "loggedChinese": "北红尾鸲（雌鸟）",
-      "loggedEnglish": "Daurian Redstart (female)"
+      "loggedEnglish": "Daurian Redstart (female)",
+      "photoMeta": {
+        "photos/2026-11-10-phoenicurus-auroreus-female.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      }
     },
     {
       "id": "obs-2026-11-10-001",
@@ -188,7 +209,19 @@
         "scientificName": "Phylloscopus proregulus"
       },
       "loggedChinese": "黄眉柳莺",
-      "loggedEnglish": "Yellow-browed Warbler"
+      "loggedEnglish": "Yellow-browed Warbler",
+      "photoMeta": {
+        "photos/2026-11-10-phylloscopus-inornatus-1.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        },
+        "photos/2026-11-10-phylloscopus-inornatus-2.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      }
     },
     {
       "id": "obs-2025-02-04-pezc",
@@ -205,7 +238,14 @@
         "photos/2025-02-04-struthio-camelus-97qz.jpg"
       ],
       "datetimeNote": "钟点未记",
-      "sex": "male"
+      "sex": "male",
+      "photoMeta": {
+        "photos/2025-02-04-struthio-camelus-97qz.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      }
     },
     {
       "id": "obs-2025-02-04-6jbz",
@@ -222,7 +262,14 @@
         "photos/2025-02-04-struthio-camelus-rvbq.jpg"
       ],
       "datetimeNote": "钟点未记",
-      "sex": "female"
+      "sex": "female",
+      "photoMeta": {
+        "photos/2025-02-04-struthio-camelus-rvbq.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      }
     },
     {
       "id": "obs-2025-01-28-3zbj",
@@ -238,7 +285,14 @@
       "photos": [
         "photos/2025-01-28-ploceus-castaneiceps-7d8b.jpg"
       ],
-      "datetimeNote": "钟点未记"
+      "datetimeNote": "钟点未记",
+      "photoMeta": {
+        "photos/2025-01-28-ploceus-castaneiceps-7d8b.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      }
     },
     {
       "id": "obs-2025-01-31-uuo5",
@@ -255,7 +309,15 @@
         "photos/2025-01-31-ploceus-spekei-xtiu.jpg"
       ],
       "datetimeNote": "钟点未记",
-      "sex": "male"
+      "sex": "male",
+      "photoMeta": {
+        "photos/2025-01-31-ploceus-spekei-xtiu.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      }
     }
-  ]
+  ],
+  "favorites": []
 }

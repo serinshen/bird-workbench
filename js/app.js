@@ -14,7 +14,9 @@
     records: [],
     bySci: new Map(),
     notes: {},
+    favorites: [],
     morning: [],
+    holdScroll: false,
     filtered: [],
     filterGen: 0,
     filters: { q: "", order: "", family: "", genus: "", seen: "all", china: false },
@@ -115,7 +117,8 @@
       return bits;
     }
     const bits = [];
-    if (rec.detection === "seen") bits.push("看到");
+    if (rec.detection === "seen_heard") bits.push("看到", "听到");
+    else if (rec.detection === "seen") bits.push("看到");
     if (rec.confidence === "medium-high") bits.push("中等偏高", "tentative");
     else if (rec.confidence === "high") bits.push("高");
     else if (rec.confidence === "tentative" || rec.confidence === "as-reported") bits.push("tentative");
@@ -148,10 +151,8 @@
     return (state.bySci.get(sci) || []).slice().sort((a, b) => compareKey(sortKey(a), sortKey(b)));
   }
 
-  function observedCount() {
-    let n = 0;
-    for (const sci of state.bySci.keys()) if (state.byName.has(sci)) n += 1;
-    return n;
+  function census() {
+    return window.WBRecords.tally(state.species, state.bySci);
   }
 
   function reindexRecords() {
@@ -191,14 +192,17 @@
 
   function renderCounts() {
     const total = state.species.length;
-    const seen = observedCount();
+    const counts = census();
     document.getElementById("count-total").textContent = comma(total);
-    document.getElementById("count-seen").textContent = comma(seen);
-    document.getElementById("count-unseen").textContent = comma(total - seen);
+    document.getElementById("count-seen").textContent = comma(counts.seen);
+    document.getElementById("count-heard").textContent = comma(counts.heard);
+    document.getElementById("count-unseen").textContent = comma(counts.unseen);
     const seenBtn = document.querySelector('#seen-filter button[data-seen="seen"]');
+    const heardBtn = document.querySelector('#seen-filter button[data-seen="heard"]');
     const unseenBtn = document.querySelector('#seen-filter button[data-seen="unseen"]');
-    if (seenBtn) seenBtn.textContent = "已观察 " + comma(seen);
-    if (unseenBtn) unseenBtn.textContent = "未发现 " + comma(total - seen);
+    if (seenBtn) seenBtn.textContent = "已观察 " + comma(counts.seen);
+    if (heardBtn) heardBtn.textContent = "仅听到 " + comma(counts.heard);
+    if (unseenBtn) unseenBtn.textContent = "未发现 " + comma(counts.unseen);
   }
 
   function renderRecent() {
@@ -240,10 +244,10 @@
   }
 
   function renderRow(sp) {
-    const seen = (state.bySci.get(sp.sci) || []).length > 0;
+    const status = window.WBRecords.statusForRecords(state.bySci.get(sp.sci));
     const zh = sp.zh || "（无中文名）";
     const row = el("a", {
-      class: "sp" + (seen ? " is-seen" : "") + (sp.missingZh ? " is-blank" : ""),
+      class: "sp" + (status === "seen" ? " is-seen" : status === "heard" ? " is-heard" : "") + (sp.missingZh ? " is-blank" : ""),
       href: "#/species/" + encodeURIComponent(sp.sci),
     }, [
       el("i", { class: "mark", "aria-hidden": "true" }),
@@ -254,7 +258,7 @@
       el("span", { class: "en", lang: "en" }, [sp.en]),
       el("span", { class: "la", lang: "la" }, [sp.sci]),
       el("span", { class: "fam" }, [state.families[sp.family].zh]),
-      el("span", { class: "status" }, [seen ? "已观察" : ""]),
+      el("span", { class: "status" }, [status === "seen" ? "已观察" : status === "heard" ? "仅听到" : ""]),
     ]);
     row.title = [sp.zh, sp.en, sp.sci].filter(Boolean).join(" · ");
     return row;
@@ -282,7 +286,8 @@
     const viewH = view.clientHeight || 640;
     const start = Math.max(0, Math.floor((view.scrollTop - headerH) / rowH) - 6);
     const end = Math.min(list.length, Math.ceil((view.scrollTop - headerH + viewH) / rowH) + 8);
-    const key = state.filterGen + ":" + start + ":" + end + ":" + rowH + ":" + observedCount();
+    const counts = census();
+    const key = state.filterGen + ":" + start + ":" + end + ":" + rowH + ":" + counts.seen + ":" + counts.heard;
     if (!force && key === lastPaint) return;
     lastPaint = key;
     rows.style.transform = "translateY(" + start * rowH + "px)";
@@ -299,9 +304,10 @@
       if (filters.family !== "" && sp.family !== filters.family) continue;
       if (filters.genus !== "" && sp.genus !== filters.genus) continue;
       if (filters.china && !sp.china) continue;
-      const count = (state.bySci.get(sp.sci) || []).length;
-      if (filters.seen === "seen" && count < 1) continue;
-      if (filters.seen === "unseen" && count >= 1) continue;
+      const status = window.WBRecords.statusForRecords(state.bySci.get(sp.sci));
+      if (filters.seen === "seen" && status !== "seen") continue;
+      if (filters.seen === "heard" && status !== "heard") continue;
+      if (filters.seen === "unseen" && status !== "unseen") continue;
       if (!matches(sp, filters.q)) continue;
       out.push(sp);
     }
@@ -432,6 +438,7 @@
     try { path = decodeURIComponent(path); } catch (err) { /* keep raw */ }
     if (path === "/" || path === "") return { view: "index" };
     if (path === "/weekly") return { view: "weekly" };
+    if (path === "/photos") return { view: "photos" };
     if (path.startsWith("/species/")) {
       return { view: "species", sci: path.slice("/species/".length).replace(/\/$/, "") };
     }
@@ -448,11 +455,14 @@
     state.route = parseRoute();
     document.getElementById("view-index").hidden = state.route.view !== "index";
     document.getElementById("view-species").hidden = state.route.view !== "species";
+    document.getElementById("view-photos").hidden = state.route.view !== "photos";
     document.getElementById("view-weekly").hidden = state.route.view !== "weekly";
-    setCurrent("nav-index", state.route.view !== "weekly");
+    setCurrent("nav-index", state.route.view === "index" || state.route.view === "species");
+    setCurrent("nav-photos", state.route.view === "photos");
     setCurrent("nav-weekly", state.route.view === "weekly");
     if (state.route.view === "species") renderSpecies();
     else if (state.route.view === "weekly") renderWeekly();
+    else if (state.route.view === "photos") renderPhotos();
     else {
       document.title = "观鸟工作台";
       requestAnimationFrame(() => paintRows(true));
@@ -476,19 +486,44 @@
     return typeof path === "string" && /^photos\/[A-Za-z0-9._-]+$/.test(path);
   }
 
+  function speciesLabel(sci, rec) {
+    const sp = state.byName.get(sci);
+    if (sp && sp.zh) return sp.zh;
+    if (rec && rec.loggedChinese) return rec.loggedChinese;
+    return sci;
+  }
+
+  function sexWord(rec) {
+    if (!rec) return "";
+    if (rec.sex === "female") return "雌鸟";
+    if (rec.sex === "male") return "雄鸟";
+    return "";
+  }
+
   function speciesPhotos(sci) {
     const photos = [];
     for (const rec of recordsFor(sci)) {
-      for (const path of rec.photos || []) {
-        if (!safePhoto(path)) continue;
+      const list = (rec.photos || []).filter(safePhoto);
+      list.forEach((path, index) => {
         const place = (rec.location && rec.location.place) || "";
-        const zh = (state.byName.get(sci) || {}).zh || rec.loggedChinese || sci;
+        const zh = speciesLabel(sci, rec);
+        const sex = sexWord(rec);
+        const caption = [dateOnly(rec), sex, place, "野外照片"].filter(Boolean).join(" · ");
         photos.push({
+          path: path,
           src: state.localPhotos.get(path) || path,
-          alt: [zh, place, dateOnly(rec), "野外照片"].filter(Boolean).join("，"),
-          caption: [dateOnly(rec), place, "野外照片"].filter(Boolean).join(" · "),
+          alt: [zh, sex, place, dateOnly(rec), "野外照片"].filter(Boolean).join("，"),
+          caption: caption,
+          observationId: rec.id,
+          sci: sci,
+          zh: zh,
+          date: dateOnly(rec),
+          place: place,
+          sex: sex,
+          index: index,
+          total: list.length,
         });
-      }
+      });
     }
     return photos;
   }
@@ -539,6 +574,17 @@
       details.append(body);
       block.append(details);
     }
+    if (state.user) {
+      const zh = speciesLabel(rec.scientificName, rec);
+      block.append(el("div", { class: "record-actions" }, [
+        el("button", {
+          type: "button",
+          class: "delete-btn",
+          "aria-label": "删除这条观察：" + zh + " " + dateOnly(rec),
+          onclick: () => confirmDeleteRecord(rec),
+        }, ["删除这条观察"]),
+      ]));
+    }
     return block;
   }
 
@@ -567,12 +613,10 @@
     });
   }
 
-  function photoPath(sci, date, file) {
+  function photoPath(sci, date) {
     const slug = sci.toLowerCase().replace(/[^a-z]+/g, "-").replace(/^-|-$/g, "");
-    const rawExt = (file.name.split(".").pop() || "jpg").toLowerCase().replace(/[^a-z0-9]/g, "");
-    const ext = rawExt || "jpg";
     const rand = Math.random().toString(36).slice(2, 6);
-    return "photos/" + date + "-" + slug + "-" + rand + "." + ext;
+    return "photos/" + date + "-" + slug + "-" + rand + ".jpg";
   }
 
   function uniqueId(date) {
@@ -623,7 +667,7 @@
       status.textContent = "请填写地点。";
       return;
     }
-    if (detection !== "seen" && detection !== "heard_only") {
+    if (detection !== "seen" && detection !== "seen_heard" && detection !== "heard_only") {
       status.textContent = "请选择看到或听到。";
       return;
     }
@@ -644,17 +688,28 @@
       const sci = state.route.sci;
       const uploads = [];
       const paths = [];
+      const metas = {};
       for (let i = 0; i < files.length; i++) {
-        status.textContent = "正在读取照片 " + (i + 1) + "/" + files.length + "…";
-        const path = photoPath(sci, date, files[i]);
+        status.textContent = "正在压缩并写上水印 " + (i + 1) + "/" + files.length + "…";
+        let prepared;
+        try {
+          prepared = await window.WBMedia.prepare(files[i]);
+        } catch (err) {
+          status.textContent = (err && err.message) || "照片没有处理成功，没有写入。";
+          button.disabled = false;
+          return;
+        }
+        if (prepared.skipped) status.textContent = "第 " + (i + 1) + " 张已有 @SerinS 水印，不再重盖。";
+        const path = photoPath(sci, date);
         paths.push(path);
-        state.localPhotos.set(path, URL.createObjectURL(files[i]));
-        uploads.push({ path: path, base64: await fileToBase64(files[i]) });
+        state.localPhotos.set(path, URL.createObjectURL(prepared.blob));
+        uploads.push({ path: path, base64: prepared.base64 });
+        metas[path] = { processed: true, watermarked: true, watermark: "@SerinS" };
       }
       status.textContent = "正在读取仓库里的记录…";
       const current = await window.WBGitHub.readText(state.token, "data/observations.json");
       const doc = current ? JSON.parse(current) : { records: [] };
-      if (!Array.isArray(doc.records)) doc.records = [];
+      window.WBRecords.ensure(doc);
       const time = form.elements["obs-time"].value;
       const confidence = form.elements["obs-confidence"].value;
       const sex = form.elements["obs-sex"].value;
@@ -670,6 +725,7 @@
         location: { place: place },
         photos: paths,
       };
+      if (paths.length) rec.photoMeta = metas;
       if (!time) rec.datetimeNote = "钟点未记";
       if (sex) rec.sex = sex;
       if (notes) rec.notes = notes;
@@ -687,10 +743,12 @@
         "记录观察：" + label + " · " + date
       );
       state.records = doc.records;
+      state.favorites = doc.favorites;
       reindexRecords();
       renderCounts();
       renderRecent();
       recompute(false);
+      syncDataset();
       state.flash = { text: "这条观察已写入仓库。", url: commit.url };
       renderSpecies();
     } catch (err) {
@@ -699,28 +757,459 @@
     }
   }
 
+  function syncDataset() {
+    const counts = census();
+    const root = document.documentElement;
+    root.dataset.records = String(state.records.length);
+    root.dataset.observed = String(counts.seen);
+    root.dataset.heard = String(counts.heard);
+  }
+
+  function refreshView() {
+    if (!state.booted) return;
+    if (state.route.view === "species") renderSpecies();
+    else if (state.route.view === "photos") renderPhotos();
+    else if (state.route.view === "weekly") renderWeekly();
+    else requestAnimationFrame(() => paintRows(true));
+  }
+
+  function currentDoc() {
+    return { records: state.records, favorites: state.favorites || [] };
+  }
+
+  function takeFlash() {
+    if (!state.flash) return null;
+    const flash = el("p", { class: "flash", role: "status" }, [state.flash.text + (state.flash.url ? " " : "")]);
+    if (state.flash.url) {
+      flash.append(el("a", { href: state.flash.url, target: "_blank", rel: "noopener noreferrer" }, ["查看这次提交"]));
+    }
+    state.flash = null;
+    return flash;
+  }
+
+  function pencilIcon() {
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("class", "fav-icon");
+    svg.setAttribute("viewBox", "0 0 24 24");
+    svg.setAttribute("width", "18");
+    svg.setAttribute("height", "18");
+    svg.setAttribute("aria-hidden", "true");
+    const body = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    body.setAttribute("d", "M4 16.6 14.9 5.7a1.5 1.5 0 0 1 2.1 0l1.3 1.3a1.5 1.5 0 0 1 0 2.1L7.4 20H4v-3.4Z");
+    body.setAttribute("fill", "none");
+    body.setAttribute("stroke", "currentColor");
+    body.setAttribute("stroke-width", "1.6");
+    body.setAttribute("stroke-linejoin", "round");
+    const tip = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    tip.setAttribute("d", "M13.2 7.3 16.7 10.8");
+    tip.setAttribute("fill", "none");
+    tip.setAttribute("stroke", "currentColor");
+    tip.setAttribute("stroke-width", "1.6");
+    svg.append(body, tip);
+    return svg;
+  }
+
+  function favoriteButton(photo) {
+    const on = window.WBRecords.isFavorite(currentDoc(), photo.observationId, photo.path);
+    const button = el("button", {
+      type: "button",
+      class: "fav",
+      "aria-pressed": on ? "true" : "false",
+      "aria-label": on ? "取消收藏，从影像记录拿下" : "收藏这张照片，加入影像记录",
+    });
+    button.append(pencilIcon(), el("span", {}, [on ? "已收藏" : "收藏"]));
+    button.addEventListener("click", () => toggleFavorite(photo, button));
+    return button;
+  }
+
+  async function withObservations(mutate, message) {
+    const current = await window.WBGitHub.readText(state.token, "data/observations.json");
+    const doc = current ? JSON.parse(current) : { records: [] };
+    window.WBRecords.ensure(doc);
+    const outcome = mutate(doc);
+    if (outcome && outcome.error) throw new Error(outcome.error);
+    if (outcome && outcome.changed === false) return null;
+    const files = [];
+    for (const path of (outcome && outcome.orphanPaths) || []) {
+      if (!safePhoto(path)) continue;
+      files.push({ path: path, deleted: true });
+    }
+    files.push({
+      path: "data/observations.json",
+      base64: utf8ToB64(JSON.stringify(doc, null, 2) + "\n"),
+    });
+    const commit = await window.WBGitHub.commitFiles(state.token, files, message);
+    state.records = doc.records;
+    state.favorites = doc.favorites;
+    reindexRecords();
+    renderCounts();
+    renderRecent();
+    recompute(false);
+    syncDataset();
+    return commit;
+  }
+
+  async function toggleFavorite(photo, button) {
+    if (!state.user || !state.token) {
+      showNote("登录之后才能收藏或取消收藏。");
+      return;
+    }
+    const turningOn = !window.WBRecords.isFavorite(currentDoc(), photo.observationId, photo.path);
+    button.disabled = true;
+    try {
+      const commit = await withObservations((doc) => {
+        return window.WBRecords.setFavorite(
+          doc,
+          photo.observationId,
+          photo.path,
+          turningOn,
+          new Date().toISOString()
+        );
+      }, (turningOn ? "收藏照片：" : "取消收藏：") + photo.zh);
+      if (!commit) {
+        button.disabled = false;
+        return;
+      }
+      const text = turningOn ? "已收入影像记录。" : "已从影像记录拿下。";
+      state.flash = { text: text, url: commit.url };
+      showNote(text);
+      state.holdScroll = true;
+      refreshView();
+    } catch (err) {
+      showNote(err.message || "没有写入仓库。");
+      button.disabled = false;
+    }
+  }
+
+  function photoStillShared(photo) {
+    return state.records.some((rec) => rec.id !== photo.observationId && (rec.photos || []).indexOf(photo.path) !== -1);
+  }
+
+  let confirmBusyLock = false;
+
+  function openConfirm(opts) {
+    if (confirmBusyLock) return;
+    const layer = document.getElementById("confirm-layer");
+    const title = document.getElementById("confirm-title");
+    const desc = document.getElementById("confirm-desc");
+    const error = document.getElementById("confirm-error");
+    const cancel = document.getElementById("confirm-cancel");
+    const ok = document.getElementById("confirm-ok");
+    const shell = document.querySelector(".shell");
+    title.textContent = opts.title;
+    desc.textContent = opts.description;
+    error.hidden = true;
+    error.textContent = "";
+    ok.textContent = "删除";
+    ok.disabled = false;
+    cancel.disabled = false;
+    let busy = false;
+    const previous = document.activeElement;
+    layer.hidden = false;
+    if (shell) shell.setAttribute("inert", "");
+    cancel.focus();
+
+    function close() {
+      document.removeEventListener("keydown", onKey);
+      cancel.removeEventListener("click", onCancel);
+      ok.removeEventListener("click", onOk);
+      layer.removeEventListener("click", onBackdrop);
+      layer.hidden = true;
+      confirmBusyLock = false;
+      if (shell) shell.removeAttribute("inert");
+      if (previous && previous.focus && document.contains(previous)) previous.focus();
+    }
+
+    function onCancel() {
+      if (busy) return;
+      close();
+    }
+
+    async function onOk() {
+      if (busy) return;
+      busy = true;
+      ok.disabled = true;
+      cancel.disabled = true;
+      ok.textContent = "正在写入…";
+      error.hidden = true;
+      try {
+        await opts.onConfirm();
+        close();
+      } catch (err) {
+        busy = false;
+        ok.disabled = false;
+        cancel.disabled = false;
+        ok.textContent = "删除";
+        error.hidden = false;
+        error.textContent = (err && err.message) || "没有写入仓库。";
+      }
+    }
+
+    function onBackdrop(event) {
+      if (event.target === layer) onCancel();
+    }
+
+    function onKey(event) {
+      if (event.key === "Escape") {
+        event.preventDefault();
+        onCancel();
+        return;
+      }
+      if (event.key !== "Tab") return;
+      const nodes = [cancel, ok].filter((node) => !node.disabled);
+      if (!nodes.length) {
+        event.preventDefault();
+        return;
+      }
+      const first = nodes[0];
+      const last = nodes[nodes.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first.focus();
+      }
+    }
+
+    confirmBusyLock = true;
+    cancel.addEventListener("click", onCancel);
+    ok.addEventListener("click", onOk);
+    layer.addEventListener("click", onBackdrop);
+    document.addEventListener("keydown", onKey);
+  }
+
+  function confirmDeletePhoto(photo) {
+    const fav = window.WBRecords.isFavorite(currentDoc(), photo.observationId, photo.path);
+    const shared = photoStillShared(photo);
+    const where = [photo.date, photo.sex, photo.place].filter(Boolean).join(" · ");
+    let description = "删除照片：" + photo.zh + (where ? " · " + where : "") + "。";
+    if (photo.total > 1) description += "这是该条观察的第 " + (photo.index + 1) + " 张，共 " + photo.total + " 张。";
+    description += "观察记录会留下。";
+    if (fav) description += "它会同时离开影像记录。";
+    if (shared) description += "另一条记录还用着同一文件，仓库里的照片会留下。";
+    else description += "仓库里的文件 " + photo.path + " 会删除。";
+    openConfirm({
+      title: "删除这张照片？",
+      description: description,
+      onConfirm: async () => {
+        const commit = await withObservations((doc) => {
+          return window.WBRecords.removePhoto(doc, photo.observationId, photo.path);
+        }, "删除照片：" + photo.zh);
+        const text = "已从这条观察里删除照片。";
+        state.flash = { text: text, url: commit && commit.url };
+        showNote(text);
+        state.holdScroll = true;
+        refreshView();
+      },
+    });
+  }
+
+  function confirmDeleteRecord(rec) {
+    const zh = speciesLabel(rec.scientificName, rec);
+    const paths = (rec.photos || []).filter(safePhoto);
+    const orphan = [];
+    const shared = [];
+    for (const path of paths) {
+      const used = state.records.some((other) => other.id !== rec.id && (other.photos || []).indexOf(path) !== -1);
+      if (used) shared.push(path);
+      else orphan.push(path);
+    }
+    const fav = (state.favorites || []).some((item) => item && item.observationId === rec.id);
+    const place = rec.location && rec.location.place;
+    let description = "删除观察：" + zh + "（" + rec.scientificName + "）";
+    const when = [dateOnly(rec), place].filter(Boolean).join(" · ");
+    if (when) description += " · " + when;
+    description += "。这条观察会从记录里去掉。";
+    if (!paths.length) description += "这条记录没有照片。";
+    else if (orphan.length && !shared.length) description += "只属于这条记录的照片会从仓库删除：" + orphan.join("、") + "。";
+    else {
+      if (orphan.length) description += "会删除只属于这条记录的照片：" + orphan.join("、") + "。";
+      if (shared.length) description += "这些文件还被其他记录用着，会留下：" + shared.join("、") + "。";
+    }
+    if (fav) description += "已收藏的照片会离开影像记录。";
+    const remaining = (state.bySci.get(rec.scientificName) || []).filter((item) => item.id !== rec.id);
+    const next = window.WBRecords.statusForRecords(remaining);
+    if (next === "unseen") description += "这是该物种的最后一条记录，观鸟名录里会回到未发现。";
+    else if (next === "heard") description += "剩下的记录都是听到的，这个物种会变为仅听到，不再算已观察。";
+    else description += "这个物种还有看到的记录，仍是已观察。";
+    openConfirm({
+      title: "删除这条观察？",
+      description: description,
+      onConfirm: async () => {
+        const commit = await withObservations((doc) => {
+          return window.WBRecords.removeRecord(doc, rec.id);
+        }, "删除观察：" + zh);
+        const text = "已删除这条观察。";
+        state.flash = { text: text, url: commit && commit.url };
+        showNote(text);
+        state.holdScroll = true;
+        refreshView();
+      },
+    });
+  }
+
+  function renderPlate(photos) {
+    const figure = el("figure", { class: "plate" });
+    const image = el("img", { id: "hero-img", alt: "" });
+    const caption = el("figcaption", { id: "hero-cap" });
+    const controls = el("div", { class: "photo-controls" });
+    let thumbs = null;
+    function show(index) {
+      const photo = photos[index];
+      image.src = photo.src;
+      image.alt = photo.alt;
+      caption.textContent = photo.caption;
+      const nodes = [favoriteButton(photo)];
+      if (state.user) {
+        nodes.push(el("button", {
+          type: "button",
+          class: "delete-btn",
+          "aria-label": "删除这张照片：" + photo.caption,
+          onclick: () => confirmDeletePhoto(photo),
+        }, ["删除这张照片"]));
+      }
+      controls.replaceChildren(...nodes);
+      if (thumbs) {
+        thumbs.querySelectorAll("button").forEach((item, itemIndex) => {
+          if (itemIndex === index) item.setAttribute("aria-current", "true");
+          else item.removeAttribute("aria-current");
+        });
+      }
+    }
+    figure.append(image, caption, controls);
+    if (photos.length > 1) {
+      thumbs = el("div", { class: "thumbs" });
+      photos.forEach((photo, index) => {
+        thumbs.append(el("button", {
+          type: "button",
+          "aria-label": "第 " + (index + 1) + " 张：" + photo.caption,
+          onclick: () => show(index),
+        }, [el("img", { src: photo.src, alt: "" })]));
+      });
+      figure.append(thumbs);
+    }
+    show(0);
+    return figure;
+  }
+
+  function galleryItems() {
+    const items = [];
+    for (const fav of state.favorites || []) {
+      if (!fav || !safePhoto(fav.path)) continue;
+      const rec = state.records.find((item) => item && item.id === fav.observationId);
+      if (!rec || (rec.photos || []).indexOf(fav.path) === -1) continue;
+      const list = (rec.photos || []).filter(safePhoto);
+      const place = (rec.location && rec.location.place) || "";
+      const zh = speciesLabel(rec.scientificName, rec);
+      const sex = sexWord(rec);
+      items.push({
+        path: fav.path,
+        src: state.localPhotos.get(fav.path) || fav.path,
+        alt: [zh, sex, place, dateOnly(rec), "野外照片"].filter(Boolean).join("，"),
+        observationId: rec.id,
+        sci: rec.scientificName,
+        zh: zh,
+        date: dateOnly(rec),
+        place: place,
+        sex: sex,
+        index: Math.max(0, list.indexOf(fav.path)),
+        total: list.length,
+        sort: sortKey(rec),
+      });
+    }
+    items.sort((a, b) => compareKey(b.sort, a.sort) || compareKey(a.path, b.path));
+    return items;
+  }
+
+  function emptySketch() {
+    const svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+    svg.setAttribute("class", "empty-sketch");
+    svg.setAttribute("viewBox", "0 0 120 72");
+    svg.setAttribute("aria-hidden", "true");
+    const frame = document.createElementNS("http://www.w3.org/2000/svg", "rect");
+    frame.setAttribute("x", "8");
+    frame.setAttribute("y", "8");
+    frame.setAttribute("width", "104");
+    frame.setAttribute("height", "56");
+    frame.setAttribute("rx", "4");
+    frame.setAttribute("fill", "none");
+    frame.setAttribute("stroke", "#C4B59A");
+    frame.setAttribute("stroke-width", "1.4");
+    const sun = document.createElementNS("http://www.w3.org/2000/svg", "circle");
+    sun.setAttribute("cx", "86");
+    sun.setAttribute("cy", "28");
+    sun.setAttribute("r", "7");
+    sun.setAttribute("fill", "none");
+    sun.setAttribute("stroke", "#7A9B76");
+    sun.setAttribute("stroke-width", "1.4");
+    const hill = document.createElementNS("http://www.w3.org/2000/svg", "path");
+    hill.setAttribute("d", "M18 52 C 36 34, 52 48, 102 24");
+    hill.setAttribute("fill", "none");
+    hill.setAttribute("stroke", "#A8C4C4");
+    hill.setAttribute("stroke-width", "1.4");
+    hill.setAttribute("stroke-linecap", "round");
+    svg.append(frame, sun, hill);
+    return svg;
+  }
+
+  function renderPhotos() {
+    document.title = "影像记录 · 观鸟工作台";
+    const root = document.getElementById("view-photos");
+    const keep = state.holdScroll ? root.scrollTop : 0;
+    state.holdScroll = false;
+    root.replaceChildren();
+    const flash = takeFlash();
+    if (flash) root.append(flash);
+    root.append(el("h1", { class: "gallery-title" }, ["影像记录"]));
+    const items = galleryItems();
+    if (!items.length) {
+      root.append(el("div", { class: "gallery-empty" }, [
+        emptySketch(),
+        el("p", {}, ["还没有收藏的野外照片。"]),
+        el("p", {}, ["在某次观察的照片下面点「收藏」，它就会留在这里。不登录也可以翻这本影像记录；收藏和取消收藏需要登录。"]),
+      ]));
+      root.scrollTop = keep;
+      return;
+    }
+    root.append(el("p", { class: "quiet" }, ["已收藏 " + items.length + " 张。"]));
+    const grid = el("div", { class: "gallery" });
+    for (const photo of items) {
+      const tile = el("article", { class: "tile" }, [
+        el("a", { class: "tile-link", href: "#/species/" + encodeURIComponent(photo.sci) }, [
+          el("span", { class: "tile-frame" }, [el("img", { src: photo.src, alt: photo.alt })]),
+          el("span", { class: "tile-name" }, [photo.zh]),
+          el("span", { class: "tile-meta" }, [[photo.date, photo.sex, photo.place].filter(Boolean).join(" · ")]),
+        ]),
+      ]);
+      if (state.user) tile.append(el("div", { class: "tile-actions" }, [favoriteButton(photo)]));
+      grid.append(tile);
+    }
+    root.append(grid);
+    root.scrollTop = keep;
+  }
+
   function renderSpecies() {
     const sci = state.route.sci;
     const sp = state.byName.get(sci);
     const root = document.getElementById("view-species");
+    const keep = state.holdScroll ? root.scrollTop : 0;
+    state.holdScroll = false;
     root.replaceChildren();
-    root.append(el("a", { class: "back", href: "#/" }, ["← 返回名录"]));
-    if (state.flash) {
-      const flash = el("p", { class: "flash" }, [state.flash.text + " "]);
-      if (state.flash.url) flash.append(el("a", { href: state.flash.url, target: "_blank", rel: "noopener noreferrer" }, ["查看这次提交"]));
-      root.append(flash);
-      state.flash = null;
-    }
+    root.append(el("a", { class: "back", href: "#/" }, ["← 返回观鸟名录"]));
+    const flash = takeFlash();
+    if (flash) root.append(flash);
     if (!sp) {
       document.title = "没有这种鸟 · 观鸟工作台";
       root.append(el("p", {}, ["名录里没有 " + sci + "。"]));
+      root.scrollTop = 0;
       return;
     }
     const recs = recordsFor(sci);
-    const seen = recs.length > 0;
+    const status = window.WBRecords.statusForRecords(recs);
     document.title = (sp.zh || sp.sci) + " · 观鸟工作台";
     const zh = sp.zh || "（无中文名）";
-    root.append(el("h2", { class: "sp-zh" + (seen ? " is-seen" : "") }, [zh]));
+    root.append(el("h2", { class: "sp-zh" + (status === "seen" ? " is-seen" : status === "heard" ? " is-heard" : "") }, [zh]));
     if (sp.missingZh) root.append(el("p", { class: "missing" }, ["名录未给出中文名，这里留空。"]));
     if (sp.en) root.append(el("p", { class: "sp-en", lang: "en" }, [sp.en]));
     root.append(el("p", { class: "binom" }, [
@@ -737,7 +1226,9 @@
       root.append(line);
     }
     const chips = el("ul", { class: "chips" });
-    chips.append(el("li", { class: seen ? "chip seen" : "chip" }, [seen ? "已观察" : "未发现"]));
+    const chipClass = status === "seen" ? "chip seen" : status === "heard" ? "chip heard" : "chip";
+    const chipText = status === "seen" ? "已观察" : status === "heard" ? "仅听到" : "未发现";
+    chips.append(el("li", { class: chipClass }, [chipText]));
     if (sp.china) chips.append(el("li", { class: "chip" }, ["中国可记录"]));
     if (sp.missingZh) chips.append(el("li", { class: "chip" }, ["中文名空缺"]));
     root.append(chips);
@@ -767,34 +1258,8 @@
     }
     const photos = speciesPhotos(sci);
     state.heroPhotos = photos;
-    if (photos.length) {
-      const figure = el("figure", { class: "plate" });
-      const image = el("img", { id: "hero-img", src: photos[0].src, alt: photos[0].alt });
-      const caption = el("figcaption", { id: "hero-cap" }, [photos[0].caption]);
-      figure.append(image, caption);
-      if (photos.length > 1) {
-        const thumbs = el("div", { class: "thumbs" });
-        photos.forEach((photo, index) => {
-          const button = el("button", {
-            type: "button",
-            "aria-label": "第 " + (index + 1) + " 张",
-            onclick: () => {
-              image.src = photo.src;
-              image.alt = photo.alt;
-              caption.textContent = photo.caption;
-              thumbs.querySelectorAll("button").forEach((item, itemIndex) => {
-                if (itemIndex === index) item.setAttribute("aria-current", "true");
-                else item.removeAttribute("aria-current");
-              });
-            },
-          }, [el("img", { src: photo.src, alt: "" })]);
-          if (index === 0) button.setAttribute("aria-current", "true");
-          thumbs.append(button);
-        });
-        figure.append(thumbs);
-      }
-      root.append(figure);
-    } else {
+    if (photos.length) root.append(renderPlate(photos));
+    else {
       const heardOnly = recs.length > 0 && recs.every((rec) => rec.detection === "heard_only");
       root.append(el("p", { class: "empty-plate" }, [
         heardOnly ? "听到的记录，没有照片。" : "还没有野外照片。",
@@ -833,7 +1298,7 @@
 
     root.append(el("h3", { class: "section-title" }, ["添加观察"]));
     if (!state.user) {
-      root.append(el("p", { class: "quiet" }, ["登录自己的 GitHub 账号之后，可以在这里添加观察、上传野外照片。记录会写进这个仓库。"]));
+      root.append(el("p", { class: "quiet" }, ["登录自己的 GitHub 账号之后，可以添加观察、上传野外照片、收藏到影像记录，或删除自己的记录和照片。写入走 GitHub，记在你的账号下。"]));
     } else {
       if (state.user.login !== window.WORKBENCH_CONFIG.owner) {
         root.append(el("p", { class: "quiet" }, [
@@ -852,6 +1317,7 @@
         ])]),
         el("label", {}, ["看到或听到", el("select", { name: "obs-detection" }, [
           el("option", { value: "seen" }, ["看到"]),
+          el("option", { value: "seen_heard" }, ["看到+听到"]),
           el("option", { value: "heard_only" }, ["听到"]),
         ])]),
         el("label", {}, ["置信", el("select", { name: "obs-confidence" }, [
@@ -863,7 +1329,7 @@
         el("label", { class: "wide" }, [
           "照片",
           el("input", { type: "file", name: "obs-photos", accept: "image/*", multiple: "multiple" }),
-          el("span", { class: "hint" }, ["只上传你自己拍的。不要用图库、维基或生成的图。"]),
+          el("span", { class: "hint" }, ["只上传你自己拍的。不要用图库、维基或生成的图。写入前会压到长边 2000 像素以内，并写上 @SerinS。已经有这个水印的，不会再盖一次。"]),
         ])
       );
       const status = el("p", { class: "form-status quiet" });
@@ -883,7 +1349,7 @@
       });
       root.append(form);
     }
-    root.scrollTop = 0;
+    root.scrollTop = keep;
   }
 
   function renderWeekly() {
@@ -954,7 +1420,7 @@
     state.user = null;
     showNote("");
     renderSession();
-    if (state.booted && state.route.view === "species") renderSpecies();
+    if (state.booted) refreshView();
   }
 
   async function tryRefresh() {
@@ -991,13 +1457,14 @@
       state.user = null;
       renderSession();
       if (res.status === 401) showNote("登录已失效。没有保持登录。");
+      if (state.booted) refreshView();
       return;
     }
     state.token = token;
     state.user = await res.json();
     showNote("");
     renderSession();
-    if (state.booted && state.route.view === "species") renderSpecies();
+    if (state.booted) refreshView();
   }
 
   async function consumeOAuthRedirect() {
@@ -1086,6 +1553,7 @@
       state.genera = pack.genera;
       state.byName = new Map(pack.species.map((sp) => [sp.sci, sp]));
       state.records = Array.isArray(observations.records) ? observations.records : [];
+      state.favorites = Array.isArray(observations.favorites) ? observations.favorites : [];
       state.notes = notes && typeof notes === "object" ? notes : {};
       state.morning = Array.isArray(morning) ? morning : [];
       reindexRecords();
@@ -1114,8 +1582,7 @@
       root.dataset.blank = String(pack.blankZh);
       root.dataset.mz = pack.mzOk ? "1" : "0";
       root.dataset.china = String(names.length);
-      root.dataset.records = String(state.records.length);
-      root.dataset.observed = String(observedCount());
+      syncDataset();
       fillSelect(
         document.getElementById("order"),
         state.orders.map((order) => ({ value: String(order.i), label: order.zh + " " + order.la })),
