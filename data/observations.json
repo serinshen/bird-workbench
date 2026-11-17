@@ -189,6 +189,23 @@
       },
       "loggedChinese": "黄眉柳莺",
       "loggedEnglish": "Yellow-browed Warbler"
+    },
+    {
+      "id": "obs-2025-02-04-pezc",
+      "scientificName": "Struthio camelus",
+      "datetime": "2025-02-04",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "肯尼亚"
+      },
+      "photos": [
+        "photos/2025-02-04-struthio-camelus-97qz.jpg"
+      ],
+      "datetimeNote": "钟点未记",
+      "sex": "male"
     }
   ]
 }
