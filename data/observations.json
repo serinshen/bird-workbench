@@ -319,5 +319,11 @@
       }
     }
   ],
-  "favorites": []
+  "favorites": [
+    {
+      "path": "photos/2025-02-04-struthio-camelus-rvbq.jpg",
+      "observationId": "obs-2025-02-04-6jbz",
+      "at": "2026-11-17T13:58:38.257Z"
+    }
+  ]
 }
