@@ -4,10 +4,10 @@ window.WORKBENCH_CONFIG = {
   owner: "serinshen",
   repo: "bird-workbench",
   branch: "main",
-  oauthClientId: "",
+  oauthClientId: "Ov23liCuWPTQE91lzHer",
   redirectUri: "https://serinshen.github.io/bird-workbench/",
   // Origin of oauth/worker.js, with no path.
   // Example: "https://bird-workbench.example.workers.dev"
-  tokenExchangeUrl: "",
+  tokenExchangeUrl: "https://bird-workbench-oauth.serinshen.workers.dev",
   scope: "public_repo",
 };
