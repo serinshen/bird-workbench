@@ -363,6 +363,29 @@
         }
       },
       "datetimeNote": "钟点未记"
+    },
+    {
+      "id": "obs-2025-01-31-100p",
+      "scientificName": "Cossypha heuglini",
+      "datetime": "2025-01-31",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "肯尼亚"
+      },
+      "photos": [
+        "photos/2025-01-31-cossypha-heuglini-m2dn.jpg"
+      ],
+      "photoMeta": {
+        "photos/2025-01-31-cossypha-heuglini-m2dn.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      },
+      "datetimeNote": "钟点未记"
     }
   ],
   "favorites": [
