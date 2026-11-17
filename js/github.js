@@ -64,6 +64,13 @@
       const parentCommit = await parentRes.json();
       const tree = [];
       for (const file of files) {
+        if (file.deleted) {
+          if (!file.path || !/^photos\/[A-Za-z0-9._-]+$/.test(file.path)) {
+            throw new Error("只能删除 photos/ 里的野外照片。");
+          }
+          tree.push({ path: file.path, mode: "100644", type: "blob", sha: null });
+          continue;
+        }
         const blobRes = await request(token, base + "/git/blobs", {
           method: "POST",
           headers: Object.assign({ "Content-Type": "application/json" }, headers(token)),
