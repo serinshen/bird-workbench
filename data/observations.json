@@ -549,6 +549,29 @@
         }
       },
       "datetimeNote": "钟点未记"
+    },
+    {
+      "id": "obs-2025-08-11-srm1",
+      "scientificName": "Culicicapa ceylonensis",
+      "datetime": "2025-08-11",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "四川唐家河"
+      },
+      "photos": [
+        "photos/2025-08-11-culicicapa-ceylonensis-2mnz.jpg"
+      ],
+      "photoMeta": {
+        "photos/2025-08-11-culicicapa-ceylonensis-2mnz.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      },
+      "datetimeNote": "钟点未记"
     }
   ],
   "favorites": [
