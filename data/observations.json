@@ -1279,6 +1279,29 @@
         }
       },
       "datetimeNote": "钟点未记"
+    },
+    {
+      "id": "obs-2022-10-06-y6sd",
+      "scientificName": "Lonchura punctulata",
+      "datetime": "2022-10-06",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "云南西双版纳"
+      },
+      "photos": [
+        "photos/2022-10-06-lonchura-punctulata-9z5l.jpg"
+      ],
+      "photoMeta": {
+        "photos/2022-10-06-lonchura-punctulata-9z5l.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      },
+      "datetimeNote": "钟点未记"
     }
   ],
   "favorites": [
