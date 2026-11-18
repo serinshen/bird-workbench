@@ -1186,6 +1186,30 @@
       },
       "datetimeNote": "钟点未记",
       "sex": "male"
+    },
+    {
+      "id": "obs-2024-02-13-n0i7",
+      "scientificName": "Eophona migratoria",
+      "datetime": "2024-02-13",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "云南昆明"
+      },
+      "photos": [
+        "photos/2024-02-13-eophona-migratoria-vde6.jpg"
+      ],
+      "photoMeta": {
+        "photos/2024-02-13-eophona-migratoria-vde6.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      },
+      "datetimeNote": "钟点未记",
+      "sex": "female"
     }
   ],
   "favorites": [
