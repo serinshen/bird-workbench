@@ -708,6 +708,28 @@
         }
       },
       "sex": "male"
+    },
+    {
+      "id": "obs-2026-02-17-5g3h",
+      "scientificName": "Spizixos semitorques",
+      "datetime": "2026-02-17T14:35:00",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "四川唐家河"
+      },
+      "photos": [
+        "photos/2026-02-17-spizixos-semitorques-kzgc.jpg"
+      ],
+      "photoMeta": {
+        "photos/2026-02-17-spizixos-semitorques-kzgc.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      }
     }
   ],
   "favorites": [
