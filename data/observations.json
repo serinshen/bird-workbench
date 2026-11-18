@@ -978,6 +978,30 @@
         }
       },
       "datetimeNote": "钟点未记"
+    },
+    {
+      "id": "obs-2025-11-23-b11d",
+      "scientificName": "Emberiza spodocephala",
+      "datetime": "2025-11-23",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "上海吴淞炮台湾国家湿地公园"
+      },
+      "photos": [
+        "photos/2025-11-23-emberiza-spodocephala-ftkz.jpg"
+      ],
+      "photoMeta": {
+        "photos/2025-11-23-emberiza-spodocephala-ftkz.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      },
+      "datetimeNote": "钟点未记",
+      "sex": "female"
     }
   ],
   "favorites": [
