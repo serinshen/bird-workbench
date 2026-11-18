@@ -909,6 +909,29 @@
         }
       },
       "sex": "female"
+    },
+    {
+      "id": "obs-2026-02-20-rwao",
+      "scientificName": "Phoenicurus frontalis",
+      "datetime": "2026-02-20T09:20:00",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "四川唐家河"
+      },
+      "photos": [
+        "photos/2026-02-20-phoenicurus-frontalis-z8px.jpg"
+      ],
+      "photoMeta": {
+        "photos/2026-02-20-phoenicurus-frontalis-z8px.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      },
+      "sex": "male"
     }
   ],
   "favorites": [
