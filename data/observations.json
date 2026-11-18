@@ -640,6 +640,29 @@
           "watermark": "@SerinS"
         }
       }
+    },
+    {
+      "id": "obs-2026-02-21-ye5x",
+      "scientificName": "Haliaeetus albicilla",
+      "datetime": "2026-02-21T10:27:00",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "四川唐家河"
+      },
+      "photos": [
+        "photos/2026-02-21-haliaeetus-albicilla-8pwo.jpg"
+      ],
+      "photoMeta": {
+        "photos/2026-02-21-haliaeetus-albicilla-8pwo.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      },
+      "notes": "蛇岛对面"
     }
   ],
   "favorites": [
