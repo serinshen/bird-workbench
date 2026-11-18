@@ -1093,6 +1093,29 @@
         }
       },
       "datetimeNote": "钟点未记"
+    },
+    {
+      "id": "obs-2024-02-13-oa34",
+      "scientificName": "Erythrogenys gravivox",
+      "datetime": "2024-02-13",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "云南昆明"
+      },
+      "photos": [
+        "photos/2024-02-13-erythrogenys-gravivox-infc.jpg"
+      ],
+      "photoMeta": {
+        "photos/2024-02-13-erythrogenys-gravivox-infc.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      },
+      "datetimeNote": "钟点未记"
     }
   ],
   "favorites": [
