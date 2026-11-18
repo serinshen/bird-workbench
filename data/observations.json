@@ -932,6 +932,29 @@
         }
       },
       "sex": "male"
+    },
+    {
+      "id": "obs-2025-11-23-l969",
+      "scientificName": "Columba janthina",
+      "datetime": "2025-11-23",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "上海吴淞炮台湾公园"
+      },
+      "photos": [
+        "photos/2025-11-23-columba-janthina-fohz.jpg"
+      ],
+      "photoMeta": {
+        "photos/2025-11-23-columba-janthina-fohz.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      },
+      "datetimeNote": "钟点未记"
     }
   ],
   "favorites": [
