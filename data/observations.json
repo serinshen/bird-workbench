@@ -752,6 +752,28 @@
           "watermark": "@SerinS"
         }
       }
+    },
+    {
+      "id": "obs-2026-02-19-5ohv",
+      "scientificName": "Alcippe davidi",
+      "datetime": "2026-02-19T17:00:00",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "四川唐家河"
+      },
+      "photos": [
+        "photos/2026-02-19-alcippe-davidi-obu6.jpg"
+      ],
+      "photoMeta": {
+        "photos/2026-02-19-alcippe-davidi-obu6.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      }
     }
   ],
   "favorites": [
