@@ -1002,6 +1002,28 @@
       },
       "datetimeNote": "钟点未记",
       "sex": "female"
+    },
+    {
+      "id": "obs-2025-11-23-qrgf",
+      "scientificName": "Egretta garzetta",
+      "datetime": "2025-11-23T11:51:00",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "上海吴淞炮台湾国家湿地公园"
+      },
+      "photos": [
+        "photos/2025-11-23-egretta-garzetta-tyq8.jpg"
+      ],
+      "photoMeta": {
+        "photos/2025-11-23-egretta-garzetta-tyq8.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      }
     }
   ],
   "favorites": [
