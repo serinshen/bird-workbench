@@ -685,6 +685,29 @@
           "watermark": "@SerinS"
         }
       }
+    },
+    {
+      "id": "obs-2026-02-18-gir8",
+      "scientificName": "Phoenicurus fuliginosus",
+      "datetime": "2026-02-18T18:25:00",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "四川唐家河"
+      },
+      "photos": [
+        "photos/2026-02-18-phoenicurus-fuliginosus-vph8.jpg"
+      ],
+      "photoMeta": {
+        "photos/2026-02-18-phoenicurus-fuliginosus-vph8.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      },
+      "sex": "male"
     }
   ],
   "favorites": [
