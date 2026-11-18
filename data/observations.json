@@ -1047,6 +1047,29 @@
         }
       },
       "datetimeNote": "钟点未记"
+    },
+    {
+      "id": "obs-2025-11-23-yiqv",
+      "scientificName": "Lanius schach",
+      "datetime": "2025-11-23",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "上海吴淞炮台湾国家湿地公园"
+      },
+      "photos": [
+        "photos/2025-11-23-lanius-schach-vsek.jpg"
+      ],
+      "photoMeta": {
+        "photos/2025-11-23-lanius-schach-vsek.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      },
+      "datetimeNote": "钟点未记"
     }
   ],
   "favorites": [
