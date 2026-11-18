@@ -596,6 +596,28 @@
       },
       "datetimeNote": "钟点未记",
       "sex": "male"
+    },
+    {
+      "id": "obs-2026-02-18-x3sg",
+      "scientificName": "Suthora webbiana",
+      "datetime": "2026-02-18T11:04:00",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "四川唐家河"
+      },
+      "photos": [
+        "photos/2026-02-18-suthora-webbiana-03me.jpg"
+      ],
+      "photoMeta": {
+        "photos/2026-02-18-suthora-webbiana-03me.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      }
     }
   ],
   "favorites": [
