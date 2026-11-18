@@ -955,6 +955,29 @@
         }
       },
       "datetimeNote": "钟点未记"
+    },
+    {
+      "id": "obs-2026-11-23-yckk",
+      "scientificName": "Turdus pallidus",
+      "datetime": "2026-11-23",
+      "timezone": "Asia/Shanghai",
+      "detection": "seen",
+      "confidence": "high",
+      "tentative": false,
+      "location": {
+        "place": "上海吴淞炮台湾公园"
+      },
+      "photos": [
+        "photos/2026-11-23-turdus-pallidus-g8y0.jpg"
+      ],
+      "photoMeta": {
+        "photos/2026-11-23-turdus-pallidus-g8y0.jpg": {
+          "processed": true,
+          "watermarked": true,
+          "watermark": "@SerinS"
+        }
+      },
+      "datetimeNote": "钟点未记"
     }
   ],
   "favorites": [
