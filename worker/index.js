@@ -228,7 +228,7 @@ function parseLocation(raw) {
   }
 }
 
-function recordFrom(row, photos) {
+export function recordFrom(row, photos) {
   const location = parseLocation(row.location_json);
   if (row.place) location.place = row.place;
   const list = (photos || []).slice().sort((a, b) => a.sort_index - b.sort_index);
@@ -245,7 +245,7 @@ function recordFrom(row, photos) {
   if (row.sex) rec.sex = row.sex;
   if (row.notes) rec.notes = row.notes;
   if (row.habitat) rec.habitat = row.habitat;
-  if (row.weather_light) rec.weatherLight = row.weatherLight;
+  if (row.weather_light) rec.weatherLight = row.weather_light;
   if (row.source_group) rec.sourceGroup = row.source_group;
   if (row.logged_chinese) rec.loggedChinese = row.logged_chinese;
   if (row.logged_english) rec.loggedEnglish = row.logged_english;

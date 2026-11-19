@@ -5,6 +5,7 @@ import { gunzipSync } from "node:zlib";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { mapDetection, mapRecord, mapSuspicious } from "./record-map.mjs";
+import { recordFrom } from "../worker/index.js";
 
 const require = createRequire(import.meta.url);
 const root = join(dirname(fileURLToPath(import.meta.url)), "..");
@@ -145,6 +146,42 @@ for (const file of files) {
   assert(WBJpeg.hasMarker(bytes), "missing WBWM marker " + file);
   assert(referenced.has("photos/" + file), "unreferenced " + file);
 }
+
+const d1Row = {
+  id: "obs-test",
+  scientific_name: "Phoenicurus frontalis",
+  datetime: "2026-11-11",
+  timezone: "Asia/Shanghai",
+  detection: "heard",
+  suspicious: 1,
+  place: "石门子村（霍比特徒步线）",
+  location_json: JSON.stringify({ place: "石门子村（霍比特徒步线）", province: "四川省" }),
+  notes: "heard only",
+  habitat: "霍比特徒步线途中听见",
+  weather_light: "白天徒步途中（具体时段未记）",
+  source_group: "雀形目 Passeriformes · 鹟科 Muscicapidae",
+  logged_chinese: "蓝额红尾鸲",
+  logged_english: "Blue-fronted Redstart",
+  open_question_json: JSON.stringify({ text: "尚未完全排除", scientificName: "Phylloscopus proregulus" }),
+  uploaded_at: null,
+};
+assert(!Object.prototype.hasOwnProperty.call(d1Row, "weatherLight"), "fixture is a D1 row, not a camelCase object");
+const fromRow = recordFrom(d1Row, [
+  { path: "photos/b.jpg", sort_index: 1, watermark: "@SerinS" },
+  { path: "photos/a.jpg", sort_index: 0, watermark: "@SerinS" },
+]);
+assert(fromRow.weatherLight === "白天徒步途中（具体时段未记）", "weather_light must surface as weatherLight, got " + fromRow.weatherLight);
+assert(fromRow.habitat === d1Row.habitat, "habitat");
+assert(fromRow.sourceGroup === d1Row.source_group, "source_group");
+assert(fromRow.loggedChinese === "蓝额红尾鸲" && "鸲".codePointAt(0) === 0x9e32, "logged_chinese");
+assert(fromRow.loggedEnglish === d1Row.logged_english, "logged_english");
+assert(fromRow.openQuestion && fromRow.openQuestion.scientificName === "Phylloscopus proregulus", "open_question_json");
+assert(fromRow.scientificName === d1Row.scientific_name, "scientific_name");
+assert(fromRow.location.province === "四川省" && fromRow.location.place === d1Row.place, "location_json");
+assert(fromRow.photos.join(",") === "photos/a.jpg,photos/b.jpg", "sort_index");
+assert(fromRow.suspicious === true, "suspicious flag");
+assert(!fromRow.uploadedAt, "null uploaded_at stays unset");
+assert(!recordFrom({ ...d1Row, weather_light: "" }).weatherLight, "blank weather_light stays hidden");
 
 const uiFiles = ["index.html", "js/app.js", "js/api.js", "js/crop.js", "js/config.js", "css/site.css"];
 const banned = ["钟点未记", "已观察", "仓库", "看到+听到", "看到或听到", "中文名空缺", "置信", "GitHub", "oauth", "Ov23li", "client_secret", "GITHUB_CLIENT"];
