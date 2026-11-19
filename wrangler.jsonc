@@ -14,7 +14,7 @@
     {
       "binding": "DB",
       "database_name": "bird-workbench",
-      "database_id": "00000000-0000-0000-0000-000000000001",
+      "database_id": "3cb7a2c6-e07d-4e7c-9fb4-7ed52a57122b",
       "migrations_dir": "migrations"
     }
   ],
