@@ -1,17 +1,24 @@
 // Compress a new field photo and stamp @SerinS before it is written.
 // Files that already carry the JPEG marker are returned unchanged.
+// Uploads are decoded from file bytes, not from the file extension.
 (function () {
   var spec = window.WBJpeg;
 
-  function bytesToBase64(bytes) {
-    var binary = "";
-    for (var i = 0; i < bytes.length; i += 0x8000) {
-      var slice = bytes.subarray(i, i + 0x8000);
-      var part = "";
-      for (var j = 0; j < slice.length; j++) part += String.fromCharCode(slice[j]);
-      binary += part;
-    }
-    return btoa(binary);
+  function sniff(bytes) {
+    if (bytes.length >= 3 && bytes[0] === 0xff && bytes[1] === 0xd8 && bytes[2] === 0xff) return "jpeg";
+    if (bytes.length >= 8 && bytes[0] === 0x89 && bytes[1] === 0x50 && bytes[2] === 0x4e && bytes[3] === 0x47) return "png";
+    if (bytes.length >= 6 && bytes[0] === 0x47 && bytes[1] === 0x49 && bytes[2] === 0x46) return "gif";
+    if (
+      bytes.length >= 12 &&
+      bytes[0] === 0x52 && bytes[1] === 0x49 && bytes[2] === 0x46 && bytes[3] === 0x46 &&
+      bytes[8] === 0x57 && bytes[9] === 0x45 && bytes[10] === 0x42 && bytes[11] === 0x50
+    ) return "webp";
+    if (bytes.length >= 12 && bytes[4] === 0x66 && bytes[5] === 0x74 && bytes[6] === 0x79 && bytes[7] === 0x70) return "heif";
+    return "";
+  }
+
+  function isJpeg(bytes) {
+    return bytes.length > 3 && bytes[0] === 0xff && bytes[1] === 0xd8;
   }
 
   function applyOrientation(ctx, orientation, width, height) {
@@ -117,32 +124,44 @@
     return exifOrientation;
   }
 
-  async function prepare(file) {
+  async function loadOriented(file) {
     var raw = new Uint8Array(await file.arrayBuffer());
-    if (spec.hasMarker(raw)) {
-      return {
-        skipped: true,
-        width: null,
-        height: null,
-        blob: new Blob([raw], { type: "image/jpeg" }),
-        base64: bytesToBase64(raw),
-      };
+    var kind = sniff(raw);
+    if (!kind) {
+      // Extension is ignored. Try the bytes anyway, then fail if they are not an image.
     }
-    var exifOrientation = spec.jpegOrientation(raw);
-    var bitmap = await decodeBitmap(file);
-    var orientation = manualOrientation(bitmap, spec.jpegSize(raw), exifOrientation);
-    var oriented = paintOriented(bitmap, orientation);
+    if (isJpeg(raw) && spec.hasMarker(raw)) {
+      return { skipped: true, raw: raw, kind: "jpeg" };
+    }
+    var bitmap;
+    try {
+      bitmap = await decodeBitmap(file);
+    } catch (err) {
+      if (!kind) throw new Error("这张照片无法解码，没有写入。请换一张 JPEG 或 PNG。");
+      throw err;
+    }
+    var exifOrientation = isJpeg(raw) ? spec.jpegOrientation(raw) : 1;
+    var orientation = manualOrientation(bitmap, isJpeg(raw) ? spec.jpegSize(raw) : null, exifOrientation);
+    var canvas = paintOriented(bitmap, orientation);
     if (bitmap.close) bitmap.close();
-    var scale = Math.min(1, spec.MAX_EDGE / Math.max(oriented.width, oriented.height));
-    var width = Math.max(1, Math.round(oriented.width * scale));
-    var height = Math.max(1, Math.round(oriented.height * scale));
+    return { skipped: false, canvas: canvas, kind: kind || "image" };
+  }
+
+  function packSkipped(raw) {
+    return { skipped: true, blob: new Blob([raw], { type: "image/jpeg" }) };
+  }
+
+  async function finish(source) {
+    var scale = Math.min(1, spec.MAX_EDGE / Math.max(source.width, source.height));
+    var width = Math.max(1, Math.round(source.width * scale));
+    var height = Math.max(1, Math.round(source.height * scale));
     var canvas = document.createElement("canvas");
     canvas.width = width;
     canvas.height = height;
     var ctx = canvas.getContext("2d");
     ctx.imageSmoothingEnabled = true;
     if ("imageSmoothingQuality" in ctx) ctx.imageSmoothingQuality = "high";
-    ctx.drawImage(oriented, 0, 0, width, height);
+    ctx.drawImage(source, 0, 0, width, height);
     await drawWatermark(ctx, width, height);
     var blob = await new Promise(function (resolve, reject) {
       canvas.toBlob(function (result) {
@@ -157,9 +176,13 @@
       width: width,
       height: height,
       blob: new Blob([marked], { type: "image/jpeg" }),
-      base64: bytesToBase64(marked),
     };
   }
 
-  window.WBMedia = { prepare: prepare };
+  window.WBMedia = {
+    sniff: sniff,
+    loadOriented: loadOriented,
+    packSkipped: packSkipped,
+    finish: finish,
+  };
 })();
