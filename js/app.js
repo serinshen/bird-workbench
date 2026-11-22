@@ -1,5 +1,4 @@
 (function () {
-  const FIRST_ISSUE = "2026-11-20";
   const PHOTO_MAX = 25 * 1024 * 1024;
   const TOAST_MS = 4000;
 
@@ -17,6 +16,7 @@
     notes: {},
     favorites: [],
     morning: [],
+    weekly: null,
     holdScroll: false,
     filtered: [],
     filterGen: 0,
@@ -66,20 +66,6 @@
 
   function comma(n) {
     return Number(n).toLocaleString("en-US");
-  }
-
-  function shanghaiDate(date) {
-    return new Intl.DateTimeFormat("en-CA", {
-      timeZone: "Asia/Shanghai",
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-    }).format(date || new Date());
-  }
-
-  function daysBetween(start, end) {
-    const ms = Date.parse(end + "T00:00:00+08:00") - Date.parse(start + "T00:00:00+08:00");
-    return Math.round(ms / 86400000);
   }
 
   function formatStamp(iso) {
@@ -1415,24 +1401,70 @@
     }
   }
 
+  function isoDate(value) {
+    if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return "";
+    const year = Number(value.slice(0, 4));
+    const month = Number(value.slice(5, 7));
+    const day = Number(value.slice(8, 10));
+    const date = new Date(Date.UTC(year, month - 1, day));
+    if (date.getUTCFullYear() !== year || date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return "";
+    return value;
+  }
+
+  function normalizeWeekly(data) {
+    if (!Array.isArray(data)) return null;
+    const issues = [];
+    for (const item of data) {
+      if (!item || typeof item !== "object") continue;
+      const kicker = typeof item.kicker === "string" ? item.kicker.trim() : "";
+      const body = typeof item.body === "string" ? item.body.trim() : "";
+      const from = isoDate(item.from);
+      const to = isoDate(item.to);
+      const published = isoDate(item.published);
+      if (!kicker || !body || !from || !to || !published) continue;
+      issues.push({
+        issue: Number.isInteger(item.issue) ? item.issue : 0,
+        kicker: kicker,
+        from: from,
+        to: to,
+        published: published,
+        body: body,
+      });
+    }
+    return issues;
+  }
+
+  function weeklyIssueOrder(a, b) {
+    if (a.published !== b.published) return a.published < b.published ? 1 : -1;
+    return b.issue - a.issue;
+  }
+
   function renderWeekly() {
     document.title = "鸟况周报 · 观鸟工作台";
-    const today = shanghaiDate();
     const root = document.getElementById("view-weekly");
-    root.replaceChildren(
-      el("h1", {}, ["鸟况周报"]),
-      el("p", { class: "issue-kicker" }, ["第一期 · 尚未刊出"]),
-      el("p", { class: "due" }, ["预定刊期 ", el("time", { datetime: FIRST_ISSUE }, [FIRST_ISSUE])])
-    );
-    let gap;
-    if (today < FIRST_ISSUE) {
-      gap = "今天是 " + today + "，距第一期还有 " + daysBetween(today, FIRST_ISSUE) + " 天。这段日子没有周报，这里不编造观察综述。";
-    } else if (today === FIRST_ISSUE) {
-      gap = "今天是预定的第一期刊期（" + FIRST_ISSUE + "），还没有这一期。";
-    } else {
-      gap = "第一期预定 " + FIRST_ISSUE + "，到今天（" + today + "）仍然没有刊出。这里不补写。";
+    root.replaceChildren(el("h1", {}, ["鸟况周报"]));
+    const issues = state.weekly;
+    if (!Array.isArray(issues)) {
+      root.append(el("p", { class: "gap" }, ["周报没有载入。"]));
+      return;
     }
-    root.append(el("p", { class: "gap" }, [gap]));
+    if (!issues.length) {
+      root.append(el("p", { class: "gap" }, ["还没有刊出。"]));
+      return;
+    }
+    for (const issue of issues.slice().sort(weeklyIssueOrder)) {
+      root.append(
+        el("p", { class: "issue-kicker" }, [issue.kicker]),
+        el("p", { class: "due" }, [
+          el("time", { datetime: issue.from }, [issue.from]),
+          " 至 ",
+          el("time", { datetime: issue.to }, [issue.to]),
+          "，刊期 ",
+          el("time", { datetime: issue.published }, [issue.published]),
+        ]),
+        el("p", { class: "gap" }, [issue.body])
+      );
+    }
   }
 
   async function getJson(url) {
@@ -1463,10 +1495,11 @@
       if (state.booted) renderRoute();
     });
     try {
-      const [pack, china, morning, libraryResult, sessionResult] = await Promise.all([
+      const [pack, china, morning, weeklyResult, libraryResult, sessionResult] = await Promise.all([
         window.WBChecklist.loadPack("data/pack.b64"),
         getJson("data/china-recordable-sci.json"),
         getJson("data/morning-cards.json"),
+        getJson("data/weekly-issues.json").then((data) => ({ ok: true, data: data })).catch(() => ({ ok: false })),
         window.WBApi.get("/api/library").then((data) => ({ ok: true, data: data })).catch((err) => ({ ok: false, error: err })),
         window.WBApi.get("/api/session").catch(() => ({ signedIn: false })),
       ]);
@@ -1484,6 +1517,7 @@
       state.genera = pack.genera;
       state.byName = new Map(pack.species.map((sp) => [sp.sci, sp]));
       state.morning = Array.isArray(morning) ? morning : [];
+      state.weekly = weeklyResult.ok ? normalizeWeekly(weeklyResult.data) : null;
       if (libraryResult.ok) applyLibrary(libraryResult.data);
       else {
         state.records = [];
