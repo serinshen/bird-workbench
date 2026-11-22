@@ -1480,6 +1480,99 @@
     root.append(list);
   }
 
+  function weeklyLinkUrl(url) {
+    if (typeof url !== "string" || /\s/.test(url)) return "";
+    try {
+      const parsed = new URL(url);
+      if (parsed.protocol !== "http:" && parsed.protocol !== "https:") return "";
+      return url;
+    } catch (err) {
+      return "";
+    }
+  }
+
+  function parseWeeklyInline(text) {
+    const nodes = [];
+    let buf = "";
+    let i = 0;
+    const flush = () => {
+      if (!buf) return;
+      nodes.push(document.createTextNode(buf));
+      buf = "";
+    };
+    while (i < text.length) {
+      if (text.startsWith("**", i)) {
+        const end = text.indexOf("**", i + 2);
+        if (end !== -1) {
+          flush();
+          nodes.push(el("strong", {}, parseWeeklyInline(text.slice(i + 2, end))));
+          i = end + 2;
+          continue;
+        }
+      }
+      if (text.charAt(i) === "*" && text.charAt(i + 1) !== "*") {
+        const end = text.indexOf("*", i + 1);
+        if (end !== -1) {
+          flush();
+          const word = text.slice(i + 1, end);
+          const attrs = /^[A-Za-z]/.test(word) ? { lang: "la" } : null;
+          nodes.push(el("i", attrs, parseWeeklyInline(word)));
+          i = end + 1;
+          continue;
+        }
+      }
+      if (text.charAt(i) === "[") {
+        const labelEnd = text.indexOf("]", i + 1);
+        if (labelEnd !== -1 && text.charAt(labelEnd + 1) === "(") {
+          const urlEnd = text.indexOf(")", labelEnd + 2);
+          const href = urlEnd === -1 ? "" : weeklyLinkUrl(text.slice(labelEnd + 2, urlEnd));
+          if (href) {
+            flush();
+            nodes.push(el("a", { href: href }, [text.slice(i + 1, labelEnd)]));
+            i = urlEnd + 1;
+            continue;
+          }
+        }
+      }
+      buf += text.charAt(i);
+      i += 1;
+    }
+    flush();
+    return nodes;
+  }
+
+  function renderWeeklyMarkdown(markdown) {
+    const root = el("div", { class: "weekly-body" });
+    const lines = String(markdown || "").replace(/\r\n/g, "\n").split("\n");
+    let list = null;
+    const closeList = () => {
+      if (!list) return;
+      root.append(list);
+      list = null;
+    };
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed) {
+        closeList();
+        continue;
+      }
+      if (trimmed.startsWith("## ")) {
+        closeList();
+        root.append(el("h2", { class: "section-title" }, parseWeeklyInline(trimmed.slice(3).trim())));
+        continue;
+      }
+      if (trimmed.startsWith("- ")) {
+        if (!list) list = el("ul", {});
+        list.append(el("li", {}, parseWeeklyInline(trimmed.slice(2))));
+        continue;
+      }
+      closeList();
+      root.append(el("p", {}, parseWeeklyInline(trimmed)));
+    }
+    closeList();
+    return root;
+  }
+
   function renderWeeklyIssue(root, id) {
     root.replaceChildren(el("a", { class: "back", href: "#/weekly" }, ["← 返回鸟况周报"]));
     if (!Array.isArray(state.weekly)) {
@@ -1494,6 +1587,12 @@
       return;
     }
     document.title = issue.kicker + " · 观鸟工作台";
+    let body;
+    try {
+      body = renderWeeklyMarkdown(issue.body);
+    } catch (err) {
+      body = el("p", { class: "gap" }, [issue.body]);
+    }
     root.append(
       el("h1", {}, [issue.kicker]),
       el("p", { class: "due" }, [
@@ -1503,7 +1602,7 @@
         "，刊期 ",
         el("time", { datetime: issue.published }, [issue.published]),
       ]),
-      el("p", { class: "gap" }, [issue.body])
+      body
     );
   }
 
