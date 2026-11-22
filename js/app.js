@@ -577,7 +577,11 @@
     let path = hash || "/";
     try { path = decodeURIComponent(path); } catch (err) { /* keep raw */ }
     if (path === "/" || path === "") return { view: "index" };
-    if (path === "/weekly") return { view: "weekly" };
+    if (path === "/weekly" || path === "/weekly/") return { view: "weekly" };
+    if (path.startsWith("/weekly/")) {
+      const issue = path.slice("/weekly/".length).replace(/\/$/, "");
+      return issue ? { view: "weekly", issue: issue } : { view: "weekly" };
+    }
     if (path === "/photos") return { view: "photos" };
     if (path.startsWith("/share/")) return { view: "share", token: path.slice("/share/".length).replace(/\/$/, "") };
     if (path.startsWith("/species/")) {
@@ -1417,14 +1421,17 @@
     for (const item of data) {
       if (!item || typeof item !== "object") continue;
       const kicker = typeof item.kicker === "string" ? item.kicker.trim() : "";
+      const title = typeof item.title === "string" ? item.title.trim() : "";
       const body = typeof item.body === "string" ? item.body.trim() : "";
       const from = isoDate(item.from);
       const to = isoDate(item.to);
       const published = isoDate(item.published);
-      if (!kicker || !body || !from || !to || !published) continue;
+      if (!Number.isInteger(item.issue) || item.issue < 1) continue;
+      if (!kicker || !title || !body || !from || !to || !published) continue;
       issues.push({
-        issue: Number.isInteger(item.issue) ? item.issue : 0,
+        issue: item.issue,
         kicker: kicker,
+        title: title,
         from: from,
         to: to,
         published: published,
@@ -1439,9 +1446,15 @@
     return b.issue - a.issue;
   }
 
-  function renderWeekly() {
+  function findWeekly(id) {
+    if (typeof id !== "string" || !/^[1-9]\d*$/.test(id)) return null;
+    const n = Number(id);
+    if (!Number.isSafeInteger(n) || !Array.isArray(state.weekly)) return null;
+    return state.weekly.find((item) => item.issue === n) || null;
+  }
+
+  function renderWeeklyIndex(root) {
     document.title = "鸟况周报 · 观鸟工作台";
-    const root = document.getElementById("view-weekly");
     root.replaceChildren(el("h1", {}, ["鸟况周报"]));
     const issues = state.weekly;
     if (!Array.isArray(issues)) {
@@ -1452,19 +1465,53 @@
       root.append(el("p", { class: "gap" }, ["还没有刊出。"]));
       return;
     }
+    const list = el("ul", { class: "weekly-index" });
     for (const issue of issues.slice().sort(weeklyIssueOrder)) {
-      root.append(
-        el("p", { class: "issue-kicker" }, [issue.kicker]),
-        el("p", { class: "due" }, [
+      list.append(el("li", {}, [
+        el("a", { href: "#/weekly/" + issue.issue }, [
           el("time", { datetime: issue.from }, [issue.from]),
           " 至 ",
           el("time", { datetime: issue.to }, [issue.to]),
-          "，刊期 ",
-          el("time", { datetime: issue.published }, [issue.published]),
+          " · ",
+          issue.title,
         ]),
-        el("p", { class: "gap" }, [issue.body])
-      );
+      ]));
     }
+    root.append(list);
+  }
+
+  function renderWeeklyIssue(root, id) {
+    root.replaceChildren(el("a", { class: "back", href: "#/weekly" }, ["← 返回鸟况周报"]));
+    if (!Array.isArray(state.weekly)) {
+      document.title = "鸟况周报 · 观鸟工作台";
+      root.append(el("p", { class: "gap" }, ["周报没有载入。"]));
+      return;
+    }
+    const issue = findWeekly(id);
+    if (!issue) {
+      document.title = "没有这一期 · 观鸟工作台";
+      root.append(el("p", { class: "gap" }, ["没有这一期。"]));
+      return;
+    }
+    document.title = issue.kicker + " · 观鸟工作台";
+    root.append(
+      el("h1", {}, [issue.kicker]),
+      el("p", { class: "due" }, [
+        el("time", { datetime: issue.from }, [issue.from]),
+        " 至 ",
+        el("time", { datetime: issue.to }, [issue.to]),
+        "，刊期 ",
+        el("time", { datetime: issue.published }, [issue.published]),
+      ]),
+      el("p", { class: "gap" }, [issue.body])
+    );
+  }
+
+  function renderWeekly() {
+    const root = document.getElementById("view-weekly");
+    if (state.route.issue) renderWeeklyIssue(root, state.route.issue);
+    else renderWeeklyIndex(root);
+    root.scrollTop = 0;
   }
 
   async function getJson(url) {
