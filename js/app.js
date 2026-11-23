@@ -1,5 +1,4 @@
 (function () {
-  const FIRST_ISSUE = "2026-11-20";
   const PHOTO_MAX = 25 * 1024 * 1024;
   const TOAST_MS = 4000;
 
@@ -17,6 +16,7 @@
     notes: {},
     favorites: [],
     morning: [],
+    weekly: null,
     holdScroll: false,
     filtered: [],
     filterGen: 0,
@@ -66,20 +66,6 @@
 
   function comma(n) {
     return Number(n).toLocaleString("en-US");
-  }
-
-  function shanghaiDate(date) {
-    return new Intl.DateTimeFormat("en-CA", {
-      timeZone: "Asia/Shanghai",
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-    }).format(date || new Date());
-  }
-
-  function daysBetween(start, end) {
-    const ms = Date.parse(end + "T00:00:00+08:00") - Date.parse(start + "T00:00:00+08:00");
-    return Math.round(ms / 86400000);
   }
 
   function formatStamp(iso) {
@@ -591,7 +577,11 @@
     let path = hash || "/";
     try { path = decodeURIComponent(path); } catch (err) { /* keep raw */ }
     if (path === "/" || path === "") return { view: "index" };
-    if (path === "/weekly") return { view: "weekly" };
+    if (path === "/weekly" || path === "/weekly/") return { view: "weekly" };
+    if (path.startsWith("/weekly/")) {
+      const issue = path.slice("/weekly/".length).replace(/\/$/, "");
+      return issue ? { view: "weekly", issue: issue } : { view: "weekly" };
+    }
     if (path === "/photos") return { view: "photos" };
     if (path.startsWith("/share/")) return { view: "share", token: path.slice("/share/".length).replace(/\/$/, "") };
     if (path.startsWith("/species/")) {
@@ -1415,24 +1405,212 @@
     }
   }
 
-  function renderWeekly() {
-    document.title = "鸟况周报 · 观鸟工作台";
-    const today = shanghaiDate();
-    const root = document.getElementById("view-weekly");
-    root.replaceChildren(
-      el("h1", {}, ["鸟况周报"]),
-      el("p", { class: "issue-kicker" }, ["第一期 · 尚未刊出"]),
-      el("p", { class: "due" }, ["预定刊期 ", el("time", { datetime: FIRST_ISSUE }, [FIRST_ISSUE])])
-    );
-    let gap;
-    if (today < FIRST_ISSUE) {
-      gap = "今天是 " + today + "，距第一期还有 " + daysBetween(today, FIRST_ISSUE) + " 天。这段日子没有周报，这里不编造观察综述。";
-    } else if (today === FIRST_ISSUE) {
-      gap = "今天是预定的第一期刊期（" + FIRST_ISSUE + "），还没有这一期。";
-    } else {
-      gap = "第一期预定 " + FIRST_ISSUE + "，到今天（" + today + "）仍然没有刊出。这里不补写。";
+  function isoDate(value) {
+    if (typeof value !== "string" || !/^\d{4}-\d{2}-\d{2}$/.test(value)) return "";
+    const year = Number(value.slice(0, 4));
+    const month = Number(value.slice(5, 7));
+    const day = Number(value.slice(8, 10));
+    const date = new Date(Date.UTC(year, month - 1, day));
+    if (date.getUTCFullYear() !== year || date.getUTCMonth() !== month - 1 || date.getUTCDate() !== day) return "";
+    return value;
+  }
+
+  function normalizeWeekly(data) {
+    if (!Array.isArray(data)) return null;
+    const issues = [];
+    for (const item of data) {
+      if (!item || typeof item !== "object") continue;
+      const kicker = typeof item.kicker === "string" ? item.kicker.trim() : "";
+      const title = typeof item.title === "string" ? item.title.trim() : "";
+      const body = typeof item.body === "string" ? item.body.trim() : "";
+      const from = isoDate(item.from);
+      const to = isoDate(item.to);
+      const published = isoDate(item.published);
+      if (!Number.isInteger(item.issue) || item.issue < 1) continue;
+      if (!kicker || !title || !body || !from || !to || !published) continue;
+      issues.push({
+        issue: item.issue,
+        kicker: kicker,
+        title: title,
+        from: from,
+        to: to,
+        published: published,
+        body: body,
+      });
     }
-    root.append(el("p", { class: "gap" }, [gap]));
+    return issues;
+  }
+
+  function weeklyIssueOrder(a, b) {
+    if (a.published !== b.published) return a.published < b.published ? 1 : -1;
+    return b.issue - a.issue;
+  }
+
+  function findWeekly(id) {
+    if (typeof id !== "string" || !/^[1-9]\d*$/.test(id)) return null;
+    const n = Number(id);
+    if (!Number.isSafeInteger(n) || !Array.isArray(state.weekly)) return null;
+    return state.weekly.find((item) => item.issue === n) || null;
+  }
+
+  function renderWeeklyIndex(root) {
+    document.title = "鸟况周报 · 观鸟工作台";
+    root.replaceChildren(el("h1", {}, ["鸟况周报"]));
+    const issues = state.weekly;
+    if (!Array.isArray(issues)) {
+      root.append(el("p", { class: "gap" }, ["周报没有载入。"]));
+      return;
+    }
+    if (!issues.length) {
+      root.append(el("p", { class: "gap" }, ["还没有刊出。"]));
+      return;
+    }
+    const list = el("ul", { class: "weekly-index" });
+    for (const issue of issues.slice().sort(weeklyIssueOrder)) {
+      list.append(el("li", {}, [
+        el("a", { href: "#/weekly/" + issue.issue }, [
+          el("time", { datetime: issue.from }, [issue.from]),
+          " 至 ",
+          el("time", { datetime: issue.to }, [issue.to]),
+          " · ",
+          issue.title,
+        ]),
+      ]));
+    }
+    root.append(list);
+  }
+
+  function weeklyLinkUrl(url) {
+    if (typeof url !== "string" || /\s/.test(url)) return "";
+    try {
+      const parsed = new URL(url);
+      if (parsed.protocol !== "http:" && parsed.protocol !== "https:") return "";
+      return url;
+    } catch (err) {
+      return "";
+    }
+  }
+
+  function parseWeeklyInline(text) {
+    const nodes = [];
+    let buf = "";
+    let i = 0;
+    const flush = () => {
+      if (!buf) return;
+      nodes.push(document.createTextNode(buf));
+      buf = "";
+    };
+    while (i < text.length) {
+      if (text.startsWith("**", i)) {
+        const end = text.indexOf("**", i + 2);
+        if (end !== -1) {
+          flush();
+          nodes.push(el("strong", {}, parseWeeklyInline(text.slice(i + 2, end))));
+          i = end + 2;
+          continue;
+        }
+      }
+      if (text.charAt(i) === "*" && text.charAt(i + 1) !== "*") {
+        const end = text.indexOf("*", i + 1);
+        if (end !== -1) {
+          flush();
+          const word = text.slice(i + 1, end);
+          const attrs = /^[A-Za-z]/.test(word) ? { lang: "la" } : null;
+          nodes.push(el("i", attrs, parseWeeklyInline(word)));
+          i = end + 1;
+          continue;
+        }
+      }
+      if (text.charAt(i) === "[") {
+        const labelEnd = text.indexOf("]", i + 1);
+        if (labelEnd !== -1 && text.charAt(labelEnd + 1) === "(") {
+          const urlEnd = text.indexOf(")", labelEnd + 2);
+          const href = urlEnd === -1 ? "" : weeklyLinkUrl(text.slice(labelEnd + 2, urlEnd));
+          if (href) {
+            flush();
+            nodes.push(el("a", { href: href }, [text.slice(i + 1, labelEnd)]));
+            i = urlEnd + 1;
+            continue;
+          }
+        }
+      }
+      buf += text.charAt(i);
+      i += 1;
+    }
+    flush();
+    return nodes;
+  }
+
+  function renderWeeklyMarkdown(markdown) {
+    const root = el("div", { class: "weekly-body" });
+    const lines = String(markdown || "").replace(/\r\n/g, "\n").split("\n");
+    let list = null;
+    const closeList = () => {
+      if (!list) return;
+      root.append(list);
+      list = null;
+    };
+    for (const line of lines) {
+      const trimmed = line.trim();
+      if (!trimmed) {
+        closeList();
+        continue;
+      }
+      if (trimmed.startsWith("## ")) {
+        closeList();
+        root.append(el("h2", { class: "section-title" }, parseWeeklyInline(trimmed.slice(3).trim())));
+        continue;
+      }
+      if (trimmed.startsWith("- ")) {
+        if (!list) list = el("ul", {});
+        list.append(el("li", {}, parseWeeklyInline(trimmed.slice(2))));
+        continue;
+      }
+      closeList();
+      root.append(el("p", {}, parseWeeklyInline(trimmed)));
+    }
+    closeList();
+    return root;
+  }
+
+  function renderWeeklyIssue(root, id) {
+    root.replaceChildren(el("a", { class: "back", href: "#/weekly" }, ["← 返回鸟况周报"]));
+    if (!Array.isArray(state.weekly)) {
+      document.title = "鸟况周报 · 观鸟工作台";
+      root.append(el("p", { class: "gap" }, ["周报没有载入。"]));
+      return;
+    }
+    const issue = findWeekly(id);
+    if (!issue) {
+      document.title = "没有这一期 · 观鸟工作台";
+      root.append(el("p", { class: "gap" }, ["没有这一期。"]));
+      return;
+    }
+    document.title = issue.kicker + " · 观鸟工作台";
+    let body;
+    try {
+      body = renderWeeklyMarkdown(issue.body);
+    } catch (err) {
+      body = el("p", { class: "gap" }, [issue.body]);
+    }
+    root.append(
+      el("h1", {}, [issue.kicker]),
+      el("p", { class: "due" }, [
+        el("time", { datetime: issue.from }, [issue.from]),
+        " 至 ",
+        el("time", { datetime: issue.to }, [issue.to]),
+        "，刊期 ",
+        el("time", { datetime: issue.published }, [issue.published]),
+      ]),
+      body
+    );
+  }
+
+  function renderWeekly() {
+    const root = document.getElementById("view-weekly");
+    if (state.route.issue) renderWeeklyIssue(root, state.route.issue);
+    else renderWeeklyIndex(root);
+    root.scrollTop = 0;
   }
 
   async function getJson(url) {
@@ -1463,10 +1641,11 @@
       if (state.booted) renderRoute();
     });
     try {
-      const [pack, china, morning, libraryResult, sessionResult] = await Promise.all([
+      const [pack, china, morning, weeklyResult, libraryResult, sessionResult] = await Promise.all([
         window.WBChecklist.loadPack("data/pack.b64"),
         getJson("data/china-recordable-sci.json"),
         getJson("data/morning-cards.json"),
+        getJson("data/weekly-issues.json").then((data) => ({ ok: true, data: data })).catch(() => ({ ok: false })),
         window.WBApi.get("/api/library").then((data) => ({ ok: true, data: data })).catch((err) => ({ ok: false, error: err })),
         window.WBApi.get("/api/session").catch(() => ({ signedIn: false })),
       ]);
@@ -1484,6 +1663,7 @@
       state.genera = pack.genera;
       state.byName = new Map(pack.species.map((sp) => [sp.sci, sp]));
       state.morning = Array.isArray(morning) ? morning : [];
+      state.weekly = weeklyResult.ok ? normalizeWeekly(weeklyResult.data) : null;
       if (libraryResult.ok) applyLibrary(libraryResult.data);
       else {
         state.records = [];

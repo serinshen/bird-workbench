@@ -6,7 +6,7 @@
 
 线上的 GitHub Pages 仍是改动之前的站点：<https://serinshen.github.io/bird-workbench/>。这次改动不发布到那里。
 
-晨间物种卡是另一个站点，只从侧栏和物种页链出去：<https://serinshen.github.io/species-archive/>。鸟况周报的第一期预定 2026-11-20，尚未刊出。
+晨间物种卡是另一个站点，只从侧栏和物种页链出去：<https://serinshen.github.io/species-archive/>。鸟况周报的目录在 `#/weekly`，点标题进入 `#/weekly/1` 这样的一期。各期写在 `data/weekly-issues.json`。正文是手写的公开鸟况，不从观察记录生成。第一期覆盖 2026-11-13 至 2026-11-19，刊期 2026-11-20。
 
 ## 数据
 
@@ -14,6 +14,7 @@
 - `data/china-recordable-sci.json`：中国可记录 1,491 种，只做筛选，不是另一套分类。
 - `data/observations.json`：备份。观察方式在导入时把原来的 `seen`、`seen_heard` 记为看到，`heard_only` 记为听到。`可疑` 只在原来的 `tentative` 为 true 时打开。
 - `data/notes.json`：手记备份，按学名保存。
+- `data/weekly-issues.json`：鸟况周报。每期手写。目录按刊期从新到旧，只显示日期和题目；正文用少量 Markdown（标题、列表、强调、链接）。
 - `photos/`：野外照片备份。长边不超过 2000 像素，画面上有 `@SerinS`。文件里的 JPEG 注释 `WBWM:@SerinS` 用来跳过已经处理过的照片。
 
 目、科在筛选里显示「中文名 + 拉丁名」。属只显示拉丁属名。屏幕上的科名来自 IOC 名录。导入记录里原来的类群写法留在每条记录的 `sourceGroup`，不覆盖名录。
