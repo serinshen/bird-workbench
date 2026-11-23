@@ -31,13 +31,12 @@
       <div id="session"></div>
       <ul class="counts">
         <li><span>种数</span><b id="count-total">…</b></li>
-        <li><span>已观察</span><b id="count-seen">…</b></li>
+        <li><span>已发现</span><b id="count-seen">…</b></li>
         <li><span>仅听到</span><b id="count-heard">…</b></li>
         <li><span>未发现</span><b id="count-unseen">…</b></li>
         <li><span>中国可记录</span><b id="count-china">…</b></li>
-        <li><span>中文名空缺</span><b id="count-blank">…</b></li>
       </ul>
-      <p class="count-note">已观察只统计有看到的物种。仅听到不计入已观察。状态都由记录推导。</p>
+      <p class="count-note">已发现只统计观察方式为看到的物种。仅听到不计入已发现。状态都由记录推导。种数和这三项随当前筛选变化。</p>
     </aside>
     <main class="main">
       <p id="login-note" class="login-note" role="status" hidden></p>
@@ -55,7 +54,7 @@
           <label>属 <select id="genus" aria-label="属" disabled></select></label>
           <div id="seen-filter" class="seg" role="group" aria-label="观察状态">
             <button type="button" data-seen="all" aria-pressed="true">全部</button>
-            <button type="button" data-seen="seen" aria-pressed="false">已观察</button>
+            <button type="button" data-seen="seen" aria-pressed="false">已发现</button>
             <button type="button" data-seen="heard" aria-pressed="false">仅听到</button>
             <button type="button" data-seen="unseen" aria-pressed="false">未发现</button>
           </div>
@@ -77,8 +76,24 @@
       <div id="view-species" hidden></div>
       <div id="view-photos" hidden></div>
       <div id="view-weekly" hidden></div>
+      <div id="view-share" hidden></div>
     </main>
   </div>
+  <div id="crop-layer" class="modal-back" hidden>
+    <div class="modal crop-modal" role="dialog" aria-modal="true" aria-labelledby="crop-title" aria-describedby="crop-hint">
+      <h2 id="crop-title">裁切</h2>
+      <p id="crop-hint">拖动选框移动，拖四角改变范围。方向键移动，按住 Alt 再按方向键改变大小。可以保持整幅。确认之后才会加水印。</p>
+      <p id="crop-count" class="quiet"></p>
+      <div id="crop-stage" class="crop-stage"></div>
+      <p id="crop-error" class="confirm-error" role="alert" hidden></p>
+      <div class="modal-actions">
+        <button type="button" id="crop-cancel">取消</button>
+        <button type="button" id="crop-reset">整幅</button>
+        <button type="button" id="crop-ok" class="primary">就用这个范围</button>
+      </div>
+    </div>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
   <div id="confirm-layer" class="modal-back" hidden>
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="confirm-title" aria-describedby="confirm-desc">
       <h2 id="confirm-title"></h2>
@@ -96,7 +111,8 @@
   <script src="js/jpegmark.js"></script>
   <script src="js/records.js"></script>
   <script src="js/media.js"></script>
-  <script src="js/github.js"></script>
+  <script src="js/crop.js"></script>
+  <script src="js/api.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

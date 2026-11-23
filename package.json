@@ -1,0 +1,14 @@
+{
+  "name": "bird-workbench",
+  "private": true,
+  "scripts": {
+    "check": "node scripts/check-mapping.mjs",
+    "dev": "wrangler dev",
+    "db:local": "wrangler d1 migrations apply bird-workbench --local",
+    "migrate:local": "node scripts/migrate.mjs --local",
+    "migrate:remote": "node scripts/migrate.mjs --remote"
+  },
+  "devDependencies": {
+    "wrangler": "4.165.0"
+  }
+}

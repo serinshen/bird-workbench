@@ -13,10 +13,11 @@
   }
 
   function isHeardOnly(rec) {
-    return !!(rec && rec.detection === "heard_only");
+    var detection = rec && rec.detection;
+    return detection === "heard" || detection === "heard_only";
   }
 
-  // "seen" 已观察, "heard" 仅听到, "unseen" 未发现.
+  // "seen" 已发现, "heard" 仅听到, "unseen" 未发现.
   function statusForRecords(records) {
     var list = [];
     if (Array.isArray(records)) {
@@ -44,6 +45,91 @@
       else if (status === "heard") heard += 1;
     }
     return { seen: seen, heard: heard, unseen: list.length - seen - heard };
+  }
+
+  function compare(a, b) {
+    if (a < b) return -1;
+    if (a > b) return 1;
+    return 0;
+  }
+
+  function sortKey(rec) {
+    var match = String((rec && rec.datetime) || "").match(/^(\d{4}-\d{2}-\d{2})(?:[T ](\d{2}:\d{2})(?::(\d{2}))?)?/);
+    if (!match) return "9999-99-99T99:99:99" + ((rec && rec.id) || "");
+    // Date-only records sort after clock times on that day.
+    var clock = match[2] ? match[2] + ":" + (match[3] || "00") : "99:99:99";
+    return match[1] + "T" + clock + ((rec && rec.id) || "");
+  }
+
+  function displayWhen(rec) {
+    var match = String((rec && rec.datetime) || "").match(/^(\d{4}-\d{2}-\d{2})(?:[T ](\d{2}):(\d{2}))?/);
+    if (!match) return { date: String((rec && rec.datetime) || ""), time: "" };
+    return { date: match[1], time: match[2] ? match[2] + ":" + match[3] : "" };
+  }
+
+  function whenLine(rec) {
+    var parts = displayWhen(rec);
+    return parts.time ? parts.date + " " + parts.time : parts.date;
+  }
+
+  function phraseLine(rec) {
+    var bits = [];
+    if (rec && rec.sex === "female") bits.push("雌鸟");
+    else if (rec && rec.sex === "male") bits.push("雄鸟");
+    if (includesSeen(rec)) bits.push("看到");
+    else if (isHeardOnly(rec)) bits.push("听到");
+    if (rec && rec.suspicious) bits.push("可疑");
+    return bits.filter(Boolean).join(" · ");
+  }
+
+  // Newest upload first. Records without an upload time fall back to observation time.
+  function recentRank(rec) {
+    if (rec && rec.uploadedAt) return "2" + rec.uploadedAt + " " + (rec.id || "");
+    return "1" + sortKey(rec);
+  }
+
+  function recentSpecies(records, limit) {
+    var list = (records || []).slice().sort(function (a, b) {
+      return compare(recentRank(b), recentRank(a));
+    });
+    var seen = {};
+    var out = [];
+    var cap = limit == null ? 5 : limit;
+    for (var i = 0; i < list.length; i++) {
+      var sci = list[i] && list[i].scientificName;
+      if (!sci || seen[sci]) continue;
+      seen[sci] = true;
+      out.push(list[i]);
+      if (out.length >= cap) break;
+    }
+    return out;
+  }
+
+  function galleryEntries(doc) {
+    var ensured = ensure({ records: (doc && doc.records) || [], favorites: (doc && doc.favorites) || [] });
+    var byId = {};
+    for (var i = 0; i < ensured.records.length; i++) {
+      var rec = ensured.records[i];
+      if (rec && rec.id) byId[rec.id] = rec;
+    }
+    var items = [];
+    for (var j = 0; j < ensured.favorites.length; j++) {
+      var fav = ensured.favorites[j];
+      if (!fav || !fav.path) continue;
+      var owner = byId[fav.observationId];
+      if (!owner || !Array.isArray(owner.photos) || owner.photos.indexOf(fav.path) === -1) continue;
+      items.push({
+        path: fav.path,
+        observationId: fav.observationId,
+        at: fav.at || "",
+        sort: sortKey(owner),
+        rec: owner,
+      });
+    }
+    items.sort(function (a, b) {
+      return compare(b.sort, a.sort) || compare(a.path, b.path);
+    });
+    return items;
   }
 
   function findRecord(doc, observationId) {
@@ -143,6 +229,14 @@
     isHeardOnly: isHeardOnly,
     statusForRecords: statusForRecords,
     tally: tally,
+    compare: compare,
+    sortKey: sortKey,
+    displayWhen: displayWhen,
+    whenLine: whenLine,
+    phraseLine: phraseLine,
+    recentRank: recentRank,
+    recentSpecies: recentSpecies,
+    galleryEntries: galleryEntries,
     isFavorite: isFavorite,
     setFavorite: setFavorite,
     removePhoto: removePhoto,
