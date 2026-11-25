@@ -435,8 +435,11 @@ button.primary:disabled { opacity: 0.55; cursor: default; }
 
 .cols,
 .sp {
+  /* Fixed status track: each row is its own grid, so auto would
+     narrow the empty 未发现 rows and shift 科. 40px fits "已发现". */
+  --col-status: 40px;
   display: grid;
-  grid-template-columns: 22px minmax(0, 1.15fr) minmax(0, 1.25fr) minmax(0, 1.4fr) minmax(0, 0.7fr) auto;
+  grid-template-columns: 22px minmax(0, 1.15fr) minmax(0, 1.25fr) minmax(0, 1.4fr) minmax(0, 0.7fr) var(--col-status);
   column-gap: 12px;
   align-items: center;
   padding-left: 22px;
@@ -521,23 +524,12 @@ button.primary:disabled { opacity: 0.55; cursor: default; }
 .fam { font-size: 13px; }
 
 .status {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 1px;
+  min-width: 0;
   font-size: 12px;
   line-height: 1.2;
   color: var(--sage-ink);
+  white-space: nowrap;
   text-align: right;
-}
-
-.status .rank,
-.status .seen-word { white-space: nowrap; }
-
-.status .rank {
-  font-size: 11px;
-  color: var(--sage-ink);
 }
 
 .mark {
@@ -669,6 +661,12 @@ button.primary:disabled { opacity: 0.55; cursor: default; }
 .chip.rank.cn {
   border-color: rgba(58, 58, 54, 0.45);
   color: var(--ink);
+}
+
+.chip.rank.san {
+  border-color: var(--sand);
+  color: var(--ink-soft);
+  letter-spacing: 0.12em;
 }
 
 .tax-dl {
@@ -940,6 +938,7 @@ textarea.note {
 }
 
 .weekly-index .weekly-bullet {
+  margin-right: 0.4em;
   color: var(--sage);
   font-size: 1.15em;
 }
@@ -1343,7 +1342,7 @@ textarea.note {
   .cols { display: none; }
 
   .sp {
-    grid-template-columns: 16px minmax(0, 1fr) auto;
+    grid-template-columns: 16px minmax(0, 1fr) var(--col-status);
     padding-left: 16px;
     padding-right: 16px;
   }

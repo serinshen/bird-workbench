@@ -1,6 +1,7 @@
 {
   "iucnSource": "AviList v2026 column IUCN RED LIST CATEGORY, on that AviList species. LC is stored only when the species is also on the 2021 China national key protected list. Empty categories are omitted. No IOC crosswalk.",
   "chinaSource": "国家重点保护野生动物名录（2021年调整），国家林业和草原局、农业农村部公告2021年第3号. Bird entries were read from two public republications (上海市绿化和市容管理局; 安徽省野生动植物保护协会) that agree on 394 bird names except five orthographic variants, which were matched only when both spellings pointed at one AviList species. Matched by exact AviList scientific name, a 1:1 rename of that name, or one Chinese name plus the same epithet. Subspecies that AviList does not treat as species are omitted, including 四川林鸮 Strix davidi and 海南画眉 Garrulax owstoni. Unmatched names are omitted.",
+  "sanSource": "有重要生态、科学、社会价值的陆生野生动物名录（国家林业和草原局公告2023年第17号，2023年6月26日公布，2023年6月30日发布）. Birds only, matched to AviList v2026. Matched by exact scientific name, a checklist synonym when that name does not point at a different Chinese species, or one Chinese name plus the same epithet. Entries noted 仅限野外种群 are the wild population. Unmatched names and conflicts are omitted.",
   "byScientificName": {
     "Acanthiza katherina": {
       "iucn": "VU"
@@ -23,7 +24,8 @@
       "iucn": "VU"
     },
     "Acridotheres javanicus": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Acridotheres melanopterus": {
       "iucn": "EN"
@@ -84,7 +86,8 @@
       "iucn": "VU"
     },
     "Acrocephalus tangorum": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Acrocephalus vaughani": {
       "iucn": "EN"
@@ -383,7 +386,8 @@
       "iucn": "VU"
     },
     "Anarhynchus mongolus": {
-      "iucn": "EN"
+      "iucn": "EN",
+      "san": true
     },
     "Anarhynchus montanus": {
       "iucn": "NT"
@@ -643,7 +647,8 @@
       "iucn": "VU"
     },
     "Apus acuticauda": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Aquila adalberti": {
       "iucn": "VU"
@@ -750,13 +755,15 @@
       "iucn": "VU"
     },
     "Ardenna carneipes": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Ardenna creatopus": {
       "iucn": "VU"
     },
     "Ardenna grisea": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Ardeola idae": {
       "iucn": "EN"
@@ -921,13 +928,15 @@
       "iucn": "CR"
     },
     "Aythya ferina": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Aythya innotata": {
       "iucn": "CR"
     },
     "Aythya nyroca": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Balaeniceps rex": {
       "iucn": "VU"
@@ -988,13 +997,15 @@
       "iucn": "NT"
     },
     "Bombycilla japonica": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Bostrychia bocagei": {
       "iucn": "CR"
     },
     "Botaurus eurhythmus": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Botaurus minutus": {
       "cn": "II",
@@ -1010,7 +1021,8 @@
       "iucn": "VU"
     },
     "Brachypteryx hyperythra": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Brachyramphus brevirostris": {
       "iucn": "NT"
@@ -1019,7 +1031,8 @@
       "iucn": "EN"
     },
     "Brachyramphus perdix": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Bradypterus grandis": {
       "iucn": "NT"
@@ -1179,20 +1192,24 @@
       "iucn": "VU"
     },
     "Calidris acuminata": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Calidris alpina": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Calidris canutus": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Calidris falcinellus": {
       "cn": "II",
       "iucn": "VU"
     },
     "Calidris ferruginea": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Calidris fuscicollis": {
       "iucn": "VU"
@@ -1211,7 +1228,8 @@
       "iucn": "CR"
     },
     "Calidris ruficollis": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Calidris subruficollis": {
       "iucn": "VU"
@@ -1248,7 +1266,8 @@
       "iucn": "NT"
     },
     "Calonectris leucomelas": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Caloperdix oculeus": {
       "iucn": "NT"
@@ -1353,7 +1372,8 @@
       "iucn": "EX"
     },
     "Carpodacus formosanus": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Carpodacus roborowskii": {
       "cn": "II",
@@ -1461,7 +1481,8 @@
       "iucn": "NT"
     },
     "Ceyx erithaca": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Ceyx flumenicola": {
       "iucn": "NT"
@@ -1565,7 +1586,8 @@
       "iucn": "VU"
     },
     "Chloropsis cochinchinensis": {
-      "iucn": "EN"
+      "iucn": "EN",
+      "san": true
     },
     "Chloropsis cyanopogon": {
       "iucn": "NT"
@@ -1630,7 +1652,8 @@
       "iucn": "LC"
     },
     "Ciconia episcopus": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Ciconia nigra": {
       "cn": "I",
@@ -1758,7 +1781,8 @@
       "iucn": "NT"
     },
     "Clangula hyemalis": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Cleptornis marchei": {
       "iucn": "EN"
@@ -1916,7 +1940,8 @@
       "iucn": "EN"
     },
     "Coracias benghalensis": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Coracina bicolor": {
       "iucn": "NT"
@@ -1977,7 +2002,8 @@
       "iucn": "LC"
     },
     "Coturnix japonica": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Coturnix novaezelandiae": {
       "iucn": "EX"
@@ -2111,7 +2137,8 @@
       "iucn": "EW"
     },
     "Cyanoptila cumatilis": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Cyanoramphus auriceps": {
       "iucn": "NT"
@@ -2147,7 +2174,8 @@
       "iucn": "NT"
     },
     "Cyornis banyumas": {
-      "iucn": "CR"
+      "iucn": "CR",
+      "san": true
     },
     "Cyornis brunneatus": {
       "cn": "II",
@@ -2833,7 +2861,8 @@
       "iucn": "CR"
     },
     "Gallinago hardwickii": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Gallinago imperialis": {
       "iucn": "NT"
@@ -2934,7 +2963,8 @@
       "iucn": "NT"
     },
     "Gavia adamsii": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Gecinulus rafflesii": {
       "iucn": "NT"
@@ -3161,7 +3191,8 @@
       "iucn": "NT"
     },
     "Graminicola striatus": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Grus americana": {
       "iucn": "EN"
@@ -3258,10 +3289,12 @@
       "iucn": "EX"
     },
     "Haematopus ostralegus": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Halcyon pileata": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Halcyon smyrnensis": {
       "cn": "II",
@@ -3455,7 +3488,8 @@
       "iucn": "NT"
     },
     "Hydrobates leucorhous": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Hydrobates macrodactylus": {
       "iucn": "CR (PE)"
@@ -3467,7 +3501,8 @@
       "iucn": "VU"
     },
     "Hydrobates monorhis": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Hydrobates monteiroi": {
       "iucn": "VU"
@@ -3789,7 +3824,8 @@
       "iucn": "NT"
     },
     "Larvivora komadori": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Larvivora ruficeps": {
       "cn": "I",
@@ -3913,7 +3949,8 @@
       "iucn": "VU"
     },
     "Limnodromus scolopaceus": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Limnodromus semipalmatus": {
       "cn": "II",
@@ -3926,10 +3963,12 @@
       "iucn": "VU"
     },
     "Limosa lapponica": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Limosa limosa": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Linaria johannis": {
       "iucn": "NT"
@@ -3962,7 +4001,8 @@
       "iucn": "DD"
     },
     "Locustella major": {
-      "iucn": "EN"
+      "iucn": "EN",
+      "san": true
     },
     "Locustella portenta": {
       "iucn": "VU"
@@ -4245,10 +4285,12 @@
       "iucn": "EX"
     },
     "Melanitta americana": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Melanitta fusca": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Melanocorypha mongolica": {
       "cn": "II",
@@ -4646,7 +4688,8 @@
       "iucn": "VU"
     },
     "Napothera danjoui": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Napothera naungmungensis": {
       "iucn": "NT"
@@ -4917,7 +4960,8 @@
       "iucn": "VU"
     },
     "Onychoprion aleuticus": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Onychorhynchus swainsoni": {
       "iucn": "VU"
@@ -5182,7 +5226,8 @@
       "iucn": "NT"
     },
     "Paradoxornis flavirostris": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Paradoxornis heudei": {
       "cn": "II",
@@ -5437,7 +5482,8 @@
       "iucn": "VU"
     },
     "Phoebastria immutabilis": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Phoebastria irrorata": {
       "iucn": "CR"
@@ -5499,10 +5545,12 @@
       "iucn": "NT"
     },
     "Phylloscopus hainanus": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Phylloscopus ijimae": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Phylloscopus maforensis": {
       "iucn": "NT"
@@ -5671,7 +5719,8 @@
       "iucn": "VU"
     },
     "Pluvialis squatarola": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Pluvianellus socialis": {
       "iucn": "VU"
@@ -5761,7 +5810,8 @@
       "iucn": "EN"
     },
     "Polysticta stelleri": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Polystictus pectoralis": {
       "iucn": "NT"
@@ -6518,7 +6568,8 @@
       "iucn": "VU"
     },
     "Rissa tridactyla": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Robsonius rabori": {
       "iucn": "NT"
@@ -6560,7 +6611,8 @@
       "iucn": "EN"
     },
     "Rynchops albicollis": {
-      "iucn": "EN"
+      "iucn": "EN",
+      "san": true
     },
     "Sagittarius serpentarius": {
       "iucn": "EN"
@@ -6615,14 +6667,16 @@
       "iucn": "CR"
     },
     "Schoeniclus rusticus": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Schoeniclus siemsseni": {
       "cn": "II",
       "iucn": "LC"
     },
     "Schoeniclus yessoensis": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Schoenicola platyurus": {
       "iucn": "NT"
@@ -6798,7 +6852,8 @@
       "iucn": "EN"
     },
     "Sitta solangiae": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Sitta victoriae": {
       "iucn": "EN"
@@ -6826,7 +6881,8 @@
       "iucn": "NT"
     },
     "Spelaeornis badeigularis": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Spelaeornis chocolatinus": {
       "iucn": "VU"
@@ -6918,7 +6974,8 @@
       "iucn": "NT"
     },
     "Stachyris humei": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Stachyris leucotis": {
       "iucn": "NT"
@@ -6937,7 +6994,8 @@
       "iucn": "NT"
     },
     "Stachyris roberti": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Stagonopleura guttata": {
       "iucn": "VU"
@@ -6993,7 +7051,8 @@
       "iucn": "VU"
     },
     "Streptopelia turtur": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Strigops habroptilus": {
       "iucn": "CR"
@@ -7589,7 +7648,8 @@
       "iucn": "CR"
     },
     "Tringa flavipes": {
-      "iucn": "VU"
+      "iucn": "VU",
+      "san": true
     },
     "Tringa guttifer": {
       "cn": "I",
@@ -7611,7 +7671,8 @@
       "iucn": "LC"
     },
     "Trochalopteron morrisonianum": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Trochalopteron ngoclinhense": {
       "iucn": "EN"
@@ -7758,14 +7819,16 @@
       "iucn": "VU"
     },
     "Urocissa whiteheadi": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Urocynchramus pylzowi": {
       "cn": "II",
       "iucn": "LC"
     },
     "Vanellus duvaucelii": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Vanellus gregarius": {
       "cn": "II",
@@ -7775,7 +7838,8 @@
       "iucn": "CR (PE)"
     },
     "Vanellus vanellus": {
-      "iucn": "NT"
+      "iucn": "NT",
+      "san": true
     },
     "Vauriella albigularis": {
       "iucn": "VU"
@@ -8074,6 +8138,2811 @@
     },
     "Zosterornis nigrorum": {
       "iucn": "EN"
+    },
+    "Lerwa lerwa": {
+      "san": true
+    },
+    "Alectoris chukar": {
+      "san": true
+    },
+    "Francolinus pintadeanus": {
+      "san": true
+    },
+    "Perdix perdix": {
+      "san": true
+    },
+    "Perdix dauurica": {
+      "san": true
+    },
+    "Perdix hodgsoniae": {
+      "san": true
+    },
+    "Coturnix coturnix": {
+      "san": true
+    },
+    "Synoicus chinensis": {
+      "san": true
+    },
+    "Bambusicola fytchii": {
+      "san": true
+    },
+    "Bambusicola thoracicus": {
+      "san": true
+    },
+    "Bambusicola sonorivox": {
+      "san": true
+    },
+    "Phasianus colchicus": {
+      "san": true
+    },
+    "Anser fabalis": {
+      "san": true
+    },
+    "Anser serrirostris": {
+      "san": true
+    },
+    "Anser anser": {
+      "san": true
+    },
+    "Anser indicus": {
+      "san": true
+    },
+    "Anser caerulescens": {
+      "san": true
+    },
+    "Branta hutchinsii": {
+      "san": true
+    },
+    "Branta bernicla": {
+      "san": true
+    },
+    "Sarkidiornis melanotos": {
+      "san": true
+    },
+    "Branta canadensis": {
+      "san": true
+    },
+    "Branta leucopsis": {
+      "san": true
+    },
+    "Tadorna tadorna": {
+      "san": true
+    },
+    "Tadorna ferruginea": {
+      "san": true
+    },
+    "Mareca strepera": {
+      "san": true
+    },
+    "Mareca falcata": {
+      "san": true
+    },
+    "Mareca penelope": {
+      "san": true
+    },
+    "Anas platyrhynchos": {
+      "san": true
+    },
+    "Anas zonorhyncha": {
+      "san": true
+    },
+    "Anas poecilorhyncha": {
+      "san": true
+    },
+    "Anas acuta": {
+      "san": true
+    },
+    "Anas crecca": {
+      "san": true
+    },
+    "Spatula clypeata": {
+      "san": true
+    },
+    "Spatula querquedula": {
+      "san": true
+    },
+    "Mareca americana": {
+      "san": true
+    },
+    "Anas luzonica": {
+      "san": true
+    },
+    "Netta rufina": {
+      "san": true
+    },
+    "Aythya fuligula": {
+      "san": true
+    },
+    "Aythya marila": {
+      "san": true
+    },
+    "Aythya valisineria": {
+      "san": true
+    },
+    "Histrionicus histrionicus": {
+      "san": true
+    },
+    "Bucephala clangula": {
+      "san": true
+    },
+    "Mergus merganser": {
+      "san": true
+    },
+    "Mergus serrator": {
+      "san": true
+    },
+    "Tachybaptus ruficollis": {
+      "san": true
+    },
+    "Podiceps cristatus": {
+      "san": true
+    },
+    "Phoenicopterus roseus": {
+      "san": true
+    },
+    "Columba livia": {
+      "san": true
+    },
+    "Columba rupestris": {
+      "san": true
+    },
+    "Columba leuconota": {
+      "san": true
+    },
+    "Columba oenas": {
+      "san": true
+    },
+    "Columba hodgsonii": {
+      "san": true
+    },
+    "Columba pulchricollis": {
+      "san": true
+    },
+    "Columba janthina": {
+      "san": true
+    },
+    "Streptopelia orientalis": {
+      "san": true
+    },
+    "Streptopelia decaocto": {
+      "san": true
+    },
+    "Streptopelia tranquebarica": {
+      "san": true
+    },
+    "Spilopelia chinensis": {
+      "san": true
+    },
+    "Spilopelia senegalensis": {
+      "san": true
+    },
+    "Chalcophaps indica": {
+      "san": true
+    },
+    "Syrrhaptes tibetanus": {
+      "san": true
+    },
+    "Syrrhaptes paradoxus": {
+      "san": true
+    },
+    "Lyncornis macrotis": {
+      "san": true
+    },
+    "Caprimulgus indicus": {
+      "san": true
+    },
+    "Caprimulgus europaeus": {
+      "san": true
+    },
+    "Caprimulgus macrurus": {
+      "san": true
+    },
+    "Caprimulgus affinis": {
+      "san": true
+    },
+    "Aerodramus brevirostris": {
+      "san": true
+    },
+    "Aerodramus maximus": {
+      "san": true
+    },
+    "Hirundapus caudacutus": {
+      "san": true
+    },
+    "Hirundapus giganteus": {
+      "san": true
+    },
+    "Hirundapus celebensis": {
+      "san": true
+    },
+    "Cypsiurus balasiensis": {
+      "san": true
+    },
+    "Tachymarptis melba": {
+      "san": true
+    },
+    "Apus apus": {
+      "san": true
+    },
+    "Apus pacificus": {
+      "san": true
+    },
+    "Phaenicophaeus tristis": {
+      "san": true
+    },
+    "Clamator coromandus": {
+      "san": true
+    },
+    "Clamator jacobinus": {
+      "san": true
+    },
+    "Eudynamys scolopaceus": {
+      "san": true
+    },
+    "Chrysococcyx maculatus": {
+      "san": true
+    },
+    "Chrysococcyx xanthorhynchus": {
+      "san": true
+    },
+    "Cacomantis sonneratii": {
+      "san": true
+    },
+    "Cacomantis merulinus": {
+      "san": true
+    },
+    "Surniculus lugubris": {
+      "san": true
+    },
+    "Hierococcyx sparverioides": {
+      "san": true
+    },
+    "Hierococcyx varius": {
+      "san": true
+    },
+    "Hierococcyx nisicolor": {
+      "san": true
+    },
+    "Hierococcyx hyperythrus": {
+      "san": true
+    },
+    "Cuculus poliocephalus": {
+      "san": true
+    },
+    "Cuculus micropterus": {
+      "san": true
+    },
+    "Cuculus saturatus": {
+      "san": true
+    },
+    "Cuculus optatus": {
+      "san": true
+    },
+    "Cuculus canorus": {
+      "san": true
+    },
+    "Rallina fasciata": {
+      "san": true
+    },
+    "Rallina eurizonoides": {
+      "san": true
+    },
+    "Lewinia striata": {
+      "san": true
+    },
+    "Rallus aquaticus": {
+      "san": true
+    },
+    "Rallus indicus": {
+      "san": true
+    },
+    "Porzana porzana": {
+      "san": true
+    },
+    "Zapornia akool": {
+      "san": true
+    },
+    "Zapornia pusilla": {
+      "san": true
+    },
+    "Zapornia fusca": {
+      "san": true
+    },
+    "Amaurornis phoenicurus": {
+      "san": true
+    },
+    "Gallicrex cinerea": {
+      "san": true
+    },
+    "Gallinula chloropus": {
+      "san": true
+    },
+    "Fulica atra": {
+      "san": true
+    },
+    "Burhinus oedicnemus": {
+      "san": true
+    },
+    "Himantopus himantopus": {
+      "san": true
+    },
+    "Recurvirostra avosetta": {
+      "san": true
+    },
+    "Vanellus cinereus": {
+      "san": true
+    },
+    "Vanellus indicus": {
+      "san": true
+    },
+    "Vanellus leucurus": {
+      "san": true
+    },
+    "Pluvialis fulva": {
+      "san": true
+    },
+    "Charadrius hiaticula": {
+      "san": true
+    },
+    "Thinornis placidus": {
+      "san": true
+    },
+    "Thinornis dubius": {
+      "san": true
+    },
+    "Anarhynchus alexandrinus": {
+      "san": true
+    },
+    "Anarhynchus leschenaultii": {
+      "san": true
+    },
+    "Anarhynchus asiaticus": {
+      "san": true
+    },
+    "Anarhynchus veredus": {
+      "san": true
+    },
+    "Eudromias morinellus": {
+      "san": true
+    },
+    "Rostratula benghalensis": {
+      "san": true
+    },
+    "Scolopax rusticola": {
+      "san": true
+    },
+    "Lymnocryptes minimus": {
+      "san": true
+    },
+    "Gallinago solitaria": {
+      "san": true
+    },
+    "Gallinago stenura": {
+      "san": true
+    },
+    "Gallinago megala": {
+      "san": true
+    },
+    "Gallinago gallinago": {
+      "san": true
+    },
+    "Numenius phaeopus": {
+      "san": true
+    },
+    "Tringa erythropus": {
+      "san": true
+    },
+    "Tringa totanus": {
+      "san": true
+    },
+    "Tringa stagnatilis": {
+      "san": true
+    },
+    "Tringa nebularia": {
+      "san": true
+    },
+    "Tringa ochropus": {
+      "san": true
+    },
+    "Tringa glareola": {
+      "san": true
+    },
+    "Tringa brevipes": {
+      "san": true
+    },
+    "Tringa incana": {
+      "san": true
+    },
+    "Xenus cinereus": {
+      "san": true
+    },
+    "Actitis hypoleucos": {
+      "san": true
+    },
+    "Calidris alba": {
+      "san": true
+    },
+    "Calidris mauri": {
+      "san": true
+    },
+    "Calidris minuta": {
+      "san": true
+    },
+    "Calidris temminckii": {
+      "san": true
+    },
+    "Calidris subminuta": {
+      "san": true
+    },
+    "Calidris melanotos": {
+      "san": true
+    },
+    "Calidris pugnax": {
+      "san": true
+    },
+    "Calidris ptilocnemis": {
+      "san": true
+    },
+    "Phalaropus lobatus": {
+      "san": true
+    },
+    "Phalaropus fulicarius": {
+      "san": true
+    },
+    "Turnix sylvaticus": {
+      "san": true
+    },
+    "Turnix tanki": {
+      "san": true
+    },
+    "Turnix suscitator": {
+      "san": true
+    },
+    "Glareola pratincola": {
+      "san": true
+    },
+    "Glareola maldivarum": {
+      "san": true
+    },
+    "Anous stolidus": {
+      "san": true
+    },
+    "Gygis alba": {
+      "san": true
+    },
+    "Chroicocephalus genei": {
+      "san": true
+    },
+    "Chroicocephalus brunnicephalus": {
+      "san": true
+    },
+    "Chroicocephalus ridibundus": {
+      "san": true
+    },
+    "Chroicocephalus novaehollandiae": {
+      "san": true
+    },
+    "Rhodostethia rosea": {
+      "san": true
+    },
+    "Leucophaeus pipixcan": {
+      "san": true
+    },
+    "Ichthyaetus ichthyaetus": {
+      "san": true
+    },
+    "Larus crassirostris": {
+      "san": true
+    },
+    "Larus canus": {
+      "san": true
+    },
+    "Larus glaucescens": {
+      "san": true
+    },
+    "Larus hyperboreus": {
+      "san": true
+    },
+    "Larus fuscus": {
+      "san": true
+    },
+    "Larus smithsonianus": {
+      "san": true
+    },
+    "Larus cachinnans": {
+      "san": true
+    },
+    "Larus schistisagus": {
+      "san": true
+    },
+    "Gelochelidon nilotica": {
+      "san": true
+    },
+    "Hydroprogne caspia": {
+      "san": true
+    },
+    "Thalasseus bengalensis": {
+      "san": true
+    },
+    "Thalasseus sandvicensis": {
+      "san": true
+    },
+    "Sternula albifrons": {
+      "san": true
+    },
+    "Onychoprion anaethetus": {
+      "san": true
+    },
+    "Onychoprion fuscatus": {
+      "san": true
+    },
+    "Sterna dougallii": {
+      "san": true
+    },
+    "Sterna sumatrana": {
+      "san": true
+    },
+    "Sterna hirundo": {
+      "san": true
+    },
+    "Chlidonias hybrida": {
+      "san": true
+    },
+    "Chlidonias leucopterus": {
+      "san": true
+    },
+    "Stercorarius longicaudus": {
+      "san": true
+    },
+    "Stercorarius pomarinus": {
+      "san": true
+    },
+    "Stercorarius parasiticus": {
+      "san": true
+    },
+    "Synthliboramphus antiquus": {
+      "san": true
+    },
+    "Cerorhinca monocerata": {
+      "san": true
+    },
+    "Phaethon lepturus": {
+      "san": true
+    },
+    "Phaethon rubricauda": {
+      "san": true
+    },
+    "Gavia stellata": {
+      "san": true
+    },
+    "Gavia arctica": {
+      "san": true
+    },
+    "Gavia pacifica": {
+      "san": true
+    },
+    "Hydrobates tristrami": {
+      "san": true
+    },
+    "Oceanites oceanicus": {
+      "san": true
+    },
+    "Ardenna tenuirostris": {
+      "san": true
+    },
+    "Ardenna pacifica": {
+      "san": true
+    },
+    "Pterodroma hypoleuca": {
+      "san": true
+    },
+    "Bulweria bulwerii": {
+      "san": true
+    },
+    "Anastomus oscitans": {
+      "san": true
+    },
+    "Urile urile": {
+      "san": true
+    },
+    "Phalacrocorax carbo": {
+      "san": true
+    },
+    "Phalacrocorax capillatus": {
+      "san": true
+    },
+    "Botaurus stellaris": {
+      "san": true
+    },
+    "Botaurus sinensis": {
+      "san": true
+    },
+    "Botaurus cinnamomeus": {
+      "san": true
+    },
+    "Botaurus flavicollis": {
+      "san": true
+    },
+    "Nycticorax nycticorax": {
+      "san": true
+    },
+    "Butorides striata": {
+      "san": true
+    },
+    "Ardeola bacchus": {
+      "san": true
+    },
+    "Ardeola grayii": {
+      "san": true
+    },
+    "Ardeola speciosa": {
+      "san": true
+    },
+    "Ardea cinerea": {
+      "san": true
+    },
+    "Ardea purpurea": {
+      "san": true
+    },
+    "Ardea alba": {
+      "san": true
+    },
+    "Ardea intermedia": {
+      "san": true
+    },
+    "Egretta garzetta": {
+      "san": true
+    },
+    "Egretta picata": {
+      "san": true
+    },
+    "Egretta novaehollandiae": {
+      "san": true
+    },
+    "Upupa epops": {
+      "san": true
+    },
+    "Merops apiaster": {
+      "san": true
+    },
+    "Coracias garrulus": {
+      "san": true
+    },
+    "Eurystomus orientalis": {
+      "san": true
+    },
+    "Halcyon coromanda": {
+      "san": true
+    },
+    "Todiramphus chloris": {
+      "san": true
+    },
+    "Alcedo atthis": {
+      "san": true
+    },
+    "Megaceryle lugubris": {
+      "san": true
+    },
+    "Ceryle rudis": {
+      "san": true
+    },
+    "Psilopogon virens": {
+      "san": true
+    },
+    "Psilopogon lineatus": {
+      "san": true
+    },
+    "Psilopogon faiostrictus": {
+      "san": true
+    },
+    "Psilopogon franklinii": {
+      "san": true
+    },
+    "Psilopogon faber": {
+      "san": true
+    },
+    "Psilopogon nuchalis": {
+      "san": true
+    },
+    "Psilopogon asiaticus": {
+      "san": true
+    },
+    "Psilopogon australis": {
+      "san": true
+    },
+    "Psilopogon haemacephalus": {
+      "san": true
+    },
+    "Indicator xanthonotus": {
+      "san": true
+    },
+    "Jynx torquilla": {
+      "san": true
+    },
+    "Picumnus innominatus": {
+      "san": true
+    },
+    "Sasia ochracea": {
+      "san": true
+    },
+    "Dendrocopos hyperythrus": {
+      "san": true
+    },
+    "Yungipicus kizuki": {
+      "san": true
+    },
+    "Yungipicus canicapillus": {
+      "san": true
+    },
+    "Dryobates minor": {
+      "san": true
+    },
+    "Dendrocopos macei": {
+      "san": true
+    },
+    "Dendrocopos atratus": {
+      "san": true
+    },
+    "Dendrocoptes auriceps": {
+      "san": true
+    },
+    "Dendrocopos darjellensis": {
+      "san": true
+    },
+    "Dendrocopos leucotos": {
+      "san": true
+    },
+    "Dendrocopos major": {
+      "san": true
+    },
+    "Picus vittatus": {
+      "san": true
+    },
+    "Picus xanthopygaeus": {
+      "san": true
+    },
+    "Picus squamatus": {
+      "san": true
+    },
+    "Picus canus": {
+      "san": true
+    },
+    "Dinopium javanense": {
+      "san": true
+    },
+    "Dinopium shorii": {
+      "san": true
+    },
+    "Dinopium benghalense": {
+      "san": true
+    },
+    "Chrysocolaptes lucidus": {
+      "san": true
+    },
+    "Gecinulus grantia": {
+      "san": true
+    },
+    "Blythipicus pyrrhotis": {
+      "san": true
+    },
+    "Micropternus brachyurus": {
+      "san": true
+    },
+    "Oriolus oriolus": {
+      "san": true
+    },
+    "Oriolus kundoo": {
+      "san": true
+    },
+    "Oriolus tenuirostris": {
+      "san": true
+    },
+    "Oriolus chinensis": {
+      "san": true
+    },
+    "Oriolus xanthornus": {
+      "san": true
+    },
+    "Oriolus traillii": {
+      "san": true
+    },
+    "Erpornis zantholeuca": {
+      "san": true
+    },
+    "Pteruthius rufiventer": {
+      "san": true
+    },
+    "Pteruthius aeralatus": {
+      "san": true
+    },
+    "Pteruthius xanthochlorus": {
+      "san": true
+    },
+    "Pteruthius melanotis": {
+      "san": true
+    },
+    "Pteruthius intermedius": {
+      "san": true
+    },
+    "Coracina macei": {
+      "san": true
+    },
+    "Lalage melaschistos": {
+      "san": true
+    },
+    "Pericrocotus roseus": {
+      "san": true
+    },
+    "Pericrocotus cantonensis": {
+      "san": true
+    },
+    "Pericrocotus divaricatus": {
+      "san": true
+    },
+    "Pericrocotus solaris": {
+      "san": true
+    },
+    "Pericrocotus ethologus": {
+      "san": true
+    },
+    "Pericrocotus brevirostris": {
+      "san": true
+    },
+    "Pericrocotus flammeus": {
+      "san": true
+    },
+    "Pericrocotus tegimae": {
+      "san": true
+    },
+    "Artamus fuscus": {
+      "san": true
+    },
+    "Hemipus picatus": {
+      "san": true
+    },
+    "Tephrodornis virgatus": {
+      "san": true
+    },
+    "Aegithina tiphia": {
+      "san": true
+    },
+    "Aegithina lafresnayei": {
+      "san": true
+    },
+    "Rhipidura albicollis": {
+      "san": true
+    },
+    "Rhipidura aureola": {
+      "san": true
+    },
+    "Dicrurus macrocercus": {
+      "san": true
+    },
+    "Dicrurus leucophaeus": {
+      "san": true
+    },
+    "Dicrurus aeneus": {
+      "san": true
+    },
+    "Dicrurus hottentottus": {
+      "san": true
+    },
+    "Hypothymis azurea": {
+      "san": true
+    },
+    "Terpsiphone paradisi": {
+      "san": true
+    },
+    "Terpsiphone affinis": {
+      "san": true
+    },
+    "Terpsiphone incei": {
+      "san": true
+    },
+    "Terpsiphone atrocaudata": {
+      "san": true
+    },
+    "Lanius tigrinus": {
+      "san": true
+    },
+    "Lanius bucephalus": {
+      "san": true
+    },
+    "Lanius cristatus": {
+      "san": true
+    },
+    "Lanius collurio": {
+      "san": true
+    },
+    "Lanius isabellinus": {
+      "san": true
+    },
+    "Lanius phoenicuroides": {
+      "san": true
+    },
+    "Lanius collurioides": {
+      "san": true
+    },
+    "Lanius schach": {
+      "san": true
+    },
+    "Lanius tephronotus": {
+      "san": true
+    },
+    "Lanius minor": {
+      "san": true
+    },
+    "Lanius excubitor": {
+      "san": true
+    },
+    "Lanius sphenocercus": {
+      "san": true
+    },
+    "Perisoreus infaustus": {
+      "san": true
+    },
+    "Garrulus glandarius": {
+      "san": true
+    },
+    "Cyanopica cyanus": {
+      "san": true
+    },
+    "Urocissa caerulea": {
+      "san": true
+    },
+    "Urocissa flavirostris": {
+      "san": true
+    },
+    "Urocissa erythroryncha": {
+      "san": true
+    },
+    "Dendrocitta vagabunda": {
+      "san": true
+    },
+    "Dendrocitta formosae": {
+      "san": true
+    },
+    "Dendrocitta frontalis": {
+      "san": true
+    },
+    "Temnurus temnurus": {
+      "san": true
+    },
+    "Pica pica": {
+      "san": true
+    },
+    "Nucifraga caryocatactes": {
+      "san": true
+    },
+    "Pyrrhocorax pyrrhocorax": {
+      "san": true
+    },
+    "Pyrrhocorax graculus": {
+      "san": true
+    },
+    "Coloeus dauuricus": {
+      "san": true
+    },
+    "Corvus frugilegus": {
+      "san": true
+    },
+    "Corvus corax": {
+      "san": true
+    },
+    "Chelidorhynx hypoxanthus": {
+      "san": true
+    },
+    "Culicicapa ceylonensis": {
+      "san": true
+    },
+    "Cephalopyrus flammiceps": {
+      "san": true
+    },
+    "Sylviparus modestus": {
+      "san": true
+    },
+    "Melanochlora sultanea": {
+      "san": true
+    },
+    "Periparus rufonuchalis": {
+      "san": true
+    },
+    "Periparus rubidiventris": {
+      "san": true
+    },
+    "Periparus ater": {
+      "san": true
+    },
+    "Periparus venustulus": {
+      "san": true
+    },
+    "Lophophanes dichrous": {
+      "san": true
+    },
+    "Sittiparus varius": {
+      "san": true
+    },
+    "Sittiparus castaneoventris": {
+      "san": true
+    },
+    "Poecile palustris": {
+      "san": true
+    },
+    "Poecile montanus": {
+      "san": true
+    },
+    "Poecile weigoldicus": {
+      "san": true
+    },
+    "Cyanistes cyanus": {
+      "san": true
+    },
+    "Pseudopodoces humilis": {
+      "san": true
+    },
+    "Parus major": {
+      "san": true
+    },
+    "Parus cinereus": {
+      "san": true
+    },
+    "Machlolophus xanthogenys": {
+      "san": true
+    },
+    "Parus monticolus": {
+      "san": true
+    },
+    "Machlolophus holsti": {
+      "san": true
+    },
+    "Machlolophus spilonotus": {
+      "san": true
+    },
+    "Remiz consobrinus": {
+      "san": true
+    },
+    "Remiz coronatus": {
+      "san": true
+    },
+    "Remiz macronyx": {
+      "san": true
+    },
+    "Melanocorypha calandra": {
+      "san": true
+    },
+    "Melanocorypha bimaculata": {
+      "san": true
+    },
+    "Melanocorypha maxima": {
+      "san": true
+    },
+    "Melanocorypha yeltoniensis": {
+      "san": true
+    },
+    "Calandrella brachydactyla": {
+      "san": true
+    },
+    "Calandrella acutirostris": {
+      "san": true
+    },
+    "Alaudala cheleensis": {
+      "san": true
+    },
+    "Galerida cristata": {
+      "san": true
+    },
+    "Alauda leucoptera": {
+      "san": true
+    },
+    "Alauda gulgula": {
+      "san": true
+    },
+    "Eremophila alpestris": {
+      "san": true
+    },
+    "Panurus biarmicus": {
+      "san": true
+    },
+    "Cisticola juncidis": {
+      "san": true
+    },
+    "Cisticola exilis": {
+      "san": true
+    },
+    "Prinia crinigera": {
+      "san": true
+    },
+    "Prinia polychroa": {
+      "san": true
+    },
+    "Prinia atrogularis": {
+      "san": true
+    },
+    "Prinia rufescens": {
+      "san": true
+    },
+    "Prinia hodgsonii": {
+      "san": true
+    },
+    "Prinia flaviventris": {
+      "san": true
+    },
+    "Prinia inornata": {
+      "san": true
+    },
+    "Orthotomus sutorius": {
+      "san": true
+    },
+    "Orthotomus atrogularis": {
+      "san": true
+    },
+    "Acrocephalus arundinaceus": {
+      "san": true
+    },
+    "Acrocephalus orientalis": {
+      "san": true
+    },
+    "Acrocephalus stentoreus": {
+      "san": true
+    },
+    "Acrocephalus melanopogon": {
+      "san": true
+    },
+    "Acrocephalus bistrigiceps": {
+      "san": true
+    },
+    "Acrocephalus schoenobaenus": {
+      "san": true
+    },
+    "Acrocephalus concinens": {
+      "san": true
+    },
+    "Acrocephalus agricola": {
+      "san": true
+    },
+    "Acrocephalus dumetorum": {
+      "san": true
+    },
+    "Acrocephalus scirpaceus": {
+      "san": true
+    },
+    "Arundinax aedon": {
+      "san": true
+    },
+    "Iduna caligata": {
+      "san": true
+    },
+    "Iduna rama": {
+      "san": true
+    },
+    "Iduna pallida": {
+      "san": true
+    },
+    "Pnoepyga albiventer": {
+      "san": true
+    },
+    "Pnoepyga formosana": {
+      "san": true
+    },
+    "Pnoepyga immaculata": {
+      "san": true
+    },
+    "Pnoepyga pusilla": {
+      "san": true
+    },
+    "Locustella mandelli": {
+      "san": true
+    },
+    "Locustella alishanensis": {
+      "san": true
+    },
+    "Locustella chengi": {
+      "san": true
+    },
+    "Locustella thoracica": {
+      "san": true
+    },
+    "Locustella davidi": {
+      "san": true
+    },
+    "Locustella tacsanowskia": {
+      "san": true
+    },
+    "Locustella luteoventris": {
+      "san": true
+    },
+    "Locustella naevia": {
+      "san": true
+    },
+    "Locustella lanceolata": {
+      "san": true
+    },
+    "Locustella luscinioides": {
+      "san": true
+    },
+    "Helopsaltes ochotensis": {
+      "san": true
+    },
+    "Helopsaltes pleskei": {
+      "san": true
+    },
+    "Helopsaltes certhiola": {
+      "san": true
+    },
+    "Helopsaltes pryeri": {
+      "san": true
+    },
+    "Megalurus palustris": {
+      "san": true
+    },
+    "Riparia paludicola": {
+      "san": true
+    },
+    "Riparia riparia": {
+      "san": true
+    },
+    "Riparia diluta": {
+      "san": true
+    },
+    "Hirundo rustica": {
+      "san": true
+    },
+    "Hirundo tahitica": {
+      "san": true
+    },
+    "Ptyonoprogne rupestris": {
+      "san": true
+    },
+    "Ptyonoprogne concolor": {
+      "san": true
+    },
+    "Delichon urbicum": {
+      "san": true
+    },
+    "Delichon dasypus": {
+      "san": true
+    },
+    "Delichon nipalense": {
+      "san": true
+    },
+    "Cecropis daurica": {
+      "san": true
+    },
+    "Spizixos canifrons": {
+      "san": true
+    },
+    "Spizixos semitorques": {
+      "san": true
+    },
+    "Alcurus striatus": {
+      "san": true
+    },
+    "Pycnonotus jocosus": {
+      "san": true
+    },
+    "Pycnonotus xanthorrhous": {
+      "san": true
+    },
+    "Pycnonotus sinensis": {
+      "san": true
+    },
+    "Pycnonotus cafer": {
+      "san": true
+    },
+    "Pycnonotus aurigaster": {
+      "san": true
+    },
+    "Pycnonotus finlaysoni": {
+      "san": true
+    },
+    "Pycnonotus flavescens": {
+      "san": true
+    },
+    "Alophoixus flaveolus": {
+      "san": true
+    },
+    "Alophoixus pallidus": {
+      "san": true
+    },
+    "Iole propinqua": {
+      "san": true
+    },
+    "Ixos mcclellandii": {
+      "san": true
+    },
+    "Hemixos flavala": {
+      "san": true
+    },
+    "Hemixos castanonotus": {
+      "san": true
+    },
+    "Hypsipetes leucocephalus": {
+      "san": true
+    },
+    "Hypsipetes amaurotis": {
+      "san": true
+    },
+    "Phylloscopus trochilus": {
+      "san": true
+    },
+    "Phylloscopus collybita": {
+      "san": true
+    },
+    "Phylloscopus sindianus": {
+      "san": true
+    },
+    "Phylloscopus sibilatrix": {
+      "san": true
+    },
+    "Phylloscopus fuscatus": {
+      "san": true
+    },
+    "Phylloscopus fuligiventer": {
+      "san": true
+    },
+    "Phylloscopus affinis": {
+      "san": true
+    },
+    "Phylloscopus subaffinis": {
+      "san": true
+    },
+    "Phylloscopus griseolus": {
+      "san": true
+    },
+    "Phylloscopus armandii": {
+      "san": true
+    },
+    "Phylloscopus schwarzi": {
+      "san": true
+    },
+    "Phylloscopus pulcher": {
+      "san": true
+    },
+    "Phylloscopus maculipennis": {
+      "san": true
+    },
+    "Phylloscopus kansuensis": {
+      "san": true
+    },
+    "Phylloscopus yunnanensis": {
+      "san": true
+    },
+    "Phylloscopus proregulus": {
+      "san": true
+    },
+    "Phylloscopus chloronotus": {
+      "san": true
+    },
+    "Phylloscopus forresti": {
+      "san": true
+    },
+    "Phylloscopus inornatus": {
+      "san": true
+    },
+    "Phylloscopus humei": {
+      "san": true
+    },
+    "Phylloscopus borealis": {
+      "san": true
+    },
+    "Phylloscopus xanthodryas": {
+      "san": true
+    },
+    "Phylloscopus trochiloides": {
+      "san": true
+    },
+    "Phylloscopus plumbeitarsus": {
+      "san": true
+    },
+    "Phylloscopus tenellipes": {
+      "san": true
+    },
+    "Phylloscopus borealoides": {
+      "san": true
+    },
+    "Phylloscopus magnirostris": {
+      "san": true
+    },
+    "Phylloscopus coronatus": {
+      "san": true
+    },
+    "Phylloscopus reguloides": {
+      "san": true
+    },
+    "Phylloscopus claudiae": {
+      "san": true
+    },
+    "Phylloscopus goodsoni": {
+      "san": true
+    },
+    "Phylloscopus emeiensis": {
+      "san": true
+    },
+    "Phylloscopus ogilviegranti": {
+      "san": true
+    },
+    "Phylloscopus cantator": {
+      "san": true
+    },
+    "Phylloscopus calciatilis": {
+      "san": true
+    },
+    "Phylloscopus ricketti": {
+      "san": true
+    },
+    "Phylloscopus xanthoschistos": {
+      "san": true
+    },
+    "Phylloscopus burkii": {
+      "san": true
+    },
+    "Phylloscopus tephrocephalus": {
+      "san": true
+    },
+    "Phylloscopus whistleri": {
+      "san": true
+    },
+    "Phylloscopus valentini": {
+      "san": true
+    },
+    "Phylloscopus omeiensis": {
+      "san": true
+    },
+    "Phylloscopus soror": {
+      "san": true
+    },
+    "Phylloscopus poliogenys": {
+      "san": true
+    },
+    "Phylloscopus castaniceps": {
+      "san": true
+    },
+    "Abroscopus superciliaris": {
+      "san": true
+    },
+    "Abroscopus albogularis": {
+      "san": true
+    },
+    "Abroscopus schisticeps": {
+      "san": true
+    },
+    "Phyllergates cucullatus": {
+      "san": true
+    },
+    "Tickellia hodgsoni": {
+      "san": true
+    },
+    "Horornis diphone": {
+      "san": true
+    },
+    "Horornis canturians": {
+      "san": true
+    },
+    "Horornis fortipes": {
+      "san": true
+    },
+    "Horornis brunnescens": {
+      "san": true
+    },
+    "Horornis acanthizoides": {
+      "san": true
+    },
+    "Horornis flavolivaceus": {
+      "san": true
+    },
+    "Tesia cyaniventer": {
+      "san": true
+    },
+    "Tesia olivea": {
+      "san": true
+    },
+    "Cettia cetti": {
+      "san": true
+    },
+    "Cettia major": {
+      "san": true
+    },
+    "Cettia brunnifrons": {
+      "san": true
+    },
+    "Cettia castaneocoronata": {
+      "san": true
+    },
+    "Urosphena squameiceps": {
+      "san": true
+    },
+    "Hemitesia pallidipes": {
+      "san": true
+    },
+    "Aegithalos caudatus": {
+      "san": true
+    },
+    "Aegithalos glaucogularis": {
+      "san": true
+    },
+    "Aegithalos concinnus": {
+      "san": true
+    },
+    "Aegithalos iouschistos": {
+      "san": true
+    },
+    "Aegithalos fuliginosus": {
+      "san": true
+    },
+    "Leptopoecile sophiae": {
+      "san": true
+    },
+    "Leptopoecile elegans": {
+      "san": true
+    },
+    "Myzornis pyrrhoura": {
+      "san": true
+    },
+    "Sylvia atricapilla": {
+      "san": true
+    },
+    "Curruca nisoria": {
+      "san": true
+    },
+    "Curruca curruca": {
+      "san": true
+    },
+    "Curruca crassirostris": {
+      "san": true
+    },
+    "Curruca nana": {
+      "san": true
+    },
+    "Curruca communis": {
+      "san": true
+    },
+    "Fulvetta vinipectus": {
+      "san": true
+    },
+    "Fulvetta ruficapilla": {
+      "san": true
+    },
+    "Fulvetta ludlowi": {
+      "san": true
+    },
+    "Fulvetta cinereiceps": {
+      "san": true
+    },
+    "Chrysomma sinense": {
+      "san": true
+    },
+    "Rhopophilus pekinensis": {
+      "san": true
+    },
+    "Paradoxornis aemodius": {
+      "san": true
+    },
+    "Paradoxornis unicolor": {
+      "san": true
+    },
+    "Suthora webbiana": {
+      "san": true
+    },
+    "Suthora alphonsiana": {
+      "san": true
+    },
+    "Suthora brunnea": {
+      "san": true
+    },
+    "Suthora fulvifrons": {
+      "san": true
+    },
+    "Suthora nipalensis": {
+      "san": true
+    },
+    "Suthora verreauxi": {
+      "san": true
+    },
+    "Suthora atrosuperciliaris": {
+      "san": true
+    },
+    "Paradoxornis gularis": {
+      "san": true
+    },
+    "Paradoxornis guttaticollis": {
+      "san": true
+    },
+    "Staphida castaniceps": {
+      "san": true
+    },
+    "Yuhina bakeri": {
+      "san": true
+    },
+    "Yuhina flavicollis": {
+      "san": true
+    },
+    "Yuhina gularis": {
+      "san": true
+    },
+    "Parayuhina diademata": {
+      "san": true
+    },
+    "Yuhina occipitalis": {
+      "san": true
+    },
+    "Yuhina brunneiceps": {
+      "san": true
+    },
+    "Yuhina nigrimenta": {
+      "san": true
+    },
+    "Zosterops japonicus": {
+      "san": true
+    },
+    "Zosterops meyeni": {
+      "san": true
+    },
+    "Zosterops palpebrosus": {
+      "san": true
+    },
+    "Erythrogenys hypoleucos": {
+      "san": true
+    },
+    "Erythrogenys gravivox": {
+      "san": true
+    },
+    "Erythrogenys swinhoei": {
+      "san": true
+    },
+    "Erythrogenys erythrocnemis": {
+      "san": true
+    },
+    "Pomatorhinus schisticeps": {
+      "san": true
+    },
+    "Pomatorhinus ruficollis": {
+      "san": true
+    },
+    "Pomatorhinus musicus": {
+      "san": true
+    },
+    "Pomatorhinus ochraceiceps": {
+      "san": true
+    },
+    "Pomatorhinus ferruginosus": {
+      "san": true
+    },
+    "Pomatorhinus superciliaris": {
+      "san": true
+    },
+    "Spelaeornis troglodytoides": {
+      "san": true
+    },
+    "Spelaeornis reptatus": {
+      "san": true
+    },
+    "Spelaeornis caudatus": {
+      "san": true
+    },
+    "Stachyris nigriceps": {
+      "san": true
+    },
+    "Stachyris strialata": {
+      "san": true
+    },
+    "Cyanoderma ruficeps": {
+      "san": true
+    },
+    "Cyanoderma pyrrhops": {
+      "san": true
+    },
+    "Cyanoderma chrysaeum": {
+      "san": true
+    },
+    "Mixornis gularis": {
+      "san": true
+    },
+    "Timalia pileata": {
+      "san": true
+    },
+    "Schoeniparus cinereus": {
+      "san": true
+    },
+    "Schoeniparus castaneceps": {
+      "san": true
+    },
+    "Schoeniparus rufogularis": {
+      "san": true
+    },
+    "Schoeniparus dubius": {
+      "san": true
+    },
+    "Schoeniparus brunneus": {
+      "san": true
+    },
+    "Alcippe poioicephala": {
+      "san": true
+    },
+    "Alcippe morrisonia": {
+      "san": true
+    },
+    "Alcippe nipalensis": {
+      "san": true
+    },
+    "Napothera epilepidota": {
+      "san": true
+    },
+    "Gampsorhynchus rufulus": {
+      "san": true
+    },
+    "Pellorneum albiventre": {
+      "san": true
+    },
+    "Pellorneum ruficeps": {
+      "san": true
+    },
+    "Pellorneum tickelli": {
+      "san": true
+    },
+    "Pterorhinus lanceolatus": {
+      "san": true
+    },
+    "Garrulax leucolophus": {
+      "san": true
+    },
+    "Garrulax strepitans": {
+      "san": true
+    },
+    "Garrulax castanotis": {
+      "san": true
+    },
+    "Ianthocincla rufogularis": {
+      "san": true
+    },
+    "Pterorhinus perspicillatus": {
+      "san": true
+    },
+    "Pterorhinus albogularis": {
+      "san": true
+    },
+    "Pterorhinus ruficeps": {
+      "san": true
+    },
+    "Garrulax monileger": {
+      "san": true
+    },
+    "Pterorhinus pectoralis": {
+      "san": true
+    },
+    "Pterorhinus ruficollis": {
+      "san": true
+    },
+    "Pterorhinus davidi": {
+      "san": true
+    },
+    "Pterorhinus caerulatus": {
+      "san": true
+    },
+    "Pterorhinus poecilorhynchus": {
+      "san": true
+    },
+    "Pterorhinus sannio": {
+      "san": true
+    },
+    "Garrulax merulinus": {
+      "san": true
+    },
+    "Grammatoptila striata": {
+      "san": true
+    },
+    "Trochalopteron lineatum": {
+      "san": true
+    },
+    "Trochalopteron squamatum": {
+      "san": true
+    },
+    "Trochalopteron subunicolor": {
+      "san": true
+    },
+    "Trochalopteron henrici": {
+      "san": true
+    },
+    "Trochalopteron affine": {
+      "san": true
+    },
+    "Trochalopteron variegatum": {
+      "san": true
+    },
+    "Trochalopteron erythrocephalum": {
+      "san": true
+    },
+    "Cutia nipalensis": {
+      "san": true
+    },
+    "Actinodura cyanouroptera": {
+      "san": true
+    },
+    "Actinodura strigula": {
+      "san": true
+    },
+    "Minla ignotincta": {
+      "san": true
+    },
+    "Liocichla phoenicea": {
+      "san": true
+    },
+    "Liocichla ripponi": {
+      "san": true
+    },
+    "Liocichla steerii": {
+      "san": true
+    },
+    "Actinodura egertoni": {
+      "san": true
+    },
+    "Actinodura ramsayi": {
+      "san": true
+    },
+    "Actinodura nipalensis": {
+      "san": true
+    },
+    "Actinodura waldeni": {
+      "san": true
+    },
+    "Actinodura souliei": {
+      "san": true
+    },
+    "Actinodura morrisoniana": {
+      "san": true
+    },
+    "Leioptila annectens": {
+      "san": true
+    },
+    "Heterophasia capistrata": {
+      "san": true
+    },
+    "Heterophasia gracilis": {
+      "san": true
+    },
+    "Heterophasia desgodinsi": {
+      "san": true
+    },
+    "Heterophasia auricularis": {
+      "san": true
+    },
+    "Heterophasia pulchella": {
+      "san": true
+    },
+    "Heterophasia picaoides": {
+      "san": true
+    },
+    "Certhia familiaris": {
+      "san": true
+    },
+    "Certhia hodgsoni": {
+      "san": true
+    },
+    "Certhia himalayana": {
+      "san": true
+    },
+    "Certhia nipalensis": {
+      "san": true
+    },
+    "Certhia discolor": {
+      "san": true
+    },
+    "Certhia manipurensis": {
+      "san": true
+    },
+    "Sitta europaea": {
+      "san": true
+    },
+    "Sitta nagaensis": {
+      "san": true
+    },
+    "Sitta castanea": {
+      "san": true
+    },
+    "Sitta himalayensis": {
+      "san": true
+    },
+    "Sitta villosa": {
+      "san": true
+    },
+    "Sitta leucopsis": {
+      "san": true
+    },
+    "Sitta frontalis": {
+      "san": true
+    },
+    "Tichodroma muraria": {
+      "san": true
+    },
+    "Nannus troglodytes": {
+      "san": true
+    },
+    "Cinclus cinclus": {
+      "san": true
+    },
+    "Cinclus pallasii": {
+      "san": true
+    },
+    "Acridotheres albocinctus": {
+      "san": true
+    },
+    "Acridotheres cristatellus": {
+      "san": true
+    },
+    "Ampeliceps coronatus": {
+      "san": true
+    },
+    "Acridotheres grandis": {
+      "san": true
+    },
+    "Acridotheres tristis": {
+      "san": true
+    },
+    "Aplonis panayensis": {
+      "san": true
+    },
+    "Saroglossa spilopterus": {
+      "san": true
+    },
+    "Acridotheres burmannicus": {
+      "san": true
+    },
+    "Spodiopsar sericeus": {
+      "san": true
+    },
+    "Spodiopsar cineraceus": {
+      "san": true
+    },
+    "Gracupica nigricollis": {
+      "san": true
+    },
+    "Gracupica contra": {
+      "san": true
+    },
+    "Agropsar sturninus": {
+      "san": true
+    },
+    "Agropsar philippensis": {
+      "san": true
+    },
+    "Sturnia sinensis": {
+      "san": true
+    },
+    "Sturnia malabarica": {
+      "san": true
+    },
+    "Sturnia pagodarum": {
+      "san": true
+    },
+    "Sturnus vulgaris": {
+      "san": true
+    },
+    "Pastor roseus": {
+      "san": true
+    },
+    "Geokichla citrina": {
+      "san": true
+    },
+    "Geokichla sibirica": {
+      "san": true
+    },
+    "Zoothera mollissima": {
+      "san": true
+    },
+    "Zoothera griseiceps": {
+      "san": true
+    },
+    "Zoothera salimalii": {
+      "san": true
+    },
+    "Zoothera dixoni": {
+      "san": true
+    },
+    "Zoothera aurea": {
+      "san": true
+    },
+    "Zoothera dauma": {
+      "san": true
+    },
+    "Zoothera monticola": {
+      "san": true
+    },
+    "Zoothera marginata": {
+      "san": true
+    },
+    "Turdus hortulorum": {
+      "san": true
+    },
+    "Turdus dissimilis": {
+      "san": true
+    },
+    "Turdus cardis": {
+      "san": true
+    },
+    "Turdus unicolor": {
+      "san": true
+    },
+    "Turdus albocinctus": {
+      "san": true
+    },
+    "Turdus boulboul": {
+      "san": true
+    },
+    "Turdus merula": {
+      "san": true
+    },
+    "Turdus mandarinus": {
+      "san": true
+    },
+    "Turdus maximus": {
+      "san": true
+    },
+    "Turdus niveiceps": {
+      "san": true
+    },
+    "Turdus rubrocanus": {
+      "san": true
+    },
+    "Turdus kessleri": {
+      "san": true
+    },
+    "Turdus obscurus": {
+      "san": true
+    },
+    "Turdus chrysolaus": {
+      "san": true
+    },
+    "Turdus atrogularis": {
+      "san": true
+    },
+    "Turdus ruficollis": {
+      "san": true
+    },
+    "Turdus naumanni": {
+      "san": true
+    },
+    "Turdus pallidus": {
+      "san": true
+    },
+    "Turdus eunomus": {
+      "san": true
+    },
+    "Turdus pilaris": {
+      "san": true
+    },
+    "Turdus iliacus": {
+      "san": true
+    },
+    "Turdus philomelos": {
+      "san": true
+    },
+    "Turdus mupinensis": {
+      "san": true
+    },
+    "Turdus viscivorus": {
+      "san": true
+    },
+    "Erithacus rubecula": {
+      "san": true
+    },
+    "Larvivora akahige": {
+      "san": true
+    },
+    "Larvivora sibilans": {
+      "san": true
+    },
+    "Larvivora brunnea": {
+      "san": true
+    },
+    "Larvivora cyane": {
+      "san": true
+    },
+    "Calliope pectoralis": {
+      "san": true
+    },
+    "Calliope tschebaiewi": {
+      "san": true
+    },
+    "Luscinia phaenicuroides": {
+      "san": true
+    },
+    "Tarsiger cyanurus": {
+      "san": true
+    },
+    "Tarsiger rufilatus": {
+      "san": true
+    },
+    "Tarsiger indicus": {
+      "san": true
+    },
+    "Tarsiger johnstoniae": {
+      "san": true
+    },
+    "Tarsiger chrysaeus": {
+      "san": true
+    },
+    "Heteroxenicus stellatus": {
+      "san": true
+    },
+    "Brachypteryx leucophris": {
+      "san": true
+    },
+    "Brachypteryx montana": {
+      "san": true
+    },
+    "Cercotrichas galactotes": {
+      "san": true
+    },
+    "Copsychus saularis": {
+      "san": true
+    },
+    "Phoenicurus erythronotus": {
+      "san": true
+    },
+    "Phoenicurus coeruleocephala": {
+      "san": true
+    },
+    "Phoenicurus schisticeps": {
+      "san": true
+    },
+    "Phoenicurus frontalis": {
+      "san": true
+    },
+    "Phoenicurus ochruros": {
+      "san": true
+    },
+    "Phoenicurus phoenicurus": {
+      "san": true
+    },
+    "Phoenicurus hodgsoni": {
+      "san": true
+    },
+    "Phoenicurus auroreus": {
+      "san": true
+    },
+    "Phoenicurus erythrogastrus": {
+      "san": true
+    },
+    "Phoenicurus leucocephalus": {
+      "san": true
+    },
+    "Myiomela leucura": {
+      "san": true
+    },
+    "Cinclidium frontale": {
+      "san": true
+    },
+    "Myophonus insularis": {
+      "san": true
+    },
+    "Myophonus caeruleus": {
+      "san": true
+    },
+    "Grandala coelicolor": {
+      "san": true
+    },
+    "Enicurus scouleri": {
+      "san": true
+    },
+    "Enicurus immaculatus": {
+      "san": true
+    },
+    "Enicurus schistaceus": {
+      "san": true
+    },
+    "Enicurus leschenaulti": {
+      "san": true
+    },
+    "Enicurus maculatus": {
+      "san": true
+    },
+    "Saxicola maurus": {
+      "san": true
+    },
+    "Saxicola caprata": {
+      "san": true
+    },
+    "Saxicola jerdoni": {
+      "san": true
+    },
+    "Saxicola ferreus": {
+      "san": true
+    },
+    "Oenanthe isabellina": {
+      "san": true
+    },
+    "Oenanthe oenanthe": {
+      "san": true
+    },
+    "Oenanthe pleschanka": {
+      "san": true
+    },
+    "Oenanthe deserti": {
+      "san": true
+    },
+    "Oenanthe picata": {
+      "san": true
+    },
+    "Monticola saxatilis": {
+      "san": true
+    },
+    "Monticola cinclorhyncha": {
+      "san": true
+    },
+    "Monticola solitarius": {
+      "san": true
+    },
+    "Monticola rufiventris": {
+      "san": true
+    },
+    "Monticola gularis": {
+      "san": true
+    },
+    "Muscicapa striata": {
+      "san": true
+    },
+    "Muscicapa griseisticta": {
+      "san": true
+    },
+    "Muscicapa sibirica": {
+      "san": true
+    },
+    "Muscicapa dauurica": {
+      "san": true
+    },
+    "Muscicapa muttui": {
+      "san": true
+    },
+    "Muscicapa ferruginea": {
+      "san": true
+    },
+    "Ficedula ruficauda": {
+      "san": true
+    },
+    "Ficedula hypoleuca": {
+      "san": true
+    },
+    "Ficedula zanthopygia": {
+      "san": true
+    },
+    "Ficedula narcissina": {
+      "san": true
+    },
+    "Ficedula owstoni": {
+      "san": true
+    },
+    "Ficedula elisae": {
+      "san": true
+    },
+    "Ficedula hodgsoni": {
+      "san": true
+    },
+    "Ficedula mugimaki": {
+      "san": true
+    },
+    "Ficedula strophiata": {
+      "san": true
+    },
+    "Ficedula parva": {
+      "san": true
+    },
+    "Ficedula albicilla": {
+      "san": true
+    },
+    "Ficedula hyperythra": {
+      "san": true
+    },
+    "Ficedula westermanni": {
+      "san": true
+    },
+    "Ficedula superciliaris": {
+      "san": true
+    },
+    "Ficedula tricolor": {
+      "san": true
+    },
+    "Ficedula sapphira": {
+      "san": true
+    },
+    "Cyanoptila cyanomelana": {
+      "san": true
+    },
+    "Eumyias thalassinus": {
+      "san": true
+    },
+    "Cyornis hainanus": {
+      "san": true
+    },
+    "Cyornis unicolor": {
+      "san": true
+    },
+    "Cyornis poliogenys": {
+      "san": true
+    },
+    "Cyornis rubeculoides": {
+      "san": true
+    },
+    "Cyornis glaucicomans": {
+      "san": true
+    },
+    "Anthipes monileger": {
+      "san": true
+    },
+    "Niltava sundara": {
+      "san": true
+    },
+    "Niltava vivida": {
+      "san": true
+    },
+    "Niltava macgrigoriae": {
+      "san": true
+    },
+    "Regulus goodfellowi": {
+      "san": true
+    },
+    "Regulus regulus": {
+      "san": true
+    },
+    "Bombycilla garrulus": {
+      "san": true
+    },
+    "Elachura formosa": {
+      "san": true
+    },
+    "Irena puella": {
+      "san": true
+    },
+    "Chloropsis aurifrons": {
+      "san": true
+    },
+    "Chloropsis hardwickii": {
+      "san": true
+    },
+    "Pachyglossa agilis": {
+      "san": true
+    },
+    "Pachyglossa chrysorrhea": {
+      "san": true
+    },
+    "Pachyglossa melanozantha": {
+      "san": true
+    },
+    "Dicaeum concolor": {
+      "san": true
+    },
+    "Dicaeum ignipectus": {
+      "san": true
+    },
+    "Dicaeum cruentatum": {
+      "san": true
+    },
+    "Chalcoparia singalensis": {
+      "san": true
+    },
+    "Anthreptes malacensis": {
+      "san": true
+    },
+    "Kurochkinegramma hypogrammicum": {
+      "san": true
+    },
+    "Cinnyris asiaticus": {
+      "san": true
+    },
+    "Cinnyris jugularis": {
+      "san": true
+    },
+    "Aethopyga gouldiae": {
+      "san": true
+    },
+    "Aethopyga nipalensis": {
+      "san": true
+    },
+    "Aethopyga christinae": {
+      "san": true
+    },
+    "Aethopyga saturata": {
+      "san": true
+    },
+    "Aethopyga siparaja": {
+      "san": true
+    },
+    "Aethopyga ignicauda": {
+      "san": true
+    },
+    "Arachnothera longirostra": {
+      "san": true
+    },
+    "Arachnothera magna": {
+      "san": true
+    },
+    "Prunella collaris": {
+      "san": true
+    },
+    "Prunella himalayana": {
+      "san": true
+    },
+    "Prunella rubeculoides": {
+      "san": true
+    },
+    "Prunella strophiata": {
+      "san": true
+    },
+    "Prunella montanella": {
+      "san": true
+    },
+    "Prunella fulvescens": {
+      "san": true
+    },
+    "Prunella atrogularis": {
+      "san": true
+    },
+    "Prunella immaculata": {
+      "san": true
+    },
+    "Ploceus manyar": {
+      "san": true
+    },
+    "Ploceus philippinus": {
+      "san": true
+    },
+    "Amandava amandava": {
+      "san": true
+    },
+    "Erythrura prasina": {
+      "san": true
+    },
+    "Euodice malabarica": {
+      "san": true
+    },
+    "Lonchura striata": {
+      "san": true
+    },
+    "Lonchura punctulata": {
+      "san": true
+    },
+    "Lonchura atricapilla": {
+      "san": true
+    },
+    "Passer cinnamomeus": {
+      "san": true
+    },
+    "Passer montanus": {
+      "san": true
+    },
+    "Passer ammodendri": {
+      "san": true
+    },
+    "Passer domesticus": {
+      "san": true
+    },
+    "Passer hispaniolensis": {
+      "san": true
+    },
+    "Petronia petronia": {
+      "san": true
+    },
+    "Montifringilla nivalis": {
+      "san": true
+    },
+    "Montifringilla henrici": {
+      "san": true
+    },
+    "Montifringilla adamsi": {
+      "san": true
+    },
+    "Onychostruthus taczanowskii": {
+      "san": true
+    },
+    "Pyrgilauda davidiana": {
+      "san": true
+    },
+    "Pyrgilauda ruficollis": {
+      "san": true
+    },
+    "Pyrgilauda blanfordi": {
+      "san": true
+    },
+    "Dendronanthus indicus": {
+      "san": true
+    },
+    "Motacilla flava": {
+      "san": true
+    },
+    "Motacilla tschutschensis": {
+      "san": true
+    },
+    "Motacilla citreola": {
+      "san": true
+    },
+    "Motacilla cinerea": {
+      "san": true
+    },
+    "Motacilla alba": {
+      "san": true
+    },
+    "Motacilla grandis": {
+      "san": true
+    },
+    "Anthus richardi": {
+      "san": true
+    },
+    "Anthus rufulus": {
+      "san": true
+    },
+    "Anthus godlewskii": {
+      "san": true
+    },
+    "Anthus campestris": {
+      "san": true
+    },
+    "Anthus pratensis": {
+      "san": true
+    },
+    "Anthus trivialis": {
+      "san": true
+    },
+    "Anthus hodgsoni": {
+      "san": true
+    },
+    "Anthus gustavi": {
+      "san": true
+    },
+    "Anthus roseatus": {
+      "san": true
+    },
+    "Anthus cervinus": {
+      "san": true
+    },
+    "Anthus rubescens": {
+      "san": true
+    },
+    "Anthus spinoletta": {
+      "san": true
+    },
+    "Anthus sylvanus": {
+      "san": true
+    },
+    "Fringilla coelebs": {
+      "san": true
+    },
+    "Fringilla montifringilla": {
+      "san": true
+    },
+    "Mycerobas affinis": {
+      "san": true
+    },
+    "Mycerobas melanozanthos": {
+      "san": true
+    },
+    "Mycerobas carnipes": {
+      "san": true
+    },
+    "Coccothraustes coccothraustes": {
+      "san": true
+    },
+    "Eophona migratoria": {
+      "san": true
+    },
+    "Eophona personata": {
+      "san": true
+    },
+    "Pinicola enucleator": {
+      "san": true
+    },
+    "Pyrrhula nipalensis": {
+      "san": true
+    },
+    "Pyrrhula erythrocephala": {
+      "san": true
+    },
+    "Pyrrhula erythaca": {
+      "san": true
+    },
+    "Pyrrhula pyrrhula": {
+      "san": true
+    },
+    "Rhodopechys sanguineus": {
+      "san": true
+    },
+    "Bucanetes mongolicus": {
+      "san": true
+    },
+    "Rhodospiza obsoleta": {
+      "san": true
+    },
+    "Agraphospiza rubescens": {
+      "san": true
+    },
+    "Pyrrhoplectes epauletta": {
+      "san": true
+    },
+    "Procarduelis nipalensis": {
+      "san": true
+    },
+    "Leucosticte nemoricola": {
+      "san": true
+    },
+    "Leucosticte brandti": {
+      "san": true
+    },
+    "Leucosticte arctoa": {
+      "san": true
+    },
+    "Carpodacus erythrinus": {
+      "san": true
+    },
+    "Carpodacus sipahi": {
+      "san": true
+    },
+    "Carpodacus rubicilloides": {
+      "san": true
+    },
+    "Carpodacus rubicilla": {
+      "san": true
+    },
+    "Carpodacus rhodochlamys": {
+      "san": true
+    },
+    "Carpodacus pulcherrimus": {
+      "san": true
+    },
+    "Carpodacus davidianus": {
+      "san": true
+    },
+    "Carpodacus waltoni": {
+      "san": true
+    },
+    "Carpodacus rodochroa": {
+      "san": true
+    },
+    "Carpodacus edwardsii": {
+      "san": true
+    },
+    "Carpodacus rodopeplus": {
+      "san": true
+    },
+    "Carpodacus verreauxii": {
+      "san": true
+    },
+    "Carpodacus vinaceus": {
+      "san": true
+    },
+    "Carpodacus stoliczkae": {
+      "san": true
+    },
+    "Carpodacus sibiricus": {
+      "san": true
+    },
+    "Carpodacus trifasciatus": {
+      "san": true
+    },
+    "Carpodacus thura": {
+      "san": true
+    },
+    "Carpodacus dubius": {
+      "san": true
+    },
+    "Carpodacus puniceus": {
+      "san": true
+    },
+    "Carpodacus subhimachalus": {
+      "san": true
+    },
+    "Callacanthis burtoni": {
+      "san": true
+    },
+    "Chloris chloris": {
+      "san": true
+    },
+    "Chloris sinica": {
+      "san": true
+    },
+    "Chloris spinoides": {
+      "san": true
+    },
+    "Chloris ambigua": {
+      "san": true
+    },
+    "Linaria flavirostris": {
+      "san": true
+    },
+    "Linaria cannabina": {
+      "san": true
+    },
+    "Acanthis flammea": {
+      "san": true
+    },
+    "Loxia leucoptera": {
+      "san": true
+    },
+    "Carduelis carduelis": {
+      "san": true
+    },
+    "Serinus pusillus": {
+      "san": true
+    },
+    "Spinus thibetanus": {
+      "san": true
+    },
+    "Spinus spinus": {
+      "san": true
+    },
+    "Calcarius lapponicus": {
+      "san": true
+    },
+    "Plectrophenax nivalis": {
+      "san": true
+    },
+    "Melophus lathami": {
+      "san": true
+    },
+    "Emberiza calandra": {
+      "san": true
+    },
+    "Emberiza citrinella": {
+      "san": true
+    },
+    "Emberiza leucocephalos": {
+      "san": true
+    },
+    "Emberiza cia": {
+      "san": true
+    },
+    "Emberiza godlewskii": {
+      "san": true
+    },
+    "Emberiza stewarti": {
+      "san": true
+    },
+    "Zonotrichia leucophrys": {
+      "san": true
+    },
+    "Emberiza cioides": {
+      "san": true
+    },
+    "Emberiza buchanani": {
+      "san": true
+    },
+    "Emberiza hortulana": {
+      "san": true
+    },
+    "Schoeniclus tristrami": {
+      "san": true
+    },
+    "Emberiza fucata": {
+      "san": true
+    },
+    "Schoeniclus pusillus": {
+      "san": true
+    },
+    "Schoeniclus chrysophrys": {
+      "san": true
+    },
+    "Schoeniclus elegans": {
+      "san": true
+    },
+    "Schoeniclus rutilus": {
+      "san": true
+    },
+    "Melophus melanocephalus": {
+      "san": true
+    },
+    "Melophus bruniceps": {
+      "san": true
+    },
+    "Schoeniclus sulphuratus": {
+      "san": true
+    },
+    "Schoeniclus spodocephalus": {
+      "san": true
+    },
+    "Schoeniclus variabilis": {
+      "san": true
+    },
+    "Schoeniclus pallasi": {
+      "san": true
+    },
+    "Schoeniclus schoeniclus": {
+      "san": true
     }
   }
 }

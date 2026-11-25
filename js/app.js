@@ -411,12 +411,6 @@
     DD: "数据缺乏",
   };
 
-  function iucnShort(code) {
-    if (code === "CR (PE)") return "CR（PE）";
-    if (code === "CR (PEW)") return "CR（PEW）";
-    return code;
-  }
-
   function iucnLong(code) {
     const word = IUCN_WORD[code];
     if (!word) return "";
@@ -429,14 +423,6 @@
     if (cn === "I") return "国家一级";
     if (cn === "II") return "国家二级";
     return "";
-  }
-
-  function rankParts(sp, long) {
-    const parts = [];
-    if (sp.iucn && IUCN_WORD[sp.iucn]) parts.push(long ? iucnLong(sp.iucn) : iucnShort(sp.iucn));
-    const cn = cnWord(sp.cn);
-    if (cn) parts.push(cn);
-    return parts;
   }
 
   function renderRow(sp) {
@@ -455,11 +441,10 @@
       el("span", { class: "la", lang: "la" }, [sp.sci]),
       el("span", { class: "fam" }, [state.families[sp.family].zh || state.families[sp.family].la]),
       el("span", { class: "status" }, [
-        rankParts(sp, false).length ? el("span", { class: "rank" }, [rankParts(sp, false).join(" · ")]) : null,
-        status === "seen" || status === "heard" ? el("span", { class: "seen-word" }, [status === "seen" ? "已发现" : "仅听到"]) : null,
+        status === "seen" ? "已发现" : status === "heard" ? "仅听到" : null,
       ]),
     ]);
-    row.title = [sp.zh, sp.en, sp.sci, statusWord(status)].concat(rankParts(sp, true)).filter(Boolean).join(" · ");
+    row.title = [sp.zh, sp.en, sp.sci, statusWord(status)].filter(Boolean).join(" · ");
     return row;
   }
 
@@ -1384,6 +1369,7 @@
     if (sp.china) chips.append(el("li", { class: "chip" }, ["中国可记录"]));
     if (sp.iucn && IUCN_WORD[sp.iucn]) chips.append(el("li", { class: "chip rank" }, [iucnLong(sp.iucn)]));
     if (sp.cn === "I" || sp.cn === "II") chips.append(el("li", { class: "chip rank cn" }, [cnWord(sp.cn)]));
+    if (sp.san) chips.append(el("li", { class: "chip rank san" }, ["三有"]));
     root.append(chips);
     const family = state.families[sp.family];
     const order = state.orders[sp.order];
@@ -1567,12 +1553,11 @@
     for (const issue of issues.slice().sort(weeklyIssueOrder)) {
       list.append(el("li", {}, [
         el("a", { href: "#/weekly/" + issue.issue }, [
+          el("span", { class: "weekly-bullet", "aria-hidden": "true" }, ["•"]),
           el("time", { datetime: issue.from }, [issue.from]),
           " 至 ",
           el("time", { datetime: issue.to }, [issue.to]),
           " · ",
-          el("span", { class: "weekly-bullet", "aria-hidden": "true" }, ["•"]),
-          " ",
           issue.title,
         ]),
       ]));
@@ -1760,6 +1745,7 @@
         if (rank && typeof rank === "object") {
           if (typeof rank.iucn === "string" && iucnCodes.has(rank.iucn)) sp.iucn = rank.iucn;
           if (rank.cn === "I" || rank.cn === "II") sp.cn = rank.cn;
+          if (rank.san === true) sp.san = true;
         }
         sp._zh = [sp.zh].concat(sp.aliasZh).filter(Boolean).join("\n");
         sp._lat = foldLatin([sp.en, sp.sci, sp.genusName].concat(sp.syn).join(" "));
