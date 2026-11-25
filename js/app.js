@@ -426,6 +426,7 @@
   function renderRow(sp) {
     const status = window.WBRecords.statusForRecords(state.bySci.get(sp.sci));
     const zh = sp.zh || "（无中文名）";
+    const ranks = rankParts(sp, false);
     const row = el("a", {
       class: "sp" + (status === "seen" ? " is-seen" : status === "heard" ? " is-heard" : "") + (sp.missingZh ? " is-blank" : ""),
       href: "#/species/" + encodeURIComponent(sp.sci),
@@ -438,9 +439,9 @@
       el("span", { class: "en", lang: "en" }, [sp.en]),
       el("span", { class: "la", lang: "la" }, [sp.sci]),
       el("span", { class: "fam" }, [state.families[sp.family].zh]),
+      el("span", { class: "rank" }, [ranks.length ? ranks.join(" · ") : null]),
       el("span", { class: "status" }, [
-        rankParts(sp, false).length ? el("span", { class: "rank" }, [rankParts(sp, false).join(" · ")]) : null,
-        status === "seen" || status === "heard" ? el("span", { class: "seen-word" }, [status === "seen" ? "已发现" : "仅听到"]) : null,
+        status === "seen" ? "已发现" : status === "heard" ? "仅听到" : null,
       ]),
     ]);
     row.title = [sp.zh, sp.en, sp.sci, statusWord(status)].concat(rankParts(sp, true)).filter(Boolean).join(" · ");
@@ -1545,12 +1546,11 @@
     for (const issue of issues.slice().sort(weeklyIssueOrder)) {
       list.append(el("li", {}, [
         el("a", { href: "#/weekly/" + issue.issue }, [
+          el("span", { class: "weekly-bullet", "aria-hidden": "true" }, ["•"]),
           el("time", { datetime: issue.from }, [issue.from]),
           " 至 ",
           el("time", { datetime: issue.to }, [issue.to]),
           " · ",
-          el("span", { class: "weekly-bullet", "aria-hidden": "true" }, ["•"]),
-          " ",
           issue.title,
         ]),
       ]));

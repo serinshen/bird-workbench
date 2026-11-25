@@ -435,8 +435,13 @@ button.primary:disabled { opacity: 0.55; cursor: default; }
 
 .cols,
 .sp {
+  /* Fixed tracks keep the columns aligned: each row is its own grid.
+     128px fits the longest short rank ("CR（PEW） · 国家一级") at 11px.
+     40px fits "已发现" and "仅听到". */
+  --col-rank: 128px;
+  --col-status: 40px;
   display: grid;
-  grid-template-columns: 22px minmax(0, 1.15fr) minmax(0, 1.25fr) minmax(0, 1.4fr) minmax(0, 0.7fr) auto;
+  grid-template-columns: 22px minmax(0, 1.15fr) minmax(0, 1.25fr) minmax(0, 1.4fr) minmax(0, 0.7fr) var(--col-rank) var(--col-status);
   column-gap: 12px;
   align-items: center;
   padding-left: 22px;
@@ -520,23 +525,25 @@ button.primary:disabled { opacity: 0.55; cursor: default; }
 
 .fam { font-size: 13px; }
 
+.col-rank,
+.rank,
 .status {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 1px;
-  font-size: 12px;
-  line-height: 1.2;
-  color: var(--sage-ink);
+  min-width: 0;
+  white-space: nowrap;
   text-align: right;
 }
 
-.status .rank,
-.status .seen-word { white-space: nowrap; }
-
-.status .rank {
+.rank {
+  overflow: hidden;
   font-size: 11px;
+  line-height: 1.2;
+  color: var(--sage-ink);
+  text-overflow: ellipsis;
+}
+
+.status {
+  font-size: 12px;
+  line-height: 1.2;
   color: var(--sage-ink);
 }
 
@@ -940,6 +947,7 @@ textarea.note {
 }
 
 .weekly-index .weekly-bullet {
+  margin-right: 0.4em;
   color: var(--sage);
   font-size: 1.15em;
 }
@@ -1343,7 +1351,7 @@ textarea.note {
   .cols { display: none; }
 
   .sp {
-    grid-template-columns: 16px minmax(0, 1fr) auto;
+    grid-template-columns: 16px minmax(0, 1fr) var(--col-rank) var(--col-status);
     padding-left: 16px;
     padding-right: 16px;
   }
