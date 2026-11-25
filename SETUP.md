@@ -50,7 +50,21 @@ npx wrangler dev
 # npx wrangler deploy
 ```
 
-`node scripts/migrate.mjs` 不加 `--local` 或 `--remote` 时只检查备份，不写入。D1 里已经有记录时，脚本会停下来；确认要用 git 备份覆盖时才加 `--replace`。
+`node scripts/migrate.mjs` 不加 `--local` 或 `--remote` 时只检查备份，不写入。D1 里已经有记录时，脚本会停下来；确认要用 git 备份覆盖时才加 `--replace`。名录换成 AviList 之后不要用 `--replace` 把备份盖回生产库。
+
+## 学名改到 AviList
+
+名录已经是 AviList v2026。git 里的观察备份仍用原来的学名。页面会把 1:1 改名通过名录里的曾用学名对上现用种，所以在改库之前这些记录也开得出来。归并、拆分和没有对上的学名不会自动改到别的种。
+
+生产 D1 要另跑，而且这次不要跑：
+
+```bash
+node scripts/remap-taxonomy.mjs
+node scripts/remap-taxonomy.mjs --local
+node scripts/remap-taxonomy.mjs --remote --confirm-remote
+```
+
+第一条只打印计划。`--local` 写本地 D1。`--remote` 没有 `--confirm-remote` 会直接停。脚本只更新 `observations.scientific_name`、`notes.scientific_name`，以及开放问题里的学名。不改照片路径，不改当时记下的中文名和英文名，不改 `legacy_json`，也不跑 `migrate.mjs --replace`。对照表在 `data/scientific-name-remap.json`，说明在 `data/avilist-v2026-migration.md`。
 
 迁移会原样复制照片，不重新加水印。`WBWM:@SerinS` 仍在文件里。
 
