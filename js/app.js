@@ -11,6 +11,7 @@
     families: [],
     genera: [],
     byName: new Map(),
+    synTo: new Map(),
     records: [],
     bySci: new Map(),
     notes: {},
@@ -99,8 +100,15 @@
     return window.WBRecords.displayWhen(rec).date;
   }
 
+  function resolveSci(name) {
+    if (!name) return "";
+    if (state.byName.has(name)) return name;
+    const mapped = state.synTo && state.synTo.get(name);
+    return mapped || name;
+  }
+
   function recordsFor(sci) {
-    return (state.bySci.get(sci) || []).slice().sort((a, b) => compareKey(sortKey(a), sortKey(b)));
+    return (state.bySci.get(resolveSci(sci)) || []).slice().sort((a, b) => compareKey(sortKey(a), sortKey(b)));
   }
 
   function speciesInScope() {
@@ -125,8 +133,9 @@
     state.bySci = new Map();
     for (const rec of state.records) {
       if (!rec || !rec.scientificName) continue;
-      if (!state.bySci.has(rec.scientificName)) state.bySci.set(rec.scientificName, []);
-      state.bySci.get(rec.scientificName).push(rec);
+      const sci = resolveSci(rec.scientificName);
+      if (!state.bySci.has(sci)) state.bySci.set(sci, []);
+      state.bySci.get(sci).push(rec);
     }
   }
 
@@ -143,10 +152,16 @@
   }
 
   function noteBody(sci) {
-    const note = state.notes[sci];
-    if (!note) return "";
-    if (typeof note === "string") return note;
-    return note.body || "";
+    const current = resolveSci(sci);
+    const sp = state.byName.get(current);
+    const keys = [current].concat(sp ? sp.syn : []);
+    for (const key of keys) {
+      const note = state.notes[key];
+      if (!note) continue;
+      if (typeof note === "string") return note;
+      if (note.body) return note.body;
+    }
+    return "";
   }
 
   function showNote(text) {
@@ -353,10 +368,11 @@
     host.hidden = false;
     host.append(el("span", { class: "recent-label" }, ["最近记下"]));
     for (const rec of picks) {
-      const sp = state.byName.get(rec.scientificName);
+      const sci = resolveSci(rec.scientificName);
+      const sp = state.byName.get(sci);
       const label = sp && sp.zh ? sp.zh : rec.loggedChinese || rec.scientificName;
       if (host.childNodes.length > 1) host.append(el("span", { class: "dotsep", "aria-hidden": "true" }, ["·"]));
-      host.append(el("a", { href: "#/species/" + encodeURIComponent(rec.scientificName) }, [label]));
+      host.append(el("a", { href: "#/species/" + encodeURIComponent(sci) }, [label]));
     }
   }
 
@@ -437,7 +453,7 @@
       ]),
       el("span", { class: "en", lang: "en" }, [sp.en]),
       el("span", { class: "la", lang: "la" }, [sp.sci]),
-      el("span", { class: "fam" }, [state.families[sp.family].zh]),
+      el("span", { class: "fam" }, [state.families[sp.family].zh || state.families[sp.family].la]),
       el("span", { class: "status" }, [
         rankParts(sp, false).length ? el("span", { class: "rank" }, [rankParts(sp, false).join(" · ")]) : null,
         status === "seen" || status === "heard" ? el("span", { class: "seen-word" }, [status === "seen" ? "已发现" : "仅听到"]) : null,
@@ -513,6 +529,11 @@
     if (options.some((option) => option.value === current)) select.value = current;
   }
 
+  function taxonLabel(zh, la) {
+    if (zh && la) return zh + " " + la;
+    return zh || la || "";
+  }
+
   function rebuildFamilies() {
     const select = document.getElementById("family");
     const order = state.filters.order;
@@ -520,7 +541,7 @@
     const options = [];
     if (order !== "") {
       for (const family of state.families) {
-        if (family.order === order) options.push({ value: String(family.i), label: family.zh + " " + family.la });
+        if (family.order === order) options.push({ value: String(family.i), label: taxonLabel(family.zh, family.la) });
       }
     }
     fillSelect(select, options, order === "" ? "先选择目" : "全部科");
@@ -673,7 +694,7 @@
   }
 
   function speciesLabel(sci, rec) {
-    const sp = state.byName.get(sci);
+    const sp = state.byName.get(resolveSci(sci));
     if (sp && sp.zh) return sp.zh;
     if (rec && rec.loggedChinese) return rec.loggedChinese;
     return sci;
@@ -725,8 +746,8 @@
       const line = el("p", { class: "open-q" }, [rec.openQuestion.text]);
       if (rec.openQuestion.scientificName) {
         line.append("（");
-        line.append(el("a", { href: "#/species/" + encodeURIComponent(rec.openQuestion.scientificName) }, [
-          el("i", { lang: "la" }, [rec.openQuestion.scientificName]),
+        line.append(el("a", { href: "#/species/" + encodeURIComponent(resolveSci(rec.openQuestion.scientificName)) }, [
+          el("i", { lang: "la" }, [resolveSci(rec.openQuestion.scientificName)]),
         ]));
         line.append("）");
       }
@@ -940,7 +961,7 @@
       status.textContent = fields.error;
       return;
     }
-    const sci = state.route.sci;
+    const sci = resolveSci(state.route.sci);
     if (!state.byName.has(sci)) {
       status.textContent = "名录里没有这个种。";
       return;
@@ -1312,7 +1333,7 @@
       const when = window.WBRecords.whenLine(rec);
       const alt = [zh, sex, place, when, "野外照片"].filter(Boolean).join("，");
       grid.append(el("article", { class: "tile" }, [
-        el("a", { class: "tile-link", href: "#/species/" + encodeURIComponent(rec.scientificName) }, [
+        el("a", { class: "tile-link", href: "#/species/" + encodeURIComponent(resolveSci(rec.scientificName)) }, [
           el("span", { class: "tile-frame" }, [el("img", { src: photoSrc(entry.path), alt: alt })]),
           el("span", { class: "tile-name" }, [zh]),
           el("span", { class: "tile-meta" }, [[when, sex, place].filter(Boolean).join(" · ")]),
@@ -1324,7 +1345,7 @@
   }
 
   function renderSpecies() {
-    const sci = state.route.sci;
+    const sci = resolveSci(state.route.sci);
     const sp = state.byName.get(sci);
     const root = document.getElementById("view-species");
     const keep = state.holdScroll ? root.scrollTop : 0;
@@ -1367,11 +1388,11 @@
     const family = state.families[sp.family];
     const order = state.orders[sp.order];
     const genus = state.genera[sp.genus];
-    const familyName = el("span", {}, [family.zh + " " + family.la]);
+    const familyName = el("span", {}, [taxonLabel(family.zh, family.la)]);
     if (family.en) familyName.append(el("span", { class: "en-fam", lang: "en" }, [" · " + family.en]));
     root.append(el("dl", { class: "tax-dl" }, [
       el("dt", {}, ["目"]),
-      el("dd", {}, [order.zh + " " + order.la]),
+      el("dd", {}, [taxonLabel(order.zh, order.la)]),
       el("dt", {}, ["科"]),
       el("dd", {}, [familyName]),
       el("dt", {}, ["属"]),
@@ -1463,12 +1484,13 @@
     const list = state.records.slice().sort((a, b) => compareKey(sortKey(b), sortKey(a)));
     if (!list.length) root.append(el("p", { class: "quiet" }, ["还没有观察记录。"]));
     for (const rec of list) {
-      const zh = speciesLabel(rec.scientificName, rec);
+      const sci = resolveSci(rec.scientificName);
+      const zh = speciesLabel(sci, rec);
       const article = el("article", { class: "record share-record" });
       article.append(el("h2", { class: "share-name" }, [
-        el("a", { href: "#/species/" + encodeURIComponent(rec.scientificName) }, [zh]),
+        el("a", { href: "#/species/" + encodeURIComponent(sci) }, [zh]),
       ]));
-      article.append(el("p", { class: "binom" }, [el("i", { lang: "la" }, [rec.scientificName])]));
+      article.append(el("p", { class: "binom" }, [el("i", { lang: "la" }, [state.byName.has(sci) ? sci : rec.scientificName])]));
       for (const node of renderRecordBody(rec)) article.append(node);
       for (const path of (rec.photos || []).filter(safePhoto)) {
         article.append(el("img", {
@@ -1748,6 +1770,16 @@
       state.families = pack.families;
       state.genera = pack.genera;
       state.byName = new Map(pack.species.map((sp) => [sp.sci, sp]));
+      state.synTo = new Map();
+      const synCollisions = new Set();
+      for (const sp of pack.species) {
+        for (const name of sp.syn) {
+          const prev = state.synTo.get(name);
+          if (prev && prev !== sp.sci) synCollisions.add(name);
+          else state.synTo.set(name, sp.sci);
+        }
+      }
+      for (const name of synCollisions) state.synTo.delete(name);
       state.morning = Array.isArray(morning) ? morning : [];
       state.weekly = weeklyResult.ok ? normalizeWeekly(weeklyResult.data) : null;
       if (libraryResult.ok) applyLibrary(libraryResult.data);
@@ -1766,12 +1798,12 @@
       document.getElementById("tax-label").textContent = state.tax;
       document.getElementById("count-china").textContent = comma(names.length);
       const problems = [];
-      if (pack.n !== 11064 || pack.parsedN !== 11064) problems.push("物种数不是 11,064");
-      if (pack.orders.length !== 44) problems.push("目的数量不是 44");
+      if (pack.n !== 11172 || pack.parsedN !== 11172) problems.push("物种数不是 11,172");
+      if (pack.orders.length !== 45) problems.push("目的数量不是 45");
       if (pack.families.length !== 250) problems.push("科的数量不是 250");
-      if (pack.genera.length !== 2355) problems.push("属的数量不是 2,355");
-      if (pack.blankZh !== 23 || !pack.mzOk) problems.push("缺中文名的 23 种对不上");
-      if (names.length !== 1491) problems.push("中国可记录不是 1,491");
+      if (pack.genera.length !== 2379) problems.push("属的数量不是 2,379");
+      if (pack.blankZh !== 1 || !pack.mzOk) problems.push("缺中文名的种对不上");
+      if (names.length !== 1482) problems.push("中国可记录不是 1,482");
       if (!libraryResult.ok) problems.push("观察记录没有载入。名录仍然可以检索。");
       const banner = document.getElementById("banner");
       if (problems.length) {
@@ -1791,7 +1823,7 @@
       syncDataset();
       fillSelect(
         document.getElementById("order"),
-        state.orders.map((order) => ({ value: String(order.i), label: order.zh + " " + order.la })),
+        state.orders.map((order) => ({ value: String(order.i), label: taxonLabel(order.zh, order.la) })),
         "全部目"
       );
       rebuildFamilies();
