@@ -198,30 +198,11 @@
       function nudge(event) {
         var key = event.key;
         var step = stepSize();
-        var ratio = rect.w > 0 && rect.h > 0 ? rect.w / rect.h : 0;
-        if (event.altKey) {
-          if (event.shiftKey && ratio > 0) {
-            if (key === "ArrowLeft") rect.w -= step;
-            if (key === "ArrowRight") rect.w += step;
-            if (key === "ArrowUp") rect.h -= step;
-            if (key === "ArrowDown") rect.h += step;
-            if (key === "ArrowLeft" || key === "ArrowRight") rect.h = rect.w / ratio;
-            if (key === "ArrowUp" || key === "ArrowDown") rect.w = rect.h * ratio;
-            fit(ratio);
-          } else {
-            if (key === "ArrowLeft") rect.w -= step;
-            if (key === "ArrowRight") rect.w += step;
-            if (key === "ArrowUp") rect.h -= step;
-            if (key === "ArrowDown") rect.h += step;
-            fit();
-          }
-        } else {
-          if (key === "ArrowLeft") rect.x -= step;
-          if (key === "ArrowRight") rect.x += step;
-          if (key === "ArrowUp") rect.y -= step;
-          if (key === "ArrowDown") rect.y += step;
-          fit();
-        }
+        if (key === "ArrowLeft") rect.x -= step;
+        if (key === "ArrowRight") rect.x += step;
+        if (key === "ArrowUp") rect.y -= step;
+        if (key === "ArrowDown") rect.y += step;
+        fit();
       }
 
       function onBackdrop(event) {
