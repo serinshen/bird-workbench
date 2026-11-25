@@ -435,13 +435,11 @@ button.primary:disabled { opacity: 0.55; cursor: default; }
 
 .cols,
 .sp {
-  /* Fixed tracks keep the columns aligned: each row is its own grid.
-     128px fits the longest short rank ("CR（PEW） · 国家一级") at 11px.
-     40px fits "已发现" and "仅听到". */
-  --col-rank: 128px;
+  /* Fixed status track: each row is its own grid, so auto would
+     narrow the empty 未发现 rows and shift 科. 40px fits "已发现". */
   --col-status: 40px;
   display: grid;
-  grid-template-columns: 22px minmax(0, 1.15fr) minmax(0, 1.25fr) minmax(0, 1.4fr) minmax(0, 0.7fr) var(--col-rank) var(--col-status);
+  grid-template-columns: 22px minmax(0, 1.15fr) minmax(0, 1.25fr) minmax(0, 1.4fr) minmax(0, 0.7fr) var(--col-status);
   column-gap: 12px;
   align-items: center;
   padding-left: 22px;
@@ -525,40 +523,13 @@ button.primary:disabled { opacity: 0.55; cursor: default; }
 
 .fam { font-size: 13px; }
 
-.col-rank,
-.rank,
 .status {
   min-width: 0;
-  white-space: nowrap;
-  text-align: right;
-}
-
-.rank {
-  display: flex;
-  justify-content: flex-end;
-  align-items: baseline;
-  overflow: hidden;
-  font-size: 11px;
-  line-height: 1.2;
-  color: var(--sage-ink);
-}
-
-.rank-sep { margin: 0 0.35em; color: var(--sand); }
-
-.rank-iucn { color: var(--sage-ink); }
-
-.rank-cn { color: var(--ink); }
-
-.rank-san {
-  color: var(--ink-soft);
-  letter-spacing: 0.08em;
-  box-shadow: inset 0 -1px 0 var(--sand);
-}
-
-.status {
   font-size: 12px;
   line-height: 1.2;
   color: var(--sage-ink);
+  white-space: nowrap;
+  text-align: right;
 }
 
 .mark {
@@ -1371,7 +1342,7 @@ textarea.note {
   .cols { display: none; }
 
   .sp {
-    grid-template-columns: 16px minmax(0, 1fr) var(--col-rank) var(--col-status);
+    grid-template-columns: 16px minmax(0, 1fr) var(--col-status);
     padding-left: 16px;
     padding-right: 16px;
   }

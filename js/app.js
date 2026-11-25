@@ -395,12 +395,6 @@
     DD: "数据缺乏",
   };
 
-  function iucnShort(code) {
-    if (code === "CR (PE)") return "CR（PE）";
-    if (code === "CR (PEW)") return "CR（PEW）";
-    return code;
-  }
-
   function iucnLong(code) {
     const word = IUCN_WORD[code];
     if (!word) return "";
@@ -413,24 +407,6 @@
     if (cn === "I") return "国家一级";
     if (cn === "II") return "国家二级";
     return "";
-  }
-
-  function rankMarks(sp, long) {
-    const marks = [];
-    if (sp.iucn && IUCN_WORD[sp.iucn]) marks.push({ kind: "iucn", text: long ? iucnLong(sp.iucn) : iucnShort(sp.iucn) });
-    const cn = cnWord(sp.cn);
-    if (cn) marks.push({ kind: "cn", text: cn });
-    if (sp.san) marks.push({ kind: "san", text: "三有" });
-    return marks;
-  }
-
-  function rankNodes(sp) {
-    const nodes = [];
-    rankMarks(sp, false).forEach((mark, index) => {
-      if (index) nodes.push(el("span", { class: "rank-sep", "aria-hidden": "true" }, ["·"]));
-      nodes.push(el("span", { class: "rank-" + mark.kind }, [mark.text]));
-    });
-    return nodes;
   }
 
   function renderRow(sp) {
@@ -448,12 +424,11 @@
       el("span", { class: "en", lang: "en" }, [sp.en]),
       el("span", { class: "la", lang: "la" }, [sp.sci]),
       el("span", { class: "fam" }, [state.families[sp.family].zh]),
-      el("span", { class: "rank" }, rankNodes(sp)),
       el("span", { class: "status" }, [
         status === "seen" ? "已发现" : status === "heard" ? "仅听到" : null,
       ]),
     ]);
-    row.title = [sp.zh, sp.en, sp.sci, statusWord(status)].concat(rankMarks(sp, true).map((mark) => mark.text)).filter(Boolean).join(" · ");
+    row.title = [sp.zh, sp.en, sp.sci, statusWord(status)].filter(Boolean).join(" · ");
     return row;
   }
 
