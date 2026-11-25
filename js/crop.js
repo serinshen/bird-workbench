@@ -4,6 +4,48 @@
     return Math.max(min, Math.min(max, value));
   }
 
+  var currentClose = null;
+
+  function resized(origin, handle, dx, dy, lock) {
+    var left = origin.x;
+    var top = origin.y;
+    var right = origin.x + origin.w;
+    var bottom = origin.y + origin.h;
+    if (handle.indexOf("w") !== -1) left += dx;
+    if (handle.indexOf("e") !== -1) right += dx;
+    if (handle.indexOf("n") !== -1) top += dy;
+    if (handle.indexOf("s") !== -1) bottom += dy;
+    if (!(lock && origin.w > 0 && origin.h > 0)) {
+      return {
+        x: Math.min(left, right),
+        y: Math.min(top, bottom),
+        w: Math.abs(right - left),
+        h: Math.abs(bottom - top),
+      };
+    }
+    var ratio = origin.w / origin.h;
+    var ax = handle.indexOf("w") !== -1 ? origin.x + origin.w : origin.x;
+    var ay = handle.indexOf("n") !== -1 ? origin.y + origin.h : origin.y;
+    var mx = handle.indexOf("w") !== -1 ? left : right;
+    var my = handle.indexOf("n") !== -1 ? top : bottom;
+    var dw = mx - ax;
+    var dh = my - ay;
+    var adx = Math.abs(dw);
+    var ady = Math.abs(dh);
+    if (ady * ratio > adx) adx = ady * ratio;
+    else ady = adx / ratio;
+    var signX = dw < 0 ? -1 : 1;
+    var signY = dh < 0 ? -1 : 1;
+    var x2 = ax + signX * adx;
+    var y2 = ay + signY * ady;
+    return {
+      x: Math.min(ax, x2),
+      y: Math.min(ay, y2),
+      w: Math.abs(x2 - ax),
+      h: Math.abs(y2 - ay),
+    };
+  }
+
   function cropCanvas(source, label) {
     return new Promise(function (resolve) {
       var layer = document.getElementById("crop-layer");
@@ -45,32 +87,47 @@
         box.style.height = (rect.h / source.height * 100) + "%";
       }
 
-      function fit() {
+      function fit(ratio) {
         var minW = Math.min(32, source.width);
         var minH = Math.min(32, source.height);
-        rect.w = clamp(rect.w, minW, source.width);
-        rect.h = clamp(rect.h, minH, source.height);
-        rect.x = clamp(rect.x, 0, source.width - rect.w);
-        rect.y = clamp(rect.y, 0, source.height - rect.h);
+        if (ratio && ratio > 0) {
+          var w = rect.w;
+          var h = w / ratio;
+          if (w < minW) { w = minW; h = w / ratio; }
+          if (h < minH) { h = minH; w = h * ratio; }
+          if (w > source.width) { w = source.width; h = w / ratio; }
+          if (h > source.height) { h = source.height; w = h * ratio; }
+          if (w > source.width) { w = source.width; h = w / ratio; }
+          rect.w = w;
+          rect.h = h;
+        } else {
+          rect.w = clamp(rect.w, minW, source.width);
+          rect.h = clamp(rect.h, minH, source.height);
+        }
+        rect.x = clamp(rect.x, 0, Math.max(0, source.width - rect.w));
+        rect.y = clamp(rect.y, 0, Math.max(0, source.height - rect.h));
         paint();
       }
 
       function close(result) {
         if (closed) return;
         closed = true;
-        document.removeEventListener("keydown", onKey);
+        if (currentClose === close) currentClose = null;
+        document.removeEventListener("keydown", onKey, true);
         cancel.removeEventListener("click", onCancel);
         reset.removeEventListener("click", onReset);
         ok.removeEventListener("click", onOk);
         layer.removeEventListener("click", onBackdrop);
         box.removeEventListener("pointerdown", onPointerDown);
-        box.removeEventListener("keydown", onBoxKey);
         layer.hidden = true;
         stage.replaceChildren();
         if (shell) shell.removeAttribute("inert");
         if (previous && previous.focus && document.contains(previous)) previous.focus();
         resolve(result);
       }
+
+      if (currentClose) currentClose(null);
+      currentClose = close;
 
       function onCancel() { close(null); }
 
@@ -99,8 +156,10 @@
 
       function onPointerDown(event) {
         if (event.button != null && event.button !== 0) return;
-        event.preventDefault();
         var handle = event.target && event.target.dataset ? event.target.dataset.handle : "";
+        if (!handle && event.target !== box) return;
+        event.preventDefault();
+        box.focus();
         var start = point(event);
         var origin = { x: rect.x, y: rect.y, w: rect.w, h: rect.h };
         box.setPointerCapture(event.pointerId);
@@ -112,21 +171,12 @@
           if (!handle) {
             rect.x = origin.x + dx;
             rect.y = origin.y + dy;
+            fit();
           } else {
-            var left = origin.x;
-            var top = origin.y;
-            var right = origin.x + origin.w;
-            var bottom = origin.y + origin.h;
-            if (handle.indexOf("w") !== -1) left = origin.x + dx;
-            if (handle.indexOf("e") !== -1) right = origin.x + origin.w + dx;
-            if (handle.indexOf("n") !== -1) top = origin.y + dy;
-            if (handle.indexOf("s") !== -1) bottom = origin.y + origin.h + dy;
-            rect.x = Math.min(left, right);
-            rect.y = Math.min(top, bottom);
-            rect.w = Math.abs(right - left);
-            rect.h = Math.abs(bottom - top);
+            var ratio = ev.shiftKey ? origin.w / origin.h : 0;
+            rect = resized(origin, handle, dx, dy, ev.shiftKey);
+            fit(ratio);
           }
-          fit();
         }
 
         function up(ev) {
@@ -141,23 +191,37 @@
         box.addEventListener("pointercancel", up);
       }
 
-      function onBoxKey(event) {
-        var step = event.shiftKey ? 8 : 24;
+      function stepSize() {
+        return Math.max(12, Math.round(Math.min(source.width, source.height) * 0.02));
+      }
+
+      function nudge(event) {
         var key = event.key;
-        if (key !== "ArrowLeft" && key !== "ArrowRight" && key !== "ArrowUp" && key !== "ArrowDown") return;
-        event.preventDefault();
+        var step = stepSize();
+        var ratio = rect.w > 0 && rect.h > 0 ? rect.w / rect.h : 0;
         if (event.altKey) {
-          if (key === "ArrowLeft") rect.w -= step;
-          if (key === "ArrowRight") rect.w += step;
-          if (key === "ArrowUp") rect.h -= step;
-          if (key === "ArrowDown") rect.h += step;
+          if (event.shiftKey && ratio > 0) {
+            if (key === "ArrowLeft") rect.w -= step;
+            if (key === "ArrowRight") rect.w += step;
+            if (key === "ArrowUp") rect.h -= step;
+            if (key === "ArrowDown") rect.h += step;
+            if (key === "ArrowLeft" || key === "ArrowRight") rect.h = rect.w / ratio;
+            if (key === "ArrowUp" || key === "ArrowDown") rect.w = rect.h * ratio;
+            fit(ratio);
+          } else {
+            if (key === "ArrowLeft") rect.w -= step;
+            if (key === "ArrowRight") rect.w += step;
+            if (key === "ArrowUp") rect.h -= step;
+            if (key === "ArrowDown") rect.h += step;
+            fit();
+          }
         } else {
           if (key === "ArrowLeft") rect.x -= step;
           if (key === "ArrowRight") rect.x += step;
           if (key === "ArrowUp") rect.y -= step;
           if (key === "ArrowDown") rect.y += step;
+          fit();
         }
-        fit();
       }
 
       function onBackdrop(event) {
@@ -165,9 +229,16 @@
       }
 
       function onKey(event) {
+        if (closed) return;
         if (event.key === "Escape") {
           event.preventDefault();
           onCancel();
+          return;
+        }
+        if (event.key === "ArrowLeft" || event.key === "ArrowRight" || event.key === "ArrowUp" || event.key === "ArrowDown") {
+          event.preventDefault();
+          event.stopPropagation();
+          nudge(event);
           return;
         }
         if (event.key !== "Tab") return;
@@ -189,9 +260,11 @@
       ok.addEventListener("click", onOk);
       layer.addEventListener("click", onBackdrop);
       box.addEventListener("pointerdown", onPointerDown);
-      box.addEventListener("keydown", onBoxKey);
-      document.addEventListener("keydown", onKey);
+      document.addEventListener("keydown", onKey, true);
       box.focus();
+      requestAnimationFrame(function () {
+        if (!closed) box.focus();
+      });
     });
   }
 

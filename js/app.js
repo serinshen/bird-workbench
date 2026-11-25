@@ -382,6 +382,47 @@
     return "未发现";
   }
 
+  const IUCN_WORD = {
+    EX: "绝灭",
+    EW: "野外绝灭",
+    CR: "极危",
+    "CR (PE)": "极危",
+    "CR (PEW)": "极危",
+    EN: "濒危",
+    VU: "易危",
+    NT: "近危",
+    LC: "无危",
+    DD: "数据缺乏",
+  };
+
+  function iucnShort(code) {
+    if (code === "CR (PE)") return "CR（PE）";
+    if (code === "CR (PEW)") return "CR（PEW）";
+    return code;
+  }
+
+  function iucnLong(code) {
+    const word = IUCN_WORD[code];
+    if (!word) return "";
+    if (code === "CR (PE)") return "极危 CR（可能绝灭）";
+    if (code === "CR (PEW)") return "极危 CR（可能野外绝灭）";
+    return word + " " + code;
+  }
+
+  function cnWord(cn) {
+    if (cn === "I") return "国家一级";
+    if (cn === "II") return "国家二级";
+    return "";
+  }
+
+  function rankParts(sp, long) {
+    const parts = [];
+    if (sp.iucn && IUCN_WORD[sp.iucn]) parts.push(long ? iucnLong(sp.iucn) : iucnShort(sp.iucn));
+    const cn = cnWord(sp.cn);
+    if (cn) parts.push(cn);
+    return parts;
+  }
+
   function renderRow(sp) {
     const status = window.WBRecords.statusForRecords(state.bySci.get(sp.sci));
     const zh = sp.zh || "（无中文名）";
@@ -397,9 +438,12 @@
       el("span", { class: "en", lang: "en" }, [sp.en]),
       el("span", { class: "la", lang: "la" }, [sp.sci]),
       el("span", { class: "fam" }, [state.families[sp.family].zh]),
-      el("span", { class: "status" }, [status === "seen" ? "已发现" : status === "heard" ? "仅听到" : ""]),
+      el("span", { class: "status" }, [
+        rankParts(sp, false).length ? el("span", { class: "rank" }, [rankParts(sp, false).join(" · ")]) : null,
+        status === "seen" || status === "heard" ? el("span", { class: "seen-word" }, [status === "seen" ? "已发现" : "仅听到"]) : null,
+      ]),
     ]);
-    row.title = [sp.zh, sp.en, sp.sci, statusWord(status)].filter(Boolean).join(" · ");
+    row.title = [sp.zh, sp.en, sp.sci, statusWord(status)].concat(rankParts(sp, true)).filter(Boolean).join(" · ");
     return row;
   }
 
@@ -775,10 +819,11 @@
       }
       form.append(photos);
     }
+    const fileInput = el("input", { type: "file", name: "obs-photos", accept: "image/*", multiple: "multiple" });
     form.append(el("label", { class: "wide" }, [
       "野外照片（可空）",
-      el("input", { type: "file", name: "obs-photos", accept: "image/*", multiple: "multiple" }),
-      el("span", { class: "hint" }, ["先裁切，再压到长边 2000 像素以内，并写上 @SerinS。文件里已有 WBWM:@SerinS 的，不再裁切、不再重盖。按文件内容识别，不看扩展名。"]),
+      fileInput,
+      el("span", { class: "hint" }, ["选好就裁切，再压到长边 2000 像素以内，并写上 @SerinS。文件里已有 WBWM:@SerinS 的，不再裁切、不再重盖。按文件内容识别，不看扩展名。"]),
     ]));
     const status = el("p", { class: "form-status quiet" });
     const button = el("button", { type: "submit", class: "primary" }, ["保存"]);
@@ -795,6 +840,11 @@
       }, ["取消"]));
     }
     form.append(actions);
+    form._prepared = [];
+    form._photoEpoch = 0;
+    fileInput.addEventListener("change", () => {
+      ingestSelectedPhotos(form, Array.from(fileInput.files || []), status, button);
+    });
     form.addEventListener("submit", (event) => {
       event.preventDefault();
       if (spec.mode === "edit") saveEdit(form, rec, status, button);
@@ -819,30 +869,54 @@
     return { date, time, place, detection, sex, suspicious, notes };
   }
 
-  async function processNewPhotos(files, status) {
-    const blobs = [];
-    for (let i = 0; i < files.length; i++) {
-      const file = files[i];
-      if (file.size > PHOTO_MAX) throw new Error("单张照片请小于 25MB。");
-      status.textContent = "正在打开照片 " + (i + 1) + "/" + files.length + "…";
-      const loaded = await window.WBMedia.loadOriented(file);
-      if (loaded.skipped) {
-        status.textContent = "第 " + (i + 1) + " 张已有站点水印，不再裁切。";
-        blobs.push(window.WBMedia.packSkipped(loaded.raw).blob);
-        continue;
-      }
-      status.textContent = "请裁切第 " + (i + 1) + " 张，共 " + files.length + " 张。";
-      const cropped = await window.WBCrop.cropCanvas(loaded.canvas, "第 " + (i + 1) + " 张，共 " + files.length + " 张");
-      if (!cropped) {
-        const err = new Error("已取消，没有写入。");
-        err.code = "cancel";
-        throw err;
-      }
-      status.textContent = "正在处理照片 " + (i + 1) + "/" + files.length + "…";
-      const prepared = await window.WBMedia.finish(cropped);
-      blobs.push(prepared.blob);
+  async function ingestSelectedPhotos(form, files, status, button) {
+    const epoch = ++form._photoEpoch;
+    form._prepared = [];
+    if (!files.length) {
+      status.textContent = "";
+      return;
     }
-    return blobs;
+    button.disabled = true;
+    const blobs = [];
+    try {
+      for (let i = 0; i < files.length; i++) {
+        if (form._photoEpoch !== epoch) return;
+        const file = files[i];
+        if (file.size > PHOTO_MAX) throw new Error("单张照片请小于 25MB。");
+        status.textContent = "正在打开照片 " + (i + 1) + "/" + files.length + "…";
+        const loaded = await window.WBMedia.loadOriented(file);
+        if (form._photoEpoch !== epoch) return;
+        if (loaded.skipped) {
+          status.textContent = "第 " + (i + 1) + " 张已有站点水印，不再裁切。";
+          blobs.push(window.WBMedia.packSkipped(loaded.raw).blob);
+          continue;
+        }
+        status.textContent = "请裁切第 " + (i + 1) + " 张，共 " + files.length + " 张。";
+        const cropped = await window.WBCrop.cropCanvas(loaded.canvas, "第 " + (i + 1) + " 张，共 " + files.length + " 张");
+        if (form._photoEpoch !== epoch) return;
+        if (!cropped) {
+          status.textContent = blobs.length
+            ? "已取消，后面的照片没有加入。已留下 " + blobs.length + " 张。"
+            : "已取消，没有加入照片。";
+          break;
+        }
+        status.textContent = "正在处理照片 " + (i + 1) + "/" + files.length + "…";
+        const prepared = await window.WBMedia.finish(cropped);
+        if (form._photoEpoch !== epoch) return;
+        blobs.push(prepared.blob);
+      }
+      if (form._photoEpoch !== epoch) return;
+      form._prepared = blobs;
+      if (blobs.length && !status.textContent.startsWith("已取消")) {
+        status.textContent = "已裁好 " + blobs.length + " 张。";
+      }
+    } catch (err) {
+      if (form._photoEpoch !== epoch) return;
+      form._prepared = blobs;
+      status.textContent = err.message || "这张照片没有加入。";
+    } finally {
+      if (form._photoEpoch === epoch) button.disabled = false;
+    }
   }
 
   function fieldsToForm(fields, blobs, extra) {
@@ -871,10 +945,10 @@
       status.textContent = "名录里没有这个种。";
       return;
     }
-    const files = Array.from(form.elements["obs-photos"].files || []);
+    if (form._photoEpoch && button.disabled) return;
+    const blobs = form._prepared || [];
     button.disabled = true;
     try {
-      const blobs = await processNewPhotos(files, status);
       status.textContent = "正在写入";
       const data = await window.WBApi.form("/api/observations", "POST", fieldsToForm(fields, blobs, { scientificName: sci }));
       applyLibrary(data);
@@ -893,10 +967,10 @@
       status.textContent = fields.error;
       return;
     }
-    const files = Array.from(form.elements["obs-photos"].files || []);
+    if (form._photoEpoch && button.disabled) return;
+    const blobs = form._prepared || [];
     button.disabled = true;
     try {
-      const blobs = await processNewPhotos(files, status);
       status.textContent = "正在写入";
       const data = await window.WBApi.form(
         "/api/observations/" + encodeURIComponent(rec.id),
@@ -1287,6 +1361,8 @@
     const chipClass = status === "seen" ? "chip seen" : status === "heard" ? "chip heard" : "chip";
     chips.append(el("li", { class: chipClass }, [statusWord(status)]));
     if (sp.china) chips.append(el("li", { class: "chip" }, ["中国可记录"]));
+    if (sp.iucn && IUCN_WORD[sp.iucn]) chips.append(el("li", { class: "chip rank" }, [iucnLong(sp.iucn)]));
+    if (sp.cn === "I" || sp.cn === "II") chips.append(el("li", { class: "chip rank cn" }, [cnWord(sp.cn)]));
     root.append(chips);
     const family = state.families[sp.family];
     const order = state.orders[sp.order];
@@ -1473,6 +1549,8 @@
           " 至 ",
           el("time", { datetime: issue.to }, [issue.to]),
           " · ",
+          el("span", { class: "weekly-bullet", "aria-hidden": "true" }, ["•"]),
+          " ",
           issue.title,
         ]),
       ]));
@@ -1641,18 +1719,26 @@
       if (state.booted) renderRoute();
     });
     try {
-      const [pack, china, morning, weeklyResult, libraryResult, sessionResult] = await Promise.all([
+      const [pack, china, morning, weeklyResult, protectionResult, libraryResult, sessionResult] = await Promise.all([
         window.WBChecklist.loadPack("data/pack.b64"),
         getJson("data/china-recordable-sci.json"),
         getJson("data/morning-cards.json"),
         getJson("data/weekly-issues.json").then((data) => ({ ok: true, data: data })).catch(() => ({ ok: false })),
+        getJson("data/protection-ranks.json").then((data) => ({ ok: true, data: data })).catch(() => ({ ok: false })),
         window.WBApi.get("/api/library").then((data) => ({ ok: true, data: data })).catch((err) => ({ ok: false, error: err })),
         window.WBApi.get("/api/session").catch(() => ({ signedIn: false })),
       ]);
       const names = Array.isArray(china.scientificNames) ? china.scientificNames : [];
       const chinaSet = new Set(names);
+      const rankTable = protectionResult.ok && protectionResult.data && protectionResult.data.byScientificName;
+      const iucnCodes = new Set(["EX", "EW", "CR", "CR (PE)", "CR (PEW)", "EN", "VU", "NT", "LC", "DD"]);
       for (const sp of pack.species) {
         sp.china = chinaSet.has(sp.sci);
+        const rank = rankTable && rankTable[sp.sci];
+        if (rank && typeof rank === "object") {
+          if (typeof rank.iucn === "string" && iucnCodes.has(rank.iucn)) sp.iucn = rank.iucn;
+          if (rank.cn === "I" || rank.cn === "II") sp.cn = rank.cn;
+        }
         sp._zh = [sp.zh].concat(sp.aliasZh).filter(Boolean).join("\n");
         sp._lat = foldLatin([sp.en, sp.sci, sp.genusName].concat(sp.syn).join(" "));
       }

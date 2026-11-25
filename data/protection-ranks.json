@@ -1,0 +1,7596 @@
+{
+  "iucnSource": "AviList v2026 IUCN category, only where that IOC 15.2 species is the same concept (crosswalk relation same or renamed, and concept unchanged).",
+  "chinaSource": "国家重点保护野生动物名录（2021年调整）. Matched by exact scientific name, checklist synonym, unique Chinese name plus the same epithet, or a unique epithet. Unmatched names are omitted.",
+  "byScientificName": {
+    "Acanthiza katherina": {
+      "iucn": "VU"
+    },
+    "Accipiter madagascariensis": {
+      "iucn": "NT"
+    },
+    "Accipiter nisus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Accipiter poliogaster": {
+      "iucn": "NT"
+    },
+    "Aceros nipalensis": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Acridotheres cinereus": {
+      "iucn": "VU"
+    },
+    "Acridotheres javanicus": {
+      "iucn": "VU"
+    },
+    "Acridotheres melanopterus": {
+      "iucn": "EN"
+    },
+    "Acrobatornis fonsecai": {
+      "iucn": "NT"
+    },
+    "Acrocephalus aequinoctialis": {
+      "iucn": "EN"
+    },
+    "Acrocephalus brevipennis": {
+      "iucn": "VU"
+    },
+    "Acrocephalus caffer": {
+      "iucn": "VU"
+    },
+    "Acrocephalus familiaris": {
+      "iucn": "EN"
+    },
+    "Acrocephalus griseldis": {
+      "iucn": "EN"
+    },
+    "Acrocephalus hiwae": {
+      "iucn": "EN"
+    },
+    "Acrocephalus paludicola": {
+      "iucn": "VU"
+    },
+    "Acrocephalus rehsei": {
+      "iucn": "NT"
+    },
+    "Acrocephalus rimitarae": {
+      "iucn": "CR"
+    },
+    "Acrocephalus sechellensis": {
+      "iucn": "NT"
+    },
+    "Acrocephalus sorghophilus": {
+      "iucn": "CR",
+      "cn": "II"
+    },
+    "Acrocephalus taiti": {
+      "iucn": "VU"
+    },
+    "Acrocephalus tangorum": {
+      "iucn": "VU"
+    },
+    "Acrocephalus vaughani": {
+      "iucn": "EN"
+    },
+    "Actenoides concretus": {
+      "iucn": "NT"
+    },
+    "Actinodura sodangorum": {
+      "iucn": "NT"
+    },
+    "Actophilornis albinucha": {
+      "iucn": "EN"
+    },
+    "Aegithina viridissima": {
+      "iucn": "NT"
+    },
+    "Aegolius funereus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Aegotheles affinis": {
+      "iucn": "NT"
+    },
+    "Aegotheles savesi": {
+      "iucn": "CR"
+    },
+    "Aegypius monachus": {
+      "iucn": "NT",
+      "cn": "I"
+    },
+    "Aepypodius bruijnii": {
+      "iucn": "EN"
+    },
+    "Aerodramus bartschi": {
+      "iucn": "VU"
+    },
+    "Aerodramus elaphrus": {
+      "iucn": "VU"
+    },
+    "Aerodramus francicus": {
+      "iucn": "NT"
+    },
+    "Aerodramus fuciphagus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Aerodramus orientalis": {
+      "iucn": "DD"
+    },
+    "Aerodramus papuensis": {
+      "iucn": "DD"
+    },
+    "Aerodramus sawtelli": {
+      "iucn": "VU"
+    },
+    "Aerodramus whiteheadi": {
+      "iucn": "DD"
+    },
+    "Aethopyga duyvenbodei": {
+      "iucn": "VU"
+    },
+    "Aethopyga linaraborae": {
+      "iucn": "NT"
+    },
+    "Afropavo congensis": {
+      "iucn": "NT"
+    },
+    "Afrotis afra": {
+      "iucn": "VU"
+    },
+    "Agamia agami": {
+      "iucn": "NT"
+    },
+    "Agapornis fischeri": {
+      "iucn": "NT"
+    },
+    "Agapornis lilianae": {
+      "iucn": "NT"
+    },
+    "Agapornis nigrigenis": {
+      "iucn": "VU"
+    },
+    "Agelaius tricolor": {
+      "iucn": "EN"
+    },
+    "Agelaius xanthomus": {
+      "iucn": "EN"
+    },
+    "Agelastes meleagrides": {
+      "iucn": "VU"
+    },
+    "Aglaeactis aliciae": {
+      "iucn": "VU"
+    },
+    "Aglaeactis castelnaudii": {
+      "iucn": "NT"
+    },
+    "Aglaiocercus berlepschi": {
+      "iucn": "VU"
+    },
+    "Agriornis albicauda": {
+      "iucn": "VU"
+    },
+    "Aix galericulata": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Alauda arvensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Alauda razae": {
+      "iucn": "CR"
+    },
+    "Alcedo euryzona": {
+      "iucn": "CR"
+    },
+    "Alcedo hercules": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Alcedo meninting": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Alcedo peninsulae": {
+      "iucn": "NT"
+    },
+    "Alcippe brunneicauda": {
+      "iucn": "NT"
+    },
+    "Alectoris graeca": {
+      "iucn": "NT"
+    },
+    "Alectoris magna": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Alectoris rufa": {
+      "iucn": "NT"
+    },
+    "Alectroenas madagascariensis": {
+      "iucn": "NT"
+    },
+    "Alectroenas sganzini": {
+      "iucn": "NT"
+    },
+    "Alectrurus risora": {
+      "iucn": "VU"
+    },
+    "Alectrurus tricolor": {
+      "iucn": "VU"
+    },
+    "Alipiopsitta xanthops": {
+      "iucn": "NT"
+    },
+    "Alophoixus bres": {
+      "iucn": "EN"
+    },
+    "Alophoixus tephrogenys": {
+      "iucn": "VU"
+    },
+    "Amandava formosa": {
+      "iucn": "VU"
+    },
+    "Amaurornis magnirostris": {
+      "iucn": "VU"
+    },
+    "Amazilia luciae": {
+      "iucn": "VU"
+    },
+    "Amazona aestiva": {
+      "iucn": "NT"
+    },
+    "Amazona agilis": {
+      "iucn": "EN"
+    },
+    "Amazona arausiaca": {
+      "iucn": "VU"
+    },
+    "Amazona auropalliata": {
+      "iucn": "CR"
+    },
+    "Amazona barbadensis": {
+      "iucn": "NT"
+    },
+    "Amazona brasiliensis": {
+      "iucn": "NT"
+    },
+    "Amazona collaria": {
+      "iucn": "VU"
+    },
+    "Amazona dufresniana": {
+      "iucn": "NT"
+    },
+    "Amazona finschi": {
+      "iucn": "EN"
+    },
+    "Amazona guildingii": {
+      "iucn": "VU"
+    },
+    "Amazona imperialis": {
+      "iucn": "CR"
+    },
+    "Amazona leucocephala": {
+      "iucn": "NT"
+    },
+    "Amazona lilacina": {
+      "iucn": "CR"
+    },
+    "Amazona oratrix": {
+      "iucn": "EN"
+    },
+    "Amazona pretrei": {
+      "iucn": "VU"
+    },
+    "Amazona rhodocorytha": {
+      "iucn": "VU"
+    },
+    "Amazona tucumana": {
+      "iucn": "VU"
+    },
+    "Amazona ventralis": {
+      "iucn": "VU"
+    },
+    "Amazona versicolor": {
+      "iucn": "VU"
+    },
+    "Amazona vinacea": {
+      "iucn": "EN"
+    },
+    "Amazona viridigenalis": {
+      "iucn": "EN"
+    },
+    "Amazona vittata": {
+      "iucn": "CR"
+    },
+    "Ammomanes phoenicura": {
+      "iucn": "NT"
+    },
+    "Ammospiza caudacuta": {
+      "iucn": "EN"
+    },
+    "Ampelornis griseiceps": {
+      "iucn": "NT"
+    },
+    "Amytornis ballarae": {
+      "iucn": "VU"
+    },
+    "Amytornis dorotheae": {
+      "iucn": "VU"
+    },
+    "Amytornis merrotsyi": {
+      "iucn": "NT"
+    },
+    "Amytornis woodwardi": {
+      "iucn": "EN"
+    },
+    "Anairetes alpinus": {
+      "iucn": "VU"
+    },
+    "Anairetes fernandezianus": {
+      "iucn": "EN"
+    },
+    "Anarhynchus bicinctus": {
+      "iucn": "NT"
+    },
+    "Anarhynchus frontalis": {
+      "iucn": "VU"
+    },
+    "Anarhynchus mongolus": {
+      "iucn": "EN"
+    },
+    "Anarhynchus montanus": {
+      "iucn": "NT"
+    },
+    "Anarhynchus nivosus": {
+      "iucn": "NT"
+    },
+    "Anarhynchus peronii": {
+      "iucn": "NT"
+    },
+    "Anarhynchus sanctaehelenae": {
+      "iucn": "VU"
+    },
+    "Anarhynchus thoracicus": {
+      "iucn": "VU"
+    },
+    "Anas albogularis": {
+      "iucn": "NT"
+    },
+    "Anas aucklandica": {
+      "iucn": "NT"
+    },
+    "Anas bernieri": {
+      "iucn": "EN"
+    },
+    "Anas chlorotis": {
+      "iucn": "NT"
+    },
+    "Anas laysanensis": {
+      "iucn": "CR"
+    },
+    "Anas melleri": {
+      "iucn": "EN"
+    },
+    "Anas nesiotis": {
+      "iucn": "VU"
+    },
+    "Anas wyvilliana": {
+      "iucn": "VU"
+    },
+    "Andigena laminirostris": {
+      "iucn": "NT"
+    },
+    "Anodorhynchus hyacinthinus": {
+      "iucn": "VU"
+    },
+    "Anodorhynchus leari": {
+      "iucn": "EN"
+    },
+    "Anorrhinus austeni": {
+      "iucn": "NT",
+      "cn": "I"
+    },
+    "Anorrhinus galeritus": {
+      "iucn": "NT"
+    },
+    "Anorrhinus tickelli": {
+      "iucn": "NT"
+    },
+    "Anser albifrons": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Anser cygnoides": {
+      "iucn": "EN",
+      "cn": "II"
+    },
+    "Anser erythropus": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Anthocephala berlepschi": {
+      "iucn": "VU"
+    },
+    "Anthocephala floriceps": {
+      "iucn": "VU"
+    },
+    "Anthochaera phrygia": {
+      "iucn": "CR"
+    },
+    "Anthracoceros albirostris": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Anthracoceros coronatus": {
+      "iucn": "NT"
+    },
+    "Anthracoceros malayanus": {
+      "iucn": "VU"
+    },
+    "Anthracoceros marchei": {
+      "iucn": "VU"
+    },
+    "Anthracoceros montani": {
+      "iucn": "CR"
+    },
+    "Anthreptes rhodolaemus": {
+      "iucn": "NT"
+    },
+    "Anthreptes rubritorques": {
+      "iucn": "VU"
+    },
+    "Anthus crenatus": {
+      "iucn": "NT"
+    },
+    "Anthus hoeschi": {
+      "iucn": "NT"
+    },
+    "Anthus nattereri": {
+      "iucn": "VU"
+    },
+    "Anthus nilghiriensis": {
+      "iucn": "VU"
+    },
+    "Anthus ruficollis": {
+      "iucn": "NT"
+    },
+    "Anthus sokokensis": {
+      "iucn": "EN"
+    },
+    "Anthus spragueii": {
+      "iucn": "VU"
+    },
+    "Antigone antigone": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Antigone canadensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Antigone vipio": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Antrostomus carolinensis": {
+      "iucn": "NT"
+    },
+    "Antrostomus noctitherus": {
+      "iucn": "VU"
+    },
+    "Antrostomus vociferus": {
+      "iucn": "NT"
+    },
+    "Anumara forbesi": {
+      "iucn": "VU"
+    },
+    "Apalharpactes reinwardtii": {
+      "iucn": "VU"
+    },
+    "Apalis chariessa": {
+      "iucn": "NT"
+    },
+    "Apalis chirindensis": {
+      "iucn": "VU"
+    },
+    "Apalis flavigularis": {
+      "iucn": "NT"
+    },
+    "Apalis fuscigularis": {
+      "iucn": "CR"
+    },
+    "Apalis kaboboensis": {
+      "iucn": "VU"
+    },
+    "Apalis karamojae": {
+      "iucn": "VU"
+    },
+    "Apalis lynesi": {
+      "iucn": "EN"
+    },
+    "Apalis sharpii": {
+      "iucn": "NT"
+    },
+    "Apalis stronachi": {
+      "iucn": "VU"
+    },
+    "Aphanotriccus audax": {
+      "iucn": "NT"
+    },
+    "Aphanotriccus capitalis": {
+      "iucn": "VU"
+    },
+    "Aphelocephala leucopsis": {
+      "iucn": "VU"
+    },
+    "Aphelocephala pectoralis": {
+      "iucn": "NT"
+    },
+    "Aphelocoma coerulescens": {
+      "iucn": "VU"
+    },
+    "Aphrastura masafuerae": {
+      "iucn": "CR"
+    },
+    "Aplonis brunneicapillus": {
+      "iucn": "VU"
+    },
+    "Aplonis cinerascens": {
+      "iucn": "NT"
+    },
+    "Aplonis crassa": {
+      "iucn": "NT"
+    },
+    "Aplonis feadensis": {
+      "iucn": "NT"
+    },
+    "Aplonis pelzelni": {
+      "iucn": "CR"
+    },
+    "Aplonis santovestris": {
+      "iucn": "EN"
+    },
+    "Aprosmictus jonquillaceus": {
+      "iucn": "NT"
+    },
+    "Aptenodytes forsteri": {
+      "iucn": "NT"
+    },
+    "Apteryx australis": {
+      "iucn": "VU"
+    },
+    "Apteryx mantelli": {
+      "iucn": "VU"
+    },
+    "Apteryx maxima": {
+      "iucn": "VU"
+    },
+    "Apteryx owenii": {
+      "iucn": "NT"
+    },
+    "Apteryx rowi": {
+      "iucn": "VU"
+    },
+    "Apus acuticauda": {
+      "iucn": "NT"
+    },
+    "Aquila adalberti": {
+      "iucn": "VU"
+    },
+    "Aquila chrysaetos": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Aquila fasciata": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Aquila gurneyi": {
+      "iucn": "NT"
+    },
+    "Aquila heliaca": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Aquila nipalensis": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Aquila rapax": {
+      "iucn": "VU"
+    },
+    "Ara ambiguus": {
+      "iucn": "CR"
+    },
+    "Ara glaucogularis": {
+      "iucn": "CR"
+    },
+    "Ara militaris": {
+      "iucn": "VU"
+    },
+    "Ara rubrogenys": {
+      "iucn": "CR"
+    },
+    "Aramidopsis plateni": {
+      "iucn": "VU"
+    },
+    "Aratinga solstitialis": {
+      "iucn": "EN"
+    },
+    "Arborophila ardens": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Arborophila atrogularis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Arborophila brunneopectus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Arborophila cambodiana": {
+      "iucn": "NT"
+    },
+    "Arborophila crudigularis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Arborophila davidi": {
+      "iucn": "NT"
+    },
+    "Arborophila gingica": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Arborophila mandellii": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Arborophila orientalis": {
+      "iucn": "VU"
+    },
+    "Arborophila rufipectus": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Arborophila rufogularis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Arborophila torqueola": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Arcanator orostruthus": {
+      "iucn": "NT"
+    },
+    "Ardea humbloti": {
+      "iucn": "EN"
+    },
+    "Ardea insignis": {
+      "iucn": "CR",
+      "cn": "I"
+    },
+    "Ardenna bulleri": {
+      "iucn": "VU"
+    },
+    "Ardenna carneipes": {
+      "iucn": "NT"
+    },
+    "Ardenna creatopus": {
+      "iucn": "VU"
+    },
+    "Ardenna grisea": {
+      "iucn": "NT"
+    },
+    "Ardeola idae": {
+      "iucn": "EN"
+    },
+    "Ardeotis arabs": {
+      "iucn": "NT"
+    },
+    "Ardeotis kori": {
+      "iucn": "NT"
+    },
+    "Ardeotis nigriceps": {
+      "iucn": "CR"
+    },
+    "Arenaria interpres": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Argusianus argus": {
+      "iucn": "VU"
+    },
+    "Argya cinereifrons": {
+      "iucn": "VU"
+    },
+    "Argya longirostris": {
+      "iucn": "VU"
+    },
+    "Arizelocichla milanjensis": {
+      "iucn": "NT"
+    },
+    "Arizelopsar femoralis": {
+      "iucn": "EN"
+    },
+    "Arremon basilicus": {
+      "iucn": "NT"
+    },
+    "Arremon castaneiceps": {
+      "iucn": "NT"
+    },
+    "Arremon franciscanus": {
+      "iucn": "NT"
+    },
+    "Arremon nigriceps": {
+      "iucn": "NT"
+    },
+    "Arremon phygas": {
+      "iucn": "VU"
+    },
+    "Asarcornis scutulata": {
+      "iucn": "CR",
+      "cn": "II"
+    },
+    "Asio flammeus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Asio otus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Asio solomonensis": {
+      "iucn": "NT"
+    },
+    "Asthenes ayacuchensis": {
+      "iucn": "NT"
+    },
+    "Asthenes berlepschi": {
+      "iucn": "NT"
+    },
+    "Asthenes hudsoni": {
+      "iucn": "NT"
+    },
+    "Asthenes luizae": {
+      "iucn": "NT"
+    },
+    "Asthenes perijana": {
+      "iucn": "EN"
+    },
+    "Asthenes urubambensis": {
+      "iucn": "NT"
+    },
+    "Astur gentilis": {
+      "cn": "II"
+    },
+    "Astur gundlachi": {
+      "iucn": "EN"
+    },
+    "Astur henstii": {
+      "iucn": "VU"
+    },
+    "Atelornis crossleyi": {
+      "iucn": "NT"
+    },
+    "Athene blewitti": {
+      "iucn": "EN"
+    },
+    "Athene brama": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Athene granti": {
+      "iucn": "NT"
+    },
+    "Athene malaitae": {
+      "iucn": "VU"
+    },
+    "Athene noctua": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Athene roseoaxillaris": {
+      "iucn": "VU"
+    },
+    "Atlapetes blancae": {
+      "iucn": "CR"
+    },
+    "Atlapetes flaviceps": {
+      "iucn": "NT"
+    },
+    "Atlapetes fuscoolivaceus": {
+      "iucn": "NT"
+    },
+    "Atlapetes luteoviridis": {
+      "iucn": "VU"
+    },
+    "Atlapetes melanopsis": {
+      "iucn": "NT"
+    },
+    "Atlapetes pallidiceps": {
+      "iucn": "EN"
+    },
+    "Atlapetes terborghi": {
+      "iucn": "NT"
+    },
+    "Atrichornis clamosus": {
+      "iucn": "EN"
+    },
+    "Atrichornis rufescens": {
+      "iucn": "EN"
+    },
+    "Attila torridus": {
+      "iucn": "NT"
+    },
+    "Augastes lumachella": {
+      "iucn": "NT"
+    },
+    "Aulacorhynchus huallagae": {
+      "iucn": "NT"
+    },
+    "Automolus lammi": {
+      "iucn": "EN"
+    },
+    "Aviceda jerdoni": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Aviceda leuphotes": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Aythya baeri": {
+      "iucn": "CR",
+      "cn": "I"
+    },
+    "Aythya ferina": {
+      "iucn": "VU"
+    },
+    "Aythya innotata": {
+      "iucn": "CR"
+    },
+    "Aythya nyroca": {
+      "iucn": "NT"
+    },
+    "Balaeniceps rex": {
+      "iucn": "VU"
+    },
+    "Balearica pavonina": {
+      "iucn": "VU"
+    },
+    "Balearica regulorum": {
+      "iucn": "EN"
+    },
+    "Bangsia arcaei": {
+      "iucn": "NT"
+    },
+    "Bangsia aureocincta": {
+      "iucn": "VU"
+    },
+    "Bangsia flavovirens": {
+      "iucn": "VU"
+    },
+    "Basileuterus ignotus": {
+      "iucn": "VU"
+    },
+    "Basilornis galeatus": {
+      "iucn": "NT"
+    },
+    "Bathmocercus cerviniventris": {
+      "iucn": "DD"
+    },
+    "Batrachostomus auritus": {
+      "iucn": "VU"
+    },
+    "Batrachostomus hodgsoni": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Batrachostomus stellatus": {
+      "iucn": "NT"
+    },
+    "Berenicornis comatus": {
+      "iucn": "EN"
+    },
+    "Bernieria madagascariensis": {
+      "iucn": "NT"
+    },
+    "Biatas nigropectus": {
+      "iucn": "VU"
+    },
+    "Bleda eximius": {
+      "iucn": "NT"
+    },
+    "Bolborhynchus ferrugineifrons": {
+      "iucn": "VU"
+    },
+    "Bolemoreus hindwoodi": {
+      "iucn": "NT"
+    },
+    "Bombycilla japonica": {
+      "iucn": "NT"
+    },
+    "Bostrychia bocagei": {
+      "iucn": "CR"
+    },
+    "Botaurus eurhythmus": {
+      "iucn": "NT"
+    },
+    "Botaurus minutus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Botaurus poiciloptilus": {
+      "iucn": "VU"
+    },
+    "Brachypteracias leptosomus": {
+      "iucn": "VU"
+    },
+    "Brachypteryx hyperythra": {
+      "iucn": "NT"
+    },
+    "Brachyramphus brevirostris": {
+      "iucn": "NT"
+    },
+    "Brachyramphus marmoratus": {
+      "iucn": "EN"
+    },
+    "Brachyramphus perdix": {
+      "iucn": "NT"
+    },
+    "Bradypterus grandis": {
+      "iucn": "NT"
+    },
+    "Bradypterus graueri": {
+      "iucn": "VU"
+    },
+    "Bradypterus sylvaticus": {
+      "iucn": "NT"
+    },
+    "Branta ruficollis": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Branta sandvicensis": {
+      "iucn": "NT"
+    },
+    "Brotogeris pyrrhoptera": {
+      "iucn": "VU"
+    },
+    "Bubo bubo": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Bubo scandiacus": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Bucco noanamae": {
+      "iucn": "NT"
+    },
+    "Buceros bicornis": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Buceros rhinoceros": {
+      "iucn": "VU"
+    },
+    "Bucorvus abyssinicus": {
+      "iucn": "VU"
+    },
+    "Bucorvus leadbeateri": {
+      "iucn": "VU"
+    },
+    "Bulweria fallax": {
+      "iucn": "NT"
+    },
+    "Butastur indicus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Butastur liventer": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Butastur teesa": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Buteo buteo": {
+      "cn": "II"
+    },
+    "Buteo galapagoensis": {
+      "iucn": "VU"
+    },
+    "Buteo hemilasius": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Buteo japonicus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Buteo lagopus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Buteo oreophilus": {
+      "iucn": "NT"
+    },
+    "Buteo refectus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Buteo ridgwayi": {
+      "iucn": "CR"
+    },
+    "Buteo rufinus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Buteo socotraensis": {
+      "iucn": "VU"
+    },
+    "Buteo solitarius": {
+      "iucn": "NT"
+    },
+    "Buteo trizonatus": {
+      "iucn": "NT"
+    },
+    "Buteo ventralis": {
+      "iucn": "EN"
+    },
+    "Buteogallus aequinoctialis": {
+      "iucn": "NT"
+    },
+    "Buteogallus coronatus": {
+      "iucn": "EN"
+    },
+    "Buteogallus gundlachii": {
+      "iucn": "NT"
+    },
+    "Buteogallus lacernulatus": {
+      "iucn": "NT"
+    },
+    "Buteogallus solitarius": {
+      "iucn": "NT"
+    },
+    "Bycanistes cylindricus": {
+      "iucn": "VU"
+    },
+    "Cacatua alba": {
+      "iucn": "EN"
+    },
+    "Cacatua citrinocristata": {
+      "iucn": "CR"
+    },
+    "Cacatua goffiniana": {
+      "iucn": "NT"
+    },
+    "Cacatua haematuropygia": {
+      "iucn": "CR"
+    },
+    "Cacatua moluccensis": {
+      "iucn": "EN"
+    },
+    "Cacatua ophthalmica": {
+      "iucn": "VU"
+    },
+    "Cacatua sulphurea": {
+      "iucn": "CR"
+    },
+    "Cacicus koepckeae": {
+      "iucn": "NT"
+    },
+    "Calcarius ornatus": {
+      "iucn": "VU"
+    },
+    "Calendulauda burra": {
+      "iucn": "VU"
+    },
+    "Calicalicus rufocarpalis": {
+      "iucn": "VU"
+    },
+    "Calidris acuminata": {
+      "iucn": "VU"
+    },
+    "Calidris alpina": {
+      "iucn": "NT"
+    },
+    "Calidris canutus": {
+      "iucn": "NT"
+    },
+    "Calidris falcinellus": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Calidris ferruginea": {
+      "iucn": "VU"
+    },
+    "Calidris fuscicollis": {
+      "iucn": "VU"
+    },
+    "Calidris himantopus": {
+      "iucn": "NT"
+    },
+    "Calidris minutilla": {
+      "iucn": "NT"
+    },
+    "Calidris pusilla": {
+      "iucn": "NT"
+    },
+    "Calidris pygmaea": {
+      "iucn": "CR",
+      "cn": "I"
+    },
+    "Calidris ruficollis": {
+      "iucn": "NT"
+    },
+    "Calidris subruficollis": {
+      "iucn": "VU"
+    },
+    "Calidris tenuirostris": {
+      "iucn": "EN",
+      "cn": "II"
+    },
+    "Calliope calliope": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Calliope obscura": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Calliope pectardens": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Callocephalon fimbriatum": {
+      "iucn": "VU"
+    },
+    "Caloenas nicobarica": {
+      "iucn": "NT"
+    },
+    "Calonectris edwardsii": {
+      "iucn": "NT"
+    },
+    "Calonectris leucomelas": {
+      "iucn": "NT"
+    },
+    "Caloperdix oculeus": {
+      "iucn": "NT"
+    },
+    "Caloramphus hayii": {
+      "iucn": "NT"
+    },
+    "Calyptomena viridis": {
+      "iucn": "NT"
+    },
+    "Calyptophilus frugivorus": {
+      "iucn": "NT"
+    },
+    "Calyptophilus tertius": {
+      "iucn": "VU"
+    },
+    "Calyptorhynchus lathami": {
+      "iucn": "VU"
+    },
+    "Calyptura cristata": {
+      "iucn": "CR"
+    },
+    "Camarhynchus heliobates": {
+      "iucn": "CR"
+    },
+    "Camarhynchus pallidus": {
+      "iucn": "NT"
+    },
+    "Camarhynchus pauper": {
+      "iucn": "CR"
+    },
+    "Camarhynchus psittacula": {
+      "iucn": "VU"
+    },
+    "Campephilus imperialis": {
+      "iucn": "CR (PE)"
+    },
+    "Campephilus principalis": {
+      "iucn": "CR"
+    },
+    "Campethera notata": {
+      "iucn": "NT"
+    },
+    "Campylopterus calcirupicola": {
+      "iucn": "VU"
+    },
+    "Campylopterus diamantinensis": {
+      "iucn": "NT"
+    },
+    "Campylopterus ensipennis": {
+      "iucn": "NT"
+    },
+    "Campylopterus phainopeplus": {
+      "iucn": "CR"
+    },
+    "Campylorhamphus multostriatus": {
+      "iucn": "NT"
+    },
+    "Campylorhynchus yucatanicus": {
+      "iucn": "NT"
+    },
+    "Capito dayi": {
+      "iucn": "NT"
+    },
+    "Capito fitzpatricki": {
+      "iucn": "NT"
+    },
+    "Capito quinticolor": {
+      "iucn": "NT"
+    },
+    "Capito wallacei": {
+      "iucn": "VU"
+    },
+    "Caprimulgus concretus": {
+      "iucn": "VU"
+    },
+    "Caprimulgus prigoginei": {
+      "iucn": "DD"
+    },
+    "Caprimulgus ruficollis": {
+      "iucn": "NT"
+    },
+    "Caprimulgus solala": {
+      "iucn": "VU"
+    },
+    "Carpococcyx radiceus": {
+      "iucn": "VU"
+    },
+    "Carpococcyx renauldi": {
+      "iucn": "EN"
+    },
+    "Carpococcyx viridis": {
+      "iucn": "EN"
+    },
+    "Carpodacus formosanus": {
+      "iucn": "NT"
+    },
+    "Carpodacus roborowskii": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Carpodacus roseus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Carpodacus sillemi": {
+      "iucn": "DD",
+      "cn": "II"
+    },
+    "Carpodectes antoniae": {
+      "iucn": "NT"
+    },
+    "Carpornis melanocephala": {
+      "iucn": "NT"
+    },
+    "Carterornis castus": {
+      "iucn": "NT"
+    },
+    "Catharopeza bishopi": {
+      "iucn": "EN"
+    },
+    "Catharus bicknelli": {
+      "iucn": "VU"
+    },
+    "Catreus wallichii": {
+      "iucn": "VU"
+    },
+    "Ceblepyris cucullatus": {
+      "iucn": "EN"
+    },
+    "Celeus galeatus": {
+      "iucn": "VU"
+    },
+    "Celeus obrieni": {
+      "iucn": "VU"
+    },
+    "Centrocercus minimus": {
+      "iucn": "EN"
+    },
+    "Centrocercus urophasianus": {
+      "iucn": "VU"
+    },
+    "Centropus bengalensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Centropus chalybeus": {
+      "iucn": "NT"
+    },
+    "Centropus chlororhynchos": {
+      "iucn": "VU"
+    },
+    "Centropus nigrorufus": {
+      "iucn": "VU"
+    },
+    "Centropus rectunguis": {
+      "iucn": "VU"
+    },
+    "Centropus sinensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Centropus steerii": {
+      "iucn": "CR"
+    },
+    "Cephalopterus glabricollis": {
+      "iucn": "EN"
+    },
+    "Cephalopterus penduliger": {
+      "iucn": "VU"
+    },
+    "Ceratogymna atrata": {
+      "iucn": "NT"
+    },
+    "Ceratogymna elata": {
+      "iucn": "VU"
+    },
+    "Cercomacra carbonaria": {
+      "iucn": "VU"
+    },
+    "Cercomacra ferdinandi": {
+      "iucn": "NT"
+    },
+    "Certhia tianquanensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Certhidea olivacea": {
+      "iucn": "VU"
+    },
+    "Ceyx argentatus": {
+      "iucn": "NT"
+    },
+    "Ceyx cajeli": {
+      "iucn": "NT"
+    },
+    "Ceyx collectoris": {
+      "iucn": "NT"
+    },
+    "Ceyx dispar": {
+      "iucn": "NT"
+    },
+    "Ceyx erithaca": {
+      "iucn": "NT"
+    },
+    "Ceyx flumenicola": {
+      "iucn": "NT"
+    },
+    "Ceyx sangirensis": {
+      "iucn": "CR"
+    },
+    "Ceyx wallacii": {
+      "iucn": "NT"
+    },
+    "Ceyx websteri": {
+      "iucn": "VU"
+    },
+    "Chaetocercus berlepschi": {
+      "iucn": "VU"
+    },
+    "Chaetocercus bombus": {
+      "iucn": "NT"
+    },
+    "Chaetops aurantius": {
+      "iucn": "NT"
+    },
+    "Chaetops frenatus": {
+      "iucn": "NT"
+    },
+    "Chaetura andrei": {
+      "iucn": "VU"
+    },
+    "Chaetura pelagica": {
+      "iucn": "VU"
+    },
+    "Chamaetylas choloensis": {
+      "iucn": "VU"
+    },
+    "Charadrius melodus": {
+      "iucn": "NT"
+    },
+    "Charadrius vociferus": {
+      "iucn": "NT"
+    },
+    "Charitospiza eucosma": {
+      "iucn": "NT"
+    },
+    "Charmosynopsis toxopei": {
+      "iucn": "DD"
+    },
+    "Chasiempis ibidis": {
+      "iucn": "VU"
+    },
+    "Chasiempis sandwichensis": {
+      "iucn": "NT"
+    },
+    "Chasiempis sclateri": {
+      "iucn": "NT"
+    },
+    "Chelictinia riocourii": {
+      "iucn": "VU"
+    },
+    "Chersophilus duponti": {
+      "iucn": "VU"
+    },
+    "Chiroxiphia bokermanni": {
+      "iucn": "CR"
+    },
+    "Chlamydotis macqueenii": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Chlamydotis undulata": {
+      "iucn": "VU"
+    },
+    "Chlidonias albostriatus": {
+      "iucn": "EN"
+    },
+    "Chlidonias niger": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Chlorochrysa nitidissima": {
+      "iucn": "NT"
+    },
+    "Chlorocichla prigoginei": {
+      "iucn": "DD"
+    },
+    "Chlorodrepanis flava": {
+      "iucn": "NT"
+    },
+    "Chlorodrepanis stejnegeri": {
+      "iucn": "EN"
+    },
+    "Chlorophoneus kupeensis": {
+      "iucn": "EN"
+    },
+    "Chloropipo flavicapilla": {
+      "iucn": "VU"
+    },
+    "Chloropsis cochinchinensis": {
+      "iucn": "EN"
+    },
+    "Chloropsis cyanopogon": {
+      "iucn": "NT"
+    },
+    "Chloropsis flavipennis": {
+      "iucn": "VU"
+    },
+    "Chloropsis media": {
+      "iucn": "EN"
+    },
+    "Chloropsis sonnerati": {
+      "iucn": "EN"
+    },
+    "Chloropsis venusta": {
+      "iucn": "NT"
+    },
+    "Chondrohierax wilsonii": {
+      "iucn": "CR"
+    },
+    "Chroicocephalus bulleri": {
+      "iucn": "NT"
+    },
+    "Chrysocolaptes erythrocephalus": {
+      "iucn": "NT"
+    },
+    "Chrysocolaptes strictus": {
+      "iucn": "NT"
+    },
+    "Chrysocolaptes xanthocephalus": {
+      "iucn": "EN"
+    },
+    "Chrysolophus amherstiae": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Chrysolophus pictus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Chrysomma altirostre": {
+      "iucn": "VU"
+    },
+    "Chrysophlegma flavinucha": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Chrysuronia boucardi": {
+      "iucn": "EN"
+    },
+    "Chrysuronia lilliae": {
+      "iucn": "EN"
+    },
+    "Ciconia boyciana": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Ciconia ciconia": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Ciconia episcopus": {
+      "iucn": "NT"
+    },
+    "Ciconia nigra": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Ciconia stormi": {
+      "iucn": "EN"
+    },
+    "Cinclodes aricomae": {
+      "iucn": "EN"
+    },
+    "Cinclodes pabsti": {
+      "iucn": "NT"
+    },
+    "Cinclodes palliatus": {
+      "iucn": "CR"
+    },
+    "Cincloramphus grosvenori": {
+      "iucn": "VU"
+    },
+    "Cincloramphus llaneae": {
+      "iucn": "NT"
+    },
+    "Cincloramphus rufus": {
+      "iucn": "EN"
+    },
+    "Cincloramphus turipavae": {
+      "iucn": "NT"
+    },
+    "Cinclus schulzii": {
+      "iucn": "VU"
+    },
+    "Cinnyris loveridgei": {
+      "iucn": "EN"
+    },
+    "Cinnyris neergaardi": {
+      "iucn": "NT"
+    },
+    "Cinnyris prigoginei": {
+      "iucn": "NT"
+    },
+    "Cinnyris rockefelleri": {
+      "iucn": "VU"
+    },
+    "Cinnyris rufipennis": {
+      "iucn": "VU"
+    },
+    "Circaetus beaudouini": {
+      "iucn": "VU"
+    },
+    "Circaetus fasciolatus": {
+      "iucn": "NT"
+    },
+    "Circaetus gallicus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Circus aeruginosus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Circus cyaneus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Circus macrosceles": {
+      "iucn": "EN"
+    },
+    "Circus macrourus": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Circus maillardi": {
+      "iucn": "EN"
+    },
+    "Circus maurus": {
+      "iucn": "EN"
+    },
+    "Circus melanoleucos": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Circus pygargus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Circus spilonotus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Cissa chinensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Cissa hypoleuca": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Cissa thalassina": {
+      "iucn": "CR"
+    },
+    "Cisticola aberdare": {
+      "iucn": "VU"
+    },
+    "Cisticola anderseni": {
+      "iucn": "NT"
+    },
+    "Cisticola bakerorum": {
+      "iucn": "VU"
+    },
+    "Cisticola restrictus": {
+      "iucn": "DD"
+    },
+    "Cistothorus apolinari": {
+      "iucn": "EN"
+    },
+    "Clanga clanga": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Clanga hastata": {
+      "iucn": "NT"
+    },
+    "Clangula hyemalis": {
+      "iucn": "VU"
+    },
+    "Cleptornis marchei": {
+      "iucn": "EN"
+    },
+    "Clibanornis erythrocephalus": {
+      "iucn": "NT"
+    },
+    "Clibanornis rufipectus": {
+      "iucn": "VU"
+    },
+    "Clytoctantes alixii": {
+      "iucn": "EN"
+    },
+    "Clytoctantes atrogularis": {
+      "iucn": "NT"
+    },
+    "Clytorhynchus hamlini": {
+      "iucn": "NT"
+    },
+    "Clytorhynchus nigrogularis": {
+      "iucn": "NT"
+    },
+    "Clytorhynchus sanctaecrucis": {
+      "iucn": "EN"
+    },
+    "Cnemathraupis aureodorsalis": {
+      "iucn": "NT"
+    },
+    "Cnipodectes superrufus": {
+      "iucn": "VU"
+    },
+    "Coccyzus ferrugineus": {
+      "iucn": "VU"
+    },
+    "Coccyzus rufigularis": {
+      "iucn": "EN"
+    },
+    "Cochoa azurea": {
+      "iucn": "VU"
+    },
+    "Cochoa purpurea": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Cochoa viridis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Coeligena consita": {
+      "iucn": "EN"
+    },
+    "Coeligena orina": {
+      "iucn": "EN"
+    },
+    "Coeligena phalerata": {
+      "iucn": "NT"
+    },
+    "Coeligena prunellei": {
+      "iucn": "VU"
+    },
+    "Coenocorypha aucklandica": {
+      "iucn": "NT"
+    },
+    "Coenocorypha huegeli": {
+      "iucn": "NT"
+    },
+    "Coenocorypha pusilla": {
+      "iucn": "VU"
+    },
+    "Colaptes fernandinae": {
+      "iucn": "EN"
+    },
+    "Colinus virginianus": {
+      "iucn": "NT"
+    },
+    "Colluricincla boweri": {
+      "iucn": "VU"
+    },
+    "Columba argentina": {
+      "iucn": "CR"
+    },
+    "Columba eversmanni": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Columba junoniae": {
+      "iucn": "NT"
+    },
+    "Columba malherbii": {
+      "iucn": "NT"
+    },
+    "Columba pallidiceps": {
+      "iucn": "VU"
+    },
+    "Columba palumboides": {
+      "iucn": "NT"
+    },
+    "Columba palumbus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Columba pollenii": {
+      "iucn": "NT"
+    },
+    "Columba punicea": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Columba thomensis": {
+      "iucn": "EN"
+    },
+    "Columba torringtoniae": {
+      "iucn": "VU"
+    },
+    "Columbina cyanopis": {
+      "iucn": "CR"
+    },
+    "Conirostrum bicolor": {
+      "iucn": "NT"
+    },
+    "Conirostrum binghami": {
+      "iucn": "NT"
+    },
+    "Conirostrum margaritae": {
+      "iucn": "VU"
+    },
+    "Conopophaga cearae": {
+      "iucn": "NT"
+    },
+    "Conothraupis mesoleuca": {
+      "iucn": "EN"
+    },
+    "Copsychus pyrropygus": {
+      "iucn": "NT"
+    },
+    "Copsychus sechellarum": {
+      "iucn": "EN"
+    },
+    "Coracias benghalensis": {
+      "iucn": "NT"
+    },
+    "Coracina bicolor": {
+      "iucn": "NT"
+    },
+    "Coracina dobsoni": {
+      "iucn": "NT"
+    },
+    "Coracina fortis": {
+      "iucn": "NT"
+    },
+    "Coracopsis barklyi": {
+      "iucn": "VU"
+    },
+    "Coracopsis nigra": {
+      "iucn": "VU"
+    },
+    "Coracopsis sibilans": {
+      "iucn": "NT"
+    },
+    "Coracornis sanghirensis": {
+      "iucn": "CR"
+    },
+    "Corvus florensis": {
+      "iucn": "NT"
+    },
+    "Corvus hawaiiensis": {
+      "iucn": "EW"
+    },
+    "Corvus jamaicensis": {
+      "iucn": "NT"
+    },
+    "Corvus kubaryi": {
+      "iucn": "CR"
+    },
+    "Corvus leucognaphalus": {
+      "iucn": "VU"
+    },
+    "Corvus torquatus": {
+      "iucn": "VU"
+    },
+    "Corvus unicolor": {
+      "iucn": "CR"
+    },
+    "Corypha sharpii": {
+      "iucn": "EN"
+    },
+    "Coryphaspiza melanotis": {
+      "iucn": "VU"
+    },
+    "Cotinga maculata": {
+      "iucn": "CR"
+    },
+    "Cotinga ridgwayi": {
+      "iucn": "VU"
+    },
+    "Coturnicops exquisitus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Coturnix japonica": {
+      "iucn": "NT"
+    },
+    "Coua gigas": {
+      "iucn": "VU"
+    },
+    "Cracticus louisiadensis": {
+      "iucn": "NT"
+    },
+    "Cranioleuca berlepschi": {
+      "iucn": "NT"
+    },
+    "Cranioleuca henricae": {
+      "iucn": "VU"
+    },
+    "Crax alberti": {
+      "iucn": "CR"
+    },
+    "Crax blumenbachii": {
+      "iucn": "EN"
+    },
+    "Crax daubentoni": {
+      "iucn": "NT"
+    },
+    "Crax globulosa": {
+      "iucn": "EN"
+    },
+    "Crax rubra": {
+      "iucn": "VU"
+    },
+    "Crex crex": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Criniger olivaceus": {
+      "iucn": "VU"
+    },
+    "Crithagra ankoberensis": {
+      "iucn": "VU"
+    },
+    "Crithagra concolor": {
+      "iucn": "CR"
+    },
+    "Crithagra flavigula": {
+      "iucn": "NT"
+    },
+    "Crithagra leucoptera": {
+      "iucn": "NT"
+    },
+    "Crithagra xantholaema": {
+      "iucn": "NT"
+    },
+    "Crossleyia tenebrosa": {
+      "iucn": "DD"
+    },
+    "Crossoptilon auritum": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Crossoptilon crossoptilon": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Crossoptilon harmani": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Crossoptilon mantchuricum": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Cryptoleucopteryx plumbea": {
+      "iucn": "NT"
+    },
+    "Cryptospiza shelleyi": {
+      "iucn": "EN"
+    },
+    "Crypturellus boucardi": {
+      "iucn": "VU"
+    },
+    "Crypturellus kerriae": {
+      "iucn": "NT"
+    },
+    "Crypturellus noctivagus": {
+      "iucn": "NT"
+    },
+    "Crypturellus transfasciatus": {
+      "iucn": "NT"
+    },
+    "Curruca buryi": {
+      "iucn": "NT"
+    },
+    "Curruca undata": {
+      "iucn": "NT"
+    },
+    "Cursorius coromandelicus": {
+      "iucn": "NT"
+    },
+    "Cutia legalleni": {
+      "iucn": "NT"
+    },
+    "Cyanochen cyanoptera": {
+      "iucn": "NT"
+    },
+    "Cyanocorax coeruleus": {
+      "iucn": "NT"
+    },
+    "Cyanocorax dickeyi": {
+      "iucn": "NT"
+    },
+    "Cyanolanius comorensis": {
+      "iucn": "NT"
+    },
+    "Cyanolanius madagascarinus": {
+      "iucn": "NT"
+    },
+    "Cyanolyca mirabilis": {
+      "iucn": "VU"
+    },
+    "Cyanolyca nanus": {
+      "iucn": "NT"
+    },
+    "Cyanolyca pulchra": {
+      "iucn": "NT"
+    },
+    "Cyanopsitta spixii": {
+      "iucn": "EW"
+    },
+    "Cyanoptila cumatilis": {
+      "iucn": "NT"
+    },
+    "Cyanoramphus auriceps": {
+      "iucn": "NT"
+    },
+    "Cyanoramphus forbesi": {
+      "iucn": "VU"
+    },
+    "Cyanoramphus malherbi": {
+      "iucn": "CR"
+    },
+    "Cyanoramphus unicolor": {
+      "iucn": "VU"
+    },
+    "Cygnus columbianus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Cygnus cygnus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Cygnus olor": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Cynanthus lawrencei": {
+      "iucn": "NT"
+    },
+    "Cyornis banyumas": {
+      "iucn": "CR"
+    },
+    "Cyornis brunneatus": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Cyornis caerulatus": {
+      "iucn": "VU"
+    },
+    "Cyornis camarinensis": {
+      "iucn": "NT"
+    },
+    "Cyornis colonus": {
+      "iucn": "NT"
+    },
+    "Cyornis herioti": {
+      "iucn": "NT"
+    },
+    "Cyornis kadayangensis": {
+      "iucn": "NT"
+    },
+    "Cyornis lemprieri": {
+      "iucn": "NT"
+    },
+    "Cyornis magnirostris": {
+      "iucn": "NT"
+    },
+    "Cyornis nicobaricus": {
+      "iucn": "NT"
+    },
+    "Cyornis pelingensis": {
+      "iucn": "NT"
+    },
+    "Cyornis ruckii": {
+      "iucn": "CR"
+    },
+    "Cyornis turcosus": {
+      "iucn": "NT"
+    },
+    "Cyornis umbratilis": {
+      "iucn": "NT"
+    },
+    "Cypseloides niger": {
+      "iucn": "VU"
+    },
+    "Cypseloides storeri": {
+      "iucn": "DD"
+    },
+    "Cyrtonyx ocellatus": {
+      "iucn": "VU"
+    },
+    "Dacnis hartlaubi": {
+      "iucn": "NT"
+    },
+    "Dacnis nigripes": {
+      "iucn": "NT"
+    },
+    "Daptrius australis": {
+      "iucn": "NT"
+    },
+    "Dasycrotapha plateni": {
+      "iucn": "NT"
+    },
+    "Dasycrotapha pygmaea": {
+      "iucn": "NT"
+    },
+    "Dasycrotapha speciosa": {
+      "iucn": "NT"
+    },
+    "Dasyornis brachypterus": {
+      "iucn": "VU"
+    },
+    "Dasyornis longirostris": {
+      "iucn": "EN"
+    },
+    "Dendrocitta bayleii": {
+      "iucn": "VU"
+    },
+    "Dendrocopos leucopterus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Dendrocopos noguchii": {
+      "iucn": "EN"
+    },
+    "Dendrocoptes dorae": {
+      "iucn": "NT"
+    },
+    "Dendrocygna arborea": {
+      "iucn": "NT"
+    },
+    "Dendrocygna javanica": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Dendrortyx barbatus": {
+      "iucn": "VU"
+    },
+    "Dicaeum dayakorum": {
+      "iucn": "DD"
+    },
+    "Dicaeum quadricolor": {
+      "iucn": "CR"
+    },
+    "Dicaeum retrocinctum": {
+      "iucn": "NT"
+    },
+    "Dicrurus aldabranus": {
+      "iucn": "NT"
+    },
+    "Dicrurus fuscipennis": {
+      "iucn": "EN"
+    },
+    "Dicrurus megarhynchus": {
+      "iucn": "NT"
+    },
+    "Dicrurus menagei": {
+      "iucn": "EN"
+    },
+    "Dicrurus paradiseus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Dicrurus remifer": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Dicrurus waldenii": {
+      "iucn": "VU"
+    },
+    "Didunculus strigirostris": {
+      "iucn": "CR"
+    },
+    "Diglossa gloriosissima": {
+      "iucn": "NT"
+    },
+    "Diglossa venezuelensis": {
+      "iucn": "EN"
+    },
+    "Dinopium everetti": {
+      "iucn": "NT"
+    },
+    "Diomedea amsterdamensis": {
+      "iucn": "EN"
+    },
+    "Diomedea antipodensis": {
+      "iucn": "EN"
+    },
+    "Diomedea dabbenena": {
+      "iucn": "CR"
+    },
+    "Diomedea epomophora": {
+      "iucn": "VU"
+    },
+    "Diomedea exulans": {
+      "iucn": "VU"
+    },
+    "Diomedea sanfordi": {
+      "iucn": "EN"
+    },
+    "Diphyllodes respublica": {
+      "iucn": "NT"
+    },
+    "Discosura letitiae": {
+      "iucn": "DD"
+    },
+    "Dolichonyx oryzivorus": {
+      "iucn": "NT"
+    },
+    "Doliornis remseni": {
+      "iucn": "NT"
+    },
+    "Doliornis sclateri": {
+      "iucn": "NT"
+    },
+    "Doricha eliza": {
+      "iucn": "NT"
+    },
+    "Drepanis coccinea": {
+      "iucn": "VU"
+    },
+    "Dreptes thomensis": {
+      "iucn": "VU"
+    },
+    "Driophlox atrimaxillaris": {
+      "iucn": "NT"
+    },
+    "Drymophila hellmayri": {
+      "iucn": "NT"
+    },
+    "Dryocopus hodgei": {
+      "iucn": "VU"
+    },
+    "Dryocopus javensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Dryocopus martius": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Dryocopus schulzii": {
+      "iucn": "NT"
+    },
+    "Dubusia carrikeri": {
+      "iucn": "NT"
+    },
+    "Ducula aenea": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Ducula aurorae": {
+      "iucn": "EN"
+    },
+    "Ducula badia": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ducula brenchleyi": {
+      "iucn": "NT"
+    },
+    "Ducula carola": {
+      "iucn": "VU"
+    },
+    "Ducula cineracea": {
+      "iucn": "NT"
+    },
+    "Ducula finschii": {
+      "iucn": "NT"
+    },
+    "Ducula galeata": {
+      "iucn": "EN"
+    },
+    "Ducula goliath": {
+      "iucn": "NT"
+    },
+    "Ducula mindorensis": {
+      "iucn": "NT"
+    },
+    "Ducula nicobarica": {
+      "iucn": "NT"
+    },
+    "Ducula oceanica": {
+      "iucn": "VU"
+    },
+    "Ducula oenothorax": {
+      "iucn": "NT"
+    },
+    "Ducula pickeringii": {
+      "iucn": "NT"
+    },
+    "Ducula poliocephala": {
+      "iucn": "NT"
+    },
+    "Ducula rosacea": {
+      "iucn": "NT"
+    },
+    "Ducula subflavescens": {
+      "iucn": "NT"
+    },
+    "Dysithamnus occidentalis": {
+      "iucn": "NT"
+    },
+    "Dysithamnus plumbeus": {
+      "iucn": "VU"
+    },
+    "Dysithamnus striaticeps": {
+      "iucn": "NT"
+    },
+    "Eclectus cornelia": {
+      "iucn": "EN"
+    },
+    "Eclectus riedeli": {
+      "iucn": "VU"
+    },
+    "Edolisoma anale": {
+      "iucn": "NT"
+    },
+    "Edolisoma insperatum": {
+      "iucn": "EN"
+    },
+    "Edolisoma mindanense": {
+      "iucn": "VU"
+    },
+    "Edolisoma nesiotis": {
+      "iucn": "EN"
+    },
+    "Edolisoma ostentum": {
+      "iucn": "NT"
+    },
+    "Edolisoma rostratum": {
+      "iucn": "NT"
+    },
+    "Egretta eulophotes": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Egretta rufescens": {
+      "iucn": "NT"
+    },
+    "Egretta sacra": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Egretta vinaceigula": {
+      "iucn": "VU"
+    },
+    "Elaenia ridleyana": {
+      "iucn": "VU"
+    },
+    "Elanus caeruleus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Elanus scriptus": {
+      "iucn": "NT"
+    },
+    "Elaphrornis palliseri": {
+      "iucn": "NT"
+    },
+    "Electron carinatum": {
+      "iucn": "VU"
+    },
+    "Eleoscytalopus psychopompus": {
+      "iucn": "EN"
+    },
+    "Eleothreptus anomalus": {
+      "iucn": "VU"
+    },
+    "Eleothreptus candicans": {
+      "iucn": "VU"
+    },
+    "Emberiza aureola": {
+      "iucn": "CR",
+      "cn": "I"
+    },
+    "Emberiza cineracea": {
+      "iucn": "NT"
+    },
+    "Emberiza jankowskii": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Emberiza koslowi": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Emberiza rustica": {
+      "iucn": "NT"
+    },
+    "Emberiza siemsseni": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Emberiza socotrana": {
+      "iucn": "NT"
+    },
+    "Emberiza yessoensis": {
+      "iucn": "NT"
+    },
+    "Emberizoides duidae": {
+      "iucn": "DD"
+    },
+    "Enicurus ruficapillus": {
+      "iucn": "NT"
+    },
+    "Eos cyanogenia": {
+      "iucn": "NT"
+    },
+    "Eos histrio": {
+      "iucn": "EN"
+    },
+    "Eos reticulata": {
+      "iucn": "NT"
+    },
+    "Eos semilarvata": {
+      "iucn": "NT"
+    },
+    "Ephippiorhynchus senegalensis": {
+      "iucn": "NT"
+    },
+    "Eremomela turneri": {
+      "iucn": "NT"
+    },
+    "Eriocnemis godini": {
+      "iucn": "CR (PE)"
+    },
+    "Eriocnemis isabellae": {
+      "iucn": "CR"
+    },
+    "Eriocnemis mirabilis": {
+      "iucn": "EN"
+    },
+    "Eriocnemis nigrivestis": {
+      "iucn": "EN"
+    },
+    "Erythropitta granatina": {
+      "iucn": "NT"
+    },
+    "Erythropitta meeki": {
+      "iucn": "DD"
+    },
+    "Erythrotriorchis buergersi": {
+      "iucn": "NT"
+    },
+    "Erythrotriorchis radiatus": {
+      "iucn": "EN"
+    },
+    "Erythrura kleinschmidti": {
+      "iucn": "VU"
+    },
+    "Esacus magnirostris": {
+      "iucn": "NT"
+    },
+    "Esacus recurvirostris": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Estrilda nigriloris": {
+      "iucn": "DD"
+    },
+    "Estrilda poliopareia": {
+      "iucn": "NT"
+    },
+    "Euchrepomis sharpei": {
+      "iucn": "NT"
+    },
+    "Eudyptes chrysolophus": {
+      "iucn": "VU"
+    },
+    "Eudyptes moseleyi": {
+      "iucn": "EN"
+    },
+    "Eudyptes pachyrhynchus": {
+      "iucn": "NT"
+    },
+    "Eudyptes robustus": {
+      "iucn": "VU"
+    },
+    "Eudyptes sclateri": {
+      "iucn": "EN"
+    },
+    "Eulidia yarrellii": {
+      "iucn": "CR"
+    },
+    "Eulipoa wallacei": {
+      "iucn": "VU"
+    },
+    "Eumyias additus": {
+      "iucn": "NT"
+    },
+    "Eumyias sordidus": {
+      "iucn": "NT"
+    },
+    "Eumyias stresemanni": {
+      "iucn": "NT"
+    },
+    "Eunymphicus cornutus": {
+      "iucn": "VU"
+    },
+    "Eunymphicus uvaeensis": {
+      "iucn": "VU"
+    },
+    "Eupetes macrocerus": {
+      "iucn": "NT"
+    },
+    "Euphagus carolinus": {
+      "iucn": "VU"
+    },
+    "Euphagus cyanocephalus": {
+      "iucn": "NT"
+    },
+    "Eupherusa cyanophrys": {
+      "iucn": "EN"
+    },
+    "Eupherusa poliocerca": {
+      "iucn": "NT"
+    },
+    "Eupherusa ridgwayi": {
+      "iucn": "VU"
+    },
+    "Eupodotis caerulescens": {
+      "iucn": "NT"
+    },
+    "Eupsittula canicularis": {
+      "iucn": "VU"
+    },
+    "Euptilotus eutilotus": {
+      "iucn": "NT"
+    },
+    "Eurostopodus exul": {
+      "iucn": "CR (PE)"
+    },
+    "Eurostopodus nigripennis": {
+      "iucn": "VU"
+    },
+    "Euryceros prevostii": {
+      "iucn": "EN"
+    },
+    "Eurylaimus ochromalus": {
+      "iucn": "NT"
+    },
+    "Eurystomus azureus": {
+      "iucn": "NT"
+    },
+    "Eutrichomyias rowleyi": {
+      "iucn": "CR"
+    },
+    "Eutriorchis astur": {
+      "iucn": "EN"
+    },
+    "Falcipennis falcipennis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Falco amurensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Falco araeus": {
+      "iucn": "VU"
+    },
+    "Falco cherrug": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Falco columbarius": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Falco concolor": {
+      "iucn": "VU"
+    },
+    "Falco deiroleucus": {
+      "iucn": "NT"
+    },
+    "Falco fasciinucha": {
+      "iucn": "VU"
+    },
+    "Falco hypoleucos": {
+      "iucn": "VU"
+    },
+    "Falco jugger": {
+      "iucn": "NT"
+    },
+    "Falco naumanni": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Falco peregrinus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Falco punctatus": {
+      "iucn": "EN"
+    },
+    "Falco rusticolus": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Falco severus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Falco subbuteo": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Falco tinnunculus": {
+      "cn": "II"
+    },
+    "Falco vespertinus": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Ferminia cerverai": {
+      "iucn": "EN"
+    },
+    "Ficedula basilanica": {
+      "iucn": "VU"
+    },
+    "Ficedula bonthaina": {
+      "iucn": "EN"
+    },
+    "Ficedula henrici": {
+      "iucn": "NT"
+    },
+    "Ficedula platenae": {
+      "iucn": "VU"
+    },
+    "Ficedula riedeli": {
+      "iucn": "NT"
+    },
+    "Ficedula rufigula": {
+      "iucn": "NT"
+    },
+    "Ficedula subrubra": {
+      "iucn": "VU"
+    },
+    "Formicivora erythronotos": {
+      "iucn": "EN"
+    },
+    "Formicivora grantsaui": {
+      "iucn": "VU"
+    },
+    "Forpus cyanopygius": {
+      "iucn": "NT"
+    },
+    "Forpus xanthops": {
+      "iucn": "VU"
+    },
+    "Foudia aldabrana": {
+      "iucn": "EN"
+    },
+    "Foudia rubra": {
+      "iucn": "EN"
+    },
+    "Foudia sechellarum": {
+      "iucn": "NT"
+    },
+    "Fraseria lendu": {
+      "iucn": "VU"
+    },
+    "Fratercula arctica": {
+      "iucn": "VU"
+    },
+    "Fregata andrewsi": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Fregata aquila": {
+      "iucn": "VU"
+    },
+    "Fregata ariel": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Fregata minor": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Fregetta lineata": {
+      "iucn": "DD"
+    },
+    "Fregetta maoriana": {
+      "iucn": "CR"
+    },
+    "Fringilla polatzeki": {
+      "iucn": "EN"
+    },
+    "Fringilla teydea": {
+      "iucn": "NT"
+    },
+    "Fulica alai": {
+      "iucn": "NT"
+    },
+    "Fulica cornuta": {
+      "iucn": "NT"
+    },
+    "Fulvetta striaticollis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Gactornis enarratus": {
+      "iucn": "NT"
+    },
+    "Gallicolumba crinigera": {
+      "iucn": "VU"
+    },
+    "Gallicolumba keayi": {
+      "iucn": "CR"
+    },
+    "Gallicolumba luzonica": {
+      "iucn": "NT"
+    },
+    "Gallicolumba menagei": {
+      "iucn": "CR"
+    },
+    "Gallicolumba platenae": {
+      "iucn": "CR"
+    },
+    "Gallinago hardwickii": {
+      "iucn": "NT"
+    },
+    "Gallinago imperialis": {
+      "iucn": "NT"
+    },
+    "Gallinago macrodactyla": {
+      "iucn": "VU"
+    },
+    "Gallinago media": {
+      "iucn": "NT"
+    },
+    "Gallinago nemoricola": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Gallinago nobilis": {
+      "iucn": "NT"
+    },
+    "Gallinago stricklandii": {
+      "iucn": "NT"
+    },
+    "Gallinula comeri": {
+      "iucn": "VU"
+    },
+    "Gallinula silvestris": {
+      "iucn": "CR"
+    },
+    "Gallirallus australis": {
+      "iucn": "VU"
+    },
+    "Gallirallus calayanensis": {
+      "iucn": "VU"
+    },
+    "Gallirallus insignis": {
+      "iucn": "NT"
+    },
+    "Gallirallus lafresnayanus": {
+      "iucn": "CR"
+    },
+    "Gallirallus okinawae": {
+      "iucn": "EN"
+    },
+    "Gallirallus owstoni": {
+      "iucn": "CR"
+    },
+    "Gallirallus sylvestris": {
+      "iucn": "EN"
+    },
+    "Gallirallus wallacii": {
+      "iucn": "VU"
+    },
+    "Gallus gallus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Garrulax annamensis": {
+      "iucn": "EN"
+    },
+    "Garrulax bicolor": {
+      "iucn": "EN"
+    },
+    "Garrulax canorus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Garrulax maesi": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Garrulax palliatus": {
+      "iucn": "NT"
+    },
+    "Garrulax rufifrons": {
+      "iucn": "EN"
+    },
+    "Garrulax taewanus": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Gavia adamsii": {
+      "iucn": "NT"
+    },
+    "Gecinulus rafflesii": {
+      "iucn": "NT"
+    },
+    "Geobiastes squamiger": {
+      "iucn": "VU"
+    },
+    "Geocolaptes olivaceus": {
+      "iucn": "NT"
+    },
+    "Geokichla cinerea": {
+      "iucn": "VU"
+    },
+    "Geokichla dohertyi": {
+      "iucn": "NT"
+    },
+    "Geokichla dumasi": {
+      "iucn": "NT"
+    },
+    "Geokichla erythronota": {
+      "iucn": "NT"
+    },
+    "Geokichla guttata": {
+      "iucn": "VU"
+    },
+    "Geokichla interpres": {
+      "iucn": "EN"
+    },
+    "Geokichla joiceyi": {
+      "iucn": "NT"
+    },
+    "Geokichla leucolaema": {
+      "iucn": "NT"
+    },
+    "Geokichla mendeni": {
+      "iucn": "NT"
+    },
+    "Geokichla oberlaenderi": {
+      "iucn": "NT"
+    },
+    "Geokichla peronii": {
+      "iucn": "NT"
+    },
+    "Geokichla schistacea": {
+      "iucn": "NT"
+    },
+    "Geokichla spiloptera": {
+      "iucn": "NT"
+    },
+    "Geositta poeciloptera": {
+      "iucn": "VU"
+    },
+    "Geospiza acutirostris": {
+      "iucn": "VU"
+    },
+    "Geospiza conirostris": {
+      "iucn": "VU"
+    },
+    "Geospiza propinqua": {
+      "iucn": "VU"
+    },
+    "Geospiza septentrionalis": {
+      "iucn": "VU"
+    },
+    "Geothlypis beldingi": {
+      "iucn": "VU"
+    },
+    "Geothlypis flavovelata": {
+      "iucn": "NT"
+    },
+    "Geothlypis speciosa": {
+      "iucn": "VU"
+    },
+    "Geotrygon caniceps": {
+      "iucn": "VU"
+    },
+    "Geotrygon leucometopia": {
+      "iucn": "EN"
+    },
+    "Geotrygon purpurata": {
+      "iucn": "EN"
+    },
+    "Geotrygon versicolor": {
+      "iucn": "NT"
+    },
+    "Geronticus calvus": {
+      "iucn": "NT"
+    },
+    "Geronticus eremita": {
+      "iucn": "EN"
+    },
+    "Gerygone hypoxantha": {
+      "iucn": "NT"
+    },
+    "Glareola lactea": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Glareola nordmanni": {
+      "iucn": "NT"
+    },
+    "Glareola ocularis": {
+      "iucn": "NT"
+    },
+    "Glaucidium albertinum": {
+      "iucn": "NT"
+    },
+    "Glaucidium castanotum": {
+      "iucn": "NT"
+    },
+    "Glaucidium cuculoides": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Glaucidium mooreorum": {
+      "iucn": "CR (PE)"
+    },
+    "Glaucidium nubicola": {
+      "iucn": "VU"
+    },
+    "Glaucidium passerinum": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Glaucidium sanchezi": {
+      "iucn": "NT"
+    },
+    "Glaucis dohrnii": {
+      "iucn": "VU"
+    },
+    "Goldmania bella": {
+      "iucn": "NT"
+    },
+    "Goldmania violiceps": {
+      "iucn": "NT"
+    },
+    "Goodfellowia miranda": {
+      "iucn": "NT"
+    },
+    "Gorsachius goisagi": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Gorsachius melanolophus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Goura cristata": {
+      "iucn": "VU"
+    },
+    "Goura scheepmakeri": {
+      "iucn": "VU"
+    },
+    "Goura sclaterii": {
+      "iucn": "NT"
+    },
+    "Goura victoria": {
+      "iucn": "NT"
+    },
+    "Gracula ptilogenys": {
+      "iucn": "NT"
+    },
+    "Gracula religiosa": {
+      "cn": "II"
+    },
+    "Gracula venerata": {
+      "iucn": "EN"
+    },
+    "Gracupica jalla": {
+      "iucn": "CR (PEW)"
+    },
+    "Grallaria alleni": {
+      "iucn": "VU"
+    },
+    "Grallaria bangsi": {
+      "iucn": "VU"
+    },
+    "Grallaria chthonia": {
+      "iucn": "CR"
+    },
+    "Grallaria excelsa": {
+      "iucn": "NT"
+    },
+    "Grallaria gigantea": {
+      "iucn": "VU"
+    },
+    "Grallaria kaestneri": {
+      "iucn": "EN"
+    },
+    "Grallaria milleri": {
+      "iucn": "VU"
+    },
+    "Grallaria ridgelyi": {
+      "iucn": "EN"
+    },
+    "Grallaria saltuensis": {
+      "iucn": "NT"
+    },
+    "Grallaria urraoensis": {
+      "iucn": "CR"
+    },
+    "Grallaria watkinsi": {
+      "iucn": "NT"
+    },
+    "Grallaricula cucullata": {
+      "iucn": "NT"
+    },
+    "Grallaricula cumanensis": {
+      "iucn": "VU"
+    },
+    "Grallaricula loricata": {
+      "iucn": "NT"
+    },
+    "Grallaricula ochraceifrons": {
+      "iucn": "VU"
+    },
+    "Grallaricula peruviana": {
+      "iucn": "NT"
+    },
+    "Graminicola bengalensis": {
+      "iucn": "NT"
+    },
+    "Graminicola striatus": {
+      "iucn": "NT"
+    },
+    "Grus americana": {
+      "iucn": "EN"
+    },
+    "Grus carunculata": {
+      "iucn": "VU"
+    },
+    "Grus grus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Grus japonensis": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Grus monacha": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Grus nigricollis": {
+      "iucn": "NT",
+      "cn": "I"
+    },
+    "Grus paradisea": {
+      "iucn": "VU"
+    },
+    "Grus virgo": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Guaruba guarouba": {
+      "iucn": "VU"
+    },
+    "Gubernatrix cristata": {
+      "iucn": "EN"
+    },
+    "Guyramemua affine": {
+      "iucn": "NT"
+    },
+    "Gymnocrex talaudensis": {
+      "iucn": "EN"
+    },
+    "Gymnogyps californianus": {
+      "iucn": "CR"
+    },
+    "Gymnomyza aubryana": {
+      "iucn": "CR"
+    },
+    "Gymnomyza samoensis": {
+      "iucn": "EN"
+    },
+    "Gymnorhinus cyanocephalus": {
+      "iucn": "VU"
+    },
+    "Gypaetus barbatus": {
+      "iucn": "NT",
+      "cn": "I"
+    },
+    "Gyps africanus": {
+      "iucn": "CR"
+    },
+    "Gyps bengalensis": {
+      "iucn": "CR",
+      "cn": "I"
+    },
+    "Gyps coprotheres": {
+      "iucn": "VU"
+    },
+    "Gyps fulvus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Gyps himalayensis": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Gyps indicus": {
+      "iucn": "CR",
+      "cn": "II"
+    },
+    "Gyps rueppelli": {
+      "iucn": "CR"
+    },
+    "Gyps tenuirostris": {
+      "iucn": "CR"
+    },
+    "Gypsophila calcicola": {
+      "iucn": "VU"
+    },
+    "Haematopus chathamensis": {
+      "iucn": "EN"
+    },
+    "Haematopus ostralegus": {
+      "iucn": "NT"
+    },
+    "Halcyon pileata": {
+      "iucn": "VU"
+    },
+    "Halcyon smyrnensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Haliaeetus albicilla": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Haliaeetus leucoryphus": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Haliaeetus pelagicus": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Haliastur indus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Hapalopsittaca amazonina": {
+      "iucn": "NT"
+    },
+    "Hapalopsittaca fuertesi": {
+      "iucn": "EN"
+    },
+    "Hapalopsittaca pyrrhops": {
+      "iucn": "EN"
+    },
+    "Haplophaedia lugens": {
+      "iucn": "NT"
+    },
+    "Harpactes diardii": {
+      "iucn": "NT"
+    },
+    "Harpactes duvaucelii": {
+      "iucn": "NT"
+    },
+    "Harpactes erythrocephalus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Harpactes kasumba": {
+      "iucn": "NT"
+    },
+    "Harpactes oreskios": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Harpactes orrhophaeus": {
+      "iucn": "VU"
+    },
+    "Harpactes wardi": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Harpia harpyja": {
+      "iucn": "VU"
+    },
+    "Harpyopsis novaeguineae": {
+      "iucn": "VU"
+    },
+    "Hartertula flavoviridis": {
+      "iucn": "NT"
+    },
+    "Hedydipna pallidigaster": {
+      "iucn": "EN"
+    },
+    "Heliangelus regalis": {
+      "iucn": "NT"
+    },
+    "Heliopais personatus": {
+      "iucn": "CR"
+    },
+    "Hemignathus affinis": {
+      "iucn": "EX"
+    },
+    "Hemignathus hanapepe": {
+      "iucn": "EX"
+    },
+    "Hemignathus wilsoni": {
+      "iucn": "EN"
+    },
+    "Hemimacronyx chloris": {
+      "iucn": "VU"
+    },
+    "Hemiphaga chathamensis": {
+      "iucn": "VU"
+    },
+    "Hemiprocne coronata": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Hemitriccus cohnhafti": {
+      "iucn": "NT"
+    },
+    "Hemitriccus kaempferi": {
+      "iucn": "VU"
+    },
+    "Hemitriccus mirandae": {
+      "iucn": "VU"
+    },
+    "Henicopernis infuscatus": {
+      "iucn": "VU"
+    },
+    "Henicophaps foersteri": {
+      "iucn": "VU"
+    },
+    "Henicorhina anachoreta": {
+      "iucn": "NT"
+    },
+    "Henicorhina negreti": {
+      "iucn": "VU"
+    },
+    "Herpsilochmus parkeri": {
+      "iucn": "VU"
+    },
+    "Herpsilochmus pectoralis": {
+      "iucn": "VU"
+    },
+    "Herpsilochmus pileatus": {
+      "iucn": "NT"
+    },
+    "Hesperiphona vespertina": {
+      "iucn": "VU"
+    },
+    "Hesperoburhinus superciliaris": {
+      "iucn": "VU"
+    },
+    "Heteromirafra archeri": {
+      "iucn": "CR"
+    },
+    "Heteromirafra ruddi": {
+      "iucn": "EN"
+    },
+    "Heteromyias cinereifrons": {
+      "iucn": "NT"
+    },
+    "Heterotetrax humilis": {
+      "iucn": "NT"
+    },
+    "Heteroxolmis dominicana": {
+      "iucn": "VU"
+    },
+    "Hieraaetus pennatus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Hierococcyx vagans": {
+      "iucn": "NT"
+    },
+    "Himantopus novaezelandiae": {
+      "iucn": "CR"
+    },
+    "Hirundapus cochinchinensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Hirundo atrocaerulea": {
+      "iucn": "EN"
+    },
+    "Hirundo megaensis": {
+      "iucn": "VU"
+    },
+    "Horornis carolinae": {
+      "iucn": "NT"
+    },
+    "Horornis haddeni": {
+      "iucn": "NT"
+    },
+    "Houbaropsis bengalensis": {
+      "iucn": "CR"
+    },
+    "Humblotia flavirostris": {
+      "iucn": "VU"
+    },
+    "Hydrobates cheimomnestes": {
+      "iucn": "VU"
+    },
+    "Hydrobates homochroa": {
+      "iucn": "EN"
+    },
+    "Hydrobates hornbyi": {
+      "iucn": "NT"
+    },
+    "Hydrobates leucorhous": {
+      "iucn": "VU"
+    },
+    "Hydrobates markhami": {
+      "iucn": "NT"
+    },
+    "Hydrobates matsudairae": {
+      "iucn": "VU"
+    },
+    "Hydrobates monorhis": {
+      "iucn": "NT"
+    },
+    "Hydrobates monteiroi": {
+      "iucn": "VU"
+    },
+    "Hydrobates socorroensis": {
+      "iucn": "EN"
+    },
+    "Hydrocoloeus minutus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Hydrophasianus chirurgus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Hydrornis baudii": {
+      "iucn": "VU"
+    },
+    "Hydrornis caeruleus": {
+      "iucn": "NT"
+    },
+    "Hydrornis cyaneus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Hydrornis gurneyi": {
+      "iucn": "CR"
+    },
+    "Hydrornis irena": {
+      "iucn": "NT"
+    },
+    "Hydrornis nipalensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Hydrornis oatesi": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Hydrornis phayrei": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Hydrornis soror": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Hylexetastes uniformis": {
+      "iucn": "VU"
+    },
+    "Hyliota usambara": {
+      "iucn": "EN"
+    },
+    "Hylonympha macrocerca": {
+      "iucn": "EN"
+    },
+    "Hylopezus auricularis": {
+      "iucn": "VU"
+    },
+    "Hylopsar cupreocauda": {
+      "iucn": "NT"
+    },
+    "Hylorchilus navai": {
+      "iucn": "VU"
+    },
+    "Hylorchilus sumichrasti": {
+      "iucn": "NT"
+    },
+    "Hymenolaimus malacorhynchos": {
+      "iucn": "EN"
+    },
+    "Hypocnemis ochrogyna": {
+      "iucn": "VU"
+    },
+    "Hypopyrrhus pyrohypogaster": {
+      "iucn": "VU"
+    },
+    "Hypositta corallirostris": {
+      "iucn": "NT"
+    },
+    "Hypothymis coelestis": {
+      "iucn": "VU"
+    },
+    "Hypothymis helenae": {
+      "iucn": "NT"
+    },
+    "Hypsipetes borbonicus": {
+      "iucn": "NT"
+    },
+    "Hypsipetes catarmanensis": {
+      "iucn": "NT"
+    },
+    "Hypsipetes moheliensis": {
+      "iucn": "NT"
+    },
+    "Hypsipetes nicobariensis": {
+      "iucn": "NT"
+    },
+    "Hypsipetes olivaceus": {
+      "iucn": "VU"
+    },
+    "Hypsipetes parvirostris": {
+      "iucn": "NT"
+    },
+    "Hypsipetes platenae": {
+      "iucn": "CR"
+    },
+    "Hypsipetes rufigularis": {
+      "iucn": "NT"
+    },
+    "Hypsipetes siquijorensis": {
+      "iucn": "EN"
+    },
+    "Ianthocincla bieti": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Ianthocincla konkakinhensis": {
+      "iucn": "NT"
+    },
+    "Ianthocincla lunulata": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ianthocincla maxima": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ianthocincla ocellata": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ianthocincla sukatschewi": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Ibidorhyncha struthersii": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ichthyaetus audouinii": {
+      "iucn": "VU"
+    },
+    "Ichthyaetus relictus": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Icterus bonana": {
+      "iucn": "VU"
+    },
+    "Icterus laudabilis": {
+      "iucn": "EN"
+    },
+    "Icterus northropi": {
+      "iucn": "EN"
+    },
+    "Icterus oberi": {
+      "iucn": "VU"
+    },
+    "Icthyophaga humilis": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Icthyophaga ichthyaetus": {
+      "iucn": "NT"
+    },
+    "Icthyophaga leucogaster": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Icthyophaga sanfordi": {
+      "iucn": "VU"
+    },
+    "Icthyophaga vociferoides": {
+      "iucn": "CR"
+    },
+    "Ictinaetus malaiensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Illadopsis rufescens": {
+      "iucn": "NT"
+    },
+    "Incaspiza watkinsi": {
+      "iucn": "VU"
+    },
+    "Indicator archipelagicus": {
+      "iucn": "NT"
+    },
+    "Iodopleura pipra": {
+      "iucn": "EN"
+    },
+    "Iole finschii": {
+      "iucn": "NT"
+    },
+    "Irena cyanogastra": {
+      "iucn": "NT"
+    },
+    "Irena tweeddalii": {
+      "iucn": "NT"
+    },
+    "Iridosornis porphyrocephalus": {
+      "iucn": "NT"
+    },
+    "Ithaginis cruentus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ixodia cyaniventris": {
+      "iucn": "NT"
+    },
+    "Ixodia squamata": {
+      "iucn": "NT"
+    },
+    "Ixos malaccensis": {
+      "iucn": "NT"
+    },
+    "Jacamaralcyon tridactyla": {
+      "iucn": "NT"
+    },
+    "Junco bairdi": {
+      "iucn": "NT"
+    },
+    "Junco insularis": {
+      "iucn": "VU"
+    },
+    "Kenopia striata": {
+      "iucn": "NT"
+    },
+    "Ketupa blakistoni": {
+      "cn": "I"
+    },
+    "Ketupa flavipes": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ketupa nipalensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ketupa philippensis": {
+      "iucn": "VU"
+    },
+    "Ketupa shelleyi": {
+      "iucn": "VU"
+    },
+    "Ketupa sumatrana": {
+      "iucn": "NT"
+    },
+    "Ketupa zeylonensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Kleinothraupis parodii": {
+      "iucn": "NT"
+    },
+    "Kleinothraupis reyi": {
+      "iucn": "NT"
+    },
+    "Lagopus lagopus": {
+      "cn": "II"
+    },
+    "Lagopus muta": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Lalage conjuncta": {
+      "iucn": "VU"
+    },
+    "Lalage leucoptera": {
+      "iucn": "NT"
+    },
+    "Lalage newtoni": {
+      "iucn": "CR"
+    },
+    "Lalage sharpei": {
+      "iucn": "NT"
+    },
+    "Lalage typica": {
+      "iucn": "EN"
+    },
+    "Lamprolia klinesmithi": {
+      "iucn": "VU"
+    },
+    "Lamprolia victoriae": {
+      "iucn": "NT"
+    },
+    "Laniarius amboimensis": {
+      "iucn": "EN"
+    },
+    "Laniarius brauni": {
+      "iucn": "EN"
+    },
+    "Laniarius mufumbiri": {
+      "iucn": "NT"
+    },
+    "Laniellus albonotatus": {
+      "iucn": "NT"
+    },
+    "Laniellus langbianis": {
+      "iucn": "NT"
+    },
+    "Lanio leucothorax": {
+      "iucn": "NT"
+    },
+    "Lanius ludovicianus": {
+      "iucn": "NT"
+    },
+    "Lanius meridionalis": {
+      "iucn": "VU"
+    },
+    "Lanius newtoni": {
+      "iucn": "CR"
+    },
+    "Lanius senator": {
+      "iucn": "NT"
+    },
+    "Larosterna inca": {
+      "iucn": "NT"
+    },
+    "Larus atlanticus": {
+      "iucn": "NT"
+    },
+    "Larus heermanni": {
+      "iucn": "NT"
+    },
+    "Larvivora komadori": {
+      "iucn": "NT"
+    },
+    "Larvivora ruficeps": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Larvivora tanensis": {
+      "iucn": "VU"
+    },
+    "Laterallus levraudi": {
+      "iucn": "VU"
+    },
+    "Laterallus rogersi": {
+      "iucn": "VU"
+    },
+    "Laterallus spilonota": {
+      "iucn": "VU"
+    },
+    "Laterallus spiloptera": {
+      "iucn": "NT"
+    },
+    "Lathamus discolor": {
+      "iucn": "CR"
+    },
+    "Laticilla burnesii": {
+      "iucn": "NT"
+    },
+    "Laticilla cinerascens": {
+      "iucn": "EN"
+    },
+    "Leiothrix argentauris": {
+      "cn": "II"
+    },
+    "Leiothrix lutea": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Leipoa ocellata": {
+      "iucn": "VU"
+    },
+    "Leistes defilippii": {
+      "iucn": "VU"
+    },
+    "Lepidothrix iris": {
+      "iucn": "VU"
+    },
+    "Leptasthenura xenothorax": {
+      "iucn": "NT"
+    },
+    "Leptodon forbesi": {
+      "iucn": "EN"
+    },
+    "Leptoptilos dubius": {
+      "iucn": "NT"
+    },
+    "Leptoptilos javanicus": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Leptotila conoveri": {
+      "iucn": "NT"
+    },
+    "Leptotila ochraceiventris": {
+      "iucn": "VU"
+    },
+    "Leptotila wellsi": {
+      "iucn": "CR"
+    },
+    "Leucocarbo bougainvilliorum": {
+      "iucn": "NT"
+    },
+    "Leucocarbo campbelli": {
+      "iucn": "VU"
+    },
+    "Leucocarbo carunculatus": {
+      "iucn": "VU"
+    },
+    "Leucocarbo chalconotus": {
+      "iucn": "VU"
+    },
+    "Leucocarbo colensoi": {
+      "iucn": "VU"
+    },
+    "Leucocarbo onslowi": {
+      "iucn": "CR"
+    },
+    "Leucocarbo ranfurlyi": {
+      "iucn": "VU"
+    },
+    "Leucogeranus leucogeranus": {
+      "iucn": "CR",
+      "cn": "I"
+    },
+    "Leuconotopicus borealis": {
+      "iucn": "NT"
+    },
+    "Leucopeza semperi": {
+      "iucn": "CR"
+    },
+    "Leucophaeus fuliginosus": {
+      "iucn": "VU"
+    },
+    "Leucopsar rothschildi": {
+      "iucn": "CR"
+    },
+    "Leucosticte atrata": {
+      "iucn": "EN"
+    },
+    "Leucosticte australis": {
+      "iucn": "EN"
+    },
+    "Lewinia mirifica": {
+      "iucn": "DD"
+    },
+    "Lewinia muelleri": {
+      "iucn": "VU"
+    },
+    "Limnoctites rectirostris": {
+      "iucn": "NT"
+    },
+    "Limnodromus griseus": {
+      "iucn": "VU"
+    },
+    "Limnodromus scolopaceus": {
+      "iucn": "NT"
+    },
+    "Limnodromus semipalmatus": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Limosa fedoa": {
+      "iucn": "VU"
+    },
+    "Limosa haemastica": {
+      "iucn": "VU"
+    },
+    "Limosa lapponica": {
+      "iucn": "NT"
+    },
+    "Limosa limosa": {
+      "iucn": "NT"
+    },
+    "Linaria johannis": {
+      "iucn": "NT"
+    },
+    "Liocichla bugunorum": {
+      "iucn": "CR",
+      "cn": "I"
+    },
+    "Liocichla omeiensis": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Lioparus chrysotis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Lipaugus conditus": {
+      "iucn": "VU"
+    },
+    "Lipaugus uropygialis": {
+      "iucn": "VU"
+    },
+    "Lipaugus weberi": {
+      "iucn": "CR"
+    },
+    "Lobotos lobatus": {
+      "iucn": "VU"
+    },
+    "Lobotos oriolinus": {
+      "iucn": "DD"
+    },
+    "Locustella major": {
+      "iucn": "EN"
+    },
+    "Locustella portenta": {
+      "iucn": "VU"
+    },
+    "Loddigesia mirabilis": {
+      "iucn": "NT"
+    },
+    "Lophophorus impejanus": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Lophophorus lhuysii": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Lophophorus sclateri": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Lophornis brachylophus": {
+      "iucn": "CR"
+    },
+    "Lophornis gouldii": {
+      "iucn": "NT"
+    },
+    "Lophospiza trivirgata": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Lophotibis cristata": {
+      "iucn": "VU"
+    },
+    "Lophotriorchis kienerii": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Lophura bulweri": {
+      "iucn": "VU"
+    },
+    "Lophura diardi": {
+      "iucn": "NT"
+    },
+    "Lophura edwardsi": {
+      "iucn": "CR (PEW)"
+    },
+    "Lophura erythrophthalma": {
+      "iucn": "CR"
+    },
+    "Lophura ignita": {
+      "iucn": "VU"
+    },
+    "Lophura inornata": {
+      "iucn": "NT"
+    },
+    "Lophura leucomelanos": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Lophura nycthemera": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Lophura pyronota": {
+      "iucn": "EN"
+    },
+    "Lophura rufa": {
+      "iucn": "VU"
+    },
+    "Lophura swinhoii": {
+      "iucn": "NT",
+      "cn": "I"
+    },
+    "Loriculus catamene": {
+      "iucn": "NT"
+    },
+    "Loriculus flosculus": {
+      "iucn": "VU"
+    },
+    "Loriculus pusillus": {
+      "iucn": "NT"
+    },
+    "Loriculus vernalis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Lorius albidinucha": {
+      "iucn": "NT"
+    },
+    "Lorius domicella": {
+      "iucn": "EN"
+    },
+    "Lorius garrulus": {
+      "iucn": "VU"
+    },
+    "Loxia curvirostra": {
+      "cn": "II"
+    },
+    "Loxia megaplaga": {
+      "iucn": "EN"
+    },
+    "Loxioides bailleui": {
+      "iucn": "CR"
+    },
+    "Loxops caeruleirostris": {
+      "iucn": "CR"
+    },
+    "Loxops coccineus": {
+      "iucn": "EN"
+    },
+    "Loxops mana": {
+      "iucn": "EN"
+    },
+    "Loxops ochraceus": {
+      "iucn": "EX"
+    },
+    "Luscinia megarhynchos": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Luscinia svecica": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Lybius chaplini": {
+      "iucn": "VU"
+    },
+    "Lybius rubrifacies": {
+      "iucn": "NT"
+    },
+    "Lyrurus mlokosiewiczi": {
+      "iucn": "NT"
+    },
+    "Lyrurus tetrix": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Macgregoria pulchra": {
+      "iucn": "VU"
+    },
+    "Machlolophus nuchalis": {
+      "iucn": "NT"
+    },
+    "Macroagelaius subalaris": {
+      "iucn": "EN"
+    },
+    "Macrocephalon maleo": {
+      "iucn": "CR"
+    },
+    "Macronus ptilosus": {
+      "iucn": "NT"
+    },
+    "Macronyx flavicollis": {
+      "iucn": "NT"
+    },
+    "Macronyx sharpei": {
+      "iucn": "EN"
+    },
+    "Macropygia cinnamomea": {
+      "iucn": "NT"
+    },
+    "Macropygia ruficeps": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Macropygia tenuirostris": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Macropygia unchall": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Macrosphenus pulitzeri": {
+      "iucn": "EN"
+    },
+    "Magumma parva": {
+      "iucn": "EN"
+    },
+    "Malacocincla perspicillata": {
+      "iucn": "NT"
+    },
+    "Malaconotus alius": {
+      "iucn": "EN"
+    },
+    "Malaconotus gladiator": {
+      "iucn": "VU"
+    },
+    "Malaconotus lagdeni": {
+      "iucn": "NT"
+    },
+    "Malaconotus monteiri": {
+      "iucn": "NT"
+    },
+    "Malacopteron affine": {
+      "iucn": "NT"
+    },
+    "Malacopteron albogulare": {
+      "iucn": "NT"
+    },
+    "Malacopteron magnum": {
+      "iucn": "NT"
+    },
+    "Malacopteron palawanense": {
+      "iucn": "VU"
+    },
+    "Malimbus ballmanni": {
+      "iucn": "NT"
+    },
+    "Malimbus ibadanensis": {
+      "iucn": "EN"
+    },
+    "Manorina melanotis": {
+      "iucn": "EN"
+    },
+    "Margarornis bellulus": {
+      "iucn": "NT"
+    },
+    "Marmaronetta angustirostris": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Mayrornis schistaceus": {
+      "iucn": "VU"
+    },
+    "Mayrornis versicolor": {
+      "iucn": "NT"
+    },
+    "Mearnsia picina": {
+      "iucn": "NT"
+    },
+    "Megadyptes antipodes": {
+      "iucn": "EN"
+    },
+    "Megapodius bernsteinii": {
+      "iucn": "VU"
+    },
+    "Megapodius geelvinkianus": {
+      "iucn": "NT"
+    },
+    "Megapodius laperouse": {
+      "iucn": "NT"
+    },
+    "Megapodius nicobariensis": {
+      "iucn": "VU"
+    },
+    "Megapodius pritchardii": {
+      "iucn": "VU"
+    },
+    "Megapodius tenimberensis": {
+      "iucn": "VU"
+    },
+    "Megascops gilesi": {
+      "iucn": "VU"
+    },
+    "Megazosterops palauensis": {
+      "iucn": "NT"
+    },
+    "Meiglyptes tristis": {
+      "iucn": "EN"
+    },
+    "Meiglyptes tukki": {
+      "iucn": "NT"
+    },
+    "Melaenornis annamarulae": {
+      "iucn": "VU"
+    },
+    "Melanitta americana": {
+      "iucn": "NT"
+    },
+    "Melanitta fusca": {
+      "iucn": "VU"
+    },
+    "Melanocorypha mongolica": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Melanodryas vittata": {
+      "iucn": "VU"
+    },
+    "Melanoperdix niger": {
+      "iucn": "VU"
+    },
+    "Melanospiza richardsoni": {
+      "iucn": "EN"
+    },
+    "Meleagris ocellata": {
+      "iucn": "NT"
+    },
+    "Melignomon eisentrauti": {
+      "iucn": "NT"
+    },
+    "Melionyx princeps": {
+      "iucn": "VU"
+    },
+    "Melithreptus validirostris": {
+      "iucn": "VU"
+    },
+    "Mellisuga helenae": {
+      "iucn": "NT"
+    },
+    "Melopyrrha nigra": {
+      "iucn": "NT"
+    },
+    "Melopyrrha portoricensis": {
+      "iucn": "VU"
+    },
+    "Melopyrrha taylori": {
+      "iucn": "NT"
+    },
+    "Melozone cabanisi": {
+      "iucn": "NT"
+    },
+    "Menelikornis ruspolii": {
+      "iucn": "NT"
+    },
+    "Mentocrex beankaensis": {
+      "iucn": "VU"
+    },
+    "Mergellus albellus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Mergus octosetaceus": {
+      "iucn": "CR"
+    },
+    "Mergus squamatus": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Merops leschenaulti": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Merops mentalis": {
+      "iucn": "NT"
+    },
+    "Merops orientalis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Merops ornatus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Merops persicus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Merops philippinus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Merops viridis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Merulaxis stresemanni": {
+      "iucn": "CR"
+    },
+    "Mesitornis unicolor": {
+      "iucn": "VU"
+    },
+    "Mesitornis variegatus": {
+      "iucn": "VU"
+    },
+    "Metabolus rugensis": {
+      "iucn": "EN"
+    },
+    "Metallura baroni": {
+      "iucn": "VU"
+    },
+    "Metallura iracunda": {
+      "iucn": "NT"
+    },
+    "Metopidius indicus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Micrastur mintoni": {
+      "iucn": "NT"
+    },
+    "Micrastur plumbeus": {
+      "iucn": "VU"
+    },
+    "Microcarbo niger": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Microcerculus philomela": {
+      "iucn": "NT"
+    },
+    "Microeca hemixantha": {
+      "iucn": "NT"
+    },
+    "Microhierax caerulescens": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Microhierax latifrons": {
+      "iucn": "NT"
+    },
+    "Microhierax melanoleucos": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Micromacronus leytensis": {
+      "iucn": "NT"
+    },
+    "Micromacronus sordidus": {
+      "iucn": "NT"
+    },
+    "Microspingus alticola": {
+      "iucn": "NT"
+    },
+    "Microtarsus melanoleucos": {
+      "iucn": "NT"
+    },
+    "Microtarsus nieuwenhuisii": {
+      "iucn": "DD"
+    },
+    "Milvus migrans": {
+      "cn": "II"
+    },
+    "Mimus graysoni": {
+      "iucn": "CR"
+    },
+    "Mimus macdonaldi": {
+      "iucn": "VU"
+    },
+    "Mimus melanotis": {
+      "iucn": "NT"
+    },
+    "Mimus trifasciatus": {
+      "iucn": "EN"
+    },
+    "Mirafra javanica": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Mirafra pulpa": {
+      "iucn": "DD"
+    },
+    "Mitu mitu": {
+      "iucn": "EW"
+    },
+    "Mitu tuberosum": {
+      "iucn": "NT"
+    },
+    "Mohoua ochrocephala": {
+      "iucn": "NT"
+    },
+    "Molothrus armenti": {
+      "iucn": "NT"
+    },
+    "Monarcha godeffroyi": {
+      "iucn": "NT"
+    },
+    "Monarcha richardsii": {
+      "iucn": "NT"
+    },
+    "Monarcha takatsukasae": {
+      "iucn": "NT"
+    },
+    "Monias benschi": {
+      "iucn": "VU"
+    },
+    "Montecincla cachinnans": {
+      "iucn": "NT"
+    },
+    "Montecincla fairbanki": {
+      "iucn": "NT"
+    },
+    "Montecincla jerdoni": {
+      "iucn": "EN"
+    },
+    "Montecincla meridionalis": {
+      "iucn": "VU"
+    },
+    "Monticola erythronotus": {
+      "iucn": "NT"
+    },
+    "Monticola explorator": {
+      "iucn": "NT"
+    },
+    "Morphnus guianensis": {
+      "iucn": "NT"
+    },
+    "Morus capensis": {
+      "iucn": "EN"
+    },
+    "Motacilla bocagii": {
+      "iucn": "VU"
+    },
+    "Motacilla samveasnae": {
+      "iucn": "NT"
+    },
+    "Moupinia poecilotis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Mulleripicus fuliginosus": {
+      "iucn": "VU"
+    },
+    "Mulleripicus funebris": {
+      "iucn": "NT"
+    },
+    "Mulleripicus pulverulentus": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Muscicapa randi": {
+      "iucn": "VU"
+    },
+    "Muscicapa segregata": {
+      "iucn": "NT"
+    },
+    "Mustelirallus cerverai": {
+      "iucn": "CR"
+    },
+    "Mustelirallus colombianus": {
+      "iucn": "DD"
+    },
+    "Myadestes coloratus": {
+      "iucn": "NT"
+    },
+    "Myadestes lanaiensis": {
+      "iucn": "CR (PE)"
+    },
+    "Myadestes obscurus": {
+      "iucn": "NT"
+    },
+    "Myadestes palmeri": {
+      "iucn": "CR"
+    },
+    "Mycteria cinerea": {
+      "iucn": "EN"
+    },
+    "Mycteria leucocephala": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Myiagra atra": {
+      "iucn": "NT"
+    },
+    "Myiagra azureocapilla": {
+      "iucn": "NT"
+    },
+    "Myiagra cervinicauda": {
+      "iucn": "NT"
+    },
+    "Myiagra hebetior": {
+      "iucn": "VU"
+    },
+    "Myiarchus semirufus": {
+      "iucn": "VU"
+    },
+    "Myioborus albifrons": {
+      "iucn": "NT"
+    },
+    "Myioborus pariae": {
+      "iucn": "EN"
+    },
+    "Myiopsitta luchsi": {
+      "iucn": "NT"
+    },
+    "Myiotheretes pernix": {
+      "iucn": "EN"
+    },
+    "Myiothlypis basilica": {
+      "iucn": "NT"
+    },
+    "Myiothlypis conspicillata": {
+      "iucn": "NT"
+    },
+    "Myiothlypis griseiceps": {
+      "iucn": "NT"
+    },
+    "Myophonus blighi": {
+      "iucn": "EN"
+    },
+    "Myophonus robinsoni": {
+      "iucn": "NT"
+    },
+    "Myrmoborus melanurus": {
+      "iucn": "NT"
+    },
+    "Myrmoderus eowilsoni": {
+      "iucn": "NT"
+    },
+    "Myrmoderus ruficauda": {
+      "iucn": "EN"
+    },
+    "Myrmotherula klagesi": {
+      "iucn": "VU"
+    },
+    "Myrmotherula minor": {
+      "iucn": "NT"
+    },
+    "Myrmotherula snowi": {
+      "iucn": "CR"
+    },
+    "Myrmotherula urosticta": {
+      "iucn": "VU"
+    },
+    "Mystacornis crossleyi": {
+      "iucn": "NT"
+    },
+    "Myzomela albigula": {
+      "iucn": "DD"
+    },
+    "Myzomela batjanensis": {
+      "iucn": "VU"
+    },
+    "Myzomela chermesina": {
+      "iucn": "VU"
+    },
+    "Myzomela malaitae": {
+      "iucn": "NT"
+    },
+    "Myzomela prawiradilagae": {
+      "iucn": "VU"
+    },
+    "Nannopterum harrisi": {
+      "iucn": "VU"
+    },
+    "Napothera danjoui": {
+      "iucn": "NT"
+    },
+    "Napothera naungmungensis": {
+      "iucn": "NT"
+    },
+    "Napothera pasquieri": {
+      "iucn": "EN"
+    },
+    "Necrosyrtes monachus": {
+      "iucn": "CR"
+    },
+    "Nemosia rourei": {
+      "iucn": "CR"
+    },
+    "Neodrepanis hypoxantha": {
+      "iucn": "VU"
+    },
+    "Neohierax insignis": {
+      "iucn": "NT"
+    },
+    "Neomixis viridis": {
+      "iucn": "NT"
+    },
+    "Neomorphus radiolosus": {
+      "iucn": "VU"
+    },
+    "Neopelma aurifrons": {
+      "iucn": "NT"
+    },
+    "Neophema chrysogaster": {
+      "iucn": "CR"
+    },
+    "Neophema chrysostoma": {
+      "iucn": "VU"
+    },
+    "Neophron percnopterus": {
+      "iucn": "EN",
+      "cn": "II"
+    },
+    "Neothraupis fasciata": {
+      "iucn": "NT"
+    },
+    "Neotis denhami": {
+      "iucn": "NT"
+    },
+    "Neotis ludwigii": {
+      "iucn": "EN"
+    },
+    "Neotis nuba": {
+      "iucn": "VU"
+    },
+    "Nesillas mariae": {
+      "iucn": "EN"
+    },
+    "Nesofregetta fuliginosa": {
+      "iucn": "EN"
+    },
+    "Nesopsar nigerrimus": {
+      "iucn": "EN"
+    },
+    "Nesospingus speculiferus": {
+      "iucn": "VU"
+    },
+    "Nesospiza acunhae": {
+      "iucn": "VU"
+    },
+    "Nesospiza questi": {
+      "iucn": "VU"
+    },
+    "Nesospiza wilkinsi": {
+      "iucn": "CR"
+    },
+    "Nesotriccus ridgwayi": {
+      "iucn": "VU"
+    },
+    "Nestor meridionalis": {
+      "iucn": "VU"
+    },
+    "Nestor notabilis": {
+      "iucn": "EN"
+    },
+    "Nettapus coromandelianus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Newtonia fanovanae": {
+      "iucn": "VU"
+    },
+    "Niltava davidi": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Niltava grandis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ninox burhani": {
+      "iucn": "NT"
+    },
+    "Ninox japonica": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ninox leventisi": {
+      "iucn": "VU"
+    },
+    "Ninox mindorensis": {
+      "iucn": "VU"
+    },
+    "Ninox natalis": {
+      "iucn": "VU"
+    },
+    "Ninox ochracea": {
+      "iucn": "NT"
+    },
+    "Ninox odiosa": {
+      "iucn": "VU"
+    },
+    "Ninox randi": {
+      "iucn": "NT"
+    },
+    "Ninox reyi": {
+      "iucn": "VU"
+    },
+    "Ninox rotiensis": {
+      "iucn": "NT"
+    },
+    "Ninox rudolfi": {
+      "iucn": "NT"
+    },
+    "Ninox rumseyi": {
+      "iucn": "VU"
+    },
+    "Ninox scutulata": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ninox spilocephala": {
+      "iucn": "NT"
+    },
+    "Ninox spilonotus": {
+      "iucn": "EN"
+    },
+    "Ninox sumbaensis": {
+      "iucn": "EN"
+    },
+    "Nipponia nippon": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Nisaetus bartelsi": {
+      "iucn": "EN"
+    },
+    "Nisaetus cirrhatus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Nisaetus floris": {
+      "iucn": "EN"
+    },
+    "Nisaetus nanus": {
+      "iucn": "VU"
+    },
+    "Nisaetus nipalensis": {
+      "cn": "II"
+    },
+    "Nisaetus philippensis": {
+      "iucn": "EN"
+    },
+    "Nisaetus pinskeri": {
+      "iucn": "EN"
+    },
+    "Nothoprocta taczanowskii": {
+      "iucn": "VU"
+    },
+    "Nothura minor": {
+      "iucn": "VU"
+    },
+    "Notiomystis cincta": {
+      "iucn": "VU"
+    },
+    "Numenius arquata": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Numenius borealis": {
+      "iucn": "CR (PE)"
+    },
+    "Numenius madagascariensis": {
+      "iucn": "EN",
+      "cn": "II"
+    },
+    "Numenius minutus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Numenius tahitiensis": {
+      "iucn": "NT"
+    },
+    "Numenius tenuirostris": {
+      "iucn": "EX"
+    },
+    "Nycticryphes semicollaris": {
+      "iucn": "NT"
+    },
+    "Nyctyornis amictus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Nyctyornis athertoni": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Oceanites gracilis": {
+      "iucn": "DD"
+    },
+    "Oceanites pincoyae": {
+      "iucn": "DD"
+    },
+    "Ocyceros griseus": {
+      "iucn": "VU"
+    },
+    "Odontophorus columbianus": {
+      "iucn": "NT"
+    },
+    "Odontophorus melanotis": {
+      "iucn": "NT"
+    },
+    "Odontophorus strophium": {
+      "iucn": "VU"
+    },
+    "Oenanthe dubia": {
+      "iucn": "DD"
+    },
+    "Ognorhynchus icterotis": {
+      "iucn": "VU"
+    },
+    "Onychoprion aleuticus": {
+      "iucn": "VU"
+    },
+    "Onychorhynchus swainsoni": {
+      "iucn": "VU"
+    },
+    "Orchesticus abeillei": {
+      "iucn": "NT"
+    },
+    "Oreomystis bairdi": {
+      "iucn": "CR"
+    },
+    "Oreophasis derbianus": {
+      "iucn": "EN"
+    },
+    "Oreophilais robertsi": {
+      "iucn": "NT"
+    },
+    "Oreoscopus gutturalis": {
+      "iucn": "EN"
+    },
+    "Oreotrochilus cyanolaemus": {
+      "iucn": "CR"
+    },
+    "Oriolia bernieri": {
+      "iucn": "EN"
+    },
+    "Oriolus crassirostris": {
+      "iucn": "VU"
+    },
+    "Oriolus cruentus": {
+      "iucn": "DD"
+    },
+    "Oriolus isabellae": {
+      "iucn": "CR"
+    },
+    "Oriolus mellianus": {
+      "iucn": "EN",
+      "cn": "II"
+    },
+    "Oroanassa magnifica": {
+      "iucn": "NT",
+      "cn": "I"
+    },
+    "Ortalis erythroptera": {
+      "iucn": "VU"
+    },
+    "Orthotomus chaktomuk": {
+      "iucn": "NT"
+    },
+    "Ortygornis gularis": {
+      "iucn": "NT"
+    },
+    "Otis tarda": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Otus alfredi": {
+      "iucn": "VU"
+    },
+    "Otus alius": {
+      "iucn": "NT"
+    },
+    "Otus angelinae": {
+      "iucn": "NT"
+    },
+    "Otus beccarii": {
+      "iucn": "NT"
+    },
+    "Otus bikegila": {
+      "iucn": "CR"
+    },
+    "Otus brucei": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Otus capnodes": {
+      "iucn": "EN"
+    },
+    "Otus elegans": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Otus gurneyi": {
+      "iucn": "NT"
+    },
+    "Otus hartlaubi": {
+      "iucn": "VU"
+    },
+    "Otus insularis": {
+      "iucn": "CR"
+    },
+    "Otus ireneae": {
+      "iucn": "EN"
+    },
+    "Otus jolandae": {
+      "iucn": "NT"
+    },
+    "Otus lettia": {
+      "cn": "II"
+    },
+    "Otus mendeni": {
+      "iucn": "NT"
+    },
+    "Otus mindorensis": {
+      "iucn": "NT"
+    },
+    "Otus moheliensis": {
+      "iucn": "EN"
+    },
+    "Otus nigrorum": {
+      "iucn": "NT"
+    },
+    "Otus pauliani": {
+      "iucn": "EN"
+    },
+    "Otus pembaensis": {
+      "iucn": "VU"
+    },
+    "Otus rufescens": {
+      "iucn": "NT"
+    },
+    "Otus sagittatus": {
+      "iucn": "VU"
+    },
+    "Otus scops": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Otus semitorques": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Otus siaoensis": {
+      "iucn": "CR"
+    },
+    "Otus spilocephalus": {
+      "cn": "II"
+    },
+    "Otus sulaensis": {
+      "iucn": "NT"
+    },
+    "Otus sunia": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Otus thilohoffmanni": {
+      "iucn": "EN"
+    },
+    "Oxylabes madagascariensis": {
+      "iucn": "NT"
+    },
+    "Oxypogon cyanolaemus": {
+      "iucn": "EN"
+    },
+    "Oxypogon lindenii": {
+      "iucn": "NT"
+    },
+    "Oxypogon stuebelii": {
+      "iucn": "VU"
+    },
+    "Oxyura leucocephala": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Oxyura maccoa": {
+      "iucn": "EN"
+    },
+    "Pachycephala feminina": {
+      "iucn": "NT"
+    },
+    "Pachycephala jacquinoti": {
+      "iucn": "NT"
+    },
+    "Pachycephala rufogularis": {
+      "iucn": "VU"
+    },
+    "Pachyglossa everetti": {
+      "iucn": "NT"
+    },
+    "Pachyglossa vincens": {
+      "iucn": "NT"
+    },
+    "Pachyptila macgillivrayi": {
+      "iucn": "CR"
+    },
+    "Pachyramphus spodiurus": {
+      "iucn": "VU"
+    },
+    "Padda fuscata": {
+      "iucn": "NT"
+    },
+    "Padda oryzivora": {
+      "iucn": "EN"
+    },
+    "Pagophila eburnea": {
+      "iucn": "NT"
+    },
+    "Palmeria dolei": {
+      "iucn": "CR"
+    },
+    "Pampusana canifrons": {
+      "iucn": "EN"
+    },
+    "Pampusana erythroptera": {
+      "iucn": "CR"
+    },
+    "Pampusana hoedtii": {
+      "iucn": "EN"
+    },
+    "Pampusana kubaryi": {
+      "iucn": "EN"
+    },
+    "Pampusana rubescens": {
+      "iucn": "EN"
+    },
+    "Pampusana sanctaecrucis": {
+      "iucn": "EN"
+    },
+    "Pampusana xanthonura": {
+      "iucn": "NT"
+    },
+    "Pandion haliaetus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Papasula abbotti": {
+      "iucn": "EN"
+    },
+    "Paraclaravis geoffroyi": {
+      "iucn": "CR"
+    },
+    "Paradigalla carunculata": {
+      "iucn": "NT"
+    },
+    "Paradisaea decora": {
+      "iucn": "VU"
+    },
+    "Paradisaea guilielmi": {
+      "iucn": "NT"
+    },
+    "Paradisaea rubra": {
+      "iucn": "NT"
+    },
+    "Paradisornis rudolphi": {
+      "iucn": "NT"
+    },
+    "Paradoxornis flavirostris": {
+      "iucn": "VU"
+    },
+    "Paradoxornis heudei": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Paradoxornis margaritae": {
+      "iucn": "VU"
+    },
+    "Paradoxornis paradoxus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Pardalotus quadragintus": {
+      "iucn": "EN"
+    },
+    "Parmoptila rubrifrons": {
+      "iucn": "NT"
+    },
+    "Paroreomyza maculata": {
+      "iucn": "CR (PE)"
+    },
+    "Paroreomyza montana": {
+      "iucn": "EN"
+    },
+    "Parotia wahnesi": {
+      "iucn": "NT"
+    },
+    "Passer hemileucus": {
+      "iucn": "VU"
+    },
+    "Passer italiae": {
+      "iucn": "VU"
+    },
+    "Passerina rositae": {
+      "iucn": "NT"
+    },
+    "Patagioenas caribaea": {
+      "iucn": "VU"
+    },
+    "Patagioenas inornata": {
+      "iucn": "NT"
+    },
+    "Patagioenas leucocephala": {
+      "iucn": "NT"
+    },
+    "Patagioenas oenops": {
+      "iucn": "NT"
+    },
+    "Pauxi koepckeae": {
+      "iucn": "CR"
+    },
+    "Pauxi pauxi": {
+      "iucn": "VU"
+    },
+    "Pauxi unicornis": {
+      "iucn": "EN"
+    },
+    "Pavo muticus": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Pedionomus torquatus": {
+      "iucn": "EN"
+    },
+    "Pelargopsis amauroptera": {
+      "iucn": "NT"
+    },
+    "Pelargopsis capensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Pelecanoides garnotii": {
+      "iucn": "NT"
+    },
+    "Pelecanus crispus": {
+      "iucn": "NT",
+      "cn": "I"
+    },
+    "Pelecanus onocrotalus": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Pelecanus philippensis": {
+      "iucn": "NT",
+      "cn": "I"
+    },
+    "Pelecanus thagus": {
+      "iucn": "NT"
+    },
+    "Pellorneum buettikoferi": {
+      "iucn": "NT"
+    },
+    "Pellorneum palustre": {
+      "iucn": "VU"
+    },
+    "Pellorneum rostratum": {
+      "iucn": "NT"
+    },
+    "Penelope albipennis": {
+      "iucn": "EN"
+    },
+    "Penelope barbata": {
+      "iucn": "NT"
+    },
+    "Penelope jacucaca": {
+      "iucn": "VU"
+    },
+    "Penelope ochrogaster": {
+      "iucn": "VU"
+    },
+    "Penelope ortoni": {
+      "iucn": "EN"
+    },
+    "Penelope perspicax": {
+      "iucn": "VU"
+    },
+    "Penelope pileata": {
+      "iucn": "VU"
+    },
+    "Penelope purpurascens": {
+      "iucn": "NT"
+    },
+    "Penelope superciliaris": {
+      "iucn": "NT"
+    },
+    "Penelopides mindorensis": {
+      "iucn": "EN"
+    },
+    "Penelopides panini": {
+      "iucn": "EN"
+    },
+    "Penelopina nigra": {
+      "iucn": "VU"
+    },
+    "Percnostola arenarum": {
+      "iucn": "VU"
+    },
+    "Perdicula manipurensis": {
+      "iucn": "CR"
+    },
+    "Pericrocotus igneus": {
+      "iucn": "NT"
+    },
+    "Periparus amabilis": {
+      "iucn": "NT"
+    },
+    "Perisoreus internigrans": {
+      "iucn": "NT",
+      "cn": "I"
+    },
+    "Pernis apivorus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Pernis ptilorhynchus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Petrochelidon perdita": {
+      "iucn": "DD"
+    },
+    "Petroica archboldi": {
+      "iucn": "NT"
+    },
+    "Petroica multicolor": {
+      "iucn": "EN"
+    },
+    "Petroica traversi": {
+      "iucn": "VU"
+    },
+    "Peucaea aestivalis": {
+      "iucn": "NT"
+    },
+    "Peucaea sumichrasti": {
+      "iucn": "NT"
+    },
+    "Pezoporus occidentalis": {
+      "iucn": "CR"
+    },
+    "Phacellodomus dorsalis": {
+      "iucn": "NT"
+    },
+    "Phaenicophaeus diardi": {
+      "iucn": "NT"
+    },
+    "Phaenicophaeus pyrrhocephalus": {
+      "iucn": "VU"
+    },
+    "Phaenicophaeus sumatranus": {
+      "iucn": "NT"
+    },
+    "Phaenicophilus poliocephalus": {
+      "iucn": "NT"
+    },
+    "Phaethornis aethopygus": {
+      "iucn": "VU"
+    },
+    "Phalacrocorax capensis": {
+      "iucn": "EN"
+    },
+    "Phalacrocorax featherstoni": {
+      "iucn": "EN"
+    },
+    "Phalacrocorax neglectus": {
+      "iucn": "EN"
+    },
+    "Phalacrocorax nigrogularis": {
+      "iucn": "VU"
+    },
+    "Phapitreron brunneiceps": {
+      "iucn": "VU"
+    },
+    "Phapitreron cinereiceps": {
+      "iucn": "EN"
+    },
+    "Pharomachrus mocinno": {
+      "iucn": "NT"
+    },
+    "Phegornis mitchellii": {
+      "iucn": "NT"
+    },
+    "Philemon fuscicapillus": {
+      "iucn": "NT"
+    },
+    "Philentoma velata": {
+      "iucn": "NT"
+    },
+    "Philepitta schlegeli": {
+      "iucn": "VU"
+    },
+    "Philesturnus rufusater": {
+      "iucn": "NT"
+    },
+    "Phodilus badius": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Phoebastria albatrus": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Phoebastria immutabilis": {
+      "iucn": "NT"
+    },
+    "Phoebastria irrorata": {
+      "iucn": "CR"
+    },
+    "Phoebastria nigripes": {
+      "iucn": "NT",
+      "cn": "I"
+    },
+    "Phoebetria fusca": {
+      "iucn": "EN"
+    },
+    "Phoebetria palpebrata": {
+      "iucn": "NT"
+    },
+    "Phoeniconaias minor": {
+      "iucn": "NT"
+    },
+    "Phoenicoparrus andinus": {
+      "iucn": "VU"
+    },
+    "Phoenicoparrus jamesi": {
+      "iucn": "NT"
+    },
+    "Phoenicopterus chilensis": {
+      "iucn": "NT"
+    },
+    "Phoenicurus alaschanicus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Phoenicurus bicolor": {
+      "iucn": "NT"
+    },
+    "Phyllastrephus albigula": {
+      "iucn": "NT"
+    },
+    "Phyllastrephus viridiceps": {
+      "iucn": "NT"
+    },
+    "Phyllomyias urichi": {
+      "iucn": "EN"
+    },
+    "Phyllomyias weedeni": {
+      "iucn": "NT"
+    },
+    "Phylloscartes beckeri": {
+      "iucn": "NT"
+    },
+    "Phylloscartes ceciliae": {
+      "iucn": "CR"
+    },
+    "Phylloscartes flaviventris": {
+      "iucn": "NT"
+    },
+    "Phylloscartes roquettei": {
+      "iucn": "NT"
+    },
+    "Phylloscopus amoenus": {
+      "iucn": "NT"
+    },
+    "Phylloscopus hainanus": {
+      "iucn": "VU"
+    },
+    "Phylloscopus ijimae": {
+      "iucn": "VU"
+    },
+    "Phylloscopus maforensis": {
+      "iucn": "NT"
+    },
+    "Phylloscopus misoriensis": {
+      "iucn": "NT"
+    },
+    "Phylloscopus rotiensis": {
+      "iucn": "NT"
+    },
+    "Phylloscopus sarasinorum": {
+      "iucn": "NT"
+    },
+    "Phytotoma raimondii": {
+      "iucn": "VU"
+    },
+    "Pica asirensis": {
+      "iucn": "EN"
+    },
+    "Pica nuttallii": {
+      "iucn": "VU"
+    },
+    "Picathartes gymnocephalus": {
+      "iucn": "VU"
+    },
+    "Picathartes oreas": {
+      "iucn": "NT"
+    },
+    "Picoides tridactylus": {
+      "cn": "II"
+    },
+    "Picumnus steindachneri": {
+      "iucn": "NT"
+    },
+    "Picumnus varzeae": {
+      "iucn": "NT"
+    },
+    "Picus chlorolophus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Picus rabieri": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Pipile cujubi": {
+      "iucn": "VU"
+    },
+    "Pipile grayi": {
+      "iucn": "NT"
+    },
+    "Pipile jacutinga": {
+      "iucn": "EN"
+    },
+    "Pipile pipile": {
+      "iucn": "CR"
+    },
+    "Piprites pileata": {
+      "iucn": "NT"
+    },
+    "Pithecophaga jefferyi": {
+      "iucn": "CR"
+    },
+    "Pithys castaneus": {
+      "iucn": "NT"
+    },
+    "Pitta anerythra": {
+      "iucn": "NT"
+    },
+    "Pitta megarhyncha": {
+      "iucn": "NT"
+    },
+    "Pitta moluccensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Pitta nympha": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Pitta rosenbergii": {
+      "iucn": "NT"
+    },
+    "Pitta sordida": {
+      "cn": "II"
+    },
+    "Pitta steerii": {
+      "iucn": "VU"
+    },
+    "Pitta superba": {
+      "iucn": "EN"
+    },
+    "Pityriasis gymnocephala": {
+      "iucn": "VU"
+    },
+    "Platalea leucorodia": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Platalea minor": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Platylophus galericulatus": {
+      "iucn": "NT"
+    },
+    "Platyrinchus leucoryphus": {
+      "iucn": "VU"
+    },
+    "Platysteira albifrons": {
+      "iucn": "NT"
+    },
+    "Platysteira laticincta": {
+      "iucn": "VU"
+    },
+    "Plegadis falcinellus": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Ploceus aureonucha": {
+      "iucn": "EN"
+    },
+    "Ploceus bannermani": {
+      "iucn": "VU"
+    },
+    "Ploceus batesi": {
+      "iucn": "EN"
+    },
+    "Ploceus burnieri": {
+      "iucn": "VU"
+    },
+    "Ploceus flavipes": {
+      "iucn": "VU"
+    },
+    "Ploceus golandi": {
+      "iucn": "EN"
+    },
+    "Ploceus grandis": {
+      "iucn": "NT"
+    },
+    "Ploceus holoxanthus": {
+      "iucn": "NT"
+    },
+    "Ploceus hypoxanthus": {
+      "iucn": "NT"
+    },
+    "Ploceus megarhynchus": {
+      "iucn": "EN"
+    },
+    "Ploceus nicolli": {
+      "iucn": "NT"
+    },
+    "Ploceus olivaceiceps": {
+      "iucn": "NT"
+    },
+    "Ploceus spekeoides": {
+      "iucn": "NT"
+    },
+    "Ploceus subpersonatus": {
+      "iucn": "VU"
+    },
+    "Pluvialis squatarola": {
+      "iucn": "VU"
+    },
+    "Pluvianellus socialis": {
+      "iucn": "VU"
+    },
+    "Podiceps auritus": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Podiceps gallardoi": {
+      "iucn": "CR"
+    },
+    "Podiceps grisegena": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Podiceps nigricollis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Podiceps taczanowskii": {
+      "iucn": "EN"
+    },
+    "Podoces biddulphi": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Podoces hendersoni": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Poecile davidi": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Poecile superciliosus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Poecilostreptus cabanisi": {
+      "iucn": "VU"
+    },
+    "Pogonotriccus lanyoni": {
+      "iucn": "VU"
+    },
+    "Pogonotriccus paulista": {
+      "iucn": "NT"
+    },
+    "Pogonotriccus venezuelanus": {
+      "iucn": "NT"
+    },
+    "Poicephalus robustus": {
+      "iucn": "VU"
+    },
+    "Poikilocarbo gaimardi": {
+      "iucn": "NT"
+    },
+    "Polemaetus bellicosus": {
+      "iucn": "EN"
+    },
+    "Polyplectron bicalcaratum": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Polyplectron germaini": {
+      "iucn": "VU"
+    },
+    "Polyplectron inopinatum": {
+      "iucn": "NT"
+    },
+    "Polyplectron katsumatae": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Polyplectron malacense": {
+      "iucn": "EN"
+    },
+    "Polyplectron napoleonis": {
+      "iucn": "VU"
+    },
+    "Polyplectron schleiermacheri": {
+      "iucn": "EN"
+    },
+    "Polysticta stelleri": {
+      "iucn": "VU"
+    },
+    "Polystictus pectoralis": {
+      "iucn": "NT"
+    },
+    "Polytelis alexandrae": {
+      "iucn": "NT"
+    },
+    "Pomarea dimidiata": {
+      "iucn": "VU"
+    },
+    "Pomarea iphis": {
+      "iucn": "CR"
+    },
+    "Pomarea mendozae": {
+      "iucn": "EN"
+    },
+    "Pomarea mira": {
+      "iucn": "CR (PE)"
+    },
+    "Pomarea nigra": {
+      "iucn": "CR"
+    },
+    "Pomarea whitneyi": {
+      "iucn": "CR"
+    },
+    "Pomatorhinus montanus": {
+      "iucn": "VU"
+    },
+    "Poodytes albolimbatus": {
+      "iucn": "VU"
+    },
+    "Poospiza garleppi": {
+      "iucn": "NT"
+    },
+    "Poospiza goeringi": {
+      "iucn": "NT"
+    },
+    "Poospiza rubecula": {
+      "iucn": "NT"
+    },
+    "Porphyrio hochstetteri": {
+      "iucn": "EN"
+    },
+    "Porphyrio porphyrio": {
+      "cn": "II"
+    },
+    "Primolius couloni": {
+      "iucn": "VU"
+    },
+    "Prinia cinereocapilla": {
+      "iucn": "VU"
+    },
+    "Prinia familiaris": {
+      "iucn": "NT"
+    },
+    "Prioniturus flavicans": {
+      "iucn": "NT"
+    },
+    "Prioniturus luconensis": {
+      "iucn": "EN"
+    },
+    "Prioniturus mindorensis": {
+      "iucn": "VU"
+    },
+    "Prioniturus montanus": {
+      "iucn": "NT"
+    },
+    "Prioniturus platenae": {
+      "iucn": "VU"
+    },
+    "Prioniturus verticalis": {
+      "iucn": "CR"
+    },
+    "Prioniturus waterstradti": {
+      "iucn": "NT"
+    },
+    "Prionochilus thoracicus": {
+      "iucn": "NT"
+    },
+    "Prionodura newtoniana": {
+      "iucn": "NT"
+    },
+    "Prionops alberti": {
+      "iucn": "VU"
+    },
+    "Prionops caniceps": {
+      "iucn": "NT"
+    },
+    "Prionops gabela": {
+      "iucn": "EN"
+    },
+    "Probosciger aterrimus": {
+      "iucn": "NT"
+    },
+    "Procellaria aequinoctialis": {
+      "iucn": "VU"
+    },
+    "Procellaria cinerea": {
+      "iucn": "NT"
+    },
+    "Procellaria conspicillata": {
+      "iucn": "VU"
+    },
+    "Procellaria parkinsoni": {
+      "iucn": "VU"
+    },
+    "Procellaria westlandica": {
+      "iucn": "EN"
+    },
+    "Procnias averano": {
+      "iucn": "NT"
+    },
+    "Procnias nudicollis": {
+      "iucn": "NT"
+    },
+    "Procnias tricarunculatus": {
+      "iucn": "VU"
+    },
+    "Progne modesta": {
+      "iucn": "EN"
+    },
+    "Progne murphyi": {
+      "iucn": "NT"
+    },
+    "Progne sinaloae": {
+      "iucn": "VU"
+    },
+    "Promerops gurneyi": {
+      "iucn": "NT"
+    },
+    "Prosobonia parvirostris": {
+      "iucn": "EN"
+    },
+    "Prosopeia personata": {
+      "iucn": "NT"
+    },
+    "Prosopeia splendens": {
+      "iucn": "NT"
+    },
+    "Prunella koslowi": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Psarisomus dalhousiae": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Psarocolius cassini": {
+      "iucn": "VU"
+    },
+    "Psephotellus chrysopterygius": {
+      "iucn": "EN"
+    },
+    "Pseudastur occidentalis": {
+      "iucn": "VU"
+    },
+    "Pseudastur polionotus": {
+      "iucn": "NT"
+    },
+    "Pseudibis davisoni": {
+      "iucn": "CR",
+      "cn": "I"
+    },
+    "Pseudibis gigantea": {
+      "iucn": "CR"
+    },
+    "Pseudobias wardi": {
+      "iucn": "NT"
+    },
+    "Pseudobulweria aterrima": {
+      "iucn": "CR"
+    },
+    "Pseudobulweria becki": {
+      "iucn": "CR"
+    },
+    "Pseudobulweria macgillivrayi": {
+      "iucn": "CR"
+    },
+    "Pseudobulweria rostrata": {
+      "iucn": "NT"
+    },
+    "Pseudocalyptomena graueri": {
+      "iucn": "VU"
+    },
+    "Pseudochelidon sirintarae": {
+      "iucn": "CR"
+    },
+    "Pseudocolopteryx dinelliana": {
+      "iucn": "NT"
+    },
+    "Pseudonestor xanthophrys": {
+      "iucn": "CR"
+    },
+    "Psilopogon henricii": {
+      "iucn": "NT"
+    },
+    "Psilopogon mystacophanos": {
+      "iucn": "NT"
+    },
+    "Psilopogon rafflesii": {
+      "iucn": "NT"
+    },
+    "Psittacara erythrogenys": {
+      "iucn": "NT"
+    },
+    "Psittacara euops": {
+      "iucn": "VU"
+    },
+    "Psittacara frontatus": {
+      "iucn": "NT"
+    },
+    "Psittacara wagleri": {
+      "iucn": "NT"
+    },
+    "Psittacula alexandri": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Psittacula caniceps": {
+      "iucn": "NT"
+    },
+    "Psittacula derbiana": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Psittacula eques": {
+      "iucn": "VU"
+    },
+    "Psittacula eupatria": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Psittacula finschii": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Psittacula himalayana": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Psittacula krameri": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Psittacula longicauda": {
+      "iucn": "VU"
+    },
+    "Psittacula roseata": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Psittacus erithacus": {
+      "iucn": "EN"
+    },
+    "Psittacus timneh": {
+      "iucn": "EN"
+    },
+    "Psittinus abbotti": {
+      "iucn": "NT"
+    },
+    "Psittinus cyanurus": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Psittrichas fulgidus": {
+      "iucn": "VU"
+    },
+    "Pternistis camerunensis": {
+      "iucn": "EN"
+    },
+    "Pternistis harwoodi": {
+      "iucn": "NT"
+    },
+    "Pternistis ochropectus": {
+      "iucn": "CR"
+    },
+    "Pternistis swierstrai": {
+      "iucn": "VU"
+    },
+    "Pterocles orientalis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Pterodroma alba": {
+      "iucn": "VU"
+    },
+    "Pterodroma arminjoniana": {
+      "iucn": "VU"
+    },
+    "Pterodroma atrata": {
+      "iucn": "EN"
+    },
+    "Pterodroma axillaris": {
+      "iucn": "VU"
+    },
+    "Pterodroma baraui": {
+      "iucn": "EN"
+    },
+    "Pterodroma brevipes": {
+      "iucn": "VU"
+    },
+    "Pterodroma cahow": {
+      "iucn": "EN"
+    },
+    "Pterodroma cookii": {
+      "iucn": "VU"
+    },
+    "Pterodroma defilippiana": {
+      "iucn": "VU"
+    },
+    "Pterodroma deserta": {
+      "iucn": "VU"
+    },
+    "Pterodroma externa": {
+      "iucn": "VU"
+    },
+    "Pterodroma feae": {
+      "iucn": "NT"
+    },
+    "Pterodroma hasitata": {
+      "iucn": "EN"
+    },
+    "Pterodroma incerta": {
+      "iucn": "EN"
+    },
+    "Pterodroma inexpectata": {
+      "iucn": "NT"
+    },
+    "Pterodroma leucoptera": {
+      "iucn": "VU"
+    },
+    "Pterodroma longirostris": {
+      "iucn": "VU"
+    },
+    "Pterodroma madeira": {
+      "iucn": "EN"
+    },
+    "Pterodroma magentae": {
+      "iucn": "CR"
+    },
+    "Pterodroma phaeopygia": {
+      "iucn": "CR"
+    },
+    "Pterodroma pycrofti": {
+      "iucn": "VU"
+    },
+    "Pterodroma sandwichensis": {
+      "iucn": "EN"
+    },
+    "Pteroglossus bailloni": {
+      "iucn": "NT"
+    },
+    "Pterorhinus berthemyi": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Pterorhinus chinensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Pterorhinus courtoisi": {
+      "iucn": "CR",
+      "cn": "I"
+    },
+    "Pterorhinus koslowi": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Pterorhinus mitratus": {
+      "iucn": "NT"
+    },
+    "Pterorhinus nuchalis": {
+      "iucn": "NT"
+    },
+    "Pterorhinus waddelli": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ptilinopus arcanus": {
+      "iucn": "CR"
+    },
+    "Ptilinopus chalcurus": {
+      "iucn": "VU"
+    },
+    "Ptilinopus chrysogaster": {
+      "iucn": "EN"
+    },
+    "Ptilinopus coralensis": {
+      "iucn": "NT"
+    },
+    "Ptilinopus dohertyi": {
+      "iucn": "VU"
+    },
+    "Ptilinopus granulifrons": {
+      "iucn": "VU"
+    },
+    "Ptilinopus huttoni": {
+      "iucn": "CR"
+    },
+    "Ptilinopus insularis": {
+      "iucn": "VU"
+    },
+    "Ptilinopus layardi": {
+      "iucn": "NT"
+    },
+    "Ptilinopus rarotongensis": {
+      "iucn": "NT"
+    },
+    "Ptilinopus roseicapilla": {
+      "iucn": "NT"
+    },
+    "Ptilocichla falcata": {
+      "iucn": "VU"
+    },
+    "Ptilocichla leucogrammica": {
+      "iucn": "VU"
+    },
+    "Ptilopachus nahani": {
+      "iucn": "VU"
+    },
+    "Ptiloris victoriae": {
+      "iucn": "VU"
+    },
+    "Ptychoramphus aleuticus": {
+      "iucn": "NT"
+    },
+    "Pucrasia macrolopha": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Puffinus auricularis": {
+      "iucn": "CR"
+    },
+    "Puffinus bannermani": {
+      "iucn": "EN"
+    },
+    "Puffinus bryani": {
+      "iucn": "CR"
+    },
+    "Puffinus heinrothi": {
+      "iucn": "VU"
+    },
+    "Puffinus huttoni": {
+      "iucn": "EN"
+    },
+    "Puffinus myrtae": {
+      "iucn": "CR"
+    },
+    "Puffinus newelli": {
+      "iucn": "CR"
+    },
+    "Puffinus opisthomelas": {
+      "iucn": "NT"
+    },
+    "Pycnonotus bimaculatus": {
+      "iucn": "NT"
+    },
+    "Pycnonotus snouckaerti": {
+      "iucn": "EN"
+    },
+    "Pycnonotus taivanus": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Pycnonotus zeylanicus": {
+      "iucn": "CR"
+    },
+    "Pycnoptilus floccosus": {
+      "iucn": "VU"
+    },
+    "Pyriglena atra": {
+      "iucn": "NT"
+    },
+    "Pyrilia aurantiocephala": {
+      "iucn": "NT"
+    },
+    "Pyrilia pyrilia": {
+      "iucn": "NT"
+    },
+    "Pyrocephalus nanus": {
+      "iucn": "NT"
+    },
+    "Pyrrhula murina": {
+      "iucn": "VU"
+    },
+    "Pyrrhura albipectus": {
+      "iucn": "VU"
+    },
+    "Pyrrhura caeruleiceps": {
+      "iucn": "EN"
+    },
+    "Pyrrhura calliptera": {
+      "iucn": "VU"
+    },
+    "Pyrrhura cruentata": {
+      "iucn": "VU"
+    },
+    "Pyrrhura griseipectus": {
+      "iucn": "EN"
+    },
+    "Pyrrhura hoematotis": {
+      "iucn": "NT"
+    },
+    "Pyrrhura lepida": {
+      "iucn": "VU"
+    },
+    "Pyrrhura leucotis": {
+      "iucn": "VU"
+    },
+    "Pyrrhura orcesi": {
+      "iucn": "EN"
+    },
+    "Pyrrhura pfrimeri": {
+      "iucn": "EN"
+    },
+    "Pyrrhura viridicata": {
+      "iucn": "EN"
+    },
+    "Quiscalus quiscula": {
+      "iucn": "NT"
+    },
+    "Rallus antarcticus": {
+      "iucn": "VU"
+    },
+    "Rallus elegans": {
+      "iucn": "NT"
+    },
+    "Rallus madagascariensis": {
+      "iucn": "VU"
+    },
+    "Rallus obsoletus": {
+      "iucn": "NT"
+    },
+    "Rallus semiplumbeus": {
+      "iucn": "VU"
+    },
+    "Rallus tenuirostris": {
+      "iucn": "NT"
+    },
+    "Rallus wetmorei": {
+      "iucn": "EN"
+    },
+    "Ramphastos sulfuratus": {
+      "iucn": "NT"
+    },
+    "Ramphiculus jambu": {
+      "iucn": "VU"
+    },
+    "Ramphiculus leclancheri": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Ramphiculus mangoliensis": {
+      "iucn": "NT"
+    },
+    "Ramphiculus marchei": {
+      "iucn": "NT"
+    },
+    "Ramphiculus merrilli": {
+      "iucn": "NT"
+    },
+    "Ramphiculus subgularis": {
+      "iucn": "NT"
+    },
+    "Ramphomicron dorsale": {
+      "iucn": "NT"
+    },
+    "Randia pseudozosterops": {
+      "iucn": "NT"
+    },
+    "Reinwardtoena browni": {
+      "iucn": "NT"
+    },
+    "Rhabdotorrhinus corrugatus": {
+      "iucn": "EN"
+    },
+    "Rhabdotorrhinus exarhatus": {
+      "iucn": "VU"
+    },
+    "Rhabdotorrhinus leucocephalus": {
+      "iucn": "NT"
+    },
+    "Rhabdotorrhinus waldeni": {
+      "iucn": "EN"
+    },
+    "Rhea americana": {
+      "iucn": "NT"
+    },
+    "Rhegmatorhina gymnops": {
+      "iucn": "VU"
+    },
+    "Rheinardia nigrescens": {
+      "iucn": "NT"
+    },
+    "Rheinardia ocellata": {
+      "iucn": "CR"
+    },
+    "Rhinoplax vigil": {
+      "iucn": "CR"
+    },
+    "Rhinoptilus bitorquatus": {
+      "iucn": "CR"
+    },
+    "Rhipidura coultasi": {
+      "iucn": "NT"
+    },
+    "Rhipidura malaitae": {
+      "iucn": "NT"
+    },
+    "Rhipidura matthiae": {
+      "iucn": "NT"
+    },
+    "Rhipidura opistherythra": {
+      "iucn": "NT"
+    },
+    "Rhipidura personata": {
+      "iucn": "NT"
+    },
+    "Rhipidura sauli": {
+      "iucn": "VU"
+    },
+    "Rhipidura tenebrosa": {
+      "iucn": "NT"
+    },
+    "Rhizothera dulitensis": {
+      "iucn": "DD"
+    },
+    "Rhizothera longirostris": {
+      "iucn": "NT"
+    },
+    "Rhopornis ardesiacus": {
+      "iucn": "NT"
+    },
+    "Rhopospina caerulescens": {
+      "iucn": "NT"
+    },
+    "Rhynchopsitta pachyrhyncha": {
+      "iucn": "EN"
+    },
+    "Rhynchopsitta terrisi": {
+      "iucn": "EN"
+    },
+    "Rhynchortyx cinctus": {
+      "iucn": "NT"
+    },
+    "Rhynchostruthus louisae": {
+      "iucn": "NT"
+    },
+    "Rhynchostruthus percivali": {
+      "iucn": "NT"
+    },
+    "Rhynochetos jubatus": {
+      "iucn": "EN"
+    },
+    "Rhyticeros cassidix": {
+      "iucn": "VU"
+    },
+    "Rhyticeros everetti": {
+      "iucn": "EN"
+    },
+    "Rhyticeros narcondami": {
+      "iucn": "VU"
+    },
+    "Rhyticeros subruficollis": {
+      "iucn": "VU"
+    },
+    "Rhyticeros undulatus": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Riccordia bicolor": {
+      "iucn": "NT"
+    },
+    "Rigidipenna inexpectata": {
+      "iucn": "NT"
+    },
+    "Rissa brevirostris": {
+      "iucn": "VU"
+    },
+    "Rissa tridactyla": {
+      "iucn": "VU"
+    },
+    "Robsonius rabori": {
+      "iucn": "NT"
+    },
+    "Robsonius sorsogonensis": {
+      "iucn": "NT"
+    },
+    "Rollandia microptera": {
+      "iucn": "EN"
+    },
+    "Rollulus rouloul": {
+      "iucn": "VU"
+    },
+    "Rostratula australis": {
+      "iucn": "EN"
+    },
+    "Rougetius rougetii": {
+      "iucn": "NT"
+    },
+    "Rowettia goughensis": {
+      "iucn": "CR"
+    },
+    "Rubigula dispar": {
+      "iucn": "VU"
+    },
+    "Rufirallus xenopterus": {
+      "iucn": "VU"
+    },
+    "Rukia longirostra": {
+      "iucn": "NT"
+    },
+    "Rukia ruki": {
+      "iucn": "EN"
+    },
+    "Rynchops albicollis": {
+      "iucn": "EN"
+    },
+    "Sagittarius serpentarius": {
+      "iucn": "EN"
+    },
+    "Sarcogyps calvus": {
+      "iucn": "CR",
+      "cn": "I"
+    },
+    "Sarcophanops samarensis": {
+      "iucn": "VU"
+    },
+    "Sarcophanops steerii": {
+      "iucn": "VU"
+    },
+    "Sarothrura ayresi": {
+      "iucn": "CR"
+    },
+    "Sarothrura watersi": {
+      "iucn": "NT"
+    },
+    "Saucerottia castaneiventris": {
+      "iucn": "NT"
+    },
+    "Saudareos flavoviridis": {
+      "iucn": "NT"
+    },
+    "Saudareos iris": {
+      "iucn": "NT"
+    },
+    "Saudareos johnstoniae": {
+      "iucn": "NT"
+    },
+    "Saundersilarus saundersi": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Saxicola dacotiae": {
+      "iucn": "NT"
+    },
+    "Saxicola insignis": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Saxicola macrorhynchus": {
+      "iucn": "VU"
+    },
+    "Scenopoeetes dentirostris": {
+      "iucn": "NT"
+    },
+    "Scepomycter winifredae": {
+      "iucn": "NT"
+    },
+    "Schetba rufa": {
+      "iucn": "NT"
+    },
+    "Schistolais leontica": {
+      "iucn": "EN"
+    },
+    "Schoenicola platyurus": {
+      "iucn": "NT"
+    },
+    "Schoenicola striatus": {
+      "iucn": "VU"
+    },
+    "Schoeniparus variegaticeps": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Scleroptila psilolaema": {
+      "iucn": "NT"
+    },
+    "Scolopax mira": {
+      "iucn": "NT"
+    },
+    "Scolopax rochussenii": {
+      "iucn": "VU"
+    },
+    "Scolopax saturata": {
+      "iucn": "NT"
+    },
+    "Scotopelia ussheri": {
+      "iucn": "VU"
+    },
+    "Scytalopus alvarezlopezi": {
+      "iucn": "NT"
+    },
+    "Scytalopus canus": {
+      "iucn": "NT"
+    },
+    "Scytalopus diamantinensis": {
+      "iucn": "EN"
+    },
+    "Scytalopus gettyae": {
+      "iucn": "NT"
+    },
+    "Scytalopus gonzagai": {
+      "iucn": "EN"
+    },
+    "Scytalopus iraiensis": {
+      "iucn": "VU"
+    },
+    "Scytalopus latebricola": {
+      "iucn": "NT"
+    },
+    "Scytalopus novacapitalis": {
+      "iucn": "EN"
+    },
+    "Scytalopus panamensis": {
+      "iucn": "NT"
+    },
+    "Scytalopus perijanus": {
+      "iucn": "NT"
+    },
+    "Scytalopus robbinsi": {
+      "iucn": "EN"
+    },
+    "Scytalopus rodriguezi": {
+      "iucn": "EN"
+    },
+    "Scytalopus sanctaemartae": {
+      "iucn": "NT"
+    },
+    "Scytalopus unicolor": {
+      "iucn": "NT"
+    },
+    "Selasphorus ardens": {
+      "iucn": "EN"
+    },
+    "Selasphorus rufus": {
+      "iucn": "NT"
+    },
+    "Semnornis ramphastinus": {
+      "iucn": "NT"
+    },
+    "Sephanoides fernandensis": {
+      "iucn": "CR"
+    },
+    "Sericornis keri": {
+      "iucn": "VU"
+    },
+    "Sericossypha albocristata": {
+      "iucn": "VU"
+    },
+    "Sericulus bakeri": {
+      "iucn": "NT"
+    },
+    "Serilophus lunatus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Serinus syriacus": {
+      "iucn": "VU"
+    },
+    "Setopagis maculosa": {
+      "iucn": "DD"
+    },
+    "Setophaga angelae": {
+      "iucn": "EN"
+    },
+    "Setophaga cerulea": {
+      "iucn": "NT"
+    },
+    "Setophaga chrysoparia": {
+      "iucn": "EN"
+    },
+    "Setophaga flavescens": {
+      "iucn": "EN"
+    },
+    "Setophaga kirtlandii": {
+      "iucn": "NT"
+    },
+    "Setophaga striata": {
+      "iucn": "NT"
+    },
+    "Setophaga subita": {
+      "iucn": "VU"
+    },
+    "Setophaga vitellina": {
+      "iucn": "NT"
+    },
+    "Setornis criniger": {
+      "iucn": "VU"
+    },
+    "Sheppardia aurantiithorax": {
+      "iucn": "EN"
+    },
+    "Sheppardia gabela": {
+      "iucn": "EN"
+    },
+    "Sheppardia gunningi": {
+      "iucn": "NT"
+    },
+    "Sheppardia lowei": {
+      "iucn": "NT"
+    },
+    "Sheppardia montana": {
+      "iucn": "EN"
+    },
+    "Sholicola albiventris": {
+      "iucn": "NT"
+    },
+    "Sholicola major": {
+      "iucn": "NT"
+    },
+    "Sibirionetta formosa": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Siphonorhis brewsteri": {
+      "iucn": "NT"
+    },
+    "Sipia palliata": {
+      "iucn": "NT"
+    },
+    "Sitta formosa": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Sitta insularis": {
+      "iucn": "CR"
+    },
+    "Sitta ledanti": {
+      "iucn": "EN"
+    },
+    "Sitta magna": {
+      "iucn": "EN",
+      "cn": "II"
+    },
+    "Sitta solangiae": {
+      "iucn": "NT"
+    },
+    "Sitta victoriae": {
+      "iucn": "EN"
+    },
+    "Sitta whiteheadi": {
+      "iucn": "VU"
+    },
+    "Sitta yunnanensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Sittiparus owstoni": {
+      "iucn": "EN"
+    },
+    "Sittiparus semilarvatus": {
+      "iucn": "NT"
+    },
+    "Somateria fischeri": {
+      "iucn": "NT"
+    },
+    "Somateria mollissima": {
+      "iucn": "NT"
+    },
+    "Speculanas specularis": {
+      "iucn": "NT"
+    },
+    "Spelaeornis badeigularis": {
+      "iucn": "NT"
+    },
+    "Spelaeornis chocolatinus": {
+      "iucn": "VU"
+    },
+    "Spelaeornis kinneari": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Spelaeornis longicaudatus": {
+      "iucn": "NT"
+    },
+    "Spheniscus demersus": {
+      "iucn": "CR"
+    },
+    "Spheniscus humboldti": {
+      "iucn": "VU"
+    },
+    "Spheniscus mendiculus": {
+      "iucn": "EN"
+    },
+    "Spilornis cheela": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Spilornis elgini": {
+      "iucn": "VU"
+    },
+    "Spilornis kinabaluensis": {
+      "iucn": "NT"
+    },
+    "Spilornis klossi": {
+      "iucn": "EN"
+    },
+    "Spinus cucullatus": {
+      "iucn": "EN"
+    },
+    "Spinus yarrellii": {
+      "iucn": "VU"
+    },
+    "Spizaetus isidori": {
+      "iucn": "EN"
+    },
+    "Spizaetus ornatus": {
+      "iucn": "NT"
+    },
+    "Spizella wortheni": {
+      "iucn": "EN"
+    },
+    "Spizocorys fringillaris": {
+      "iucn": "EN"
+    },
+    "Spizocorys sclateri": {
+      "iucn": "NT"
+    },
+    "Sporophila beltoni": {
+      "iucn": "VU"
+    },
+    "Sporophila cinnamomea": {
+      "iucn": "VU"
+    },
+    "Sporophila falcirostris": {
+      "iucn": "VU"
+    },
+    "Sporophila frontalis": {
+      "iucn": "VU"
+    },
+    "Sporophila hypochroma": {
+      "iucn": "NT"
+    },
+    "Sporophila iberaensis": {
+      "iucn": "NT"
+    },
+    "Sporophila maximiliani": {
+      "iucn": "EN"
+    },
+    "Sporophila melanogaster": {
+      "iucn": "NT"
+    },
+    "Sporophila nigrorufa": {
+      "iucn": "VU"
+    },
+    "Sporophila palustris": {
+      "iucn": "EN"
+    },
+    "Sporophila ruficollis": {
+      "iucn": "NT"
+    },
+    "Stachyris grammiceps": {
+      "iucn": "NT"
+    },
+    "Stachyris humei": {
+      "iucn": "NT"
+    },
+    "Stachyris leucotis": {
+      "iucn": "NT"
+    },
+    "Stachyris maculata": {
+      "iucn": "NT"
+    },
+    "Stachyris nigricollis": {
+      "iucn": "NT"
+    },
+    "Stachyris nonggangensis": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Stachyris oglei": {
+      "iucn": "NT"
+    },
+    "Stachyris roberti": {
+      "iucn": "NT"
+    },
+    "Stagonopleura guttata": {
+      "iucn": "VU"
+    },
+    "Starnoenas cyanocephala": {
+      "iucn": "EN"
+    },
+    "Stephanoaetus coronatus": {
+      "iucn": "NT"
+    },
+    "Sterna acuticauda": {
+      "iucn": "EN",
+      "cn": "II"
+    },
+    "Sterna aurantia": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Sterna striata": {
+      "iucn": "NT"
+    },
+    "Sterna virgata": {
+      "iucn": "NT"
+    },
+    "Sternula lorata": {
+      "iucn": "EN"
+    },
+    "Sternula nereis": {
+      "iucn": "VU"
+    },
+    "Sterrhoptilus dennistouni": {
+      "iucn": "NT"
+    },
+    "Stilpnia argyrofenges": {
+      "iucn": "VU"
+    },
+    "Stilpnia meyerdeschauenseei": {
+      "iucn": "NT"
+    },
+    "Stilpnia peruviana": {
+      "iucn": "VU"
+    },
+    "Stipiturus mallee": {
+      "iucn": "EN"
+    },
+    "Stizorhina finschi": {
+      "iucn": "NT"
+    },
+    "Streptocitta albertinae": {
+      "iucn": "NT"
+    },
+    "Streptopelia dusumieri": {
+      "iucn": "VU"
+    },
+    "Streptopelia turtur": {
+      "iucn": "VU"
+    },
+    "Strigops habroptilus": {
+      "iucn": "CR"
+    },
+    "Strix aluco": {
+      "cn": "II"
+    },
+    "Strix chacoensis": {
+      "iucn": "NT"
+    },
+    "Strix leptogrammica": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Strix nebulosa": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Strix occidentalis": {
+      "iucn": "NT"
+    },
+    "Strix uralensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Struthio molybdophanes": {
+      "iucn": "VU"
+    },
+    "Sturnornis albofrontatus": {
+      "iucn": "VU"
+    },
+    "Sula dactylatra": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Sula leucogaster": {
+      "cn": "II"
+    },
+    "Sula sula": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Surnia ulula": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Suthora conspicillata": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Suthora davidiana": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Suthora przewalskii": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Suthora zappeyi": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Swynnertonia swynnertoni": {
+      "iucn": "NT"
+    },
+    "Sylvia nigricapillus": {
+      "iucn": "VU"
+    },
+    "Sylvietta philippae": {
+      "iucn": "DD"
+    },
+    "Symposiachrus boanensis": {
+      "iucn": "CR"
+    },
+    "Symposiachrus brehmii": {
+      "iucn": "NT"
+    },
+    "Symposiachrus everetti": {
+      "iucn": "EN"
+    },
+    "Symposiachrus infelix": {
+      "iucn": "NT"
+    },
+    "Symposiachrus julianae": {
+      "iucn": "NT"
+    },
+    "Symposiachrus leucurus": {
+      "iucn": "NT"
+    },
+    "Symposiachrus malaitae": {
+      "iucn": "NT"
+    },
+    "Symposiachrus menckei": {
+      "iucn": "NT"
+    },
+    "Symposiachrus sacerdotum": {
+      "iucn": "EN"
+    },
+    "Symposiachrus vidua": {
+      "iucn": "NT"
+    },
+    "Synallaxis beverlyae": {
+      "iucn": "NT"
+    },
+    "Synallaxis cinerea": {
+      "iucn": "NT"
+    },
+    "Synallaxis courseni": {
+      "iucn": "NT"
+    },
+    "Synallaxis fuscorufa": {
+      "iucn": "NT"
+    },
+    "Synallaxis hypochondriaca": {
+      "iucn": "NT"
+    },
+    "Synallaxis infuscata": {
+      "iucn": "EN"
+    },
+    "Synallaxis kollari": {
+      "iucn": "EN"
+    },
+    "Synallaxis maranonica": {
+      "iucn": "CR"
+    },
+    "Synallaxis tithys": {
+      "iucn": "VU"
+    },
+    "Synallaxis zimmeri": {
+      "iucn": "VU"
+    },
+    "Synthliboramphus craveri": {
+      "iucn": "VU"
+    },
+    "Synthliboramphus hypoleucus": {
+      "iucn": "EN"
+    },
+    "Synthliboramphus scrippsi": {
+      "iucn": "VU"
+    },
+    "Synthliboramphus wumizusume": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Sypheotides indicus": {
+      "iucn": "CR"
+    },
+    "Syrmaticus ellioti": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Syrmaticus humiae": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Syrmaticus mikado": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Syrmaticus reevesii": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Tachybaptus pelzelnii": {
+      "iucn": "EN"
+    },
+    "Tachycineta cyaneoviridis": {
+      "iucn": "EN"
+    },
+    "Tachycineta euchrysea": {
+      "iucn": "VU"
+    },
+    "Tachyeres leucocephalus": {
+      "iucn": "VU"
+    },
+    "Tachyspiza badia": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Tachyspiza brachyura": {
+      "iucn": "VU"
+    },
+    "Tachyspiza butleri": {
+      "iucn": "VU"
+    },
+    "Tachyspiza gularis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Tachyspiza haplochroa": {
+      "iucn": "NT"
+    },
+    "Tachyspiza henicogramma": {
+      "iucn": "NT"
+    },
+    "Tachyspiza imitator": {
+      "iucn": "NT"
+    },
+    "Tachyspiza luteoschistacea": {
+      "iucn": "VU"
+    },
+    "Tachyspiza princeps": {
+      "iucn": "VU"
+    },
+    "Tachyspiza soloensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Tachyspiza virgata": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Taenioptynx brodiei": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Tangara fastuosa": {
+      "iucn": "VU"
+    },
+    "Tanygnathus everetti": {
+      "iucn": "EN"
+    },
+    "Tanygnathus gramineus": {
+      "iucn": "VU"
+    },
+    "Tanygnathus lucionensis": {
+      "iucn": "NT"
+    },
+    "Tanysiptera carolinae": {
+      "iucn": "NT"
+    },
+    "Tanysiptera ellioti": {
+      "iucn": "NT"
+    },
+    "Tanysiptera hydrocharis": {
+      "iucn": "DD"
+    },
+    "Tanysiptera riedelii": {
+      "iucn": "NT"
+    },
+    "Taoniscus nanus": {
+      "iucn": "EN"
+    },
+    "Taphrolesbia griseiventris": {
+      "iucn": "EN"
+    },
+    "Tarsiger hyperythrus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Tauraco bannermani": {
+      "iucn": "NT"
+    },
+    "Tauraco fischeri": {
+      "iucn": "NT"
+    },
+    "Tauraco violaceus": {
+      "iucn": "NT"
+    },
+    "Telespiza cantans": {
+      "iucn": "VU"
+    },
+    "Telespiza ultima": {
+      "iucn": "CR"
+    },
+    "Tephrophilus wetmorei": {
+      "iucn": "VU"
+    },
+    "Terathopius ecaudatus": {
+      "iucn": "EN"
+    },
+    "Terenura sicki": {
+      "iucn": "CR"
+    },
+    "Terpsiphone corvina": {
+      "iucn": "VU"
+    },
+    "Tetrao urogalloides": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Tetrao urogallus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Tetraogallus altaicus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Tetraogallus himalayensis": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Tetraogallus tibetanus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Tetraophasis obscurus": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Tetraophasis szechenyii": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Tetrastes bonasia": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Tetrastes sewerzowi": {
+      "iucn": "NT",
+      "cn": "I"
+    },
+    "Tetrax tetrax": {
+      "iucn": "NT",
+      "cn": "I"
+    },
+    "Thalassarche bulleri": {
+      "iucn": "NT"
+    },
+    "Thalassarche carteri": {
+      "iucn": "EN"
+    },
+    "Thalassarche chlororhynchos": {
+      "iucn": "EN"
+    },
+    "Thalassarche chrysostoma": {
+      "iucn": "EN"
+    },
+    "Thalassarche eremita": {
+      "iucn": "VU"
+    },
+    "Thalassarche salvini": {
+      "iucn": "VU"
+    },
+    "Thalasseus bergii": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Thalasseus bernsteini": {
+      "iucn": "CR",
+      "cn": "I"
+    },
+    "Thalasseus elegans": {
+      "iucn": "NT"
+    },
+    "Thalurania watertonii": {
+      "iucn": "EN"
+    },
+    "Thamnophilus praecox": {
+      "iucn": "NT"
+    },
+    "Thamnophilus shumbae": {
+      "iucn": "VU"
+    },
+    "Theristicus branickii": {
+      "iucn": "NT"
+    },
+    "Thinornis cucullatus": {
+      "iucn": "NT"
+    },
+    "Thinornis novaeseelandiae": {
+      "iucn": "EN"
+    },
+    "Threskiornis bernieri": {
+      "iucn": "EN"
+    },
+    "Threskiornis melanocephalus": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Thripophaga amacurensis": {
+      "iucn": "VU"
+    },
+    "Thripophaga cherriei": {
+      "iucn": "VU"
+    },
+    "Thripophaga macroura": {
+      "iucn": "NT"
+    },
+    "Thryophilus nicefori": {
+      "iucn": "CR"
+    },
+    "Thryophilus sernai": {
+      "iucn": "VU"
+    },
+    "Tinamus guttatus": {
+      "iucn": "NT"
+    },
+    "Tinamus osgoodi": {
+      "iucn": "VU"
+    },
+    "Tinamus solitarius": {
+      "iucn": "NT"
+    },
+    "Tinamus tao": {
+      "iucn": "VU"
+    },
+    "Tityra leucura": {
+      "iucn": "DD"
+    },
+    "Todiramphus albonotatus": {
+      "iucn": "NT"
+    },
+    "Todiramphus cinnamominus": {
+      "iucn": "EW"
+    },
+    "Todiramphus enigma": {
+      "iucn": "NT"
+    },
+    "Todiramphus farquhari": {
+      "iucn": "NT"
+    },
+    "Todiramphus godeffroyi": {
+      "iucn": "CR"
+    },
+    "Todiramphus nigrocyaneus": {
+      "iucn": "NT"
+    },
+    "Todiramphus pelewensis": {
+      "iucn": "NT"
+    },
+    "Todiramphus reichenbachii": {
+      "iucn": "VU"
+    },
+    "Todiramphus tutus": {
+      "iucn": "NT"
+    },
+    "Todiramphus winchelli": {
+      "iucn": "VU"
+    },
+    "Torgos tracheliotos": {
+      "iucn": "EN"
+    },
+    "Torreornis inexpectata": {
+      "iucn": "NT"
+    },
+    "Touit costaricensis": {
+      "iucn": "NT"
+    },
+    "Touit melanonotus": {
+      "iucn": "NT"
+    },
+    "Touit stictopterus": {
+      "iucn": "NT"
+    },
+    "Touit surdus": {
+      "iucn": "VU"
+    },
+    "Toxostoma bendirei": {
+      "iucn": "VU"
+    },
+    "Toxostoma guttatum": {
+      "iucn": "CR"
+    },
+    "Tragopan blythii": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Tragopan caboti": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Tragopan melanocephalus": {
+      "iucn": "VU",
+      "cn": "I"
+    },
+    "Tragopan satyra": {
+      "iucn": "LC",
+      "cn": "I"
+    },
+    "Tragopan temminckii": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Treron apicauda": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Treron aromaticus": {
+      "iucn": "NT"
+    },
+    "Treron bicinctus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Treron capellei": {
+      "iucn": "VU"
+    },
+    "Treron chloropterus": {
+      "iucn": "NT"
+    },
+    "Treron curvirostra": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Treron floris": {
+      "iucn": "VU"
+    },
+    "Treron formosae": {
+      "cn": "II"
+    },
+    "Treron fulvicollis": {
+      "iucn": "VU"
+    },
+    "Treron griveaudi": {
+      "iucn": "EN"
+    },
+    "Treron oxyurus": {
+      "iucn": "NT"
+    },
+    "Treron pembaensis": {
+      "iucn": "VU"
+    },
+    "Treron phayrei": {
+      "iucn": "NT"
+    },
+    "Treron phoenicopterus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Treron pompadora": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Treron psittaceus": {
+      "iucn": "EN"
+    },
+    "Treron sanctithomae": {
+      "iucn": "EN"
+    },
+    "Treron sieboldii": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Treron sphenurus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Treron teysmannii": {
+      "iucn": "NT"
+    },
+    "Trichoglossus forsteni": {
+      "iucn": "EN"
+    },
+    "Trichoglossus rosenbergii": {
+      "iucn": "VU"
+    },
+    "Trichoglossus rubiginosus": {
+      "iucn": "NT"
+    },
+    "Trichoglossus weberi": {
+      "iucn": "NT"
+    },
+    "Trigonoceps occipitalis": {
+      "iucn": "CR"
+    },
+    "Tringa flavipes": {
+      "iucn": "VU"
+    },
+    "Tringa guttifer": {
+      "iucn": "EN",
+      "cn": "I"
+    },
+    "Tringa melanoleuca": {
+      "iucn": "NT"
+    },
+    "Trochalopteron elliotii": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Trochalopteron formosum": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Trochalopteron milnei": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Trochalopteron morrisonianum": {
+      "iucn": "NT"
+    },
+    "Trochalopteron ngoclinhense": {
+      "iucn": "EN"
+    },
+    "Trochalopteron yersini": {
+      "iucn": "EN"
+    },
+    "Troglodytes monticola": {
+      "iucn": "CR"
+    },
+    "Troglodytes sissonii": {
+      "iucn": "NT"
+    },
+    "Troglodytes tanneri": {
+      "iucn": "VU"
+    },
+    "Trogon bairdii": {
+      "iucn": "NT"
+    },
+    "Tropicoperdix charltonii": {
+      "iucn": "VU"
+    },
+    "Tropicoperdix chloropus": {
+      "cn": "II"
+    },
+    "Tropicoperdix graydoni": {
+      "iucn": "NT"
+    },
+    "Tumbezia salvini": {
+      "iucn": "NT"
+    },
+    "Turacoena modesta": {
+      "iucn": "NT"
+    },
+    "Turdinus atrigularis": {
+      "iucn": "NT"
+    },
+    "Turdinus macrodactylus": {
+      "iucn": "NT"
+    },
+    "Turdoides gilberti": {
+      "iucn": "VU"
+    },
+    "Turdoides hindei": {
+      "iucn": "NT"
+    },
+    "Turdoides rufocinctus": {
+      "iucn": "EN"
+    },
+    "Turdus bewsheri": {
+      "iucn": "NT"
+    },
+    "Turdus celaenops": {
+      "iucn": "VU"
+    },
+    "Turdus eremita": {
+      "iucn": "NT"
+    },
+    "Turdus feae": {
+      "iucn": "VU",
+      "cn": "II"
+    },
+    "Turdus haplochrous": {
+      "iucn": "NT"
+    },
+    "Turdus helleri": {
+      "iucn": "EN"
+    },
+    "Turdus lherminieri": {
+      "iucn": "NT"
+    },
+    "Turdus menachensis": {
+      "iucn": "NT"
+    },
+    "Turdus roehli": {
+      "iucn": "NT"
+    },
+    "Turdus swalesi": {
+      "iucn": "VU"
+    },
+    "Turdus xanthorhynchus": {
+      "iucn": "CR"
+    },
+    "Turnix melanogaster": {
+      "iucn": "VU"
+    },
+    "Turnix olivii": {
+      "iucn": "CR"
+    },
+    "Turnix worcesteri": {
+      "iucn": "DD"
+    },
+    "Tylas eduardi": {
+      "iucn": "NT"
+    },
+    "Tympanuchus cupido": {
+      "iucn": "NT"
+    },
+    "Tympanuchus pallidicinctus": {
+      "iucn": "VU"
+    },
+    "Tyrannus cubensis": {
+      "iucn": "EN"
+    },
+    "Tyto alba": {
+      "cn": "II"
+    },
+    "Tyto aurantia": {
+      "iucn": "VU"
+    },
+    "Tyto longimembris": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Tyto prigoginei": {
+      "iucn": "DD"
+    },
+    "Tyto soumagnei": {
+      "iucn": "VU"
+    },
+    "Uratelornis chimaera": {
+      "iucn": "VU"
+    },
+    "Urile pelagicus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Urocissa ornata": {
+      "iucn": "VU"
+    },
+    "Urocissa whiteheadi": {
+      "iucn": "NT"
+    },
+    "Urocynchramus pylzowi": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Vanellus duvaucelii": {
+      "iucn": "NT"
+    },
+    "Vanellus gregarius": {
+      "iucn": "CR",
+      "cn": "II"
+    },
+    "Vanellus vanellus": {
+      "iucn": "NT"
+    },
+    "Vauriella albigularis": {
+      "iucn": "VU"
+    },
+    "Vauriella goodfellowi": {
+      "iucn": "NT"
+    },
+    "Vermivora bachmanii": {
+      "iucn": "CR (PE)"
+    },
+    "Vermivora chrysoptera": {
+      "iucn": "NT"
+    },
+    "Vini amabilis": {
+      "iucn": "CR"
+    },
+    "Vini kuhlii": {
+      "iucn": "EN"
+    },
+    "Vini peruviana": {
+      "iucn": "VU"
+    },
+    "Vini stepheni": {
+      "iucn": "VU"
+    },
+    "Vini ultramarina": {
+      "iucn": "CR"
+    },
+    "Vireo atricapilla": {
+      "iucn": "NT"
+    },
+    "Vireo bairdi": {
+      "iucn": "NT"
+    },
+    "Vireo caribaeus": {
+      "iucn": "VU"
+    },
+    "Vireo gracilirostris": {
+      "iucn": "VU"
+    },
+    "Vireo masteri": {
+      "iucn": "NT"
+    },
+    "Vireo osburni": {
+      "iucn": "NT"
+    },
+    "Vosea whitemanensis": {
+      "iucn": "NT"
+    },
+    "Vultur gryphus": {
+      "iucn": "VU"
+    },
+    "Wetmorethraupis sterrhopteron": {
+      "iucn": "VU"
+    },
+    "Xanthomixis apperti": {
+      "iucn": "VU"
+    },
+    "Xanthomixis cinereiceps": {
+      "iucn": "NT"
+    },
+    "Xanthomixis zosterops": {
+      "iucn": "NT"
+    },
+    "Xanthopsar flavus": {
+      "iucn": "EN"
+    },
+    "Xenicus gilviventris": {
+      "iucn": "EN"
+    },
+    "Xenoglaux loweryi": {
+      "iucn": "VU"
+    },
+    "Xenoligea montana": {
+      "iucn": "VU"
+    },
+    "Xenoperdix udzungwensis": {
+      "iucn": "EN"
+    },
+    "Xenopirostris damii": {
+      "iucn": "VU"
+    },
+    "Xenopirostris polleni": {
+      "iucn": "VU"
+    },
+    "Xenopirostris xenopirostris": {
+      "iucn": "NT"
+    },
+    "Xenornis setifrons": {
+      "iucn": "NT"
+    },
+    "Xenospingus concolor": {
+      "iucn": "NT"
+    },
+    "Xenospiza baileyi": {
+      "iucn": "EN"
+    },
+    "Xiphocolaptes falcirostris": {
+      "iucn": "VU"
+    },
+    "Xipholena atropurpurea": {
+      "iucn": "VU"
+    },
+    "Xipholena lamellipennis": {
+      "iucn": "NT"
+    },
+    "Xiphorhynchus atlanticus": {
+      "iucn": "VU"
+    },
+    "Yungipicus ramsayi": {
+      "iucn": "VU"
+    },
+    "Zanda baudinii": {
+      "iucn": "CR"
+    },
+    "Zanda latirostris": {
+      "iucn": "EN"
+    },
+    "Zapornia atra": {
+      "iucn": "VU"
+    },
+    "Zapornia bicolor": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Zapornia olivieri": {
+      "iucn": "EN"
+    },
+    "Zapornia parva": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Zapornia paykullii": {
+      "iucn": "NT",
+      "cn": "II"
+    },
+    "Zaratornis stresemanni": {
+      "iucn": "NT"
+    },
+    "Zavattariornis stresemanni": {
+      "iucn": "EN"
+    },
+    "Zenaida galapagoensis": {
+      "iucn": "NT"
+    },
+    "Zenaida graysoni": {
+      "iucn": "EW"
+    },
+    "Zentrygon carrikeri": {
+      "iucn": "EN"
+    },
+    "Zentrygon goldmani": {
+      "iucn": "NT"
+    },
+    "Zimmerius chicomendesi": {
+      "iucn": "NT"
+    },
+    "Zonerodius heliosylus": {
+      "iucn": "NT"
+    },
+    "Zonotrichia querula": {
+      "iucn": "NT"
+    },
+    "Zoothera atrigena": {
+      "iucn": "NT"
+    },
+    "Zoothera everetti": {
+      "iucn": "NT"
+    },
+    "Zoothera machiki": {
+      "iucn": "NT"
+    },
+    "Zoothera margaretae": {
+      "iucn": "NT"
+    },
+    "Zoothera turipavae": {
+      "iucn": "NT"
+    },
+    "Zosterops brunneus": {
+      "iucn": "NT"
+    },
+    "Zosterops chloronothos": {
+      "iucn": "CR"
+    },
+    "Zosterops dehaani": {
+      "iucn": "NT"
+    },
+    "Zosterops erythropleurus": {
+      "iucn": "LC",
+      "cn": "II"
+    },
+    "Zosterops feae": {
+      "iucn": "NT"
+    },
+    "Zosterops ficedulinus": {
+      "iucn": "EN"
+    },
+    "Zosterops flavus": {
+      "iucn": "EN"
+    },
+    "Zosterops hypolais": {
+      "iucn": "NT"
+    },
+    "Zosterops lacertosus": {
+      "iucn": "NT"
+    },
+    "Zosterops luteirostris": {
+      "iucn": "VU"
+    },
+    "Zosterops meeki": {
+      "iucn": "NT"
+    },
+    "Zosterops melanocephalus": {
+      "iucn": "NT"
+    },
+    "Zosterops melanurus": {
+      "iucn": "VU"
+    },
+    "Zosterops modestus": {
+      "iucn": "VU"
+    },
+    "Zosterops mouroniensis": {
+      "iucn": "NT"
+    },
+    "Zosterops mysorensis": {
+      "iucn": "NT"
+    },
+    "Zosterops nehrkorni": {
+      "iucn": "CR"
+    },
+    "Zosterops oleagineus": {
+      "iucn": "NT"
+    },
+    "Zosterops paruhbesar": {
+      "iucn": "EN"
+    },
+    "Zosterops rotensis": {
+      "iucn": "CR"
+    },
+    "Zosterops samoensis": {
+      "iucn": "NT"
+    },
+    "Zosterops silvanus": {
+      "iucn": "VU"
+    },
+    "Zosterops somadikartai": {
+      "iucn": "NT"
+    },
+    "Zosterops tenuirostris": {
+      "iucn": "VU"
+    },
+    "Zosterops uropygialis": {
+      "iucn": "NT"
+    },
+    "Zosterops vellalavella": {
+      "iucn": "NT"
+    },
+    "Zosterops winifredae": {
+      "iucn": "NT"
+    },
+    "Zosterornis nigrorum": {
+      "iucn": "EN"
+    }
+  }
+}
