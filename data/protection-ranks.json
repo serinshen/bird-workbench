@@ -1,7 +1,7 @@
 {
-  "iucnSource": "AviList v2026 IUCN category, only where that IOC 15.2 species is the same concept (crosswalk relation same or renamed, and concept unchanged).",
-  "chinaSource": "国家重点保护野生动物名录（2021年调整）. Matched by exact scientific name, checklist synonym, unique Chinese name plus the same epithet, or a unique epithet. Unmatched names are omitted.",
-  "sanSource": "有重要生态、科学、社会价值的陆生野生动物名录（国家林业和草原局公告2023年第17号，2023年6月26日公布，2023年6月30日发布）. Birds only. Matched by exact scientific name, a checklist synonym when that name does not point at a different Chinese species, or a unique Chinese name plus the same epithet. Entries noted 仅限野外种群 are the wild population. Unmatched names and conflicts are omitted.",
+  "iucnSource": "AviList v2026 column IUCN RED LIST CATEGORY, on that AviList species. LC is stored only when the species is also on the 2021 China national key protected list. Empty categories are omitted. No IOC crosswalk.",
+  "chinaSource": "国家重点保护野生动物名录（2021年调整），国家林业和草原局、农业农村部公告2021年第3号. Bird entries were read from two public republications (上海市绿化和市容管理局; 安徽省野生动植物保护协会) that agree on 394 bird names except five orthographic variants, which were matched only when both spellings pointed at one AviList species. Matched by exact AviList scientific name, a 1:1 rename of that name, or one Chinese name plus the same epithet. Subspecies that AviList does not treat as species are omitted, including 四川林鸮 Strix davidi and 海南画眉 Garrulax owstoni. Unmatched names are omitted.",
+  "sanSource": "有重要生态、科学、社会价值的陆生野生动物名录（国家林业和草原局公告2023年第17号，2023年6月26日公布，2023年6月30日发布）. Birds only, matched to AviList v2026. Matched by exact scientific name, a checklist synonym when that name does not point at a different Chinese species, or one Chinese name plus the same epithet. Entries noted 仅限野外种群 are the wild population. Unmatched names and conflicts are omitted.",
   "byScientificName": {
     "Acanthiza katherina": {
       "iucn": "VU"
@@ -10,15 +10,15 @@
       "iucn": "NT"
     },
     "Accipiter nisus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Accipiter poliogaster": {
       "iucn": "NT"
     },
     "Aceros nipalensis": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Acridotheres cinereus": {
       "iucn": "VU"
@@ -36,6 +36,9 @@
     "Acrocephalus aequinoctialis": {
       "iucn": "EN"
     },
+    "Acrocephalus astrolabii": {
+      "iucn": "EX"
+    },
     "Acrocephalus brevipennis": {
       "iucn": "VU"
     },
@@ -51,6 +54,18 @@
     "Acrocephalus hiwae": {
       "iucn": "EN"
     },
+    "Acrocephalus longirostris": {
+      "iucn": "CR"
+    },
+    "Acrocephalus luscinius": {
+      "iucn": "EX"
+    },
+    "Acrocephalus musae": {
+      "iucn": "EX"
+    },
+    "Acrocephalus nijoi": {
+      "iucn": "EX"
+    },
     "Acrocephalus paludicola": {
       "iucn": "VU"
     },
@@ -64,8 +79,8 @@
       "iucn": "NT"
     },
     "Acrocephalus sorghophilus": {
-      "iucn": "CR",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "CR"
     },
     "Acrocephalus taiti": {
       "iucn": "VU"
@@ -76,6 +91,9 @@
     },
     "Acrocephalus vaughani": {
       "iucn": "EN"
+    },
+    "Acrocephalus yamashinae": {
+      "iucn": "EX"
     },
     "Actenoides concretus": {
       "iucn": "NT"
@@ -90,8 +108,11 @@
       "iucn": "NT"
     },
     "Aegolius funereus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Aegolius gradyi": {
+      "iucn": "EX"
     },
     "Aegotheles affinis": {
       "iucn": "NT"
@@ -100,8 +121,8 @@
       "iucn": "CR"
     },
     "Aegypius monachus": {
-      "iucn": "NT",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "NT"
     },
     "Aepypodius bruijnii": {
       "iucn": "EN"
@@ -116,8 +137,8 @@
       "iucn": "NT"
     },
     "Aerodramus fuciphagus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Aerodramus orientalis": {
       "iucn": "DD"
@@ -177,12 +198,24 @@
       "iucn": "VU"
     },
     "Aix galericulata": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Akialoa ellisiana": {
+      "iucn": "EX"
+    },
+    "Akialoa lanaiensis": {
+      "iucn": "EX"
+    },
+    "Akialoa obscura": {
+      "iucn": "EX"
+    },
+    "Akialoa stejnegeri": {
+      "iucn": "EX"
     },
     "Alauda arvensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Alauda razae": {
       "iucn": "CR"
@@ -191,12 +224,12 @@
       "iucn": "CR"
     },
     "Alcedo hercules": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Alcedo meninting": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Alcedo peninsulae": {
       "iucn": "NT"
@@ -208,14 +241,17 @@
       "iucn": "NT"
     },
     "Alectoris magna": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Alectoris rufa": {
       "iucn": "NT"
     },
     "Alectroenas madagascariensis": {
       "iucn": "NT"
+    },
+    "Alectroenas nitidissimus": {
+      "iucn": "EX"
     },
     "Alectroenas sganzini": {
       "iucn": "NT"
@@ -234,6 +270,12 @@
     },
     "Alophoixus tephrogenys": {
       "iucn": "VU"
+    },
+    "Alopochen kervazoi": {
+      "iucn": "EX"
+    },
+    "Alopochen mauritiana": {
+      "iucn": "EX"
     },
     "Amandava formosa": {
       "iucn": "VU"
@@ -383,11 +425,17 @@
     "Anas nesiotis": {
       "iucn": "VU"
     },
+    "Anas theodori": {
+      "iucn": "EX"
+    },
     "Anas wyvilliana": {
       "iucn": "VU"
     },
     "Andigena laminirostris": {
       "iucn": "NT"
+    },
+    "Anodorhynchus glaucus": {
+      "iucn": "CR (PE)"
     },
     "Anodorhynchus hyacinthinus": {
       "iucn": "VU"
@@ -396,8 +444,8 @@
       "iucn": "EN"
     },
     "Anorrhinus austeni": {
-      "iucn": "NT",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "NT"
     },
     "Anorrhinus galeritus": {
       "iucn": "NT"
@@ -406,16 +454,16 @@
       "iucn": "NT"
     },
     "Anser albifrons": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Anser cygnoides": {
-      "iucn": "EN",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "EN"
     },
     "Anser erythropus": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Anthocephala berlepschi": {
       "iucn": "VU"
@@ -426,9 +474,12 @@
     "Anthochaera phrygia": {
       "iucn": "CR"
     },
+    "Anthornis melanocephala": {
+      "iucn": "EX"
+    },
     "Anthracoceros albirostris": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Anthracoceros coronatus": {
       "iucn": "NT"
@@ -470,16 +521,16 @@
       "iucn": "VU"
     },
     "Antigone antigone": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Antigone canadensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Antigone vipio": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Antrostomus carolinensis": {
       "iucn": "NT"
@@ -523,6 +574,12 @@
     "Apalis stronachi": {
       "iucn": "VU"
     },
+    "Aphanapteryx bonasia": {
+      "iucn": "EX"
+    },
+    "Aphanocrex podarces": {
+      "iucn": "EX"
+    },
     "Aphanotriccus audax": {
       "iucn": "NT"
     },
@@ -547,11 +604,20 @@
     "Aplonis cinerascens": {
       "iucn": "NT"
     },
+    "Aplonis corvina": {
+      "iucn": "EX"
+    },
     "Aplonis crassa": {
       "iucn": "NT"
     },
     "Aplonis feadensis": {
       "iucn": "NT"
+    },
+    "Aplonis fusca": {
+      "iucn": "EX"
+    },
+    "Aplonis mavornata": {
+      "iucn": "EX"
     },
     "Aplonis pelzelni": {
       "iucn": "CR"
@@ -588,23 +654,23 @@
       "iucn": "VU"
     },
     "Aquila chrysaetos": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Aquila fasciata": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Aquila gurneyi": {
       "iucn": "NT"
     },
     "Aquila heliaca": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Aquila nipalensis": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Aquila rapax": {
       "iucn": "VU"
@@ -621,6 +687,9 @@
     "Ara rubrogenys": {
       "iucn": "CR"
     },
+    "Ara tricolor": {
+      "iucn": "EX"
+    },
     "Aramidopsis plateni": {
       "iucn": "VU"
     },
@@ -628,49 +697,49 @@
       "iucn": "EN"
     },
     "Arborophila ardens": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Arborophila atrogularis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Arborophila brunneopectus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Arborophila cambodiana": {
       "iucn": "NT"
     },
     "Arborophila crudigularis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Arborophila davidi": {
       "iucn": "NT"
     },
     "Arborophila gingica": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Arborophila mandellii": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Arborophila orientalis": {
       "iucn": "VU"
     },
     "Arborophila rufipectus": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Arborophila rufogularis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Arborophila torqueola": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Arcanator orostruthus": {
       "iucn": "NT"
@@ -679,8 +748,8 @@
       "iucn": "EN"
     },
     "Ardea insignis": {
-      "iucn": "CR",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "CR"
     },
     "Ardenna bulleri": {
       "iucn": "VU"
@@ -709,8 +778,8 @@
       "iucn": "CR"
     },
     "Arenaria interpres": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Argusianus argus": {
       "iucn": "VU"
@@ -743,16 +812,16 @@
       "iucn": "VU"
     },
     "Asarcornis scutulata": {
-      "iucn": "CR",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "CR"
     },
     "Asio flammeus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Asio otus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Asio solomonensis": {
       "iucn": "NT"
@@ -791,8 +860,8 @@
       "iucn": "EN"
     },
     "Athene brama": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Athene granti": {
       "iucn": "NT"
@@ -801,8 +870,8 @@
       "iucn": "VU"
     },
     "Athene noctua": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Athene roseoaxillaris": {
       "iucn": "VU"
@@ -847,16 +916,16 @@
       "iucn": "EN"
     },
     "Aviceda jerdoni": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Aviceda leuphotes": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Aythya baeri": {
-      "iucn": "CR",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "CR"
     },
     "Aythya ferina": {
       "iucn": "VU",
@@ -900,14 +969,17 @@
       "iucn": "VU"
     },
     "Batrachostomus hodgsoni": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Batrachostomus stellatus": {
       "iucn": "NT"
     },
     "Berenicornis comatus": {
       "iucn": "EN"
+    },
+    "Bermuteo avivorus": {
+      "iucn": "EX"
     },
     "Bernieria madagascariensis": {
       "iucn": "NT"
@@ -936,8 +1008,11 @@
       "san": true
     },
     "Botaurus minutus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Botaurus novaezelandiae": {
+      "iucn": "EX"
     },
     "Botaurus poiciloptilus": {
       "iucn": "VU"
@@ -969,8 +1044,8 @@
       "iucn": "NT"
     },
     "Branta ruficollis": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Branta sandvicensis": {
       "iucn": "NT"
@@ -979,19 +1054,19 @@
       "iucn": "VU"
     },
     "Bubo bubo": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Bubo scandiacus": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Bucco noanamae": {
       "iucn": "NT"
     },
     "Buceros bicornis": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Buceros rhinoceros": {
       "iucn": "VU"
@@ -1002,52 +1077,56 @@
     "Bucorvus leadbeateri": {
       "iucn": "VU"
     },
+    "Bulweria bifax": {
+      "iucn": "EX"
+    },
     "Bulweria fallax": {
       "iucn": "NT"
     },
     "Butastur indicus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Butastur liventer": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Butastur teesa": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Buteo buteo": {
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Buteo galapagoensis": {
       "iucn": "VU"
     },
     "Buteo hemilasius": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Buteo japonicus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Buteo lagopus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Buteo oreophilus": {
       "iucn": "NT"
     },
     "Buteo refectus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Buteo ridgwayi": {
       "iucn": "CR"
     },
     "Buteo rufinus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Buteo socotraensis": {
       "iucn": "VU"
@@ -1125,8 +1204,8 @@
       "san": true
     },
     "Calidris falcinellus": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Calidris ferruginea": {
       "iucn": "VU",
@@ -1145,8 +1224,8 @@
       "iucn": "NT"
     },
     "Calidris pygmaea": {
-      "iucn": "CR",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "CR"
     },
     "Calidris ruficollis": {
       "iucn": "NT",
@@ -1156,23 +1235,29 @@
       "iucn": "VU"
     },
     "Calidris tenuirostris": {
-      "iucn": "EN",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "EN"
+    },
+    "Callaeas cinereus": {
+      "iucn": "CR (PE)"
     },
     "Calliope calliope": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Calliope obscura": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Calliope pectardens": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Callocephalon fimbriatum": {
       "iucn": "VU"
+    },
+    "Caloenas maculata": {
+      "iucn": "EX"
     },
     "Caloenas nicobarica": {
       "iucn": "NT"
@@ -1226,6 +1311,9 @@
     "Campethera notata": {
       "iucn": "NT"
     },
+    "Camptorhynchus labradorius": {
+      "iucn": "EX"
+    },
     "Campylopterus calcirupicola": {
       "iucn": "VU"
     },
@@ -1268,6 +1356,9 @@
     "Caprimulgus solala": {
       "iucn": "VU"
     },
+    "Caracara lutosa": {
+      "iucn": "EX"
+    },
     "Carpococcyx radiceus": {
       "iucn": "VU"
     },
@@ -1277,21 +1368,24 @@
     "Carpococcyx viridis": {
       "iucn": "EN"
     },
+    "Carpodacus ferreorostris": {
+      "iucn": "EX"
+    },
     "Carpodacus formosanus": {
       "iucn": "NT",
       "san": true
     },
     "Carpodacus roborowskii": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Carpodacus roseus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Carpodacus sillemi": {
-      "iucn": "DD",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "DD"
     },
     "Carpodectes antoniae": {
       "iucn": "NT"
@@ -1327,8 +1421,8 @@
       "iucn": "VU"
     },
     "Centropus bengalensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Centropus chalybeus": {
       "iucn": "NT"
@@ -1343,8 +1437,8 @@
       "iucn": "VU"
     },
     "Centropus sinensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Centropus steerii": {
       "iucn": "CR"
@@ -1368,8 +1462,8 @@
       "iucn": "NT"
     },
     "Certhia tianquanensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Certhidea olivacea": {
       "iucn": "VU"
@@ -1414,6 +1508,9 @@
     "Chaetops frenatus": {
       "iucn": "NT"
     },
+    "Chaetoptila angustipluma": {
+      "iucn": "EX"
+    },
     "Chaetura andrei": {
       "iucn": "VU"
     },
@@ -1454,8 +1551,8 @@
       "iucn": "CR"
     },
     "Chlamydotis macqueenii": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Chlamydotis undulata": {
       "iucn": "VU"
@@ -1464,8 +1561,11 @@
       "iucn": "EN"
     },
     "Chlidonias niger": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Chloridops kona": {
+      "iucn": "EX"
     },
     "Chlorochrysa nitidissima": {
       "iucn": "NT"
@@ -1520,19 +1620,19 @@
       "iucn": "EN"
     },
     "Chrysolophus amherstiae": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Chrysolophus pictus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Chrysomma altirostre": {
       "iucn": "VU"
     },
     "Chrysophlegma flavinucha": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Chrysuronia boucardi": {
       "iucn": "EN"
@@ -1540,21 +1640,24 @@
     "Chrysuronia lilliae": {
       "iucn": "EN"
     },
+    "Cichlocolaptes mazarbarnetti": {
+      "iucn": "EX"
+    },
     "Ciconia boyciana": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Ciconia ciconia": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Ciconia episcopus": {
       "iucn": "NT",
       "san": true
     },
     "Ciconia nigra": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Ciconia stormi": {
       "iucn": "EN"
@@ -1605,23 +1708,23 @@
       "iucn": "NT"
     },
     "Circaetus gallicus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Circus aeruginosus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Circus cyaneus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Circus macrosceles": {
       "iucn": "EN"
     },
     "Circus macrourus": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Circus maillardi": {
       "iucn": "EN"
@@ -1630,24 +1733,27 @@
       "iucn": "EN"
     },
     "Circus melanoleucos": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Circus pygargus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Circus spilonotus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Ciridops anna": {
+      "iucn": "EX"
     },
     "Cissa chinensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Cissa hypoleuca": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Cissa thalassina": {
       "iucn": "CR"
@@ -1668,8 +1774,8 @@
       "iucn": "EN"
     },
     "Clanga clanga": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Clanga hastata": {
       "iucn": "NT"
@@ -1718,12 +1824,12 @@
       "iucn": "VU"
     },
     "Cochoa purpurea": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Cochoa viridis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Coeligena consita": {
       "iucn": "EN"
@@ -1740,14 +1846,23 @@
     "Coenocorypha aucklandica": {
       "iucn": "NT"
     },
+    "Coenocorypha barrierensis": {
+      "iucn": "EX"
+    },
     "Coenocorypha huegeli": {
       "iucn": "NT"
+    },
+    "Coenocorypha iredalei": {
+      "iucn": "EX"
     },
     "Coenocorypha pusilla": {
       "iucn": "VU"
     },
     "Colaptes fernandinae": {
       "iucn": "EN"
+    },
+    "Colaptes oceanicus": {
+      "iucn": "EX"
     },
     "Colinus virginianus": {
       "iucn": "NT"
@@ -1759,8 +1874,11 @@
       "iucn": "CR"
     },
     "Columba eversmanni": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
+    },
+    "Columba jouyi": {
+      "iucn": "EX"
     },
     "Columba junoniae": {
       "iucn": "NT"
@@ -1775,21 +1893,24 @@
       "iucn": "NT"
     },
     "Columba palumbus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Columba pollenii": {
       "iucn": "NT"
     },
     "Columba punicea": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Columba thomensis": {
       "iucn": "EN"
     },
     "Columba torringtoniae": {
       "iucn": "VU"
+    },
+    "Columba versicolor": {
+      "iucn": "EX"
     },
     "Columbina cyanopis": {
       "iucn": "CR"
@@ -1808,6 +1929,9 @@
     },
     "Conothraupis mesoleuca": {
       "iucn": "EN"
+    },
+    "Conuropsis carolinensis": {
+      "iucn": "EX"
     },
     "Copsychus pyrropygus": {
       "iucn": "NT"
@@ -1874,12 +1998,18 @@
       "iucn": "VU"
     },
     "Coturnicops exquisitus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Coturnix japonica": {
       "iucn": "NT",
       "san": true
+    },
+    "Coturnix novaezelandiae": {
+      "iucn": "EX"
+    },
+    "Coua delalandei": {
+      "iucn": "EX"
     },
     "Coua gigas": {
       "iucn": "VU"
@@ -1909,8 +2039,8 @@
       "iucn": "VU"
     },
     "Crex crex": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Criniger olivaceus": {
       "iucn": "VU"
@@ -1934,20 +2064,20 @@
       "iucn": "DD"
     },
     "Crossoptilon auritum": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Crossoptilon crossoptilon": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Crossoptilon harmani": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Crossoptilon mantchuricum": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Cryptoleucopteryx plumbea": {
       "iucn": "NT"
@@ -2019,20 +2149,26 @@
     "Cyanoramphus malherbi": {
       "iucn": "CR"
     },
+    "Cyanoramphus ulietanus": {
+      "iucn": "EX"
+    },
     "Cyanoramphus unicolor": {
       "iucn": "VU"
     },
+    "Cyanoramphus zealandicus": {
+      "iucn": "EX"
+    },
     "Cygnus columbianus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Cygnus cygnus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Cygnus olor": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Cynanthus lawrencei": {
       "iucn": "NT"
@@ -2042,8 +2178,8 @@
       "san": true
     },
     "Cyornis brunneatus": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Cyornis caerulatus": {
       "iucn": "VU"
@@ -2118,8 +2254,8 @@
       "iucn": "VU"
     },
     "Dendrocopos leucopterus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Dendrocopos noguchii": {
       "iucn": "EN"
@@ -2131,11 +2267,14 @@
       "iucn": "NT"
     },
     "Dendrocygna javanica": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Dendrortyx barbatus": {
       "iucn": "VU"
+    },
+    "Diaphorapteryx hawkinsi": {
+      "iucn": "EX"
     },
     "Dicaeum dayakorum": {
       "iucn": "DD"
@@ -2159,12 +2298,12 @@
       "iucn": "EN"
     },
     "Dicrurus paradiseus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Dicrurus remifer": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Dicrurus waldenii": {
       "iucn": "VU"
@@ -2220,6 +2359,12 @@
     "Drepanis coccinea": {
       "iucn": "VU"
     },
+    "Drepanis funerea": {
+      "iucn": "EX"
+    },
+    "Drepanis pacifica": {
+      "iucn": "EX"
+    },
     "Dreptes thomensis": {
       "iucn": "VU"
     },
@@ -2233,29 +2378,32 @@
       "iucn": "VU"
     },
     "Dryocopus javensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Dryocopus martius": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Dryocopus schulzii": {
       "iucn": "NT"
+    },
+    "Dryolimnas augusti": {
+      "iucn": "EX"
     },
     "Dubusia carrikeri": {
       "iucn": "NT"
     },
     "Ducula aenea": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Ducula aurorae": {
       "iucn": "EN"
     },
     "Ducula badia": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Ducula brenchleyi": {
       "iucn": "NT"
@@ -2308,11 +2456,20 @@
     "Dysithamnus striaticeps": {
       "iucn": "NT"
     },
+    "Dysmorodrepanis munroi": {
+      "iucn": "EX"
+    },
     "Eclectus cornelia": {
       "iucn": "EN"
     },
+    "Eclectus infectus": {
+      "iucn": "EX"
+    },
     "Eclectus riedeli": {
       "iucn": "VU"
+    },
+    "Ectopistes migratorius": {
+      "iucn": "EX"
     },
     "Edolisoma anale": {
       "iucn": "NT"
@@ -2333,15 +2490,15 @@
       "iucn": "NT"
     },
     "Egretta eulophotes": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Egretta rufescens": {
       "iucn": "NT"
     },
     "Egretta sacra": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Egretta vinaceigula": {
       "iucn": "VU"
@@ -2350,8 +2507,8 @@
       "iucn": "VU"
     },
     "Elanus caeruleus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Elanus scriptus": {
       "iucn": "NT"
@@ -2371,52 +2528,21 @@
     "Eleothreptus candicans": {
       "iucn": "VU"
     },
-    "Emberiza aureola": {
-      "iucn": "CR",
-      "cn": "I"
-    },
     "Emberiza cineracea": {
       "iucn": "NT"
     },
     "Emberiza jankowskii": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Emberiza koslowi": {
-      "iucn": "LC",
-      "cn": "II"
-    },
-    "Emberiza rustica": {
-      "iucn": "NT",
-      "san": true
-    },
-    "Emberiza siemsseni": {
-      "iucn": "LC",
-      "cn": "II"
-    },
-    "Emberiza socotrana": {
-      "iucn": "NT"
-    },
-    "Emberiza yessoensis": {
-      "iucn": "NT",
-      "san": true
+      "cn": "II",
+      "iucn": "LC"
     },
     "Emberizoides duidae": {
       "iucn": "DD"
     },
     "Enicurus ruficapillus": {
-      "iucn": "NT"
-    },
-    "Eos cyanogenia": {
-      "iucn": "NT"
-    },
-    "Eos histrio": {
-      "iucn": "EN"
-    },
-    "Eos reticulata": {
-      "iucn": "NT"
-    },
-    "Eos semilarvata": {
       "iucn": "NT"
     },
     "Ephippiorhynchus senegalensis": {
@@ -2437,6 +2563,9 @@
     "Eriocnemis nigrivestis": {
       "iucn": "EN"
     },
+    "Erythromachus leguati": {
+      "iucn": "EX"
+    },
     "Erythropitta granatina": {
       "iucn": "NT"
     },
@@ -2456,8 +2585,8 @@
       "iucn": "NT"
     },
     "Esacus recurvirostris": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Estrilda nigriloris": {
       "iucn": "DD"
@@ -2528,9 +2657,6 @@
     "Eupsittula canicularis": {
       "iucn": "VU"
     },
-    "Euptilotus eutilotus": {
-      "iucn": "NT"
-    },
     "Eurostopodus exul": {
       "iucn": "CR (PE)"
     },
@@ -2553,29 +2679,32 @@
       "iucn": "EN"
     },
     "Falcipennis falcipennis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Falco amurensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Falco araeus": {
       "iucn": "VU"
     },
     "Falco cherrug": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Falco columbarius": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Falco concolor": {
       "iucn": "VU"
     },
     "Falco deiroleucus": {
       "iucn": "NT"
+    },
+    "Falco duboisi": {
+      "iucn": "EX"
     },
     "Falco fasciinucha": {
       "iucn": "VU"
@@ -2587,34 +2716,34 @@
       "iucn": "NT"
     },
     "Falco naumanni": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Falco peregrinus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Falco punctatus": {
       "iucn": "EN"
     },
     "Falco rusticolus": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Falco severus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Falco subbuteo": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Falco tinnunculus": {
       "cn": "II"
     },
     "Falco vespertinus": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Ferminia cerverai": {
       "iucn": "EN"
@@ -2668,19 +2797,19 @@
       "iucn": "VU"
     },
     "Fregata andrewsi": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Fregata aquila": {
       "iucn": "VU"
     },
     "Fregata ariel": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Fregata minor": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Fregetta lineata": {
       "iucn": "DD"
@@ -2688,10 +2817,16 @@
     "Fregetta maoriana": {
       "iucn": "CR"
     },
+    "Fregilupus varius": {
+      "iucn": "EX"
+    },
     "Fringilla polatzeki": {
       "iucn": "EN"
     },
     "Fringilla teydea": {
+      "iucn": "NT"
+    },
+    "Fringillaria socotrana": {
       "iucn": "NT"
     },
     "Fulica alai": {
@@ -2700,9 +2835,12 @@
     "Fulica cornuta": {
       "iucn": "NT"
     },
+    "Fulica newtonii": {
+      "iucn": "EX"
+    },
     "Fulvetta striaticollis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Gactornis enarratus": {
       "iucn": "NT"
@@ -2736,8 +2874,8 @@
       "iucn": "NT"
     },
     "Gallinago nemoricola": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Gallinago nobilis": {
       "iucn": "NT"
@@ -2748,6 +2886,12 @@
     "Gallinula comeri": {
       "iucn": "VU"
     },
+    "Gallinula nesiotis": {
+      "iucn": "EX"
+    },
+    "Gallinula pacifica": {
+      "iucn": "CR"
+    },
     "Gallinula silvestris": {
       "iucn": "CR"
     },
@@ -2757,11 +2901,17 @@
     "Gallirallus calayanensis": {
       "iucn": "VU"
     },
+    "Gallirallus dieffenbachii": {
+      "iucn": "EX"
+    },
     "Gallirallus insignis": {
       "iucn": "NT"
     },
     "Gallirallus lafresnayanus": {
       "iucn": "CR"
+    },
+    "Gallirallus modestus": {
+      "iucn": "EX"
     },
     "Gallirallus okinawae": {
       "iucn": "EN"
@@ -2769,15 +2919,24 @@
     "Gallirallus owstoni": {
       "iucn": "CR"
     },
+    "Gallirallus pacificus": {
+      "iucn": "EX"
+    },
+    "Gallirallus poecilopterus": {
+      "iucn": "EX"
+    },
     "Gallirallus sylvestris": {
       "iucn": "EN"
+    },
+    "Gallirallus wakensis": {
+      "iucn": "EX"
     },
     "Gallirallus wallacii": {
       "iucn": "VU"
     },
     "Gallus gallus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Garrulax annamensis": {
       "iucn": "EN"
@@ -2786,12 +2945,12 @@
       "iucn": "EN"
     },
     "Garrulax canorus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Garrulax maesi": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Garrulax palliatus": {
       "iucn": "NT"
@@ -2800,8 +2959,8 @@
       "iucn": "EN"
     },
     "Garrulax taewanus": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Gavia adamsii": {
       "iucn": "NT",
@@ -2900,9 +3059,12 @@
     "Gerygone hypoxantha": {
       "iucn": "NT"
     },
+    "Gerygone insularis": {
+      "iucn": "EX"
+    },
     "Glareola lactea": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Glareola nordmanni": {
       "iucn": "NT"
@@ -2917,8 +3079,8 @@
       "iucn": "NT"
     },
     "Glaucidium cuculoides": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Glaucidium mooreorum": {
       "iucn": "CR (PE)"
@@ -2927,8 +3089,8 @@
       "iucn": "VU"
     },
     "Glaucidium passerinum": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Glaucidium sanchezi": {
       "iucn": "NT"
@@ -2946,12 +3108,12 @@
       "iucn": "NT"
     },
     "Gorsachius goisagi": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Gorsachius melanolophus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Goura cristata": {
       "iucn": "VU"
@@ -3039,27 +3201,27 @@
       "iucn": "VU"
     },
     "Grus grus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Grus japonensis": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Grus monacha": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Grus nigricollis": {
-      "iucn": "NT",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "NT"
     },
     "Grus paradisea": {
       "iucn": "VU"
     },
     "Grus virgo": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Guaruba guarouba": {
       "iucn": "VU"
@@ -3086,30 +3248,30 @@
       "iucn": "VU"
     },
     "Gypaetus barbatus": {
-      "iucn": "NT",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "NT"
     },
     "Gyps africanus": {
       "iucn": "CR"
     },
     "Gyps bengalensis": {
-      "iucn": "CR",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "CR"
     },
     "Gyps coprotheres": {
       "iucn": "VU"
     },
     "Gyps fulvus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Gyps himalayensis": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Gyps indicus": {
-      "iucn": "CR",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "CR"
     },
     "Gyps rueppelli": {
       "iucn": "CR"
@@ -3123,6 +3285,9 @@
     "Haematopus chathamensis": {
       "iucn": "EN"
     },
+    "Haematopus meadewaldoi": {
+      "iucn": "EX"
+    },
     "Haematopus ostralegus": {
       "iucn": "NT",
       "san": true
@@ -3132,24 +3297,24 @@
       "san": true
     },
     "Halcyon smyrnensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Haliaeetus albicilla": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Haliaeetus leucoryphus": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Haliaeetus pelagicus": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Haliastur indus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Hapalopsittaca amazonina": {
       "iucn": "NT"
@@ -3170,22 +3335,22 @@
       "iucn": "NT"
     },
     "Harpactes erythrocephalus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Harpactes kasumba": {
       "iucn": "NT"
     },
     "Harpactes oreskios": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Harpactes orrhophaeus": {
       "iucn": "VU"
     },
     "Harpactes wardi": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Harpia harpyja": {
       "iucn": "VU"
@@ -3211,6 +3376,9 @@
     "Hemignathus hanapepe": {
       "iucn": "EX"
     },
+    "Hemignathus lucidus": {
+      "iucn": "EX"
+    },
     "Hemignathus wilsoni": {
       "iucn": "EN"
     },
@@ -3221,8 +3389,8 @@
       "iucn": "VU"
     },
     "Hemiprocne coronata": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Hemitriccus cohnhafti": {
       "iucn": "NT"
@@ -3260,6 +3428,9 @@
     "Hesperoburhinus superciliaris": {
       "iucn": "VU"
     },
+    "Heteralocha acutirostris": {
+      "iucn": "EX"
+    },
     "Heteromirafra archeri": {
       "iucn": "CR"
     },
@@ -3276,8 +3447,8 @@
       "iucn": "VU"
     },
     "Hieraaetus pennatus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Hierococcyx vagans": {
       "iucn": "NT"
@@ -3285,9 +3456,12 @@
     "Himantopus novaezelandiae": {
       "iucn": "CR"
     },
+    "Himatione fraithii": {
+      "iucn": "EX"
+    },
     "Hirundapus cochinchinensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Hirundo atrocaerulea": {
       "iucn": "EN"
@@ -3304,9 +3478,6 @@
     "Houbaropsis bengalensis": {
       "iucn": "CR"
     },
-    "Humblotia flavirostris": {
-      "iucn": "VU"
-    },
     "Hydrobates cheimomnestes": {
       "iucn": "VU"
     },
@@ -3319,6 +3490,9 @@
     "Hydrobates leucorhous": {
       "iucn": "VU",
       "san": true
+    },
+    "Hydrobates macrodactylus": {
+      "iucn": "CR (PE)"
     },
     "Hydrobates markhami": {
       "iucn": "NT"
@@ -3337,12 +3511,12 @@
       "iucn": "EN"
     },
     "Hydrocoloeus minutus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Hydrophasianus chirurgus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Hydrornis baudii": {
       "iucn": "VU"
@@ -3351,8 +3525,8 @@
       "iucn": "NT"
     },
     "Hydrornis cyaneus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Hydrornis gurneyi": {
       "iucn": "CR"
@@ -3361,20 +3535,20 @@
       "iucn": "NT"
     },
     "Hydrornis nipalensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Hydrornis oatesi": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Hydrornis phayrei": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Hydrornis soror": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Hylexetastes uniformis": {
       "iucn": "VU"
@@ -3443,38 +3617,38 @@
       "iucn": "EN"
     },
     "Ianthocincla bieti": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Ianthocincla konkakinhensis": {
       "iucn": "NT"
     },
     "Ianthocincla lunulata": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Ianthocincla maxima": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Ianthocincla ocellata": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Ianthocincla sukatschewi": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Ibidorhyncha struthersii": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Ichthyaetus audouinii": {
       "iucn": "VU"
     },
     "Ichthyaetus relictus": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Icterus bonana": {
       "iucn": "VU"
@@ -3489,15 +3663,15 @@
       "iucn": "VU"
     },
     "Icthyophaga humilis": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Icthyophaga ichthyaetus": {
       "iucn": "NT"
     },
     "Icthyophaga leucogaster": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Icthyophaga sanfordi": {
       "iucn": "VU"
@@ -3506,8 +3680,8 @@
       "iucn": "CR"
     },
     "Ictinaetus malaiensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Illadopsis rufescens": {
       "iucn": "NT"
@@ -3534,14 +3708,8 @@
       "iucn": "NT"
     },
     "Ithaginis cruentus": {
-      "iucn": "LC",
-      "cn": "II"
-    },
-    "Ixodia cyaniventris": {
-      "iucn": "NT"
-    },
-    "Ixodia squamata": {
-      "iucn": "NT"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Ixos malaccensis": {
       "iucn": "NT"
@@ -3562,12 +3730,12 @@
       "cn": "I"
     },
     "Ketupa flavipes": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Ketupa nipalensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Ketupa philippensis": {
       "iucn": "VU"
@@ -3579,8 +3747,8 @@
       "iucn": "NT"
     },
     "Ketupa zeylonensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Kleinothraupis parodii": {
       "iucn": "NT"
@@ -3592,8 +3760,8 @@
       "cn": "II"
     },
     "Lagopus muta": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Lalage conjuncta": {
       "iucn": "VU"
@@ -3660,8 +3828,8 @@
       "san": true
     },
     "Larvivora ruficeps": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Larvivora tanensis": {
       "iucn": "VU"
@@ -3691,8 +3859,8 @@
       "cn": "II"
     },
     "Leiothrix lutea": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Leipoa ocellata": {
       "iucn": "VU"
@@ -3713,8 +3881,8 @@
       "iucn": "NT"
     },
     "Leptoptilos javanicus": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Leptotila conoveri": {
       "iucn": "NT"
@@ -3747,8 +3915,8 @@
       "iucn": "VU"
     },
     "Leucogeranus leucogeranus": {
-      "iucn": "CR",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "CR"
     },
     "Leuconotopicus borealis": {
       "iucn": "NT"
@@ -3785,8 +3953,8 @@
       "san": true
     },
     "Limnodromus semipalmatus": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Limosa fedoa": {
       "iucn": "VU"
@@ -3806,16 +3974,16 @@
       "iucn": "NT"
     },
     "Liocichla bugunorum": {
-      "iucn": "CR",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "CR"
     },
     "Liocichla omeiensis": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Lioparus chrysotis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Lipaugus conditus": {
       "iucn": "VU"
@@ -3843,16 +4011,19 @@
       "iucn": "NT"
     },
     "Lophophorus impejanus": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Lophophorus lhuysii": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Lophophorus sclateri": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
+    },
+    "Lophopsittacus mauritianus": {
+      "iucn": "EX"
     },
     "Lophornis brachylophus": {
       "iucn": "CR"
@@ -3861,15 +4032,15 @@
       "iucn": "NT"
     },
     "Lophospiza trivirgata": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Lophotibis cristata": {
       "iucn": "VU"
     },
     "Lophotriorchis kienerii": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Lophura bulweri": {
       "iucn": "VU"
@@ -3890,12 +4061,12 @@
       "iucn": "NT"
     },
     "Lophura leucomelanos": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Lophura nycthemera": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Lophura pyronota": {
       "iucn": "EN"
@@ -3904,8 +4075,8 @@
       "iucn": "VU"
     },
     "Lophura swinhoii": {
-      "iucn": "NT",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "NT"
     },
     "Loriculus catamene": {
       "iucn": "NT"
@@ -3917,8 +4088,8 @@
       "iucn": "NT"
     },
     "Loriculus vernalis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Lorius albidinucha": {
       "iucn": "NT"
@@ -3950,13 +4121,16 @@
     "Loxops ochraceus": {
       "iucn": "EX"
     },
+    "Loxops wolstenholmei": {
+      "iucn": "EX"
+    },
     "Luscinia megarhynchos": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Luscinia svecica": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Lybius chaplini": {
       "iucn": "VU"
@@ -3968,8 +4142,8 @@
       "iucn": "NT"
     },
     "Lyrurus tetrix": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Macgregoria pulchra": {
       "iucn": "VU"
@@ -3996,16 +4170,16 @@
       "iucn": "NT"
     },
     "Macropygia ruficeps": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Macropygia tenuirostris": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Macropygia unchall": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Macrosphenus pulitzeri": {
       "iucn": "EN"
@@ -4049,12 +4223,18 @@
     "Manorina melanotis": {
       "iucn": "EN"
     },
+    "Mareca marecula": {
+      "iucn": "EX"
+    },
     "Margarornis bellulus": {
       "iucn": "NT"
     },
     "Marmaronetta angustirostris": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
+    },
+    "Mascarinus mascarinus": {
+      "iucn": "EX"
     },
     "Mayrornis schistaceus": {
       "iucn": "VU"
@@ -4101,6 +4281,9 @@
     "Melaenornis annamarulae": {
       "iucn": "VU"
     },
+    "Melamprosops phaeosoma": {
+      "iucn": "EX"
+    },
     "Melanitta americana": {
       "iucn": "NT",
       "san": true
@@ -4110,8 +4293,8 @@
       "san": true
     },
     "Melanocorypha mongolica": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Melanodryas vittata": {
       "iucn": "VU"
@@ -4137,6 +4320,9 @@
     "Mellisuga helenae": {
       "iucn": "NT"
     },
+    "Melopyrrha grandis": {
+      "iucn": "CR"
+    },
     "Melopyrrha nigra": {
       "iucn": "NT"
     },
@@ -4156,42 +4342,45 @@
       "iucn": "VU"
     },
     "Mergellus albellus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Mergus australis": {
+      "iucn": "EX"
     },
     "Mergus octosetaceus": {
       "iucn": "CR"
     },
     "Mergus squamatus": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Merops leschenaulti": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Merops mentalis": {
       "iucn": "NT"
     },
     "Merops orientalis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Merops ornatus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Merops persicus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Merops philippinus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Merops viridis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Merulaxis stresemanni": {
       "iucn": "CR"
@@ -4212,8 +4401,8 @@
       "iucn": "NT"
     },
     "Metopidius indicus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Micrastur mintoni": {
       "iucn": "NT"
@@ -4222,8 +4411,8 @@
       "iucn": "VU"
     },
     "Microcarbo niger": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Microcerculus philomela": {
       "iucn": "NT"
@@ -4231,16 +4420,19 @@
     "Microeca hemixantha": {
       "iucn": "NT"
     },
+    "Microgoura meeki": {
+      "iucn": "EX"
+    },
     "Microhierax caerulescens": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Microhierax latifrons": {
       "iucn": "NT"
     },
     "Microhierax melanoleucos": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Micromacronus leytensis": {
       "iucn": "NT"
@@ -4249,6 +4441,9 @@
       "iucn": "NT"
     },
     "Microspingus alticola": {
+      "iucn": "NT"
+    },
+    "Microtarsus eutilotus": {
       "iucn": "NT"
     },
     "Microtarsus melanoleucos": {
@@ -4273,8 +4468,8 @@
       "iucn": "EN"
     },
     "Mirafra javanica": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Mirafra pulpa": {
       "iucn": "DD"
@@ -4284,6 +4479,18 @@
     },
     "Mitu tuberosum": {
       "iucn": "NT"
+    },
+    "Moho apicalis": {
+      "iucn": "EX"
+    },
+    "Moho bishopi": {
+      "iucn": "EX"
+    },
+    "Moho braccatus": {
+      "iucn": "EX"
+    },
+    "Moho nobilis": {
+      "iucn": "EX"
     },
     "Mohoua ochrocephala": {
       "iucn": "NT"
@@ -4334,8 +4541,8 @@
       "iucn": "NT"
     },
     "Moupinia poecilotis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Mulleripicus fuliginosus": {
       "iucn": "VU"
@@ -4344,8 +4551,14 @@
       "iucn": "NT"
     },
     "Mulleripicus pulverulentus": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
+    },
+    "Mundia elpenor": {
+      "iucn": "EX"
+    },
+    "Muscicapa flavirostris": {
+      "iucn": "VU"
     },
     "Muscicapa randi": {
       "iucn": "VU"
@@ -4365,18 +4578,24 @@
     "Myadestes lanaiensis": {
       "iucn": "CR (PE)"
     },
+    "Myadestes myadestinus": {
+      "iucn": "EX"
+    },
     "Myadestes obscurus": {
       "iucn": "NT"
     },
     "Myadestes palmeri": {
       "iucn": "CR"
     },
+    "Myadestes woahensis": {
+      "iucn": "EX"
+    },
     "Mycteria cinerea": {
       "iucn": "EN"
     },
     "Mycteria leucocephala": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Myiagra atra": {
       "iucn": "NT"
@@ -4386,6 +4605,9 @@
     },
     "Myiagra cervinicauda": {
       "iucn": "NT"
+    },
+    "Myiagra freycineti": {
+      "iucn": "EX"
     },
     "Myiagra hebetior": {
       "iucn": "VU"
@@ -4459,6 +4681,9 @@
     "Myzomela prawiradilagae": {
       "iucn": "VU"
     },
+    "Nannococcyx psix": {
+      "iucn": "EX"
+    },
     "Nannopterum harrisi": {
       "iucn": "VU"
     },
@@ -4471,6 +4696,12 @@
     },
     "Napothera pasquieri": {
       "iucn": "EN"
+    },
+    "Necropsar rodericanus": {
+      "iucn": "EX"
+    },
+    "Necropsittacus rodricanus": {
+      "iucn": "EX"
     },
     "Necrosyrtes monachus": {
       "iucn": "CR"
@@ -4500,8 +4731,8 @@
       "iucn": "VU"
     },
     "Neophron percnopterus": {
-      "iucn": "EN",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "EN"
     },
     "Neothraupis fasciata": {
       "iucn": "NT"
@@ -4515,8 +4746,14 @@
     "Neotis nuba": {
       "iucn": "VU"
     },
+    "Nesillas aldabrana": {
+      "iucn": "EX"
+    },
     "Nesillas mariae": {
       "iucn": "EN"
+    },
+    "Nesoenas rodericanus": {
+      "iucn": "EX"
     },
     "Nesofregetta fuliginosa": {
       "iucn": "EN"
@@ -4545,27 +4782,33 @@
     "Nestor notabilis": {
       "iucn": "EN"
     },
+    "Nestor productus": {
+      "iucn": "EX"
+    },
     "Nettapus coromandelianus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Newtonia fanovanae": {
       "iucn": "VU"
     },
     "Niltava davidi": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Niltava grandis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Ninox albifacies": {
+      "iucn": "EX"
     },
     "Ninox burhani": {
       "iucn": "NT"
     },
     "Ninox japonica": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Ninox leventisi": {
       "iucn": "VU"
@@ -4598,8 +4841,8 @@
       "iucn": "VU"
     },
     "Ninox scutulata": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Ninox spilocephala": {
       "iucn": "NT"
@@ -4611,15 +4854,15 @@
       "iucn": "EN"
     },
     "Nipponia nippon": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Nisaetus bartelsi": {
       "iucn": "EN"
     },
     "Nisaetus cirrhatus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Nisaetus floris": {
       "iucn": "EN"
@@ -4646,19 +4889,19 @@
       "iucn": "VU"
     },
     "Numenius arquata": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Numenius borealis": {
       "iucn": "CR (PE)"
     },
     "Numenius madagascariensis": {
-      "iucn": "EN",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "EN"
     },
     "Numenius minutus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Numenius tahitiensis": {
       "iucn": "NT"
@@ -4666,22 +4909,37 @@
     "Numenius tenuirostris": {
       "iucn": "EX"
     },
+    "Nyctanassa carcinocatactes": {
+      "iucn": "EX"
+    },
+    "Nycticorax duboisi": {
+      "iucn": "EX"
+    },
+    "Nycticorax mauritianus": {
+      "iucn": "EX"
+    },
+    "Nycticorax megacephalus": {
+      "iucn": "EX"
+    },
     "Nycticryphes semicollaris": {
       "iucn": "NT"
     },
     "Nyctyornis amictus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Nyctyornis athertoni": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Oceanites gracilis": {
       "iucn": "DD"
     },
     "Oceanites pincoyae": {
       "iucn": "DD"
+    },
+    "Ochthoeca salvini": {
+      "iucn": "NT"
     },
     "Ocyceros griseus": {
       "iucn": "VU"
@@ -4707,6 +4965,9 @@
     },
     "Onychorhynchus swainsoni": {
       "iucn": "VU"
+    },
+    "Ophrysia superciliosa": {
+      "iucn": "CR"
     },
     "Orchesticus abeillei": {
       "iucn": "NT"
@@ -4739,12 +5000,12 @@
       "iucn": "CR"
     },
     "Oriolus mellianus": {
-      "iucn": "EN",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "EN"
     },
     "Oroanassa magnifica": {
-      "iucn": "NT",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "NT"
     },
     "Ortalis erythroptera": {
       "iucn": "VU"
@@ -4756,8 +5017,8 @@
       "iucn": "NT"
     },
     "Otis tarda": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Otus alfredi": {
       "iucn": "VU"
@@ -4775,15 +5036,18 @@
       "iucn": "CR"
     },
     "Otus brucei": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Otus capnodes": {
       "iucn": "EN"
     },
     "Otus elegans": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
+    },
+    "Otus grucheti": {
+      "iucn": "EX"
     },
     "Otus gurneyi": {
       "iucn": "NT"
@@ -4812,6 +5076,9 @@
     "Otus moheliensis": {
       "iucn": "EN"
     },
+    "Otus murivorus": {
+      "iucn": "EX"
+    },
     "Otus nigrorum": {
       "iucn": "NT"
     },
@@ -4827,13 +5094,16 @@
     "Otus sagittatus": {
       "iucn": "VU"
     },
+    "Otus sauzieri": {
+      "iucn": "EX"
+    },
     "Otus scops": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Otus semitorques": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Otus siaoensis": {
       "iucn": "CR"
@@ -4845,8 +5115,8 @@
       "iucn": "NT"
     },
     "Otus sunia": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Otus thilohoffmanni": {
       "iucn": "EN"
@@ -4864,8 +5134,8 @@
       "iucn": "VU"
     },
     "Oxyura leucocephala": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Oxyura maccoa": {
       "iucn": "EN"
@@ -4909,6 +5179,9 @@
     "Pampusana erythroptera": {
       "iucn": "CR"
     },
+    "Pampusana ferruginea": {
+      "iucn": "EX"
+    },
     "Pampusana hoedtii": {
       "iucn": "EN"
     },
@@ -4918,6 +5191,9 @@
     "Pampusana rubescens": {
       "iucn": "EN"
     },
+    "Pampusana salamonis": {
+      "iucn": "EX"
+    },
     "Pampusana sanctaecrucis": {
       "iucn": "EN"
     },
@@ -4925,8 +5201,8 @@
       "iucn": "NT"
     },
     "Pandion haliaetus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Papasula abbotti": {
       "iucn": "EN"
@@ -4954,21 +5230,24 @@
       "san": true
     },
     "Paradoxornis heudei": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Paradoxornis margaritae": {
       "iucn": "VU"
     },
     "Paradoxornis paradoxus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Pardalotus quadragintus": {
       "iucn": "EN"
     },
     "Parmoptila rubrifrons": {
       "iucn": "NT"
+    },
+    "Paroreomyza flammea": {
+      "iucn": "EX"
     },
     "Paroreomyza maculata": {
       "iucn": "CR (PE)"
@@ -5010,8 +5289,8 @@
       "iucn": "EN"
     },
     "Pavo muticus": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Pedionomus torquatus": {
       "iucn": "EN"
@@ -5020,28 +5299,31 @@
       "iucn": "NT"
     },
     "Pelargopsis capensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Pelecanoides garnotii": {
       "iucn": "NT"
     },
     "Pelecanus crispus": {
-      "iucn": "NT",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "NT"
     },
     "Pelecanus onocrotalus": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Pelecanus philippensis": {
-      "iucn": "NT",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "NT"
     },
     "Pelecanus thagus": {
       "iucn": "NT"
     },
     "Pellorneum buettikoferi": {
+      "iucn": "NT"
+    },
+    "Pellorneum malaccense": {
       "iucn": "NT"
     },
     "Pellorneum palustre": {
@@ -5099,16 +5381,16 @@
       "iucn": "NT"
     },
     "Perisoreus internigrans": {
-      "iucn": "NT",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "NT"
     },
     "Pernis apivorus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Pernis ptilorhynchus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Petrochelidon perdita": {
       "iucn": "DD"
@@ -5127,6 +5409,9 @@
     },
     "Peucaea sumichrasti": {
       "iucn": "NT"
+    },
+    "Pezophaps solitaria": {
+      "iucn": "EX"
     },
     "Pezoporus occidentalis": {
       "iucn": "CR"
@@ -5185,13 +5470,16 @@
     "Philesturnus rufusater": {
       "iucn": "NT"
     },
+    "Philydor novaesi": {
+      "iucn": "EX"
+    },
     "Phodilus badius": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Phoebastria albatrus": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Phoebastria immutabilis": {
       "iucn": "NT",
@@ -5201,8 +5489,8 @@
       "iucn": "CR"
     },
     "Phoebastria nigripes": {
-      "iucn": "NT",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "NT"
     },
     "Phoebetria fusca": {
       "iucn": "EN"
@@ -5223,8 +5511,8 @@
       "iucn": "NT"
     },
     "Phoenicurus alaschanicus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Phoenicurus bicolor": {
       "iucn": "NT"
@@ -5301,12 +5589,15 @@
       "iucn": "NT"
     },
     "Picus chlorolophus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Picus rabieri": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
+    },
+    "Pinguinus impennis": {
+      "iucn": "EX"
     },
     "Pipile cujubi": {
       "iucn": "VU"
@@ -5319,6 +5610,9 @@
     },
     "Pipile pipile": {
       "iucn": "CR"
+    },
+    "Pipilo naufragus": {
+      "iucn": "EX"
     },
     "Piprites pileata": {
       "iucn": "NT"
@@ -5336,12 +5630,12 @@
       "iucn": "NT"
     },
     "Pitta moluccensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Pitta nympha": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Pitta rosenbergii": {
       "iucn": "NT"
@@ -5359,12 +5653,12 @@
       "iucn": "VU"
     },
     "Platalea leucorodia": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Platalea minor": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Platylophus galericulatus": {
       "iucn": "NT"
@@ -5379,8 +5673,8 @@
       "iucn": "VU"
     },
     "Plegadis falcinellus": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Ploceus aureonucha": {
       "iucn": "EN"
@@ -5431,39 +5725,45 @@
     "Pluvianellus socialis": {
       "iucn": "VU"
     },
+    "Podiceps andinus": {
+      "iucn": "EX"
+    },
     "Podiceps auritus": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Podiceps gallardoi": {
       "iucn": "CR"
     },
     "Podiceps grisegena": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Podiceps nigricollis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Podiceps taczanowskii": {
       "iucn": "EN"
     },
+    "Podilymbus gigas": {
+      "iucn": "EX"
+    },
     "Podoces biddulphi": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Podoces hendersoni": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Poecile davidi": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Poecile superciliosus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Poecilostreptus cabanisi": {
       "iucn": "VU"
@@ -5487,8 +5787,8 @@
       "iucn": "EN"
     },
     "Polyplectron bicalcaratum": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Polyplectron germaini": {
       "iucn": "VU"
@@ -5497,8 +5797,8 @@
       "iucn": "NT"
     },
     "Polyplectron katsumatae": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Polyplectron malacense": {
       "iucn": "EN"
@@ -5522,8 +5822,14 @@
     "Pomarea dimidiata": {
       "iucn": "VU"
     },
+    "Pomarea fluxa": {
+      "iucn": "EX"
+    },
     "Pomarea iphis": {
       "iucn": "CR"
+    },
+    "Pomarea maupitiensis": {
+      "iucn": "EX"
     },
     "Pomarea mendozae": {
       "iucn": "EN"
@@ -5534,6 +5840,9 @@
     "Pomarea nigra": {
       "iucn": "CR"
     },
+    "Pomarea nukuhivae": {
+      "iucn": "EX"
+    },
     "Pomarea whitneyi": {
       "iucn": "CR"
     },
@@ -5542,6 +5851,9 @@
     },
     "Poodytes albolimbatus": {
       "iucn": "VU"
+    },
+    "Poodytes rufescens": {
+      "iucn": "EX"
     },
     "Poospiza garleppi": {
       "iucn": "NT"
@@ -5552,11 +5864,21 @@
     "Poospiza rubecula": {
       "iucn": "NT"
     },
+    "Porphyrio albus": {
+      "iucn": "EX"
+    },
     "Porphyrio hochstetteri": {
       "iucn": "EN"
     },
+    "Porphyrio mantelli": {
+      "iucn": "EX"
+    },
+    "Porphyrio paepae": {
+      "iucn": "EX"
+    },
     "Porphyrio porphyrio": {
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Primolius couloni": {
       "iucn": "VU"
@@ -5642,6 +5964,15 @@
     "Promerops gurneyi": {
       "iucn": "NT"
     },
+    "Prosobonia cancellata": {
+      "iucn": "EX"
+    },
+    "Prosobonia ellisi": {
+      "iucn": "EX"
+    },
+    "Prosobonia leucoptera": {
+      "iucn": "EX"
+    },
     "Prosobonia parvirostris": {
       "iucn": "EN"
     },
@@ -5652,18 +5983,21 @@
       "iucn": "NT"
     },
     "Prunella koslowi": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Psarisomus dalhousiae": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Psarocolius cassini": {
       "iucn": "VU"
     },
     "Psephotellus chrysopterygius": {
       "iucn": "EN"
+    },
+    "Psephotellus pulcherrimus": {
+      "iucn": "EX"
     },
     "Pseudastur occidentalis": {
       "iucn": "VU"
@@ -5672,8 +6006,8 @@
       "iucn": "NT"
     },
     "Pseudibis davisoni": {
-      "iucn": "CR",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "CR"
     },
     "Pseudibis gigantea": {
       "iucn": "CR"
@@ -5727,41 +6061,50 @@
       "iucn": "NT"
     },
     "Psittacula alexandri": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
+    },
+    "Psittacula bensoni": {
+      "iucn": "EX"
     },
     "Psittacula caniceps": {
       "iucn": "NT"
     },
     "Psittacula derbiana": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Psittacula eques": {
       "iucn": "VU"
     },
     "Psittacula eupatria": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Psittacula exsul": {
+      "iucn": "EX"
     },
     "Psittacula finschii": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
     },
     "Psittacula himalayana": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Psittacula krameri": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Psittacula longicauda": {
       "iucn": "VU"
     },
     "Psittacula roseata": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
+    },
+    "Psittacula wardi": {
+      "iucn": "EX"
     },
     "Psittacus erithacus": {
       "iucn": "EN"
@@ -5773,8 +6116,11 @@
       "iucn": "NT"
     },
     "Psittinus cyanurus": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
+    },
+    "Psittirostra psittacea": {
+      "iucn": "EX"
     },
     "Psittrichas fulgidus": {
       "iucn": "VU"
@@ -5792,8 +6138,8 @@
       "iucn": "VU"
     },
     "Pterocles orientalis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Pterodroma alba": {
       "iucn": "VU"
@@ -5815,6 +6161,12 @@
     },
     "Pterodroma cahow": {
       "iucn": "EN"
+    },
+    "Pterodroma caribbaea": {
+      "iucn": "CR (PE)"
+    },
+    "Pterodroma cervicalis": {
+      "iucn": "VU"
     },
     "Pterodroma cookii": {
       "iucn": "VU"
@@ -5858,6 +6210,9 @@
     "Pterodroma pycrofti": {
       "iucn": "VU"
     },
+    "Pterodroma rupinarum": {
+      "iucn": "EX"
+    },
     "Pterodroma sandwichensis": {
       "iucn": "EN"
     },
@@ -5865,20 +6220,20 @@
       "iucn": "NT"
     },
     "Pterorhinus berthemyi": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Pterorhinus chinensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Pterorhinus courtoisi": {
-      "iucn": "CR",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "CR"
     },
     "Pterorhinus koslowi": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Pterorhinus mitratus": {
       "iucn": "NT"
@@ -5887,8 +6242,8 @@
       "iucn": "NT"
     },
     "Pterorhinus waddelli": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Ptilinopus arcanus": {
       "iucn": "CR"
@@ -5917,6 +6272,9 @@
     "Ptilinopus layardi": {
       "iucn": "NT"
     },
+    "Ptilinopus mercierii": {
+      "iucn": "EX"
+    },
     "Ptilinopus rarotongensis": {
       "iucn": "NT"
     },
@@ -5939,8 +6297,8 @@
       "iucn": "NT"
     },
     "Pucrasia macrolopha": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Puffinus auricularis": {
       "iucn": "CR"
@@ -5973,8 +6331,8 @@
       "iucn": "EN"
     },
     "Pycnonotus taivanus": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Pycnonotus zeylanicus": {
       "iucn": "CR"
@@ -6030,6 +6388,9 @@
     "Pyrrhura viridicata": {
       "iucn": "EN"
     },
+    "Quiscalus palustris": {
+      "iucn": "EX"
+    },
     "Quiscalus quiscula": {
       "iucn": "NT"
     },
@@ -6061,8 +6422,8 @@
       "iucn": "VU"
     },
     "Ramphiculus leclancheri": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Ramphiculus mangoliensis": {
       "iucn": "NT"
@@ -6081,6 +6442,9 @@
     },
     "Randia pseudozosterops": {
       "iucn": "NT"
+    },
+    "Raphus cucullatus": {
+      "iucn": "EX"
     },
     "Reinwardtoena browni": {
       "iucn": "NT"
@@ -6142,6 +6506,15 @@
     "Rhizothera longirostris": {
       "iucn": "NT"
     },
+    "Rhodacanthis flaviceps": {
+      "iucn": "EX"
+    },
+    "Rhodacanthis palmeri": {
+      "iucn": "EX"
+    },
+    "Rhodonessa caryophyllacea": {
+      "iucn": "CR"
+    },
     "Rhopornis ardesiacus": {
       "iucn": "NT"
     },
@@ -6179,11 +6552,14 @@
       "iucn": "VU"
     },
     "Rhyticeros undulatus": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Riccordia bicolor": {
       "iucn": "NT"
+    },
+    "Riccordia bracei": {
+      "iucn": "EX"
     },
     "Rigidipenna inexpectata": {
       "iucn": "NT"
@@ -6216,8 +6592,14 @@
     "Rowettia goughensis": {
       "iucn": "CR"
     },
+    "Rubigula cyaniventris": {
+      "iucn": "NT"
+    },
     "Rubigula dispar": {
       "iucn": "VU"
+    },
+    "Rubigula squamata": {
+      "iucn": "NT"
     },
     "Rufirallus xenopterus": {
       "iucn": "VU"
@@ -6236,8 +6618,8 @@
       "iucn": "EN"
     },
     "Sarcogyps calvus": {
-      "iucn": "CR",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "CR"
     },
     "Sarcophanops samarensis": {
       "iucn": "VU"
@@ -6254,25 +6636,16 @@
     "Saucerottia castaneiventris": {
       "iucn": "NT"
     },
-    "Saudareos flavoviridis": {
-      "iucn": "NT"
-    },
-    "Saudareos iris": {
-      "iucn": "NT"
-    },
-    "Saudareos johnstoniae": {
-      "iucn": "NT"
-    },
     "Saundersilarus saundersi": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Saxicola dacotiae": {
       "iucn": "NT"
     },
     "Saxicola insignis": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Saxicola macrorhynchus": {
       "iucn": "VU"
@@ -6289,6 +6662,22 @@
     "Schistolais leontica": {
       "iucn": "EN"
     },
+    "Schoeniclus aureolus": {
+      "cn": "I",
+      "iucn": "CR"
+    },
+    "Schoeniclus rusticus": {
+      "iucn": "NT",
+      "san": true
+    },
+    "Schoeniclus siemsseni": {
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Schoeniclus yessoensis": {
+      "iucn": "NT",
+      "san": true
+    },
     "Schoenicola platyurus": {
       "iucn": "NT"
     },
@@ -6296,8 +6685,8 @@
       "iucn": "VU"
     },
     "Schoeniparus variegaticeps": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Scleroptila psilolaema": {
       "iucn": "NT"
@@ -6378,8 +6767,8 @@
       "iucn": "NT"
     },
     "Serilophus lunatus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Serinus syriacus": {
       "iucn": "VU"
@@ -6436,8 +6825,11 @@
       "iucn": "NT"
     },
     "Sibirionetta formosa": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Siphonorhis americana": {
+      "iucn": "CR (PE)"
     },
     "Siphonorhis brewsteri": {
       "iucn": "NT"
@@ -6446,8 +6838,8 @@
       "iucn": "NT"
     },
     "Sitta formosa": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Sitta insularis": {
       "iucn": "CR"
@@ -6456,8 +6848,8 @@
       "iucn": "EN"
     },
     "Sitta magna": {
-      "iucn": "EN",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "EN"
     },
     "Sitta solangiae": {
       "iucn": "NT",
@@ -6470,8 +6862,8 @@
       "iucn": "VU"
     },
     "Sitta yunnanensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Sittiparus owstoni": {
       "iucn": "EN"
@@ -6496,8 +6888,8 @@
       "iucn": "VU"
     },
     "Spelaeornis kinneari": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Spelaeornis longicaudatus": {
       "iucn": "NT"
@@ -6512,8 +6904,8 @@
       "iucn": "EN"
     },
     "Spilornis cheela": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Spilornis elgini": {
       "iucn": "VU"
@@ -6595,8 +6987,8 @@
       "iucn": "NT"
     },
     "Stachyris nonggangensis": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Stachyris oglei": {
       "iucn": "NT"
@@ -6615,12 +7007,12 @@
       "iucn": "NT"
     },
     "Sterna acuticauda": {
-      "iucn": "EN",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "EN"
     },
     "Sterna aurantia": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Sterna striata": {
       "iucn": "NT"
@@ -6666,25 +7058,26 @@
       "iucn": "CR"
     },
     "Strix aluco": {
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Strix chacoensis": {
       "iucn": "NT"
     },
     "Strix leptogrammica": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Strix nebulosa": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Strix occidentalis": {
       "iucn": "NT"
     },
     "Strix uralensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Struthio molybdophanes": {
       "iucn": "VU"
@@ -6693,35 +7086,35 @@
       "iucn": "VU"
     },
     "Sula dactylatra": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Sula leucogaster": {
       "cn": "II"
     },
     "Sula sula": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Surnia ulula": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Suthora conspicillata": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Suthora davidiana": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Suthora przewalskii": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Suthora zappeyi": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Swynnertonia swynnertoni": {
       "iucn": "NT"
@@ -6802,30 +7195,33 @@
       "iucn": "VU"
     },
     "Synthliboramphus wumizusume": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Sypheotides indicus": {
       "iucn": "CR"
     },
     "Syrmaticus ellioti": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Syrmaticus humiae": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Syrmaticus mikado": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Syrmaticus reevesii": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Tachybaptus pelzelnii": {
       "iucn": "EN"
+    },
+    "Tachybaptus rufolavatus": {
+      "iucn": "EX"
     },
     "Tachycineta cyaneoviridis": {
       "iucn": "EN"
@@ -6837,8 +7233,8 @@
       "iucn": "VU"
     },
     "Tachyspiza badia": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Tachyspiza brachyura": {
       "iucn": "VU"
@@ -6847,8 +7243,8 @@
       "iucn": "VU"
     },
     "Tachyspiza gularis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Tachyspiza haplochroa": {
       "iucn": "NT"
@@ -6866,16 +7262,19 @@
       "iucn": "VU"
     },
     "Tachyspiza soloensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Tachyspiza virgata": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Tadorna cristata": {
+      "iucn": "CR"
     },
     "Taenioptynx brodiei": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Tangara fastuosa": {
       "iucn": "VU"
@@ -6908,8 +7307,8 @@
       "iucn": "EN"
     },
     "Tarsiger hyperythrus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Tauraco bannermani": {
       "iucn": "NT"
@@ -6939,44 +7338,44 @@
       "iucn": "VU"
     },
     "Tetrao urogalloides": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Tetrao urogallus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Tetraogallus altaicus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Tetraogallus himalayensis": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Tetraogallus tibetanus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Tetraophasis obscurus": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Tetraophasis szechenyii": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Tetrastes bonasia": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Tetrastes sewerzowi": {
-      "iucn": "NT",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "NT"
     },
     "Tetrax tetrax": {
-      "iucn": "NT",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "NT"
     },
     "Thalassarche bulleri": {
       "iucn": "NT"
@@ -6997,12 +7396,12 @@
       "iucn": "VU"
     },
     "Thalasseus bergii": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Thalasseus bernsteini": {
-      "iucn": "CR",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "CR"
     },
     "Thalasseus elegans": {
       "iucn": "NT"
@@ -7029,8 +7428,11 @@
       "iucn": "EN"
     },
     "Threskiornis melanocephalus": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
+    },
+    "Threskiornis solitarius": {
+      "iucn": "EX"
     },
     "Thripophaga amacurensis": {
       "iucn": "VU"
@@ -7073,6 +7475,9 @@
     },
     "Todiramphus farquhari": {
       "iucn": "NT"
+    },
+    "Todiramphus gambieri": {
+      "iucn": "CR"
     },
     "Todiramphus godeffroyi": {
       "iucn": "CR"
@@ -7117,35 +7522,38 @@
       "iucn": "CR"
     },
     "Tragopan blythii": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Tragopan caboti": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Tragopan melanocephalus": {
-      "iucn": "VU",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "VU"
     },
     "Tragopan satyra": {
-      "iucn": "LC",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "LC"
     },
     "Tragopan temminckii": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Traversia lyalli": {
+      "iucn": "EX"
     },
     "Treron apicauda": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Treron aromaticus": {
       "iucn": "NT"
     },
     "Treron bicinctus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Treron capellei": {
       "iucn": "VU"
@@ -7154,8 +7562,8 @@
       "iucn": "NT"
     },
     "Treron curvirostra": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Treron floris": {
       "iucn": "VU"
@@ -7179,12 +7587,12 @@
       "iucn": "NT"
     },
     "Treron phoenicopterus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Treron pompadora": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Treron psittaceus": {
       "iucn": "EN"
@@ -7193,23 +7601,44 @@
       "iucn": "EN"
     },
     "Treron sieboldii": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Treron sphenurus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Treron teysmannii": {
+      "iucn": "NT"
+    },
+    "Trichoglossus cyanogenius": {
+      "iucn": "NT"
+    },
+    "Trichoglossus flavoviridis": {
       "iucn": "NT"
     },
     "Trichoglossus forsteni": {
       "iucn": "EN"
     },
+    "Trichoglossus histrio": {
+      "iucn": "EN"
+    },
+    "Trichoglossus iris": {
+      "iucn": "NT"
+    },
+    "Trichoglossus johnstoniae": {
+      "iucn": "NT"
+    },
+    "Trichoglossus reticulatus": {
+      "iucn": "NT"
+    },
     "Trichoglossus rosenbergii": {
       "iucn": "VU"
     },
     "Trichoglossus rubiginosus": {
+      "iucn": "NT"
+    },
+    "Trichoglossus semilarvatus": {
       "iucn": "NT"
     },
     "Trichoglossus weberi": {
@@ -7223,23 +7652,23 @@
       "san": true
     },
     "Tringa guttifer": {
-      "iucn": "EN",
-      "cn": "I"
+      "cn": "I",
+      "iucn": "EN"
     },
     "Tringa melanoleuca": {
       "iucn": "NT"
     },
     "Trochalopteron elliotii": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Trochalopteron formosum": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Trochalopteron milnei": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Trochalopteron morrisonianum": {
       "iucn": "NT",
@@ -7272,9 +7701,6 @@
     "Tropicoperdix graydoni": {
       "iucn": "NT"
     },
-    "Tumbezia salvini": {
-      "iucn": "NT"
-    },
     "Turacoena modesta": {
       "iucn": "NT"
     },
@@ -7303,8 +7729,8 @@
       "iucn": "NT"
     },
     "Turdus feae": {
-      "iucn": "VU",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "VU"
     },
     "Turdus haplochrous": {
       "iucn": "NT"
@@ -7318,6 +7744,9 @@
     "Turdus menachensis": {
       "iucn": "NT"
     },
+    "Turdus ravidus": {
+      "iucn": "EX"
+    },
     "Turdus roehli": {
       "iucn": "NT"
     },
@@ -7327,8 +7756,17 @@
     "Turdus xanthorhynchus": {
       "iucn": "CR"
     },
+    "Turnagra capensis": {
+      "iucn": "EX"
+    },
+    "Turnagra tanagra": {
+      "iucn": "EX"
+    },
     "Turnix melanogaster": {
       "iucn": "VU"
+    },
+    "Turnix novaecaledoniae": {
+      "iucn": "CR (PE)"
     },
     "Turnix olivii": {
       "iucn": "CR"
@@ -7355,8 +7793,8 @@
       "iucn": "VU"
     },
     "Tyto longimembris": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Tyto prigoginei": {
       "iucn": "DD"
@@ -7364,12 +7802,18 @@
     "Tyto soumagnei": {
       "iucn": "VU"
     },
+    "Upupa antaios": {
+      "iucn": "EX"
+    },
     "Uratelornis chimaera": {
       "iucn": "VU"
     },
     "Urile pelagicus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Urile perspicillatus": {
+      "iucn": "EX"
     },
     "Urocissa ornata": {
       "iucn": "VU"
@@ -7379,16 +7823,19 @@
       "san": true
     },
     "Urocynchramus pylzowi": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Vanellus duvaucelii": {
       "iucn": "NT",
       "san": true
     },
     "Vanellus gregarius": {
-      "iucn": "CR",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "CR"
+    },
+    "Vanellus macropterus": {
+      "iucn": "CR (PE)"
     },
     "Vanellus vanellus": {
       "iucn": "NT",
@@ -7408,6 +7855,9 @@
     },
     "Vini amabilis": {
       "iucn": "CR"
+    },
+    "Vini diadema": {
+      "iucn": "CR (PE)"
     },
     "Vini kuhlii": {
       "iucn": "EN"
@@ -7439,6 +7889,9 @@
     "Vireo osburni": {
       "iucn": "NT"
     },
+    "Viridonia sagittirostris": {
+      "iucn": "EX"
+    },
     "Vosea whitemanensis": {
       "iucn": "NT"
     },
@@ -7462,6 +7915,9 @@
     },
     "Xenicus gilviventris": {
       "iucn": "EN"
+    },
+    "Xenicus longipes": {
+      "iucn": "EX"
     },
     "Xenoglaux loweryi": {
       "iucn": "VU"
@@ -7511,23 +7967,38 @@
     "Zanda latirostris": {
       "iucn": "EN"
     },
+    "Zapornia astrictocarpus": {
+      "iucn": "EX"
+    },
     "Zapornia atra": {
       "iucn": "VU"
     },
     "Zapornia bicolor": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
+    },
+    "Zapornia monasa": {
+      "iucn": "EX"
+    },
+    "Zapornia nigra": {
+      "iucn": "EX"
     },
     "Zapornia olivieri": {
       "iucn": "EN"
     },
+    "Zapornia palmeri": {
+      "iucn": "EX"
+    },
     "Zapornia parva": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Zapornia paykullii": {
-      "iucn": "NT",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "NT"
+    },
+    "Zapornia sandwichensis": {
+      "iucn": "EX"
     },
     "Zaratornis stresemanni": {
       "iucn": "NT"
@@ -7568,8 +8039,14 @@
     "Zoothera margaretae": {
       "iucn": "NT"
     },
+    "Zoothera terrestris": {
+      "iucn": "EX"
+    },
     "Zoothera turipavae": {
       "iucn": "NT"
+    },
+    "Zosterops albogularis": {
+      "iucn": "EX"
     },
     "Zosterops brunneus": {
       "iucn": "NT"
@@ -7581,8 +8058,8 @@
       "iucn": "NT"
     },
     "Zosterops erythropleurus": {
-      "iucn": "LC",
-      "cn": "II"
+      "cn": "II",
+      "iucn": "LC"
     },
     "Zosterops feae": {
       "iucn": "NT"
@@ -7635,11 +8112,17 @@
     "Zosterops samoensis": {
       "iucn": "NT"
     },
+    "Zosterops semiflavus": {
+      "iucn": "EX"
+    },
     "Zosterops silvanus": {
       "iucn": "VU"
     },
     "Zosterops somadikartai": {
       "iucn": "NT"
+    },
+    "Zosterops strenuus": {
+      "iucn": "EX"
     },
     "Zosterops tenuirostris": {
       "iucn": "VU"
@@ -7882,9 +8365,6 @@
       "san": true
     },
     "Apus pacificus": {
-      "san": true
-    },
-    "Apus nipalensis": {
       "san": true
     },
     "Phaenicophaeus tristis": {
@@ -9186,9 +9666,6 @@
     "Aegithalos iouschistos": {
       "san": true
     },
-    "Aegithalos bonvaloti": {
-      "san": true
-    },
     "Aegithalos fuliginosus": {
       "san": true
     },
@@ -9576,7 +10053,7 @@
     "Tichodroma muraria": {
       "san": true
     },
-    "Troglodytes troglodytes": {
+    "Nannus troglodytes": {
       "san": true
     },
     "Cinclus cinclus": {
@@ -10395,7 +10872,7 @@
     "Plectrophenax nivalis": {
       "san": true
     },
-    "Emberiza lathami": {
+    "Melophus lathami": {
       "san": true
     },
     "Emberiza calandra": {
@@ -10428,43 +10905,43 @@
     "Emberiza hortulana": {
       "san": true
     },
-    "Emberiza tristrami": {
+    "Schoeniclus tristrami": {
       "san": true
     },
     "Emberiza fucata": {
       "san": true
     },
-    "Emberiza pusilla": {
+    "Schoeniclus pusillus": {
       "san": true
     },
-    "Emberiza chrysophrys": {
+    "Schoeniclus chrysophrys": {
       "san": true
     },
-    "Emberiza elegans": {
+    "Schoeniclus elegans": {
       "san": true
     },
-    "Emberiza rutila": {
+    "Schoeniclus rutilus": {
       "san": true
     },
-    "Emberiza melanocephala": {
+    "Melophus melanocephalus": {
       "san": true
     },
-    "Emberiza bruniceps": {
+    "Melophus bruniceps": {
       "san": true
     },
-    "Emberiza sulphurata": {
+    "Schoeniclus sulphuratus": {
       "san": true
     },
-    "Emberiza spodocephala": {
+    "Schoeniclus spodocephalus": {
       "san": true
     },
-    "Emberiza variabilis": {
+    "Schoeniclus variabilis": {
       "san": true
     },
-    "Emberiza pallasi": {
+    "Schoeniclus pallasi": {
       "san": true
     },
-    "Emberiza schoeniclus": {
+    "Schoeniclus schoeniclus": {
       "san": true
     }
   }

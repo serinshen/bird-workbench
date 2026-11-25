@@ -1,0 +1,1134 @@
+{
+  "taxonomy": "AviList v2026",
+  "citation": "AviList Core Team. 2026. AviList: The Global Avian Checklist, v2026. https://doi.org/10.2173/avilist.v2026",
+  "avilistSha256": "0f00995c819903e35eaee65cf5313193868362f1a6383e05949fe3d3600a8b39",
+  "rule": "Update a stored scientific name only when it is a 1:1 rename below. Do not update lumps, splits, unmatched names, or ambiguous names. Do not change photo paths, loggedChinese, loggedEnglish, or legacy_json.",
+  "renames": [
+    {
+      "from": "Basileuterus lachrymosus",
+      "to": "Euthlypis lachrymosa",
+      "en": "Fan-tailed Warbler",
+      "zh": "扇尾森莺",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Brachycope anomala",
+      "to": "Euplectes anomalus",
+      "en": "Bob-tailed Weaver",
+      "zh": "短尾织雀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Charmosynoides margarethae",
+      "to": "Vini margarethae",
+      "en": "Duchess Lorikeet",
+      "zh": "贵妃鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Elaenia cherrei",
+      "to": "Elaenia cherriei",
+      "en": "Hispaniolan Elaenia",
+      "zh": "",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza affinis",
+      "to": "Fringillaria affinis",
+      "en": "Brown-rumped Bunting",
+      "zh": "褐腰鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza aureola",
+      "to": "Schoeniclus aureolus",
+      "en": "Yellow-breasted Bunting",
+      "zh": "黄胸鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza bruniceps",
+      "to": "Melophus bruniceps",
+      "en": "Red-headed Bunting",
+      "zh": "褐头鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza cabanisi",
+      "to": "Fringillaria cabanisi",
+      "en": "Cabanis's Bunting",
+      "zh": "白眉黄腹鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza capensis",
+      "to": "Fringillaria capensis",
+      "en": "Cape Bunting",
+      "zh": "南非岩鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza chrysophrys",
+      "to": "Schoeniclus chrysophrys",
+      "en": "Yellow-browed Bunting",
+      "zh": "黄眉鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza elegans",
+      "to": "Schoeniclus elegans",
+      "en": "Yellow-throated Bunting",
+      "zh": "黄喉鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza flaviventris",
+      "to": "Fringillaria flaviventris",
+      "en": "Golden-breasted Bunting",
+      "zh": "金胸鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza goslingi",
+      "to": "Fringillaria goslingi",
+      "en": "Gosling's Bunting",
+      "zh": "灰喉鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza impetuani",
+      "to": "Fringillaria impetuani",
+      "en": "Lark-like Bunting",
+      "zh": "淡岩鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza lathami",
+      "to": "Melophus lathami",
+      "en": "Crested Bunting",
+      "zh": "凤头鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza melanocephala",
+      "to": "Melophus melanocephalus",
+      "en": "Black-headed Bunting",
+      "zh": "黑头鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza pallasi",
+      "to": "Schoeniclus pallasi",
+      "en": "Pallas's Reed Bunting",
+      "zh": "苇鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza personata",
+      "to": "Schoeniclus personatus",
+      "en": "Masked Bunting",
+      "zh": "日本灰头鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza poliopleura",
+      "to": "Fringillaria poliopleura",
+      "en": "Somali Bunting",
+      "zh": "索马里鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza pusilla",
+      "to": "Schoeniclus pusillus",
+      "en": "Little Bunting",
+      "zh": "小鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza rustica",
+      "to": "Schoeniclus rusticus",
+      "en": "Rustic Bunting",
+      "zh": "田鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza rutila",
+      "to": "Schoeniclus rutilus",
+      "en": "Chestnut Bunting",
+      "zh": "栗鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza sahari",
+      "to": "Fringillaria sahari",
+      "en": "House Bunting",
+      "zh": "家鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza schoeniclus",
+      "to": "Schoeniclus schoeniclus",
+      "en": "Common Reed Bunting",
+      "zh": "芦鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza siemsseni",
+      "to": "Schoeniclus siemsseni",
+      "en": "Slaty Bunting",
+      "zh": "蓝鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza socotrana",
+      "to": "Fringillaria socotrana",
+      "en": "Socotra Bunting",
+      "zh": "索岛鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza spodocephala",
+      "to": "Schoeniclus spodocephalus",
+      "en": "Black-faced Bunting",
+      "zh": "灰头鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza striolata",
+      "to": "Fringillaria striolata",
+      "en": "Striolated Bunting",
+      "zh": "黑纹鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza sulphurata",
+      "to": "Schoeniclus sulphuratus",
+      "en": "Yellow Bunting",
+      "zh": "硫黄鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza tahapisi",
+      "to": "Fringillaria tahapisi",
+      "en": "Cinnamon-breasted Bunting",
+      "zh": "朱胸鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza tristrami",
+      "to": "Schoeniclus tristrami",
+      "en": "Tristram's Bunting",
+      "zh": "白眉鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza variabilis",
+      "to": "Schoeniclus variabilis",
+      "en": "Grey Bunting",
+      "zh": "灰鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emberiza yessoensis",
+      "to": "Schoeniclus yessoensis",
+      "en": "Ochre-rumped Bunting",
+      "zh": "红颈苇鹀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Emblema modesta",
+      "to": "Emblema modestum",
+      "en": "Plum-headed Finch",
+      "zh": "褐头星雀",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Eos bornea",
+      "to": "Trichoglossus borneus",
+      "en": "Red Lory",
+      "zh": "红鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Eos cyanogenia",
+      "to": "Trichoglossus cyanogenius",
+      "en": "Black-winged Lory",
+      "zh": "黑翅鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Eos histrio",
+      "to": "Trichoglossus histrio",
+      "en": "Red-and-blue Lory",
+      "zh": "红蓝鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Eos reticulata",
+      "to": "Trichoglossus reticulatus",
+      "en": "Blue-streaked Lory",
+      "zh": "蓝纹鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Eos semilarvata",
+      "to": "Trichoglossus semilarvatus",
+      "en": "Blue-eared Lory",
+      "zh": "蓝耳鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Eos squamata",
+      "to": "Trichoglossus squamatus",
+      "en": "Violet-necked Lory",
+      "zh": "紫颈鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Euptilotus eutilotus",
+      "to": "Microtarsus eutilotus",
+      "en": "Puff-backed Bulbul",
+      "zh": "凤头褐鹎",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Glossopsitta concinna",
+      "to": "Trichoglossus concinnus",
+      "en": "Musk Lorikeet",
+      "zh": "红耳绿鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Griseotyrannus aurantioatrocristatus",
+      "to": "Empidonomus aurantioatrocristatus",
+      "en": "Crowned Slaty Flycatcher",
+      "zh": "冠灰纹霸鹟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Humblotia flavirostris",
+      "to": "Muscicapa flavirostris",
+      "en": "Humblot's Flycatcher",
+      "zh": "哈氏鹟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Ixodia cyaniventris",
+      "to": "Rubigula cyaniventris",
+      "en": "Grey-bellied Bulbul",
+      "zh": "灰腹鹎",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Ixodia erythropthalmos",
+      "to": "Rubigula erythropthalmos",
+      "en": "Spectacled Bulbul",
+      "zh": "小褐鹎",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Ixodia squamata",
+      "to": "Rubigula squamata",
+      "en": "Scaly-breasted Bulbul",
+      "zh": "鳞胸鹎",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Microptilotis albonotatus",
+      "to": "Meliphaga albonotata",
+      "en": "Scrub Honeyeater",
+      "zh": "灌丛吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Microptilotis analogus",
+      "to": "Meliphaga analoga",
+      "en": "Mimic Honeyeater",
+      "zh": "效鸣吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Microptilotis cinereifrons",
+      "to": "Meliphaga cinereifrons",
+      "en": "Elegant Honeyeater",
+      "zh": "华丽吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Microptilotis flavirictus",
+      "to": "Meliphaga flavirictus",
+      "en": "Yellow-gaped Honeyeater",
+      "zh": "黄嘴吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Microptilotis gracilis",
+      "to": "Meliphaga gracilis",
+      "en": "Graceful Honeyeater",
+      "zh": "细嘴吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Microptilotis imitatrix",
+      "to": "Meliphaga imitatrix",
+      "en": "Cryptic Honeyeater",
+      "zh": "隐吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Microptilotis mimikae",
+      "to": "Meliphaga mimikae",
+      "en": "Mottle-breasted Honeyeater",
+      "zh": "斑胸吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Microptilotis montanus",
+      "to": "Meliphaga montana",
+      "en": "Forest Honeyeater",
+      "zh": "林吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Microptilotis orientalis",
+      "to": "Meliphaga orientalis",
+      "en": "Mountain Honeyeater",
+      "zh": "山林吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Microptilotis vicina",
+      "to": "Meliphaga vicina",
+      "en": "Tagula Honeyeater",
+      "zh": "塔古吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Neopelma chrysolophum",
+      "to": "Protopelma chrysolophum",
+      "en": "Serra do Mar Tyrant-Manakin",
+      "zh": "巴西黄冠霸娇鹟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Oreornis chrysogenys",
+      "to": "Meliphaga chrysogenys",
+      "en": "Orange-cheeked Honeyeater",
+      "zh": "橙颊吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Parvipsitta porphyrocephala",
+      "to": "Psitteuteles porphyrocephalus",
+      "en": "Purple-crowned Lorikeet",
+      "zh": "紫顶鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Parvipsitta pusilla",
+      "to": "Psitteuteles pusillus",
+      "en": "Little Lorikeet",
+      "zh": "姬鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Phoeniculus castaneiceps",
+      "to": "Rhinopomastus castaneiceps",
+      "en": "Forest Wood Hoopoe",
+      "zh": "栗头林戴胜",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Pseudeos cardinalis",
+      "to": "Chalcopsitta cardinalis",
+      "en": "Cardinal Lory",
+      "zh": "暗红鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Pseudeos fuscata",
+      "to": "Chalcopsitta fuscata",
+      "en": "Dusky Lory",
+      "zh": "烟色鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Ptilinopus holosericea",
+      "to": "Ptilinopus holosericeus",
+      "en": "Cloven-feathered Dove",
+      "zh": "散羽鸠",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Pycnopygius cinereus",
+      "to": "Pinarostola cinerea",
+      "en": "Marbled Honeyeater",
+      "zh": "苍额吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Pycnopygius ixoides",
+      "to": "Pinarostola ixoides",
+      "en": "Plain Honeyeater",
+      "zh": "绿褐吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Saudareos flavoviridis",
+      "to": "Trichoglossus flavoviridis",
+      "en": "Sula Lorikeet",
+      "zh": "黄绿鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Saudareos iris",
+      "to": "Trichoglossus iris",
+      "en": "Iris Lorikeet",
+      "zh": "五彩鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Saudareos johnstoniae",
+      "to": "Trichoglossus johnstoniae",
+      "en": "Mindanao Lorikeet",
+      "zh": "红喉绿鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Saudareos meyeri",
+      "to": "Trichoglossus meyeri",
+      "en": "Yellow-cheeked Lorikeet",
+      "zh": "黄耳鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Saudareos ornata",
+      "to": "Trichoglossus ornatus",
+      "en": "Ornate Lorikeet",
+      "zh": "华丽鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Sugomel lombokium",
+      "to": "Lichmera lombokia",
+      "en": "Scaly-crowned Honeyeater",
+      "zh": "鳞顶岩吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Synorhacma multistriata",
+      "to": "Charmosyna multistriata",
+      "en": "Striated Lorikeet",
+      "zh": "纵纹鹦鹉",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Territornis albilineata",
+      "to": "Meliphaga albilineata",
+      "en": "White-lined Honeyeater",
+      "zh": "白纹吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Territornis fordiana",
+      "to": "Meliphaga fordiana",
+      "en": "Kimberley Honeyeater",
+      "zh": "淡色白纹吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Territornis reticulata",
+      "to": "Meliphaga reticulata",
+      "en": "Streak-breasted Honeyeater",
+      "zh": "纹胸吸蜜鸟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Thryorchilus browni",
+      "to": "Troglodytes browni",
+      "en": "Timberline Wren",
+      "zh": "高山鹪鹩",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Troglodytes hiemalis",
+      "to": "Nannus hiemalis",
+      "en": "Winter Wren",
+      "zh": "冬鹪鹩",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Troglodytes pacificus",
+      "to": "Nannus pacificus",
+      "en": "Pacific Wren",
+      "zh": "阿拉斯加鹪鹩",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Troglodytes troglodytes",
+      "to": "Nannus troglodytes",
+      "en": "Eurasian Wren",
+      "zh": "鹪鹩",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    },
+    {
+      "from": "Tumbezia salvini",
+      "to": "Ochthoeca salvini",
+      "en": "Tumbes Tyrant",
+      "zh": "通贝斯唧霸鹟",
+      "basis": "unique English name in IOC 15.2 and AviList v2026, epithet equal or a one-letter/gender variant, and the AviList name is not an IOC species"
+    }
+  ],
+  "doNotReassign": {
+    "lumps": [
+      {
+        "from": "Accipiter chionogaster",
+        "parent": "Accipiter striatus",
+        "en": "White-breasted Hawk",
+        "zh": "白胸鹰"
+      },
+      {
+        "from": "Accipiter erythronemius",
+        "parent": "Accipiter striatus",
+        "en": "Rufous-thighed Hawk",
+        "zh": "红腿鹰"
+      },
+      {
+        "from": "Accipiter ventralis",
+        "parent": "Accipiter striatus",
+        "en": "Plain-breasted Hawk",
+        "zh": "淡胸鹰"
+      },
+      {
+        "from": "Aegithalos bonvaloti",
+        "parent": "Aegithalos iouschistos",
+        "en": "Black-browed Bushtit",
+        "zh": "黑眉长尾山雀"
+      },
+      {
+        "from": "Aerodramus ocistus",
+        "parent": "Aerodramus leucophaeus",
+        "en": "Marquesan Swiftlet",
+        "zh": "马克萨金丝燕"
+      },
+      {
+        "from": "Amblyornis germanus",
+        "parent": "Amblyornis macgregoriae",
+        "en": "Huon Bowerbird",
+        "zh": "休恩亭鸟"
+      },
+      {
+        "from": "Anas carolinensis",
+        "parent": "Anas crecca",
+        "en": "Green-winged Teal",
+        "zh": "美洲绿翅鸭"
+      },
+      {
+        "from": "Apalis flavocincta",
+        "parent": "Apalis flavida",
+        "en": "Brown-tailed Apalis",
+        "zh": "褐尾娇莺"
+      },
+      {
+        "from": "Apus cooki",
+        "parent": "Apus pacificus",
+        "en": "Cook's Swift",
+        "zh": "印支白腰雨燕"
+      },
+      {
+        "from": "Apus leuconyx",
+        "parent": "Apus pacificus",
+        "en": "Blyth's Swift",
+        "zh": "布氏白腰雨燕"
+      },
+      {
+        "from": "Apus nipalensis",
+        "parent": "Apus affinis",
+        "en": "House Swift",
+        "zh": "小白腰雨燕"
+      },
+      {
+        "from": "Buteo bannermani",
+        "parent": "Buteo buteo",
+        "en": "Cape Verde Buzzard",
+        "zh": "佛得角鵟"
+      },
+      {
+        "from": "Camaroptera brevicaudata",
+        "parent": "Camaroptera brachyura",
+        "en": "Grey-backed Camaroptera",
+        "zh": "灰背拱翅莺"
+      },
+      {
+        "from": "Carpodacus lepidus",
+        "parent": "Carpodacus sibiricus",
+        "en": "Chinese Long-tailed Rosefinch",
+        "zh": "中华长尾雀"
+      },
+      {
+        "from": "Centropus spilopterus",
+        "parent": "Centropus phasianinus",
+        "en": "Kai Coucal",
+        "zh": "摩鹿加鸦鹃"
+      },
+      {
+        "from": "Chloris kittlitzi",
+        "parent": "Chloris sinica",
+        "en": "Bonin Greenfinch",
+        "zh": "小笠原金翅雀"
+      },
+      {
+        "from": "Cinnyris whytei",
+        "parent": "Cinnyris stuhlmanni",
+        "en": "Whyte's Double-collared Sunbird",
+        "zh": "怀特双领花蜜鸟"
+      },
+      {
+        "from": "Colaptes aeruginosus",
+        "parent": "Colaptes rubiginosus",
+        "en": "Bronze-winged Woodpecker",
+        "zh": "铜翅啄木鸟"
+      },
+      {
+        "from": "Corvus cornix",
+        "parent": "Corvus corone",
+        "en": "Hooded Crow",
+        "zh": "冠小嘴乌鸦"
+      },
+      {
+        "from": "Corvus culminatus",
+        "parent": "Corvus macrorhynchos",
+        "en": "Indian Jungle Crow",
+        "zh": "印度丛林鸦"
+      },
+      {
+        "from": "Corvus levaillantii",
+        "parent": "Corvus macrorhynchos",
+        "en": "Eastern Jungle Crow",
+        "zh": "丛林鸦"
+      },
+      {
+        "from": "Elaenia chilensis",
+        "parent": "Elaenia albiceps",
+        "en": "Chilean Elaenia",
+        "zh": "智利拟霸鹟"
+      },
+      {
+        "from": "Erythrura regia",
+        "parent": "Erythrura cyaneovirens",
+        "en": "Royal Parrotfinch",
+        "zh": "皇鹦雀"
+      },
+      {
+        "from": "Geothlypis chiriquensis",
+        "parent": "Geothlypis semiflava",
+        "en": "Chiriqui Yellowthroat",
+        "zh": "巴拿马黄喉地莺"
+      },
+      {
+        "from": "Glaucidium californicum",
+        "parent": "Glaucidium gnoma",
+        "en": "Northern Pygmy Owl",
+        "zh": "北美鸺鹠"
+      },
+      {
+        "from": "Glaucidium cobanense",
+        "parent": "Glaucidium gnoma",
+        "en": "Guatemalan Pygmy Owl",
+        "zh": "危地马拉鸺鹠"
+      },
+      {
+        "from": "Glaucidium hoskinsii",
+        "parent": "Glaucidium gnoma",
+        "en": "Baja Pygmy Owl",
+        "zh": "海角鸺鹠"
+      },
+      {
+        "from": "Gracula robusta",
+        "parent": "Gracula religiosa",
+        "en": "Nias Hill Myna",
+        "zh": "尼岛鹩哥"
+      },
+      {
+        "from": "Himantopus melanurus",
+        "parent": "Himantopus mexicanus",
+        "en": "White-backed Stilt",
+        "zh": "南美长脚鹬"
+      },
+      {
+        "from": "Kleinothraupis auricularis",
+        "parent": "Kleinothraupis atropileus",
+        "en": "White-browed Hemispingus",
+        "zh": "白眉黑顶拟雀"
+      },
+      {
+        "from": "Leptotila battyi",
+        "parent": "Leptotila plumbeiceps",
+        "en": "Azuero Dove",
+        "zh": "褐背棕翅鸠"
+      },
+      {
+        "from": "Manucodia alter",
+        "parent": "Manucodia ater",
+        "en": "Tagula Manucode",
+        "zh": "塔古极乐鸟"
+      },
+      {
+        "from": "Mionectes galbinus",
+        "parent": "Mionectes olivaceus",
+        "en": "Olive-striped Flycatcher",
+        "zh": "橄榄绿纹霸鹟"
+      },
+      {
+        "from": "Myiothlypis roraimae",
+        "parent": "Myiothlypis bivittata",
+        "en": "Roraiman Warbler",
+        "zh": "亚马孙王森莺"
+      },
+      {
+        "from": "Myrmecocichla collaris",
+        "parent": "Myrmecocichla arnotti",
+        "en": "Ruaha Chat",
+        "zh": "西非蚁䳭"
+      },
+      {
+        "from": "Myrmotherula luctuosa",
+        "parent": "Myrmotherula axillaris",
+        "en": "Silvery-flanked Antwren",
+        "zh": "银胁蚁鹩"
+      },
+      {
+        "from": "Nesillas longicaudata",
+        "parent": "Nesillas typica",
+        "en": "Anjouan Brush Warbler",
+        "zh": "安岛薮莺"
+      },
+      {
+        "from": "Ocreatus addae",
+        "parent": "Ocreatus underwoodii",
+        "en": "Rufous-booted Racket-tail",
+        "zh": "棕靴盘尾蜂鸟"
+      },
+      {
+        "from": "Ocreatus peruanus",
+        "parent": "Ocreatus underwoodii",
+        "en": "Peruvian Racket-tail",
+        "zh": "秘鲁盘尾蜂鸟"
+      },
+      {
+        "from": "Otus feae",
+        "parent": "Otus senegalensis",
+        "en": "Annobon Scops Owl",
+        "zh": "安诺本角鸮"
+      },
+      {
+        "from": "Otus madagascariensis",
+        "parent": "Otus rutilus",
+        "en": "Torotoroka Scops Owl",
+        "zh": "托罗卡角鸮"
+      },
+      {
+        "from": "Oxyura ferruginea",
+        "parent": "Oxyura jamaicensis",
+        "en": "Andean Duck",
+        "zh": "安第斯硬尾鸭"
+      },
+      {
+        "from": "Pachycephala fuliginosa",
+        "parent": "Pachycephala pectoralis",
+        "en": "Western Whistler",
+        "zh": "西方啸鹟"
+      },
+      {
+        "from": "Pachycephala johni",
+        "parent": "Pachycephala griseonota",
+        "en": "Cinnamon-breasted Whistler",
+        "zh": "红胸啸鹟"
+      },
+      {
+        "from": "Pampa pampa",
+        "parent": "Pampa curvipennis",
+        "en": "Wedge-tailed Sabrewing",
+        "zh": "楔尾刀翅蜂鸟"
+      },
+      {
+        "from": "Passerella megarhyncha",
+        "parent": "Passerella iliaca",
+        "en": "Thick-billed Fox Sparrow",
+        "zh": "厚嘴狐色雀鹀"
+      },
+      {
+        "from": "Passerella schistacea",
+        "parent": "Passerella iliaca",
+        "en": "Slate-colored Fox Sparrow",
+        "zh": "灰狐色雀鹀"
+      },
+      {
+        "from": "Passerella unalaschcensis",
+        "parent": "Passerella iliaca",
+        "en": "Sooty Fox Sparrow",
+        "zh": "黑狐色雀鹀"
+      },
+      {
+        "from": "Pellorneum poliogene",
+        "parent": "Pellorneum malaccense",
+        "en": "Leaflitter Babbler",
+        "zh": "灰颊短尾雅鹛"
+      },
+      {
+        "from": "Pellorneum saturatum",
+        "parent": "Pellorneum malaccense",
+        "en": "Glissando Babbler",
+        "zh": "滑音短尾雅鹛"
+      },
+      {
+        "from": "Pericrocotus speciosus",
+        "parent": "Pericrocotus flammeus",
+        "en": "Scarlet Minivet",
+        "zh": "赤红山椒鸟"
+      },
+      {
+        "from": "Phibalura boliviana",
+        "parent": "Phibalura flavirostris",
+        "en": "Palkachupa Cotinga",
+        "zh": "黄眼燕尾伞鸟"
+      },
+      {
+        "from": "Phyllastrephus alfredi",
+        "parent": "Phyllastrephus flavostriatus",
+        "en": "Sharpe's Greenbul",
+        "zh": "夏氏旋木鹎"
+      },
+      {
+        "from": "Phylloscopus floresianus",
+        "parent": "Phylloscopus presbytes",
+        "en": "Flores Leaf Warbler",
+        "zh": "佛罗柳莺"
+      },
+      {
+        "from": "Picus dedemi",
+        "parent": "Picus canus",
+        "en": "Sumatran Woodpecker",
+        "zh": "苏门答腊绿啄木鸟"
+      },
+      {
+        "from": "Pionus seniloides",
+        "parent": "Pionus tumultuosus",
+        "en": "White-capped Parrot",
+        "zh": "白顶鹦哥"
+      },
+      {
+        "from": "Piranga hepatica",
+        "parent": "Piranga flava",
+        "en": "Hepatic Tanager",
+        "zh": "暗红丽唐纳雀"
+      },
+      {
+        "from": "Piranga lutea",
+        "parent": "Piranga flava",
+        "en": "Tooth-billed Tanager",
+        "zh": "齿嘴丽唐纳雀"
+      },
+      {
+        "from": "Polioptila attenboroughi",
+        "parent": "Polioptila paraensis",
+        "en": "Inambari Gnatcatcher",
+        "zh": "伊南巴里蚋莺"
+      },
+      {
+        "from": "Polioptila facilis",
+        "parent": "Polioptila paraensis",
+        "en": "Rio Negro Gnatcatcher",
+        "zh": "尼格罗蚋莺"
+      },
+      {
+        "from": "Porphyrio indicus",
+        "parent": "Porphyrio porphyrio",
+        "en": "Black-backed Swamphen",
+        "zh": "黑背紫水鸡"
+      },
+      {
+        "from": "Porphyrio madagascariensis",
+        "parent": "Porphyrio porphyrio",
+        "en": "African Swamphen",
+        "zh": "非洲紫水鸡"
+      },
+      {
+        "from": "Porphyrio melanotus",
+        "parent": "Porphyrio porphyrio",
+        "en": "Australasian Swamphen",
+        "zh": "澳洲紫水鸡"
+      },
+      {
+        "from": "Porphyrio poliocephalus",
+        "parent": "Porphyrio porphyrio",
+        "en": "Grey-headed Swamphen",
+        "zh": "紫水鸡"
+      },
+      {
+        "from": "Porphyrio pulverulentus",
+        "parent": "Porphyrio porphyrio",
+        "en": "Philippine Swamphen",
+        "zh": "菲律宾紫水鸡"
+      },
+      {
+        "from": "Pterodroma occulta",
+        "parent": "Pterodroma cervicalis",
+        "en": "Vanuatu Petrel",
+        "zh": "瓦努阿图圆尾鹱"
+      },
+      {
+        "from": "Puffinus mauretanicus",
+        "parent": "Puffinus yelkouan",
+        "en": "Balearic Shearwater",
+        "zh": "巴利鹱"
+      },
+      {
+        "from": "Ramosomyia wagneri",
+        "parent": "Ramosomyia viridifrons",
+        "en": "Cinnamon-sided Hummingbird",
+        "zh": "栗胁蜂鸟"
+      },
+      {
+        "from": "Ramphastos citreolaemus",
+        "parent": "Ramphastos vitellinus",
+        "en": "Citron-throated Toucan",
+        "zh": "淡黄喉巨嘴鸟"
+      },
+      {
+        "from": "Rhipidura kordensis",
+        "parent": "Rhipidura rufiventris",
+        "en": "Biak Fantail",
+        "zh": "比岛扇尾鹟"
+      },
+      {
+        "from": "Saxicola stejnegeri",
+        "parent": "Saxicola maurus",
+        "en": "Amur Stonechat",
+        "zh": "东亚石䳭"
+      },
+      {
+        "from": "Setophaga auduboni",
+        "parent": "Setophaga coronata",
+        "en": "Audubon's Warbler",
+        "zh": "奥杜邦林莺"
+      },
+      {
+        "from": "Setophaga goldmani",
+        "parent": "Setophaga coronata",
+        "en": "Goldman's Warbler",
+        "zh": "中美林莺"
+      },
+      {
+        "from": "Silvicultrix spodionota",
+        "parent": "Silvicultrix frontalis",
+        "en": "Kalinowski's Chat-Tyrant",
+        "zh": "秘鲁唧霸鹟"
+      },
+      {
+        "from": "Stiphrornis xanthogaster",
+        "parent": "Stiphrornis erythrothorax",
+        "en": "Yellow-breasted Forest Robin",
+        "zh": "黄胸林鸲"
+      },
+      {
+        "from": "Strix mauritanica",
+        "parent": "Strix aluco",
+        "en": "Maghreb Owl",
+        "zh": "马格里布林鸮"
+      },
+      {
+        "from": "Sturnia blythii",
+        "parent": "Sturnia malabarica",
+        "en": "Malabar Starling",
+        "zh": "马拉巴椋鸟"
+      },
+      {
+        "from": "Taeniopygia castanotis",
+        "parent": "Taeniopygia guttata",
+        "en": "Australian Zebra Finch",
+        "zh": "斑胸草雀"
+      },
+      {
+        "from": "Thalassarche impavida",
+        "parent": "Thalassarche melanophris",
+        "en": "Campbell Albatross",
+        "zh": "坎岛信天翁"
+      },
+      {
+        "from": "Thalasseus acuflavidus",
+        "parent": "Thalasseus sandvicensis",
+        "en": "Cabot's Tern",
+        "zh": "卡氏凤头燕鸥"
+      },
+      {
+        "from": "Trachyphonus usambiro",
+        "parent": "Trachyphonus darnaudii",
+        "en": "Usambiro Barbet",
+        "zh": "坦桑拟啄木鸟"
+      },
+      {
+        "from": "Treron permagnus",
+        "parent": "Treron formosae",
+        "en": "Ryukyu Green Pigeon",
+        "zh": "琉球绿鸠"
+      },
+      {
+        "from": "Tyto manusi",
+        "parent": "Tyto novaehollandiae",
+        "en": "Manus Masked Owl",
+        "zh": "马努斯草鸮"
+      },
+      {
+        "from": "Tyto multipunctata",
+        "parent": "Tyto tenebricosa",
+        "en": "Lesser Sooty Owl",
+        "zh": "小乌草鸮"
+      },
+      {
+        "from": "Tyto nigrobrunnea",
+        "parent": "Tyto javanica",
+        "en": "Taliabu Masked Owl",
+        "zh": "塔里仓鸮"
+      },
+      {
+        "from": "Tyto rosenbergii",
+        "parent": "Tyto javanica",
+        "en": "Sulawesi Masked Owl",
+        "zh": "苏拉威西苍鸮"
+      },
+      {
+        "from": "Tyto sororcula",
+        "parent": "Tyto novaehollandiae",
+        "en": "Moluccan Masked Owl",
+        "zh": "小草鸮"
+      },
+      {
+        "from": "Zosterops aldabrensis",
+        "parent": "Zosterops maderaspatanus",
+        "en": "Aldabra White-eye",
+        "zh": "阿岛绣眼鸟"
+      },
+      {
+        "from": "Zosterops anjuanensis",
+        "parent": "Zosterops maderaspatanus",
+        "en": "Anjouan White-eye",
+        "zh": "安岛绣眼鸟"
+      },
+      {
+        "from": "Zosterops chrysolaemus",
+        "parent": "Zosterops minor",
+        "en": "Black-fronted White-eye",
+        "zh": "黑额绣眼鸟"
+      },
+      {
+        "from": "Zosterops comorensis",
+        "parent": "Zosterops maderaspatanus",
+        "en": "Moheli White-eye",
+        "zh": "莫岛绣眼鸟"
+      }
+    ],
+    "ambiguous": [],
+    "unmatched": []
+  }
+}

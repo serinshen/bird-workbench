@@ -5,6 +5,7 @@ import { gunzipSync } from "node:zlib";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 import { mapDetection, mapRecord, mapSuspicious } from "./record-map.mjs";
+import { buildStatements, heldNames } from "./remap-taxonomy.mjs";
 import { recordFrom } from "../worker/index.js";
 
 const require = createRequire(import.meta.url);
@@ -39,6 +40,59 @@ const packText = gunzipSync(packBytes).toString("utf8");
 assert(packText.includes("蓝额红尾鸲"), "checklist is missing 蓝额红尾鸲");
 assert(packText.includes("红头穗鹛"), "checklist is missing 红头穗鹛");
 assert(!packText.includes("蓝额红尾鸪"), "checklist contains the wrong 鸪 character");
+
+const pack = JSON.parse(packText);
+assert(pack.tax === "AviList v2026", "taxonomy label");
+assert(pack.n === 11172 && pack.r.split("\n").filter(Boolean).length === 11172, "AviList species count");
+assert(pack.o.length === 45 && pack.f.length === 250 && pack.g.length === 2379, "AviList ranks");
+assert(Array.isArray(pack.mz) && pack.mz.length === 1 && pack.mz[0] === "Sakesphorus pulchellus", "blank Chinese name");
+assert(!packText.includes("IOC"), "checklist still names IOC");
+const speciesNames = new Set();
+for (const line of pack.r.split("\n")) {
+  if (!line) continue;
+  const parts = line.split("\t");
+  speciesNames.add(pack.g[Number(parts[5])] + " " + parts[0]);
+}
+assert(!speciesNames.has("Strix davidi"), "四川林鸮 is not an AviList species");
+assert(!speciesNames.has("Garrulax owstoni"), "海南画眉 is not an AviList species");
+const synTo = new Map();
+for (const line of String(pack.sy || "").split("\n")) {
+  if (!line) continue;
+  const tab = line.indexOf("\t");
+  const current = line.slice(0, tab);
+  const older = line.slice(tab + 1);
+  assert(speciesNames.has(current), "synonym target missing " + current);
+  assert(!synTo.has(older), "synonym collision " + older);
+  synTo.set(older, current);
+}
+assert(synTo.get("Emberiza siemsseni") === "Schoeniclus siemsseni", "蓝鹀 rename");
+assert(synTo.get("Emberiza spodocephala") === "Schoeniclus spodocephalus", "灰头鹀 rename");
+const remap = JSON.parse(readFileSync(join(root, "data/scientific-name-remap.json"), "utf8"));
+const held = heldNames(remap);
+const sql = buildStatements(remap);
+assert(sql.includes("Schoeniclus siemsseni"), "remap sql siemsseni");
+assert(sql.includes("Schoeniclus spodocephalus"), "remap sql spodocephala");
+assert(!sql.includes("Anas carolinensis"), "lump must not be rewritten");
+assert(!sql.includes("Strix davidi"), "subspecies rank must not be rewritten");
+for (const record of mapped) {
+  const name = record.scientificName;
+  const resolved = speciesNames.has(name) ? name : synTo.get(name);
+  assert(resolved && speciesNames.has(resolved), "observation does not resolve " + name);
+  assert(!held.has(name), "observation is in the do-not-reassign list " + name);
+}
+const china = JSON.parse(readFileSync(join(root, "data/china-recordable-sci.json"), "utf8"));
+assert(china.count === 1482 && china.scientificNames.length === 1482, "China filter count");
+for (const name of china.scientificNames) assert(speciesNames.has(name), "China filter name is not AviList " + name);
+const ranks = JSON.parse(readFileSync(join(root, "data/protection-ranks.json"), "utf8"));
+assert(ranks.byScientificName["Platalea minor"].iucn === "VU" && ranks.byScientificName["Platalea minor"].cn === "I", "黑脸琵鹭");
+assert(ranks.byScientificName["Strix uralensis"].cn === "II" && ranks.byScientificName["Strix uralensis"].iucn === "LC", "长尾林鸮 stays II");
+assert(ranks.byScientificName["Garrulax canorus"].cn === "II", "画眉 stays II");
+assert(!ranks.byScientificName["Strix davidi"] && !ranks.byScientificName["Garrulax owstoni"], "subspecies ranks omitted");
+for (const name of Object.keys(ranks.byScientificName)) {
+  assert(speciesNames.has(name), "rank is not an AviList species " + name);
+  const rank = ranks.byScientificName[name];
+  if (rank.iucn === "LC") assert(rank.cn === "I" || rank.cn === "II", "LC without national protection " + name);
+}
 
 assert(mapDetection("seen") === "seen", "seen");
 assert(mapDetection("seen_heard") === "seen", "seen_heard must become 看到");

@@ -1,6 +1,6 @@
 # 观鸟工作台
 
-个人观鸟名录。主页就是工作台：IOC World Bird List v15.2（11,064 种），按中文名、英文名、拉丁名检索，目 → 科 → 属级联筛选。一种鸟至少有一条「看到」才算已发现；记录若全部是「听到」，则是仅听到，不计入已发现；没有记录就是未发现。状态只由记录推导。每种鸟有自己的观察、野外照片和手记。收藏的野外照片在「影像记录」。
+个人观鸟名录。主页就是工作台：AviList v2026（11,172 种；AviList Core Team. 2026. AviList: The Global Avian Checklist, v2026. https://doi.org/10.2173/avilist.v2026），按中文名、英文名、拉丁名检索，目 → 科 → 属级联筛选。一种鸟至少有一条「看到」才算已发现；记录若全部是「听到」，则是仅听到，不计入已发现；没有记录就是未发现。状态只由记录推导。每种鸟有自己的观察、野外照片和手记。收藏的野外照片在「影像记录」。
 
 正在用的页面从 Cloudflare Worker 读记录、手记和照片。git 里的 `data/observations.json`、`data/notes.json` 和 `photos/` 是备份。登录只用邮箱里的一次性登录码或链接，详见 [SETUP.md](SETUP.md)。
 
@@ -10,14 +10,16 @@
 
 ## 数据
 
-- `data/pack.b64`：IOC v15.2 名录（gzip + base64）。中文名取自名录；23 个没有中文名的种保持空白。
-- `data/china-recordable-sci.json`：中国可记录 1,491 种，只做筛选，不是另一套分类。
+- `data/pack.b64`：AviList v2026 名录（gzip + base64），物种级，不含亚种。英文名和分类用 AviList。中文名优先用 eBird 简体中文名，并且只在 AviList 给出了对应的 Cornell 物种代码时使用；对不上的，沿用原先 1:1 学名上的中文名。没有中文名的种留空。
+- `data/china-recordable-sci.json`：中国可记录 1,482 种，只做筛选，不是另一套分类。由原来的 1,491 个 IOC 学名按 1:1 改名或归并到 AviList 上。
+- `data/protection-ranks.json`：AviList v2026 的 IUCN 等级，以及 2021 年《国家重点保护野生动物名录》的国家一级、二级。无危只在同时有国家保护等级时写入。
+- `data/scientific-name-remap.json`、`data/avilist-v2026-migration.md`：学名迁移。生产库的改名要另跑，见 [SETUP.md](SETUP.md)。
 - `data/observations.json`：备份。观察方式在导入时把原来的 `seen`、`seen_heard` 记为看到，`heard_only` 记为听到。`可疑` 只在原来的 `tentative` 为 true 时打开。
 - `data/notes.json`：手记备份，按学名保存。
 - `data/weekly-issues.json`：鸟况周报。每期手写。目录按刊期从新到旧，只显示日期和题目；正文用少量 Markdown（标题、列表、强调、链接）。
 - `photos/`：野外照片备份。长边不超过 2000 像素，画面上有 `@SerinS`。文件里的 JPEG 注释 `WBWM:@SerinS` 用来跳过已经处理过的照片。
 
-目、科在筛选里显示「中文名 + 拉丁名」。属只显示拉丁属名。屏幕上的科名来自 IOC 名录。导入记录里原来的类群写法留在每条记录的 `sourceGroup`，不覆盖名录。
+目、科在筛选里显示「中文名 + 拉丁名」。没有中文名时只显示拉丁名。属只显示拉丁属名。屏幕上的科名来自 AviList。导入记录里原来的类群写法留在每条记录的 `sourceGroup`，不覆盖名录。
 
 时间按 Asia/Shanghai 保存，页面只显示日期和小时:分钟，不显示时区名称。没有钟点的记录只显示日期。
 
