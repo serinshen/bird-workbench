@@ -534,11 +534,25 @@ button.primary:disabled { opacity: 0.55; cursor: default; }
 }
 
 .rank {
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
   overflow: hidden;
   font-size: 11px;
   line-height: 1.2;
   color: var(--sage-ink);
-  text-overflow: ellipsis;
+}
+
+.rank-sep { margin: 0 0.35em; color: var(--sand); }
+
+.rank-iucn { color: var(--sage-ink); }
+
+.rank-cn { color: var(--ink); }
+
+.rank-san {
+  color: var(--ink-soft);
+  letter-spacing: 0.08em;
+  box-shadow: inset 0 -1px 0 var(--sand);
 }
 
 .status {
@@ -676,6 +690,12 @@ button.primary:disabled { opacity: 0.55; cursor: default; }
 .chip.rank.cn {
   border-color: rgba(58, 58, 54, 0.45);
   color: var(--ink);
+}
+
+.chip.rank.san {
+  border-color: var(--sand);
+  color: var(--ink-soft);
+  letter-spacing: 0.12em;
 }
 
 .tax-dl {

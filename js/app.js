@@ -415,18 +415,27 @@
     return "";
   }
 
-  function rankParts(sp, long) {
-    const parts = [];
-    if (sp.iucn && IUCN_WORD[sp.iucn]) parts.push(long ? iucnLong(sp.iucn) : iucnShort(sp.iucn));
+  function rankMarks(sp, long) {
+    const marks = [];
+    if (sp.iucn && IUCN_WORD[sp.iucn]) marks.push({ kind: "iucn", text: long ? iucnLong(sp.iucn) : iucnShort(sp.iucn) });
     const cn = cnWord(sp.cn);
-    if (cn) parts.push(cn);
-    return parts;
+    if (cn) marks.push({ kind: "cn", text: cn });
+    if (sp.san) marks.push({ kind: "san", text: "三有" });
+    return marks;
+  }
+
+  function rankNodes(sp) {
+    const nodes = [];
+    rankMarks(sp, false).forEach((mark, index) => {
+      if (index) nodes.push(el("span", { class: "rank-sep", "aria-hidden": "true" }, ["·"]));
+      nodes.push(el("span", { class: "rank-" + mark.kind }, [mark.text]));
+    });
+    return nodes;
   }
 
   function renderRow(sp) {
     const status = window.WBRecords.statusForRecords(state.bySci.get(sp.sci));
     const zh = sp.zh || "（无中文名）";
-    const ranks = rankParts(sp, false);
     const row = el("a", {
       class: "sp" + (status === "seen" ? " is-seen" : status === "heard" ? " is-heard" : "") + (sp.missingZh ? " is-blank" : ""),
       href: "#/species/" + encodeURIComponent(sp.sci),
@@ -439,12 +448,12 @@
       el("span", { class: "en", lang: "en" }, [sp.en]),
       el("span", { class: "la", lang: "la" }, [sp.sci]),
       el("span", { class: "fam" }, [state.families[sp.family].zh]),
-      el("span", { class: "rank" }, [ranks.length ? ranks.join(" · ") : null]),
+      el("span", { class: "rank" }, rankNodes(sp)),
       el("span", { class: "status" }, [
         status === "seen" ? "已发现" : status === "heard" ? "仅听到" : null,
       ]),
     ]);
-    row.title = [sp.zh, sp.en, sp.sci, statusWord(status)].concat(rankParts(sp, true)).filter(Boolean).join(" · ");
+    row.title = [sp.zh, sp.en, sp.sci, statusWord(status)].concat(rankMarks(sp, true).map((mark) => mark.text)).filter(Boolean).join(" · ");
     return row;
   }
 
@@ -1364,6 +1373,7 @@
     if (sp.china) chips.append(el("li", { class: "chip" }, ["中国可记录"]));
     if (sp.iucn && IUCN_WORD[sp.iucn]) chips.append(el("li", { class: "chip rank" }, [iucnLong(sp.iucn)]));
     if (sp.cn === "I" || sp.cn === "II") chips.append(el("li", { class: "chip rank cn" }, [cnWord(sp.cn)]));
+    if (sp.san) chips.append(el("li", { class: "chip rank san" }, ["三有"]));
     root.append(chips);
     const family = state.families[sp.family];
     const order = state.orders[sp.order];
@@ -1738,6 +1748,7 @@
         if (rank && typeof rank === "object") {
           if (typeof rank.iucn === "string" && iucnCodes.has(rank.iucn)) sp.iucn = rank.iucn;
           if (rank.cn === "I" || rank.cn === "II") sp.cn = rank.cn;
+          if (rank.san === true) sp.san = true;
         }
         sp._zh = [sp.zh].concat(sp.aliasZh).filter(Boolean).join("\n");
         sp._lat = foldLatin([sp.en, sp.sci, sp.genusName].concat(sp.syn).join(" "));
